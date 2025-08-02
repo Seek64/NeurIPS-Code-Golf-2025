@@ -1,0 +1,1 @@
+p=lambda g:[[c*5%14for c in r]for r in g]
