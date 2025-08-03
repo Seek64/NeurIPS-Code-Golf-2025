@@ -1,0 +1,1 @@
+def p(g):N=len(g[0]);return[[r[i]for i in range(N)if v in l[i::N]]for r in g if(v:=min({*(l:=sum(g,[]))}-{0},key=l.count))in r]

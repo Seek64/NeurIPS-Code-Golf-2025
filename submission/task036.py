@@ -1,0 +1,1 @@
+p=lambda g:[[r[i]for i in range(30)if v in l[i::30]]for r in g if(v:=max(l:=sum(g,[]),key=lambda i:l[::-1].index(i)+l.index(i)))in r]

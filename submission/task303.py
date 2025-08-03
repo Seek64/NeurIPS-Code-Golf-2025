@@ -1,0 +1,1 @@
+p=lambda g:[[(2,r[i])[any(r)*any([*zip(*g)][i])]for i in range(len(g[0]))]for r in g]

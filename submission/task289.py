@@ -1,0 +1,1 @@
+def p(g):N=len({*sum(g,[])})-1;return[[*sum(zip(*N*[g[i//N]]),())]for i in range(3*N)]

@@ -1,0 +1,1 @@
+p=lambda g:[[max(r[c],r[~c])for c in range(16)if r[c]<1]for r in g if 0in r]

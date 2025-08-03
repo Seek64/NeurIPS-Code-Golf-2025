@@ -1,0 +1,1 @@
+def p(g):N=9-sum(g,[]).count(0);return[[*sum(zip(*N*[g[i//N]]),())]for i in range(len(g)*N)]
