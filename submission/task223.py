@@ -1,0 +1,1 @@
+p=lambda g:[[*sum(zip(*3*[g[i//3]]),())]for i in range(9)]

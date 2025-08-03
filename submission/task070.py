@@ -1,0 +1,1 @@
+p=lambda g:[[(r[i],5^r[i]+5)[8in r and(8in(c:=sum(g,[]))[i::17]or 8in c[i-1::17]and 8in c[i+1::17])]for i in range(17)]for r in g]

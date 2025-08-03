@@ -1,0 +1,1 @@
+p=lambda g:[r for*r,in zip(*filter(any,zip(*g)))if sum(r)]

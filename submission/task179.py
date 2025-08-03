@@ -1,0 +1,1 @@
+p=lambda g:[*map(list,zip(*g))]
