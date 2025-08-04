@@ -216,28 +216,29 @@ def solve_b91ae062(I):
     O = upscale(I, x2)
     return O
 
-
+# 081
 def solve_3aa6fb7a(I):
     x1 = objects(I, T, F, T)
     x2 = mapply(corners, x1)
     O = underfill(I, ONE, x2)
     return O
 
-
+# 188
 def solve_7b7f7511(I):
     x1 = portrait(I)
     x2 = branch(x1, tophalf, lefthalf)
     O = x2(I)
     return O
 
-
+# 095
+# border
 def solve_4258a5f9(I):
     x1 = ofcolor(I, FIVE)
     x2 = mapply(neighbors, x1)
     O = fill(I, ONE, x2)
     return O
 
-
+# 065
 def solve_2dc579da(I):
     x1 = vsplit(I, TWO)
     x2 = rbind(hsplit, TWO)
@@ -245,7 +246,7 @@ def solve_2dc579da(I):
     O = argmax(x3, numcolors)
     return O
 
-
+# 057
 def solve_28bf18c6(I):
     x1 = objects(I, T, T, T)
     x2 = first(x1)
@@ -253,7 +254,7 @@ def solve_28bf18c6(I):
     O = hconcat(x3, x3)
     return O
 
-
+# 083
 def solve_3af2c5a8(I):
     x1 = vmirror(I)
     x2 = hconcat(I, x1)
@@ -261,7 +262,8 @@ def solve_3af2c5a8(I):
     O = vconcat(x2, x3)
     return O
 
-
+# 103
+# Try hash / brute force
 def solve_44f52bb0(I):
     x1 = vmirror(I)
     x2 = equality(x1, I)
