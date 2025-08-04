@@ -1,0 +1,1 @@
+p=lambda g:[[(sum((0,*g[r])[c:c+3])&sum((0,*sum(g,[])[c::7])[r:r+3])==8)|g[r][c]for c in range(7)]for r in range(7)]

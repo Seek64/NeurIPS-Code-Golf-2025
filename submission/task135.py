@@ -1,1 +1,1 @@
-p=lambda g:[g[0][6:],g[1][6:],g[2][6:]]
+p=lambda g:[r[6:]for r in g[:3]]

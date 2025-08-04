@@ -1,0 +1,1 @@
+p=lambda g:(g[:(h:=len(g))//2],[r[:(w:=len(g[0]))//2]for r in g])[2*sum(g[:h//2],[])!=sum(g,[])or h<w]

@@ -1,0 +1,1 @@
+p=lambda g:min(l:=[(a:=[r[:(N:=len(g)//2)]for r in g])[:N],a[-N:],(b:=[r[-N:]for r in g])[:N],b[-N:]],key=l.count)

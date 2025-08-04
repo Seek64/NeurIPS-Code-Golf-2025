@@ -1,0 +1,1 @@
+p=lambda g:[[g[r][c]|(5in(3*sum((9*[0],*g)[r:r+3],[0]))[c+2::9])for c in range(9)]for r in range(9)]

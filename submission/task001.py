@@ -1,0 +1,1 @@
+p=lambda g:[sum([min(3*[v],g[r%3])for v in g[r//3]],[])for r in range(9)]
