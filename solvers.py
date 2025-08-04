@@ -271,7 +271,7 @@ def solve_44f52bb0(I):
     O = canvas(x3, UNITY)
     return O
 
-
+# 142
 def solve_62c24649(I):
     x1 = vmirror(I)
     x2 = hconcat(I, x1)
@@ -279,7 +279,7 @@ def solve_62c24649(I):
     O = vconcat(x2, x3)
     return O
 
-
+# 152
 def solve_67e8384a(I):
     x1 = vmirror(I)
     x2 = hconcat(I, x1)
@@ -287,7 +287,7 @@ def solve_67e8384a(I):
     O = vconcat(x2, x3)
     return O
 
-
+# 177
 def solve_7468f01a(I):
     x1 = objects(I, F, T, T)
     x2 = first(x1)
@@ -295,7 +295,7 @@ def solve_7468f01a(I):
     O = vmirror(x3)
     return O
 
-
+# 146
 def solve_662c240a(I):
     x1 = vsplit(I, THREE)
     x2 = fork(equality, dmirror, identity)
@@ -303,7 +303,8 @@ def solve_662c240a(I):
     O = extract(x1, x3)
     return O
 
-
+# 97
+# potential, could be done like 95
 def solve_42a50994(I):
     x1 = objects(I, T, T, T)
     x2 = sizefilter(x1, ONE)
@@ -311,7 +312,7 @@ def solve_42a50994(I):
     O = cover(I, x3)
     return O
 
-
+# 132
 def solve_56ff96f3(I):
     x1 = fgpartition(I)
     x2 = fork(recolor, color, backdrop)
@@ -319,7 +320,8 @@ def solve_56ff96f3(I):
     O = paint(I, x3)
     return O
 
-
+# 133
+# Similar to 95
 def solve_50cb2852(I):
     x1 = objects(I, T, F, T)
     x2 = compose(backdrop, inbox)
@@ -327,7 +329,8 @@ def solve_50cb2852(I):
     O = fill(I, EIGHT, x3)
     return O
 
-
+# 98
+# VERY similar to 133
 def solve_4347f46a(I):
     x1 = objects(I, T, F, T)
     x2 = fork(difference, toindices, box)
@@ -335,7 +338,7 @@ def solve_4347f46a(I):
     O = fill(I, ZERO, x3)
     return O
 
-
+# 108
 def solve_46f33fce(I):
     x1 = rot180(I)
     x2 = downscale(x1, TWO)

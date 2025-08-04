@@ -1,1 +1,1 @@
-p=lambda g:[2*r for*r,in zip(*filter(any,zip(*g)))if sum(r)]
+p=lambda g:[r*2for*r,in zip(*filter(any,zip(*g)))if sum(r)]

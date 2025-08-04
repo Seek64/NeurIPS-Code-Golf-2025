@@ -1,0 +1,1 @@
+p=lambda g:[[(8,g[r][c])[0in(3*sum((99*[0],*g,99*[0])[r:r+3],[0]))[c+2::len(g[0])]]for c in range(len(g[0]))]for r in range(len(g))]

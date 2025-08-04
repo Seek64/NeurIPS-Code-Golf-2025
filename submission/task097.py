@@ -1,0 +1,1 @@
+p=lambda g:[[g[r][c]*(sum([k[c:c+3]for k in[[0,*r,0]for r in[99*[0],*g,99*[0]]][r:r+3]],[]).count(0)<8)for c in range(len(g[0]))]for r in range(len(g))]
