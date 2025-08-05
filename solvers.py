@@ -405,7 +405,7 @@ def solve_dc1df850(I):
     return O
 
 # 384
-# Combine upscale and crop
+# Combine upscale and crop - potential
 def solve_f25fbde4(I):
     x1 = objects(I, T, T, T)
     x2 = first(x1)
@@ -413,7 +413,7 @@ def solve_f25fbde4(I):
     O = upscale(x3, TWO)
     return O
 
-
+# 102 OPEN !
 def solve_44d8ac46(I):
     x1 = objects(I, T, F, T)
     x2 = apply(delta, x1)
@@ -421,7 +421,7 @@ def solve_44d8ac46(I):
     O = fill(I, TWO, x3)
     return O
 
-
+# 032
 def solve_1e0a9b12(I):
     x1 = rot270(I)
     x2 = rbind(order, identity)
@@ -429,7 +429,7 @@ def solve_1e0a9b12(I):
     O = rot90(x3)
     return O
 
-
+# 016
 def solve_0d3d703e(I):
     x1 = switch(I, THREE, FOUR)
     x2 = switch(x1, EIGHT, NINE)
@@ -437,7 +437,7 @@ def solve_0d3d703e(I):
     O = switch(x3, ONE, FIVE)
     return O
 
-
+# 73
 def solve_3618c87e(I):
     x1 = objects(I, T, F, T)
     x2 = sizefilter(x1, ONE)
