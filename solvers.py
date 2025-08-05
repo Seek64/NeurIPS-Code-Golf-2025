@@ -320,7 +320,7 @@ def solve_56ff96f3(I):
     O = paint(I, x3)
     return O
 
-# 133
+# 120
 # Similar to 95
 def solve_50cb2852(I):
     x1 = objects(I, T, F, T)
@@ -330,7 +330,7 @@ def solve_50cb2852(I):
     return O
 
 # 98
-# VERY similar to 133
+# VERY similar to 120
 def solve_4347f46a(I):
     x1 = objects(I, T, F, T)
     x2 = fork(difference, toindices, box)
@@ -346,7 +346,7 @@ def solve_46f33fce(I):
     O = upscale(x3, FOUR)
     return O
 
-
+# 259
 def solve_a740d043(I):
     x1 = objects(I, T, T, T)
     x2 = merge(x1)
@@ -354,7 +354,7 @@ def solve_a740d043(I):
     O = replace(x3, ONE, ZERO)
     return O
 
-
+# 261
 def solve_a79310a0(I):
     x1 = objects(I, T, F, T)
     x2 = first(x1)
@@ -362,7 +362,7 @@ def solve_a79310a0(I):
     O = replace(x3, EIGHT, TWO)
     return O
 
-
+# 267
 def solve_aabf363d(I):
     x1 = leastcolor(I)
     x2 = replace(I, x1, ZERO)
@@ -370,7 +370,7 @@ def solve_aabf363d(I):
     O = replace(x2, x3, x1)
     return O
 
-
+# 271
 def solve_ae4f1146(I):
     x1 = objects(I, F, F, T)
     x2 = rbind(colorcount, ONE)
@@ -378,7 +378,7 @@ def solve_ae4f1146(I):
     O = subgrid(x3, I)
     return O
 
-
+# 278 OPEN!
 def solve_b27ca6d3(I):
     x1 = objects(I, T, F, T)
     x2 = sizefilter(x1, TWO)
@@ -386,7 +386,8 @@ def solve_b27ca6d3(I):
     O = fill(I, THREE, x3)
     return O
 
-
+# 317
+# Similar to 98
 def solve_ce22a75a(I):
     x1 = objects(I, T, F, T)
     x2 = apply(outbox, x1)

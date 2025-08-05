@@ -1,0 +1,1 @@
+def p(g):g=[[1%v*v for v in r]for r in g];[g:=[*map(list,zip(*g[sum(g[0])<1:][::-1]))]for _ in g*4];return g

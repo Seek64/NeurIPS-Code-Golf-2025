@@ -1,0 +1,1 @@
+p=lambda g:max([[g[j//7+i][j%7:][:3]for i in(0,1,2)]for j in range(49)],key=lambda l:0in l[0]or f"{l}".count("1"))
