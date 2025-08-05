@@ -1,0 +1,1 @@
+def p(g):w=len(g[0]);return[[g[r][c]or(2in(3*sum([[0,*a]for a in(w*[0],*g)][r:r+3],[0]))[c+3::w+1])for c in range(w)]for r in range(len(g))]

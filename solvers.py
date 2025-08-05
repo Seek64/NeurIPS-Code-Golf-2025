@@ -395,7 +395,8 @@ def solve_ce22a75a(I):
     O = fill(I, ONE, x3)
     return O
 
-
+# 352
+# Shifting window again
 def solve_dc1df850(I):
     x1 = objects(I, T, F, T)
     x2 = colorfilter(x1, TWO)
@@ -403,7 +404,8 @@ def solve_dc1df850(I):
     O = fill(I, ONE, x3)
     return O
 
-
+# 384
+# Combine upscale and crop
 def solve_f25fbde4(I):
     x1 = objects(I, T, T, T)
     x2 = first(x1)
