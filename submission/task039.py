@@ -1,0 +1,1 @@
+p=lambda g:[r[:3]for*r,in zip(*filter(any,zip(*g)))if sum(r)][:3]

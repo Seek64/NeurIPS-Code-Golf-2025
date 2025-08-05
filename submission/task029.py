@@ -1,0 +1,1 @@
+p=lambda g:[[r[i]for i in range(len(g[0]))if v in[*zip(*g)][i]][1:-1]for r in g if(v:=[c for c in range(10)if len({r.index(c)for r in g if c in r})==1][0])in r][1:-1]

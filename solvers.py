@@ -437,7 +437,7 @@ def solve_0d3d703e(I):
     O = switch(x3, ONE, FIVE)
     return O
 
-# 73
+# 073
 def solve_3618c87e(I):
     x1 = objects(I, T, F, T)
     x2 = sizefilter(x1, ONE)
@@ -445,7 +445,8 @@ def solve_3618c87e(I):
     O = move(I, x3, TWO_BY_ZERO)
     return O
 
-
+# 029
+# high potential, unsure how to find border color efficiently
 def solve_1c786137(I):
     x1 = objects(I, T, F, F)
     x2 = argmax(x1, height)
@@ -453,7 +454,7 @@ def solve_1c786137(I):
     O = trim(x3)
     return O
 
-
+# 216 - OPEN
 def solve_8efcae92(I):
     x1 = objects(I, T, F, F)
     x2 = colorfilter(x1, ONE)
@@ -462,7 +463,7 @@ def solve_8efcae92(I):
     O = subgrid(x4, I)
     return O
 
-
+# 100
 def solve_445eab21(I):
     x1 = objects(I, T, F, T)
     x2 = fork(multiply, height, width)
@@ -471,7 +472,7 @@ def solve_445eab21(I):
     O = canvas(x4, TWO_BY_TWO)
     return O
 
-
+# 171
 def solve_6f8cd79b(I):
     x1 = asindices(I)
     x2 = apply(initset, x1)
@@ -480,7 +481,7 @@ def solve_6f8cd79b(I):
     O = fill(I, EIGHT, x4)
     return O
 
-
+# 039
 def solve_2013d3e2(I):
     x1 = objects(I, F, T, T)
     x2 = first(x1)
@@ -489,7 +490,8 @@ def solve_2013d3e2(I):
     O = tophalf(x4)
     return O
 
-
+# 94
+# potential, find the middle of a frame, fixed sizes and colors
 def solve_41e4d17e(I):
     x1 = objects(I, T, F, T)
     x2 = fork(combine, vfrontier, hfrontier)
