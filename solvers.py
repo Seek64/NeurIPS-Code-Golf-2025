@@ -500,7 +500,7 @@ def solve_41e4d17e(I):
     O = underfill(I, SIX, x4)
     return O
 
-
+# 229
 def solve_9565186b(I):
     x1 = shape(I)
     x2 = objects(I, T, F, F)
@@ -509,7 +509,8 @@ def solve_9565186b(I):
     O = paint(x4, x3)
     return O
 
-
+# 272
+# Regex
 def solve_aedd82e4(I):
     x1 = objects(I, T, F, F)
     x2 = colorfilter(x1, TWO)
@@ -518,7 +519,8 @@ def solve_aedd82e4(I):
     O = fill(I, ONE, x4)
     return O
 
-
+# 294
+# Regex
 def solve_bb43febb(I):
     x1 = objects(I, T, F, F)
     x2 = colorfilter(x1, FIVE)
