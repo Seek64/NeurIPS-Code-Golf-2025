@@ -1,0 +1,1 @@
+def p(g):n=~sorted({*map(g[0].index,g[0])})[1];return[r[::n]for r in g[::-n]]

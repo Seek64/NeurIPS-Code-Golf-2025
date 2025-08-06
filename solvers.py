@@ -529,7 +529,7 @@ def solve_bb43febb(I):
     O = fill(I, TWO, x4)
     return O
 
-
+# 372
 def solve_e98196ab(I):
     x1 = tophalf(I)
     x2 = bottomhalf(I)
@@ -538,7 +538,7 @@ def solve_e98196ab(I):
     O = paint(x2, x4)
     return O
 
-
+# 389
 def solve_f76d97a5(I):
     x1 = palette(I)
     x2 = first(x1)
@@ -547,7 +547,7 @@ def solve_f76d97a5(I):
     O = replace(x4, FIVE, ZERO)
     return O
 
-
+# 320
 def solve_ce9e57f2(I):
     x1 = objects(I, T, F, T)
     x2 = fork(connect, ulcorner, centerofmass)
@@ -556,7 +556,7 @@ def solve_ce9e57f2(I):
     O = switch(x4, EIGHT, TWO)
     return O
 
-
+# 045
 def solve_22eb0ac0(I):
     x1 = fgpartition(I)
     x2 = fork(recolor, color, backdrop)
@@ -565,7 +565,7 @@ def solve_22eb0ac0(I):
     O = paint(I, x4)
     return O
 
-
+# 244
 def solve_9f236235(I):
     x1 = compress(I)
     x2 = objects(I, T, F, F)
