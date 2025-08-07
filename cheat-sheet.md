@@ -11,6 +11,14 @@ If the 1D list is going to be reused (29 byte):
 max(l:=sum(g,[]),key=l.count)
 ```
 
+## Crop figure
+
+Figure needs to be fully connected and surrounding must be black.
+
+```python 
+[r for*r,in zip(*filter(any,zip(*g)))if sum(r)]
+```
+
 ## Other tricks
 
 Getting the width as a variable in double list comprehension:

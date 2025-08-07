@@ -1,1 +1,3 @@
-def p(g):i=-1;exec(81*("\ni+=1\nif g[r:=i//9][c:=i%9]>1>g[r-1][c]:k=-1;"+3*"g[r+k][c-1:c+2]=b'\\0'[k%2::2];k+=1;"));return g
+import re
+s=", 0(.{22})0, "
+p=lambda g:[g:=eval(re.sub(f"0, 0{s}5{s}0, 0",r"5,1,5\1 1,0,1\2 5,1,5","%s"%g))for _ in g][2]

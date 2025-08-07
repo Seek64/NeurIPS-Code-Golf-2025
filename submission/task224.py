@@ -1,0 +1,2 @@
+E=enumerate
+def p(g):l=sum(g,[]);w=len(g[0]);a,y,z,b=[i for i,n in E(l)if n==5];a//=w;b//=w;y,z=sorted([y%w,z%w]);return[[(c,max({*l}-{5}))[i in(a+1,b-1)and y<j<z or j in(y+1,z-1)and a<i<b]for j,c in E(r)]for i,r in E(g)]

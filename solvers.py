@@ -617,7 +617,7 @@ def solve_0ca9ddb6(I):
     O = fill(x5, FOUR, x4)
     return O
 
-
+# 125
 def solve_543a7ed5(I):
     x1 = objects(I, T, F, T)
     x2 = colorfilter(x1, SIX)
@@ -627,7 +627,7 @@ def solve_543a7ed5(I):
     O = fill(x4, FOUR, x5)
     return O
 
-
+# 006
 def solve_0520fde7(I):
     x1 = vmirror(I)
     x2 = lefthalf(x1)
@@ -637,7 +637,7 @@ def solve_0520fde7(I):
     O = replace(x5, ONE, TWO)
     return O
 
-
+# 347
 def solve_dae9d2b5(I):
     x1 = lefthalf(I)
     x2 = righthalf(I)
@@ -647,7 +647,7 @@ def solve_dae9d2b5(I):
     O = fill(x1, SIX, x5)
     return O
 
-
+# 211
 def solve_8d5021e8(I):
     x1 = vmirror(I)
     x2 = hconcat(x1, I)
@@ -657,7 +657,7 @@ def solve_8d5021e8(I):
     O = hmirror(x5)
     return O
 
-
+# 224
 def solve_928ad970(I):
     x1 = ofcolor(I, FIVE)
     x2 = subgrid(x1, I)
@@ -667,7 +667,7 @@ def solve_928ad970(I):
     O = fill(I, x4, x5)
     return O
 
-
+# 282
 def solve_b60334d2(I):
     x1 = ofcolor(I, FIVE)
     x2 = replace(I, FIVE, ZERO)
@@ -677,7 +677,7 @@ def solve_b60334d2(I):
     O = fill(x5, FIVE, x4)
     return O
 
-
+# 290
 def solve_b94a9452(I):
     x1 = objects(I, F, F, T)
     x2 = first(x1)
