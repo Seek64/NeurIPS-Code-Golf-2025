@@ -378,7 +378,9 @@ def solve_ae4f1146(I):
     O = subgrid(x3, I)
     return O
 
-# 278 OPEN!
+# 278
+# Idea: Regex, rotate 4 times and fill all before the RR blocks
+# Beautiful
 def solve_b27ca6d3(I):
     x1 = objects(I, T, F, T)
     x2 = sizefilter(x1, TWO)
@@ -397,6 +399,7 @@ def solve_ce22a75a(I):
 
 # 352
 # Shifting window again
+# Updated with regex
 def solve_dc1df850(I):
     x1 = objects(I, T, F, T)
     x2 = colorfilter(x1, TWO)
@@ -413,7 +416,7 @@ def solve_f25fbde4(I):
     O = upscale(x3, TWO)
     return O
 
-# 102 OPEN !
+# 102
 def solve_44d8ac46(I):
     x1 = objects(I, T, F, T)
     x2 = apply(delta, x1)
@@ -574,7 +577,7 @@ def solve_9f236235(I):
     O = downscale(x3, x4)
     return O
 
-
+# 258
 def solve_a699fb00(I):
     x1 = ofcolor(I, ONE)
     x2 = shift(x1, RIGHT)
@@ -583,7 +586,7 @@ def solve_a699fb00(I):
     O = fill(I, TWO, x4)
     return O
 
-
+# 106
 def solve_46442a0e(I):
     x1 = rot90(I)
     x2 = rot180(I)
@@ -593,7 +596,8 @@ def solve_46442a0e(I):
     O = vconcat(x4, x5)
     return O
 
-
+# 194
+# SAME as 106, 7 bytes off currently
 def solve_7fe24cdd(I):
     x1 = rot90(I)
     x2 = rot180(I)
@@ -603,7 +607,7 @@ def solve_7fe24cdd(I):
     O = vconcat(x4, x5)
     return O
 
-
+# 015
 def solve_0ca9ddb6(I):
     x1 = ofcolor(I, ONE)
     x2 = ofcolor(I, TWO)

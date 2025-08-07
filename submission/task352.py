@@ -1,1 +1,2 @@
-def p(g):w=len(g[0]);return[[g[r][c]or(2in(3*sum([[0,*a]for a in(w*[0],*g)][r:r+3],[0]))[c+3::w+1])for c in range(w)]for r in range(len(g))]
+import re
+p=lambda g:[g:=eval(re.sub("0(?=(|(...){,2}.{%d})..2)"%(3*len(g[0])-4),"1","%s"%[r[::-1]for r in g[::-1]]))for _ in g][1]
