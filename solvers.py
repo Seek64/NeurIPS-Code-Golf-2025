@@ -688,7 +688,7 @@ def solve_b94a9452(I):
     O = switch(x3, x4, x5)
     return O
 
-
+# 322
 def solve_d037b0a7(I):
     x1 = objects(I, T, F, T)
     x2 = rbind(shoot, DOWN)
@@ -698,7 +698,7 @@ def solve_d037b0a7(I):
     O = paint(I, x5)
     return O
 
-
+# 325
 def solve_d0f5fe59(I):
     x1 = objects(I, T, F, T)
     x2 = size(x1)
@@ -708,7 +708,7 @@ def solve_d0f5fe59(I):
     O = fill(x4, EIGHT, x5)
     return O
 
-
+# 360
 def solve_e3497940(I):
     x1 = lefthalf(I)
     x2 = righthalf(I)
@@ -718,7 +718,7 @@ def solve_e3497940(I):
     O = paint(x1, x5)
     return O
 
-
+# 373
 def solve_e9afcf9a(I):
     x1 = astuple(TWO, ONE)
     x2 = crop(I, ORIGIN, x1)
@@ -728,7 +728,7 @@ def solve_e9afcf9a(I):
     O = hconcat(x5, x4)
     return O
 
-
+# 111
 def solve_48d8fb45(I):
     x1 = objects(I, T, T, T)
     x2 = matcher(size, ONE)
@@ -738,7 +738,7 @@ def solve_48d8fb45(I):
     O = subgrid(x5, I)
     return O
 
-
+# 332
 def solve_d406998b(I):
     x1 = vmirror(I)
     x2 = ofcolor(x1, FIVE)
@@ -748,7 +748,7 @@ def solve_d406998b(I):
     O = vmirror(x5)
     return O
 
-
+# 121
 def solve_5117e062(I):
     x1 = objects(I, F, T, T)
     x2 = matcher(numcolors, TWO)
@@ -758,7 +758,7 @@ def solve_5117e062(I):
     O = replace(x4, EIGHT, x5)
     return O
 
-
+# 078
 def solve_3906de3d(I):
     x1 = rot270(I)
     x2 = rbind(order, identity)
@@ -768,7 +768,8 @@ def solve_3906de3d(I):
     O = cmirror(x5)
     return O
 
-
+# 002
+# OPEN !
 def solve_00d62c1b(I):
     x1 = objects(I, T, F, F)
     x2 = colorfilter(x1, ZERO)
@@ -778,7 +779,7 @@ def solve_00d62c1b(I):
     O = fill(I, FOUR, x5)
     return O
 
-
+# 187
 def solve_7b6016b9(I):
     x1 = objects(I, T, F, F)
     x2 = rbind(bordering, I)
@@ -788,7 +789,7 @@ def solve_7b6016b9(I):
     O = replace(x5, ZERO, THREE)
     return O
 
-
+# 147
 def solve_67385a82(I):
     x1 = objects(I, T, F, F)
     x2 = colorfilter(x1, THREE)
@@ -798,7 +799,7 @@ def solve_67385a82(I):
     O = fill(I, EIGHT, x5)
     return O
 
-
+# 251
 def solve_a5313dff(I):
     x1 = objects(I, T, F, F)
     x2 = colorfilter(x1, ZERO)
@@ -808,7 +809,8 @@ def solve_a5313dff(I):
     O = fill(I, ONE, x5)
     return O
 
-
+# 374
+# Good but slight potential
 def solve_ea32f347(I):
     x1 = objects(I, T, F, T)
     x2 = replace(I, FIVE, FOUR)

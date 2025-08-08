@@ -1,0 +1,2 @@
+import re
+def p(g):n=sum([g:=eval(re.sub("\d(?=(..8"+s[1:]+".{%d}8))"%(3*len(g)-2),s,f"{[*map(list,zip(*g[::-1]))]}"))for s in["8"]*20+["0|0"]*4][-1],g).count(8);return[i*[0]+[8]+(n+~i)*[0]for i in range(n)]

@@ -1,0 +1,2 @@
+import re
+p=lambda g:[g:=eval(re.sub("0(.{31})2",r"2\1 0","%s"%g))for _ in g*4][-1]

@@ -1,0 +1,1 @@
+def p(g):m=(l:=sum(g,g))[l.index(8)-14:];m[14],={*m[:3]}-{0};return[m[n:n+3]for n in(0,13,26)]
