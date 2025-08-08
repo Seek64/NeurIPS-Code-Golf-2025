@@ -457,7 +457,8 @@ def solve_1c786137(I):
     O = trim(x3)
     return O
 
-# 216 - OPEN
+# 216
+# Iterate over all rectangles
 def solve_8efcae92(I):
     x1 = objects(I, T, F, F)
     x2 = colorfilter(x1, ONE)
