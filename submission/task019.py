@@ -1,0 +1,2 @@
+import re
+p=lambda g:[g:=eval(re.sub("0(?=(.{6})?.{%s}[1-79])"%(3*n*len(g[0])-2),"8",f"{[n*r for r in n*g][::-1]}"))for n in(2,1)][1]

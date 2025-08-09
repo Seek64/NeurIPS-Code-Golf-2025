@@ -1,0 +1,2 @@
+import re
+p=lambda g:[g:=eval(re.sub(s[1:],s[0],f"{[*map(list,zip(*g[::-1]))]}"))for s in["40"]*4+["04(?=..[\D0])"]*64][-1]

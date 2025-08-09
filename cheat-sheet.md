@@ -11,6 +11,20 @@ If the 1D list is going to be reused (29 byte):
 max(l:=sum(g,[]),key=l.count)
 ```
 
+## Filter zeros from 1D list
+
+```python 
+[*filter(int,l)]
+```
+
+## Upscale 
+
+Upscale by 2. Still not optimal, see Problem 307.
+
+```python 
+[[*sum(zip(r,r),())]for r in sum(zip(g,g),())]
+```
+
 ## Crop figure
 
 Figure needs to be fully connected and surrounding must be black.

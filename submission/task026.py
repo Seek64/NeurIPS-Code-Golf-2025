@@ -1,0 +1,1 @@
+p=lambda g:[[8>>r[j]+r[j+4]for j in(0,1,2)]for r in g]

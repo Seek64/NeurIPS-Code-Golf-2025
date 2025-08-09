@@ -1,1 +1,1 @@
-p=lambda g:[[*sum(zip(*2*[g[i//2]]),())]for i in range(len(g)*2)]
+p=lambda g:[[*sum(zip(r,r),())]for r in sum(zip(g,g),())]

@@ -699,6 +699,7 @@ def solve_d037b0a7(I):
     return O
 
 # 325
+# First expand to rectangles, then reduce and count
 def solve_d0f5fe59(I):
     x1 = objects(I, T, F, T)
     x2 = size(x1)
@@ -769,7 +770,7 @@ def solve_3906de3d(I):
     return O
 
 # 002
-# OPEN !
+# Same solution as 251, but definitely not optimal (91?!)
 def solve_00d62c1b(I):
     x1 = objects(I, T, F, F)
     x2 = colorfilter(x1, ZERO)
@@ -780,6 +781,8 @@ def solve_00d62c1b(I):
     return O
 
 # 187
+# Fill everything, then clear starting from the border
+# Can be reused for all "fill figures with complete border" tasks
 def solve_7b6016b9(I):
     x1 = objects(I, T, F, F)
     x2 = rbind(bordering, I)
@@ -800,6 +803,7 @@ def solve_67385a82(I):
     return O
 
 # 251
+# Fill structures, slightly more annoying than 187
 def solve_a5313dff(I):
     x1 = objects(I, T, F, F)
     x2 = colorfilter(x1, ZERO)
@@ -820,7 +824,7 @@ def solve_ea32f347(I):
     O = fill(x5, TWO, x3)
     return O
 
-
+# 339
 def solve_d631b094(I):
     x1 = palette(I)
     x2 = other(x1, ZERO)
@@ -830,7 +834,7 @@ def solve_d631b094(I):
     O = canvas(x2, x5)
     return O
 
-
+# 019
 def solve_10fcaaa3(I):
     x1 = leastcolor(I)
     x2 = hconcat(I, I)
@@ -840,7 +844,7 @@ def solve_10fcaaa3(I):
     O = underfill(x3, EIGHT, x5)
     return O
 
-
+# 001
 def solve_007bbfb7(I):
     x1 = hupscale(I, THREE)
     x2 = vupscale(x1, THREE)
@@ -851,7 +855,7 @@ def solve_007bbfb7(I):
     O = cellwise(x2, x6, ZERO)
     return O
 
-
+# 113
 def solve_496994bd(I):
     x1 = width(I)
     x2 = height(I)
@@ -862,7 +866,8 @@ def solve_496994bd(I):
     O = vconcat(x5, x6)
     return O
 
-
+# 037
+# Connect colors diagonally
 def solve_1f876c06(I):
     x1 = fgpartition(I)
     x2 = compose(last, first)
@@ -873,7 +878,8 @@ def solve_1f876c06(I):
     O = paint(I, x6)
     return O
 
-
+# 008
+# OPEN !
 def solve_05f2a901(I):
     x1 = objects(I, T, F, T)
     x2 = colorfilter(x1, TWO)
@@ -884,7 +890,8 @@ def solve_05f2a901(I):
     O = move(I, x3, x6)
     return O
 
-
+# 079
+# Select most frequent 3x3 shape
 def solve_39a8645d(I):
     x1 = objects(I, T, T, T)
     x2 = totuple(x1)
@@ -895,7 +902,8 @@ def solve_39a8645d(I):
     O = subgrid(x6, I)
     return O
 
-
+# 026
+# Check overlap
 def solve_1b2d62fb(I):
     x1 = lefthalf(I)
     x2 = righthalf(I)

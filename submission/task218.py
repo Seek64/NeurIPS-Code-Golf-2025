@@ -1,0 +1,1 @@
+p=lambda g,*o:[g:=[r for*r,in zip(*g)if(o!=(o:=r))*sum(r)]for _ in g][1]
