@@ -1,0 +1,1 @@
+p=lambda g:[*map(list,zip(*[(r[-r.count(0):]+r)[:15]for*r,in zip(*g)]))]

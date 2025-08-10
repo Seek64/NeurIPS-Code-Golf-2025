@@ -914,7 +914,9 @@ def solve_1b2d62fb(I):
     O = fill(x6, EIGHT, x5)
     return O
 
-
+# 218
+# Collapse rectangles of similar color
+# Quite optimal
 def solve_90c28cc7(I):
     x1 = objects(I, F, F, T)
     x2 = first(x1)
@@ -925,7 +927,8 @@ def solve_90c28cc7(I):
     O = rot270(x6)
     return O
 
-
+# 283
+# Color rectangles based on neighboring grey cells
 def solve_b6afb2da(I):
     x1 = objects(I, T, F, F)
     x2 = replace(I, FIVE, TWO)
@@ -936,7 +939,8 @@ def solve_b6afb2da(I):
     O = fill(x5, ONE, x6)
     return O
 
-
+# 291
+# Find the color of the rectangle with the hole
 def solve_b9b7f026(I):
     x1 = objects(I, T, F, F)
     x2 = argmin(x1, size)
@@ -947,7 +951,9 @@ def solve_b9b7f026(I):
     O = canvas(x6, UNITY)
     return O
 
-
+# 293
+# Crossing
+# Potential (31 bytes off)
 def solve_ba97ae07(I):
     x1 = objects(I, T, F, T)
     x2 = totuple(x1)
@@ -958,7 +964,7 @@ def solve_ba97ae07(I):
     O = fill(I, x4, x6)
     return O
 
-
+# 312
 def solve_c9f8e694(I):
     x1 = height(I)
     x2 = width(I)
@@ -969,7 +975,7 @@ def solve_c9f8e694(I):
     O = fill(x6, ZERO, x3)
     return O
 
-
+# 329
 def solve_d23f8c26(I):
     x1 = asindices(I)
     x2 = width(I)
@@ -980,7 +986,8 @@ def solve_d23f8c26(I):
     O = fill(I, ZERO, x6)
     return O
 
-
+# 338
+# Fill rectangles and remove border
 def solve_d5d6de2d(I):
     x1 = objects(I, T, F, T)
     x2 = sfilter(x1, square)
@@ -991,7 +998,9 @@ def solve_d5d6de2d(I):
     O = fill(x6, THREE, x5)
     return O
 
-
+# 350
+# Connect colors horizontally and vertically
+# TODO: Check if this can help with "fill rectangle" tasks
 def solve_dbc1a6ce(I):
     x1 = ofcolor(I, ONE)
     x2 = product(x1, x1)
@@ -1002,7 +1011,8 @@ def solve_dbc1a6ce(I):
     O = underfill(I, EIGHT, x6)
     return O
 
-
+# 356
+# Almost the same as 350
 def solve_ded97339(I):
     x1 = ofcolor(I, EIGHT)
     x2 = product(x1, x1)
@@ -1013,7 +1023,7 @@ def solve_ded97339(I):
     O = underfill(I, EIGHT, x6)
     return O
 
-
+# 375
 def solve_ea786f4a(I):
     x1 = width(I)
     x2 = shoot(ORIGIN, UNITY)
@@ -1024,7 +1034,7 @@ def solve_ea786f4a(I):
     O = fill(I, ZERO, x6)
     return O
 
-
+# 010
 def solve_08ed6ac7(I):
     x1 = objects(I, T, F, T)
     x2 = totuple(x1)
@@ -1035,7 +1045,7 @@ def solve_08ed6ac7(I):
     O = paint(I, x6)
     return O
 
-
+# 092
 def solve_40853293(I):
     x1 = partition(I)
     x2 = fork(recolor, color, backdrop)
@@ -1046,7 +1056,7 @@ def solve_40853293(I):
     O = paint(x6, x5)
     return O
 
-
+# 128
 def solve_5521c0d9(I):
     x1 = objects(I, T, F, T)
     x2 = merge(x1)
@@ -1057,7 +1067,7 @@ def solve_5521c0d9(I):
     O = paint(x3, x6)
     return O
 
-
+# 393
 def solve_f8ff0b80(I):
     x1 = objects(I, T, T, T)
     x2 = order(x1, size)
@@ -1068,7 +1078,7 @@ def solve_f8ff0b80(I):
     O = hmirror(x6)
     return O
 
-
+# 203
 def solve_85c4e7cd(I):
     x1 = objects(I, T, F, F)
     x2 = compose(invert, size)
@@ -1079,7 +1089,11 @@ def solve_85c4e7cd(I):
     O = paint(I, x6)
     return O
 
-
+# 330
+# Important, function to find connected structures
+# May needs adjustments.
+# For example, if a black border piece is given, it considers it as part of the structure.
+# Can be fixed by adjusting the condition.
 def solve_d2abd087(I):
     x1 = objects(I, T, F, T)
     x2 = matcher(size, SIX)

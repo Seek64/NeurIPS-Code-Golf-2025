@@ -1,3 +1,2 @@
 import re
-S=re.sub
-p=lambda g:[g:=eval(S("2(?=..[\D3])","3",S(*"02",f"{[*map(list,zip(*g[::-1]))]}")))for _ in g*4][-1]
+p=lambda g:[g:=eval(re.sub(*s,f"{[*map(list,zip(*g[::-1]))]}"))for s in["02"]+[("2(?=..[\D3])","3")]*55][-1]
