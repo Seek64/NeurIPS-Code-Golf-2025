@@ -1,2 +1,1 @@
-E=enumerate
-p=lambda g:[[r[j]or(1in{*r[:j]}&{*r[j:]}|{*c[:i]}&{*c[i:]})*8for j,c in E(zip(*g))]for i,r in E(g)]
+E=enumerate;p=lambda g:[[r[j]or(1in{*r[:j]}&{*r[j:]}|{*c[:i]}&{*c[i:]})*8for j,c in E(zip(*g))]for i,r in E(g)]

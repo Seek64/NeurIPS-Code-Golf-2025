@@ -1,2 +1,1 @@
-import re
-p=lambda g:[g:=eval(re.sub(*s,f"{[*map(list,zip(*g[::-1]))]}"))for s in["02"]+[("2(?=..[\D3])","3")]*55][-1]
+import re;p=lambda g:[g:=eval(re.sub(*s,f"{[*map(list,zip(*g[::-1]))]}"))for s in["02"]+[("2(?=..[\D3])","3")]*55][-1]

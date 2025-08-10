@@ -1,2 +1,1 @@
-import re
-p=lambda g:[g:=eval(re.sub("0(?=(|.{,9}.{%s})..2..2)"%(3*len(g)-7),"3",f"{[*map(list,zip(*g[::-1]))]}"))for _ in g][3]
+import re;p=lambda g:[g:=eval(re.sub("0(?=(|.{,9}.{%s})..2..2)"%(3*len(g)-7),"3",f"{[*map(list,zip(*g[::-1]))]}"))for _ in g][3]

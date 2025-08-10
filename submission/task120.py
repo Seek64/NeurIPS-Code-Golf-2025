@@ -1,2 +1,1 @@
-import re
-p=lambda g:eval(re.sub("(?<%s.(?%s"%(2*("=..[1-9].{%s}[1-9]..)"%(3*len(g[0])-2),)),"8","%s"%g))
+import re;p=lambda g:eval(re.sub("(?<%s.(?%s"%(2*("=..[1-9].{%s}[1-9]..)"%(3*len(g[0])-2),)),"8","%s"%g))
