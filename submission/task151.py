@@ -1,0 +1,1 @@
+import re;p=lambda g:[g:=eval(re.sub("0..[1-9](?=.{%d}[^0])"%(len(3*g)-2),"4,4",f"{[*map(list,zip(*g[::-1]))]}"))for _ in g][3]

@@ -1,0 +1,1 @@
+import re;p=lambda g:[g:=eval(re.sub(*s,f"{[*map(list,zip(*g[::-1]))]}"))for s in[("0(?=..[\D9])","9")]*44+[("1(?=..[03])","3")]*7+["90"]][-1]

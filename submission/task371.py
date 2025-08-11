@@ -1,0 +1,1 @@
+E=enumerate;p=lambda g:[[(c,3)[abs((w:=len(g[0]))*i+j-((l:=sum(g,[])).index(1,k:=l.index(1)+1)+k>>1))in(0,1,w)]for j,c in E(r)]for i,r in E(g)]

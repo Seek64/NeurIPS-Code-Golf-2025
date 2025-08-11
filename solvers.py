@@ -459,6 +459,7 @@ def solve_1c786137(I):
 
 # 216
 # Iterate over all rectangles
+# Almost identical to 365
 def solve_8efcae92(I):
     x1 = objects(I, T, F, F)
     x2 = colorfilter(x1, ONE)
@@ -1115,7 +1116,7 @@ def solve_017c7c7b(I):
     O = replace(x6, ONE, TWO)
     return O
 
-
+# 088
 def solve_363442ee(I):
     x1 = ofcolor(I, ONE)
     x2 = crop(I, ORIGIN, THREE_BY_THREE)
@@ -1137,7 +1138,7 @@ def solve_5168d44c(I):
     O = move(I, x6, x4)
     return O
 
-
+# 371
 def solve_e9614598(I):
     x1 = ofcolor(I, ONE)
     x2 = fork(add, first, last)
@@ -1148,7 +1149,7 @@ def solve_e9614598(I):
     O = fill(I, THREE, x6)
     return O
 
-
+# 346
 def solve_d9fac9be(I):
     x1 = palette(I)
     x2 = objects(I, T, F, T)
@@ -1159,7 +1160,9 @@ def solve_d9fac9be(I):
     O = canvas(x6, UNITY)
     return O
 
-
+# 365
+# Identical to 216 with a different field size
+# Potential - 41 bytes + Likely the same for 216
 def solve_e50d258f(I):
     x1 = width(I)
     x2 = astuple(NINE, x1)
@@ -1171,7 +1174,9 @@ def solve_e50d258f(I):
     O = subgrid(x7, I)
     return O
 
-
+# 196
+# Color all complete frames
+# Uses the idea from 187
 def solve_810b9b61(I):
     x1 = objects(I, T, T, T)
     x2 = apply(toindices, x1)
@@ -1183,7 +1188,7 @@ def solve_810b9b61(I):
     O = fill(I, THREE, x7)
     return O
 
-
+# 126
 def solve_54d82841(I):
     x1 = height(I)
     x2 = objects(I, T, F, T)
@@ -1195,14 +1200,15 @@ def solve_54d82841(I):
     O = fill(I, FOUR, x7)
     return O
 
-
+# 139
+# Rotate and fill
 def solve_60b61512(I):
     x1 = objects(I, T, T, T)
     x2 = mapply(delta, x1)
     O = fill(I, SEVEN, x2)
     return O
 
-
+# 052
 def solve_25d8a9c8(I):
     x1 = asindices(I)
     x2 = objects(I, T, F, F)
@@ -1214,7 +1220,8 @@ def solve_25d8a9c8(I):
     O = fill(x7, ZERO, x6)
     return O
 
-
+# 048
+# TODO: Check for all lookahead regex if they can be simplified by replacing the substitute from "N" to "N,N"
 def solve_239be575(I):
     x1 = objects(I, F, T, T)
     x2 = lbind(contained, TWO)
@@ -1226,7 +1233,8 @@ def solve_239be575(I):
     O = canvas(x7, UNITY)
     return O
 
-
+# 127
+# Another rotate 4 times and color task
 def solve_67a423a3(I):
     x1 = leastcolor(I)
     x2 = objects(I, T, F, T)

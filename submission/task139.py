@@ -1,0 +1,1 @@
+import re;p=lambda g:[g:=eval(re.sub("0(?=..[47].{25}[47])","7",f"{[*map(list,zip(*g[::-1]))]}"))for _ in 2*g][11]

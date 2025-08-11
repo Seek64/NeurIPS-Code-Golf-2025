@@ -1,0 +1,1 @@
+import re;p=lambda g:[[8^8*all(2in sum(g:=eval(re.sub(*s,f"{[*zip(*g[::-1])]}",2)),())for s in["23"]+[("[28]..3","3,3")]*31)]]

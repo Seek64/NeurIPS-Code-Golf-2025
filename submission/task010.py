@@ -1,1 +1,1 @@
-def p(g):C=[i:=0]*9;exec(81*"C[c]=C[c:=i%9]or~max(C)*g[r:=i//9][c]%6;g[r][c]=C[c];i+=1;");return g
+p=lambda g:[[r[j]%~sorted(c:=[*zip(*g)]).index(c[j])%5for j in range(9)]for r in g]
