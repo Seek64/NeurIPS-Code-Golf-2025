@@ -1,0 +1,1 @@
+import re;p=lambda g:[g:=eval(re.sub("0(?=..0.{28}0..%s)"%d,d,f"{[r[::-1]for r in g[::-1]]}"))for d in"21"*8][-1]

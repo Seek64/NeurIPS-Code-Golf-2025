@@ -1,0 +1,1 @@
+p=lambda g:[[3>>a+b for a,b in zip(*t)]for t in zip(g,g[5:])]

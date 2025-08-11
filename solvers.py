@@ -1246,7 +1246,7 @@ def solve_67a423a3(I):
     O = fill(I, FOUR, x7)
     return O
 
-
+# 136
 def solve_5c0a986e(I):
     x1 = ofcolor(I, TWO)
     x2 = ofcolor(I, ONE)
@@ -1258,7 +1258,7 @@ def solve_5c0a986e(I):
     O = fill(x7, ONE, x6)
     return O
 
-
+# 144
 def solve_6430c8c4(I):
     x1 = tophalf(I)
     x2 = bottomhalf(I)
@@ -1270,7 +1270,8 @@ def solve_6430c8c4(I):
     O = fill(x7, THREE, x6)
     return O
 
-
+# 227
+# Very similar to 144 - Both not optimal
 def solve_94f9d214(I):
     x1 = tophalf(I)
     x2 = bottomhalf(I)
@@ -1282,7 +1283,9 @@ def solve_94f9d214(I):
     O = fill(x6, TWO, x7)
     return O
 
-
+# 245
+# OPEN
+# Center figure in frame given by corners
 def solve_a1570a43(I):
     x1 = ofcolor(I, TWO)
     x2 = ofcolor(I, THREE)
@@ -1294,7 +1297,8 @@ def solve_a1570a43(I):
     O = move(I, x3, x7)
     return O
 
-
+# 318
+# Again, very similar to 144 and 227
 def solve_ce4f8723(I):
     x1 = tophalf(I)
     x2 = bottomhalf(I)
