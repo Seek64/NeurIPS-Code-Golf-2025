@@ -1,0 +1,1 @@
+def p(g):R=range(len(g));v=min((l:=sum(g,[])),key=l.count);M=[m for i in R for j in R for x in R[3:]for y in R if{0,v}=={*l}-{*(2*sum(m:=[r[j:j+x]for r in g[i:i-~y]],[R]))[1::x]+m[0]+m[-1]}];return[[c and v for c in r]for r in max(M,key=lambda m:sum(m,[]).count(v))]

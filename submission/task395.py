@@ -1,0 +1,1 @@
+p=lambda g:[[2&a+b-1for a,b in zip(*r)]for r in zip(g,g[3:])]

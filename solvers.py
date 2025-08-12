@@ -1259,6 +1259,7 @@ def solve_5c0a986e(I):
     return O
 
 # 144
+# Intersection
 def solve_6430c8c4(I):
     x1 = tophalf(I)
     x2 = bottomhalf(I)
@@ -1271,6 +1272,7 @@ def solve_6430c8c4(I):
     return O
 
 # 227
+# Intersection
 # Very similar to 144 - Both not optimal
 def solve_94f9d214(I):
     x1 = tophalf(I)
@@ -1298,6 +1300,7 @@ def solve_a1570a43(I):
     return O
 
 # 318
+# Intersection
 # Again, very similar to 144 and 227
 def solve_ce4f8723(I):
     x1 = tophalf(I)
@@ -1310,7 +1313,8 @@ def solve_ce4f8723(I):
     O = fill(x7, ZERO, x5)
     return O
 
-
+# 327
+# OPEN
 def solve_d13f3404(I):
     x1 = objects(I, T, F, T)
     x2 = rbind(shoot, UNITY)
@@ -1322,7 +1326,8 @@ def solve_d13f3404(I):
     O = paint(x7, x5)
     return O
 
-
+# 353
+# OPEN
 def solve_dc433765(I):
     x1 = ofcolor(I, THREE)
     x2 = ofcolor(I, FOUR)
@@ -1334,7 +1339,8 @@ def solve_dc433765(I):
     O = move(I, x7, x6)
     return O
 
-
+# 386
+# Intersection, similar to 144
 def solve_f2829549(I):
     x1 = lefthalf(I)
     x2 = righthalf(I)
@@ -1346,7 +1352,7 @@ def solve_f2829549(I):
     O = fill(x7, THREE, x5)
     return O
 
-
+# 395
 def solve_fafffa47(I):
     x1 = tophalf(I)
     x2 = bottomhalf(I)
@@ -1358,7 +1364,8 @@ def solve_fafffa47(I):
     O = fill(x7, TWO, x6)
     return O
 
-
+# 396
+# Difficult. Find, color and return the frame that has the most colored pixels in it.
 def solve_fcb5c309(I):
     x1 = leastcolor(I)
     x2 = objects(I, T, F, T)
@@ -1370,7 +1377,7 @@ def solve_fcb5c309(I):
     O = replace(x7, x6, x1)
     return O
 
-
+# 400
 def solve_ff805c23(I):
     x1 = hmirror(I)
     x2 = vmirror(I)

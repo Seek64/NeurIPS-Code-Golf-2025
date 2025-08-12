@@ -1,0 +1,1 @@
+p=lambda g:[g[~i][~r.index(1)::-1][:5]for i,r in enumerate(g)if 1in r]
