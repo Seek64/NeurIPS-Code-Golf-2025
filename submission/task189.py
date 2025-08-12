@@ -1,0 +1,1 @@
+R=range(6);p=lambda g:[[g[x:=i+g[2][0]*6%9][y:=j+g[0][2]*6%9]%2*g[7+i//3>>x-i][7+j//3>>y-j]for j in R]for i in R]

@@ -1389,7 +1389,9 @@ def solve_ff805c23(I):
     O = branch(x7, x5, x4)
     return O
 
-
+# 368
+# OPEN
+# Color rectangles based on colored shape
 def solve_e76a88a6(I):
     x1 = objects(I, F, F, T)
     x2 = argmax(x1, numcolors)
@@ -1401,7 +1403,7 @@ def solve_e76a88a6(I):
     O = paint(I, x7)
     return O
 
-
+# 189
 def solve_7c008303(I):
     x1 = ofcolor(I, THREE)
     x2 = subgrid(x1, I)
@@ -1413,7 +1415,7 @@ def solve_7c008303(I):
     O = fill(x7, ZERO, x3)
     return O
 
-
+# 193
 def solve_7f4411dc(I):
     x1 = leastcolor(I)
     x2 = ofcolor(I, x1)
@@ -1437,7 +1439,7 @@ def solve_b230c067(I):
     O = fill(x7, TWO, x6)
     return O
 
-
+# 369
 def solve_e8593010(I):
     x1 = objects(I, T, F, T)
     x2 = sizefilter(x1, ONE)
