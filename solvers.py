@@ -1463,7 +1463,7 @@ def solve_6d75e8bb(I):
     O = paint(I, x7)
     return O
 
-
+# 91
 def solve_3f7978a0(I):
     x1 = fgpartition(I)
     x2 = matcher(color, FIVE)
@@ -1475,7 +1475,7 @@ def solve_3f7978a0(I):
     O = crop(I, x5, x7)
     return O
 
-
+# 021
 def solve_1190e5a7(I):
     x1 = mostcolor(I)
     x2 = frontiers(I)
@@ -1487,7 +1487,7 @@ def solve_1190e5a7(I):
     O = canvas(x1, x7)
     return O
 
-
+# 167
 def solve_6e02f1e3(I):
     x1 = numcolors(I)
     x2 = canvas(ZERO, THREE_BY_THREE)
@@ -1499,7 +1499,7 @@ def solve_6e02f1e3(I):
     O = fill(x2, FIVE, x7)
     return O
 
-
+# 254
 def solve_a61f2674(I):
     x1 = objects(I, T, F, T)
     x2 = argmax(x1, size)

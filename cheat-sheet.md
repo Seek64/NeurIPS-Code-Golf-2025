@@ -25,6 +25,12 @@ Upscale by 2. Still not optimal, see Problem 307.
 [[*sum(zip(r,r),())]for r in sum(zip(g,g),())]
 ```
 
+## Iterating over column and row 
+
+```python 
+[[v for*c,v in zip(*g,r)]for r in g]
+```
+
 ## Crop figure
 
 Figure needs to be fully connected and surrounding must be black.

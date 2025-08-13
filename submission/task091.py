@@ -1,0 +1,1 @@
+def p(g):l=sum(g,[]);w=len(g[0]);x=l.index(5);y=~l[::-1].index(5);return[r[x%w:y%w+1]for r in g[x//w-1:y//w+2or x]]

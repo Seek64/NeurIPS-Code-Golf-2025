@@ -1,0 +1,1 @@
+p=lambda g:(len(g)-g.count(r:=g[0])+1)*[r[:1]*-~r.count(*{*r}-{r[0]})]

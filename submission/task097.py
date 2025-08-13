@@ -1,1 +1,1 @@
-p=lambda g:[[g[r][c]*(sum([k[c:c+3]for k in[[0,*r,0]for r in[99*[0],*g,99*[0]]][r:r+3]],[]).count(0)<8)for c in range(len(g[0]))]for r in range(len(g))]
+E=enumerate;p=lambda g:[[v*(sum([[0,*x,0][j:j+3]for x in[99*[0],*g,99*[0]]][i:i+3],g).count(0)<8)for j,v in E(r)]for i,r in E(g)]

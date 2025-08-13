@@ -1,1 +1,1 @@
-p=lambda g:[[r[j]%~sorted(c:=[*zip(*g)]).index(c[j])%5for j in range(9)]for r in g]
+p=lambda g:[[v%~sorted(zip(*g)).index((*c,))%5for*c,v in zip(*g,r)]for r in g]

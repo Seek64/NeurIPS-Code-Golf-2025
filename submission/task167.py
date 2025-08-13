@@ -1,0 +1,1 @@
+T=0,1,2;p=lambda g:[[5*(i==j^(j|len({*sum(g,[])})^1)%3)for j in T]for i in T]
