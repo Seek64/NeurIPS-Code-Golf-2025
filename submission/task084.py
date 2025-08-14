@@ -1,0 +1,1 @@
+p=lambda g:[g[i][:l-i]+[2]+i*[0]for i in range(20)if(l:=len(g)-1)>i]+[g[0][:1]+l*[4]]

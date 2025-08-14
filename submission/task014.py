@@ -1,1 +1,1 @@
-p=lambda g:[[r[i]for i in range(w)if v in l[i::w]]for r in g if(v:=min({*(l:=sum(g,[]))}-{0,w:=len(g[0])},key=l.count))in r]
+p=lambda g:[[k for*c,k in zip(*g,r)if v in c]for r in g if(v:=min({*(l:=sum(g,[]))}-{0},key=l.count))in r]

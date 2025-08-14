@@ -146,7 +146,7 @@ def solve_25ff71a9(I):
     O = move(I, x2, DOWN)
     return O
 
-# 014 - slight potential
+# 014
 def solve_0b148d64(I):
     x1 = partition(I)
     x2 = argmin(x1, size)
@@ -1001,7 +1001,7 @@ def solve_d5d6de2d(I):
 
 # 350
 # Connect colors horizontally and vertically
-# TODO: Check if this can help with "fill rectangle" tasks
+# Identical to 50 !
 def solve_dbc1a6ce(I):
     x1 = ofcolor(I, ONE)
     x2 = product(x1, x1)
@@ -1524,7 +1524,7 @@ def solve_fcc82909(I):
     O = fill(I, THREE, x8)
     return O
 
-
+# 174
 def solve_72ca375d(I):
     x1 = objects(I, T, T, T)
     x2 = totuple(x1)
@@ -1537,7 +1537,8 @@ def solve_72ca375d(I):
     O = first(x8)
     return O
 
-
+# 50
+# Identical to 350, with different colors
 def solve_253bf280(I):
     x1 = ofcolor(I, EIGHT)
     x2 = prapply(connect, x1, x1)
@@ -1563,7 +1564,7 @@ def solve_694f12f3(I):
     O = fill(x8, TWO, x7)
     return O
 
-
+# 035
 def solve_1f642eb9(I):
     x1 = objects(I, T, F, T)
     x2 = sizefilter(x1, ONE)
@@ -1576,7 +1577,8 @@ def solve_1f642eb9(I):
     O = paint(I, x8)
     return O
 
-
+# 068
+# Find the least common color and put a frame around it
 def solve_31aa019c(I):
     x1 = leastcolor(I)
     x2 = ofcolor(I, x1)
@@ -1589,7 +1591,7 @@ def solve_31aa019c(I):
     O = fill(x8, TWO, x4)
     return O
 
-
+# 056
 def solve_27a28665(I):
     x1 = objects(I, T, F, F)
     x2 = valmax(x1, size)
@@ -1602,7 +1604,8 @@ def solve_27a28665(I):
     O = canvas(x8, UNITY)
     return O
 
-
+# 190
+# Paint diagonally based on condition
 def solve_7ddcd7ec(I):
     x1 = objects(I, T, F, T)
     x2 = sizefilter(x1, ONE)
@@ -1615,7 +1618,7 @@ def solve_7ddcd7ec(I):
     O = fill(I, x5, x8)
     return O
 
-
+# 084
 def solve_3bd67248(I):
     x1 = height(I)
     x2 = decrement(x1)

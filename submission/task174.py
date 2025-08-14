@@ -1,0 +1,1 @@
+p=lambda g,n=9:(m:=[[v for*c,v in zip(*g,r)if n in c]for r in g if n in r])*all(x==x[::-1]for x in m)or p(g,n-1)

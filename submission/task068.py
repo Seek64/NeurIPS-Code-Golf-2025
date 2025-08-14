@@ -1,0 +1,1 @@
+R=range(10);p=lambda g:[[(v:=min(l:=3*sum(g,[]),key=l.count))*(g[i][j]==v)or(v in(3*l[89+10*i+j:][:29])[::10])*2for j in R]for i in R]
