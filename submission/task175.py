@@ -1,0 +1,1 @@
+R=range(21);p=lambda g:[[g[i][j]|g[j][i]or g[i-2][j-2]or g[17][17+i-j]for j in R]for i in R]
