@@ -1,0 +1,1 @@
+p=lambda g:[b:=g[0],[*map(sum,zip(b[1:]+[0],[0]+b))]]*3

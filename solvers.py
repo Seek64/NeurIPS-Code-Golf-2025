@@ -1644,7 +1644,8 @@ def solve_73251a56(I):
     O = fill(x6, x7, x8)
     return O
 
-
+# 051
+# Did not know how to handle that a capture group does not repeat itself
 def solve_25d487eb(I):
     x1 = leastcolor(I)
     x2 = objects(I, T, F, T)
@@ -1657,7 +1658,8 @@ def solve_25d487eb(I):
     O = underfill(I, x1, x8)
     return O
 
-
+# 217
+# Closely related to 001
 def solve_8f2ea7aa(I):
     x1 = objects(I, T, F, T)
     x2 = merge(x1)
@@ -1670,7 +1672,8 @@ def solve_8f2ea7aa(I):
     O = cellwise(x4, x8, ZERO)
     return O
 
-
+# 287
+# Fill gap based on rotation
 def solve_b8825c91(I):
     x1 = replace(I, FOUR, ZERO)
     x2 = dmirror(x1)
@@ -1683,7 +1686,8 @@ def solve_b8825c91(I):
     O = cmirror(x8)
     return O
 
-
+# 315
+# Very similar to 001
 def solve_cce03e0d(I):
     x1 = upscale(I, THREE)
     x2 = hconcat(I, I)
@@ -1696,7 +1700,7 @@ def solve_cce03e0d(I):
     O = fill(x5, ZERO, x8)
     return O
 
-
+# 331
 def solve_d364b489(I):
     x1 = ofcolor(I, ONE)
     x2 = shift(x1, DOWN)
@@ -1709,7 +1713,7 @@ def solve_d364b489(I):
     O = fill(x7, SEVEN, x8)
     return O
 
-
+# 252
 def solve_a5f85a15(I):
     x1 = objects(I, T, T, T)
     x2 = interval(ONE, NINE, ONE)
@@ -1722,7 +1726,7 @@ def solve_a5f85a15(I):
     O = fill(I, FOUR, x8)
     return O
 
-
+# 082
 def solve_3ac3eb23(I):
     x1 = objects(I, T, F, T)
     x2 = chain(ineighbors, last, first)
@@ -1735,7 +1739,8 @@ def solve_3ac3eb23(I):
     O = vconcat(x7, x8)
     return O
 
-
+# 99
+# Fill cups including top
 def solve_444801d8(I):
     x1 = objects(I, T, F, T)
     x2 = colorfilter(x1, ONE)
@@ -1748,7 +1753,7 @@ def solve_444801d8(I):
     O = underpaint(I, x8)
     return O
 
-
+# 041
 def solve_22168020(I):
     x1 = palette(I)
     x2 = remove(ZERO, x1)
@@ -1761,7 +1766,8 @@ def solve_22168020(I):
     O = paint(I, x8)
     return O
 
-
+# 169
+# Very similar to 330
 def solve_6e82a1ae(I):
     x1 = objects(I, T, F, T)
     x2 = lbind(sizefilter, x1)
@@ -1774,7 +1780,8 @@ def solve_6e82a1ae(I):
     O = fill(x8, ONE, x6)
     return O
 
-
+# 279
+# Very similar to 196
 def solve_b2862040(I):
     x1 = objects(I, T, F, F)
     x2 = colorfilter(x1, NINE)
@@ -1787,7 +1794,10 @@ def solve_b2862040(I):
     O = fill(I, EIGHT, x8)
     return O
 
-
+# 204
+# OPEN
+# Fill squares with the color depending on the width
+# import re;p=lambda g,k=20:-k*g or p(eval(re.sub(k*"0, "+"(?=1.{%d}1)"%(3*len(g)-2),k*f"{2+k%2*5},",f"{g}")),k-1)
 def solve_868de0fa(I):
     x1 = objects(I, T, F, F)
     x2 = sfilter(x1, square)
@@ -1813,7 +1823,7 @@ def solve_681b3aeb(I):
     O = rot90(x8)
     return O
 
-
+# 214
 def solve_8e5a5113(I):
     x1 = crop(I, ORIGIN, THREE_BY_THREE)
     x2 = rot90(x1)

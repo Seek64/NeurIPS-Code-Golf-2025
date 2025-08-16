@@ -1,0 +1,1 @@
+R=range(16);p=lambda g:[[(v:=g[i][j],g[~i][~j])[v==4]for j in R]for i in R]

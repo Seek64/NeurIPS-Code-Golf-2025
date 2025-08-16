@@ -1,1 +1,1 @@
-p=lambda g:[sum([min(3*[v],g[r%3])for v in g[r//3]],[])for r in range(9)]
+R=range(9);p=lambda g:[[g[i//3][j//3]&g[i%3][j%3]for j in R]for i in R]

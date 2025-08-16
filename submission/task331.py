@@ -1,0 +1,1 @@
+import re;p=lambda g:[g:=eval(re.sub("0(?=, 1)",s,f"{[*map(list,zip(*g[::-1]))]}"))for s in"8627"][3]
