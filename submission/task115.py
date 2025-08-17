@@ -1,0 +1,1 @@
+p=lambda g,S={0}:[[v for v in r if S<(S:=S|{v})]for r in g if{*r}-S]

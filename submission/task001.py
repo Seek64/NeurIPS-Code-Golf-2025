@@ -1,1 +1,1 @@
-R=range(9);p=lambda g:[[g[i//3][j//3]&g[i%3][j%3]for j in R]for i in R]
+p=lambda g,i=-1:[[v&g[(i:=i+1)//27][i%9//3]for v in 3*r]for r in 3*g]

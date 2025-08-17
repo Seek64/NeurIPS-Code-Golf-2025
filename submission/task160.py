@@ -1,0 +1,1 @@
+import re;p=lambda g:[g:=eval(re.sub(f"1, 1{s}0{s}1, 1",r"0,2,0\1 2,2,2\2 0,2,0",f"{g}"))for s in[", 1(.{25})1, "]*2][1]

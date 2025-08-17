@@ -1,1 +1,1 @@
-def p(g):i=0;exec(98*"r=i//7%7;c=i%7;g[0][k:=(r+c)%3]|=g[r][c];g[r][c]=g[0][k];i+=1;");return g
+R=range(7);p=lambda g:[[max(sum(g,[])[(i+j)%3::3])for j in R]for i in R]
