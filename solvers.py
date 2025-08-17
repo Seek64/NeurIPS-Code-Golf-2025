@@ -2069,7 +2069,8 @@ def solve_1fad071e(I):
     O = hconcat(x7, x9)
     return O
 
-
+# 020
+# Complete shape based on rotation
 def solve_11852cab(I):
     x1 = objects(I, T, T, T)
     x2 = merge(x1)
@@ -2083,7 +2084,8 @@ def solve_11852cab(I):
     O = paint(x9, x6)
     return O
 
-
+# 072
+# Intersection
 def solve_3428a4f5(I):
     x1 = tophalf(I)
     x2 = bottomhalf(I)
@@ -2097,7 +2099,7 @@ def solve_3428a4f5(I):
     O = fill(x9, THREE, x8)
     return O
 
-
+# 024
 def solve_178fcbfb(I):
     x1 = objects(I, T, F, T)
     x2 = ofcolor(I, TWO)

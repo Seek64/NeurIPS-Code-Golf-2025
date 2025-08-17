@@ -1,0 +1,1 @@
+p=lambda g:[[-((2in c)*8|9%~max(r))%5for c in zip(*g)]for r in g]
