@@ -1,0 +1,1 @@
+p=lambda g,*r:[r:=r[:1]+r[:-1]or g[0]for _ in g[0][::2]]

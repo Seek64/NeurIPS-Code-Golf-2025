@@ -1849,7 +1849,7 @@ def solve_025d127b(I):
     O = move(I, x8, RIGHT)
     return O
 
-
+# 043
 def solve_2281f1f4(I):
     x1 = ofcolor(I, FIVE)
     x2 = product(x1, x1)
@@ -1862,7 +1862,7 @@ def solve_2281f1f4(I):
     O = underfill(I, TWO, x8)
     return O
 
-
+# 321
 def solve_cf98881b(I):
     x1 = hsplit(I, THREE)
     x2 = first(x1)
@@ -1875,7 +1875,8 @@ def solve_cf98881b(I):
     O = fill(x8, FOUR, x7)
     return O
 
-
+# 336
+# Fill rectangle with leak
 def solve_d4f3cd78(I):
     x1 = ofcolor(I, FIVE)
     x2 = delta(x1)
@@ -1888,7 +1889,8 @@ def solve_d4f3cd78(I):
     O = fill(x3, EIGHT, x8)
     return O
 
-
+# 298
+# Very similar to 203
 def solve_bda2d7a6(I):
     x1 = partition(I)
     x2 = order(x1, size)
@@ -1901,7 +1903,8 @@ def solve_bda2d7a6(I):
     O = paint(I, x8)
     return O
 
-
+# 022
+# Build 3x3 based on parts
 def solve_137eaa0f(I):
     x1 = objects(I, F, T, T)
     x2 = matcher(first, FIVE)
@@ -1914,7 +1917,9 @@ def solve_137eaa0f(I):
     O = paint(x6, x8)
     return O
 
-
+# 145
+# Find rectangle with minimum and maximum area
+# Try function that finds connected objects
 def solve_6455b5f5(I):
     x1 = objects(I, T, F, F)
     x2 = colorfilter(x1, ZERO)
@@ -1927,7 +1932,7 @@ def solve_6455b5f5(I):
     O = fill(x8, EIGHT, x7)
     return O
 
-
+# 288
 def solve_b8cdaf2b(I):
     x1 = leastcolor(I)
     x2 = ofcolor(I, x1)
@@ -1940,7 +1945,7 @@ def solve_b8cdaf2b(I):
     O = underfill(I, x1, x8)
     return O
 
-
+# 297
 def solve_bd4472b8(I):
     x1 = width(I)
     x2 = astuple(TWO, x1)
@@ -1953,7 +1958,7 @@ def solve_bd4472b8(I):
     O = vconcat(x3, x8)
     return O
 
-
+# 115
 def solve_4be741c5(I):
     x1 = portrait(I)
     x2 = branch(x1, dmirror, identity)
@@ -1966,7 +1971,7 @@ def solve_4be741c5(I):
     O = x2(x8)
     return O
 
-
+# 295
 def solve_bbc9ae5d(I):
     x1 = width(I)
     x2 = palette(I)
@@ -1979,7 +1984,8 @@ def solve_bbc9ae5d(I):
     O = fill(x4, x6, x8)
     return O
 
-
+# 344
+# Rotate and re.sub
 def solve_d90796e8(I):
     x1 = objects(I, F, F, T)
     x2 = sizefilter(x1, TWO)
@@ -1992,7 +1998,8 @@ def solve_d90796e8(I):
     O = fill(x6, EIGHT, x8)
     return O
 
-
+# 064
+# May fail?
 def solve_2c608aff(I):
     x1 = leastcolor(I)
     x2 = objects(I, T, F, T)
@@ -2005,7 +2012,7 @@ def solve_2c608aff(I):
     O = underfill(I, x1, x8)
     return O
 
-
+# 391
 def solve_f8b3ba0a(I):
     x1 = compress(I)
     x2 = astuple(THREE, ONE)
@@ -2019,7 +2026,8 @@ def solve_f8b3ba0a(I):
     O = crop(x9, DOWN, x2)
     return O
 
-
+# 195
+# Potential, combination of 001 and 031
 def solve_80af3007(I):
     x1 = objects(I, T, T, T)
     x2 = first(x1)
@@ -2033,7 +2041,7 @@ def solve_80af3007(I):
     O = downscale(x9, THREE)
     return O
 
-
+# 198
 def solve_83302e8f(I):
     x1 = objects(I, T, F, F)
     x2 = colorfilter(x1, ZERO)
@@ -2047,7 +2055,7 @@ def solve_83302e8f(I):
     O = paint(x9, x8)
     return O
 
-
+# 038
 def solve_1fad071e(I):
     x1 = objects(I, T, F, T)
     x2 = colorfilter(x1, ONE)

@@ -1,0 +1,1 @@
+import re;p=lambda g:[g:=eval(re.sub("(?<=%s, )%s(?=[^[]*%s)"%(a,c,b),a,f"{[*map(list,zip(*g[::-1]))]}"))for a,b,c in[sorted({*f"{g}"}-{*"[], "},key=f"{g}".count)]*56][-1]

@@ -1,0 +1,1 @@
+T=-1,0,1;p=lambda g:[[max(l[k+i*11+j]for k in range(121)if(l:=sum(g,g))[k]==5)for j in T]for i in T]

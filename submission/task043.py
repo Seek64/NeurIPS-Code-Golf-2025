@@ -1,0 +1,1 @@
+p=lambda g:[[c[0]+r[9]&v+2for*c,v in zip(*g,r)]for r in g]
