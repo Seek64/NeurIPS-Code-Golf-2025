@@ -2113,7 +2113,8 @@ def solve_178fcbfb(I):
     O = paint(x4, x9)
     return O
 
-
+# 88
+# Need a better way to crop
 def solve_3de23699(I):
     x1 = fgpartition(I)
     x2 = sizefilter(x1, FOUR)
@@ -2127,7 +2128,7 @@ def solve_3de23699(I):
     O = replace(x9, x7, x6)
     return O
 
-
+# 127
 def solve_54d9e175(I):
     x1 = objects(I, T, F, T)
     x2 = sizefilter(x1, ONE)
@@ -2141,7 +2142,7 @@ def solve_54d9e175(I):
     O = replace(x9, FOUR, NINE)
     return O
 
-
+# 134
 def solve_5ad4f10b(I):
     x1 = objects(I, T, T, T)
     x2 = argmax(x1, size)
@@ -2155,7 +2156,8 @@ def solve_5ad4f10b(I):
     O = downscale(x7, x9)
     return O
 
-
+# 141
+# Draw Diagonals
 def solve_623ea044(I):
     x1 = objects(I, T, F, T)
     x2 = first(x1)
@@ -2183,7 +2185,7 @@ def solve_6b9890af(I):
     O = paint(x4, x9)
     return O
 
-
+# 168
 def solve_794b24be(I):
     x1 = ofcolor(I, ONE)
     x2 = size(x1)

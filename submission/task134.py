@@ -1,0 +1,1 @@
+def p(g):l=sum(g,[]);m=min({*l[:150]}&{*l[-150:]},key=l.count);n=len(g:=[r for*r,in zip(*filter(any,zip(*[[m*(m!=v>0)for v in r]for r in g])))if sum(r)])//3;return[r[::n]for r in g[::n]]

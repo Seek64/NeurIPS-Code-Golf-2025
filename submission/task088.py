@@ -1,0 +1,1 @@
+p=lambda g,k=3,c=0:-k*[r[1:-1]for r in g[1:-1]]or p([[(v>0)*(c:=c or v)for v in r]for r in zip(*g[::-1])if c|sum(r)],k-1)
