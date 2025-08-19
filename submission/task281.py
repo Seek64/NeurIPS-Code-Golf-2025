@@ -1,0 +1,1 @@
+def p(g,k=3):*_,a,b,c=[i for i,r in enumerate(g)if any(r)];return-k*g or p([*map(list,zip(*(g,g[:a]+(c-a)*[g[a]]+[g[b]]+(len(g)+~c)*g[-1:])[{*g[c]}=={0,8}][::-1]))],k-1)

@@ -1,0 +1,1 @@
+p=lambda g,i=-1:[[v*(g[(i:=i+1)//27][i%9//3]==max(l:=sum(g,g),key=l.count))for v in 3*r]for r in 3*g]
