@@ -2199,7 +2199,8 @@ def solve_794b24be(I):
     O = fill(x4, TWO, x9)
     return O
 
-
+# 206
+# Find 3x3 shape and copy it to given location
 def solve_88a10436(I):
     x1 = objects(I, F, F, T)
     x2 = colorfilter(x1, FIVE)
@@ -2213,7 +2214,7 @@ def solve_88a10436(I):
     O = paint(I, x9)
     return O
 
-
+# 207
 def solve_88a62173(I):
     x1 = lefthalf(I)
     x2 = righthalf(I)
@@ -2241,7 +2242,8 @@ def solve_890034e9(I):
     O = fill(I, x1, x9)
     return O
 
-
+# 236
+# Intersection
 def solve_99b1bc43(I):
     x1 = tophalf(I)
     x2 = bottomhalf(I)
@@ -2255,7 +2257,7 @@ def solve_99b1bc43(I):
     O = fill(x9, THREE, x7)
     return O
 
-
+# 266
 def solve_a9f96cdd(I):
     x1 = ofcolor(I, TWO)
     x2 = replace(I, TWO, ZERO)
