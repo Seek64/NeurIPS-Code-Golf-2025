@@ -1,0 +1,1 @@
+p=lambda g:[[max(l:=sum(g,[]),key=lambda n:sum(n!=v==min(l,key=l.count)for r in g for*c,v in zip(*g,r)if{n}&{*r}&{*c}))]]
