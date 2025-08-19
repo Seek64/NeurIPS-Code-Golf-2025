@@ -1,0 +1,1 @@
+def p(g):w=len(g[i:=0]);l=sum(g,[])+99*[0];m=max([x for k in range(120)if~-(5in(x:=(3*l[k:k+3*w-1])[::w]))],key=sum);x=l.index(5);exec(3*"g[x//w-1+i][x%w-1:x%w+2]=m[i::3];i+=1;");return g
