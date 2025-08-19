@@ -1,0 +1,1 @@
+p=lambda g:[[8-(2in r)&2-(8in c)*6for c in zip(*g)]for r in g]

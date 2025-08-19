@@ -1,0 +1,1 @@
+R=range(10);p=lambda g:[[g[i][j]|2*all(sum(sum([r[:j:d]for r in g[:i:d]],[]))%8for d in(-1,1))for j in R]for i in R]

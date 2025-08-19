@@ -2271,7 +2271,8 @@ def solve_a9f96cdd(I):
     O = fill(x8, SEVEN, x9)
     return O
 
-
+# 273
+# Fill area inside corners
 def solve_af902bf9(I):
     x1 = ofcolor(I, FOUR)
     x2 = prapply(connect, x1, x1)
@@ -2285,7 +2286,7 @@ def solve_af902bf9(I):
     O = replace(x9, NEG_ONE, ZERO)
     return O
 
-
+# 281
 def solve_b548a754(I):
     x1 = objects(I, T, F, T)
     x2 = replace(I, EIGHT, ZERO)
@@ -2299,7 +2300,7 @@ def solve_b548a754(I):
     O = fill(x9, x5, x8)
     return O
 
-
+# 299
 def solve_bdad9b1f(I):
     x1 = ofcolor(I, TWO)
     x2 = ofcolor(I, EIGHT)
@@ -2313,7 +2314,8 @@ def solve_bdad9b1f(I):
     O = fill(x9, FOUR, x7)
     return O
 
-
+# 304
+# Similar to 001
 def solve_c3e719e8(I):
     x1 = mostcolor(I)
     x2 = hconcat(I, I)
