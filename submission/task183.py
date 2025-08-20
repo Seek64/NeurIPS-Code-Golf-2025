@@ -1,0 +1,1 @@
+p=lambda g,i=0:[[v%7*g[1+(i:=i-1)*2//len(g)**2][i*2//len(g)%2-1]for v in r][2:-2]for r in g][2:-2]

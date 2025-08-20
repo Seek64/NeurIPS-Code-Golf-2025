@@ -1,0 +1,1 @@
+p=lambda g,n=9:any(m:=[*{v:0for v in sum(zip(*g),())if sum(g,g).count(v)==n}])*n*[m]or p(g,n-1)

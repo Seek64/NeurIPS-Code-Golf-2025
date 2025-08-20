@@ -2357,7 +2357,7 @@ def solve_d8c310e9(I):
     O = paint(x9, x8)
     return O
 
-
+# 247
 def solve_a3325580(I):
     x1 = objects(I, T, F, T)
     x2 = valmax(x1, size)
@@ -2371,7 +2371,7 @@ def solve_a3325580(I):
     O = dmirror(x9)
     return O
 
-
+# 215
 def solve_8eb1be9a(I):
     x1 = objects(I, T, T, T)
     x2 = first(x1)
@@ -2413,7 +2413,7 @@ def solve_1caeab9d(I):
     O = paint(x8, x9)
     return O
 
-
+# 183
 def solve_77fdfe62(I):
     x1 = ofcolor(I, EIGHT)
     x2 = subgrid(x1, I)
