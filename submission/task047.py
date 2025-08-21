@@ -1,0 +1,1 @@
+p=lambda g:[[(~37&sum(r+c)*77)%9for*c,in zip(*g)]for r in g]

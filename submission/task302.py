@@ -1,0 +1,1 @@
+import re;p=lambda g:[g:=eval(re.sub(k*"0, "+"(?=5.{34}[^0])",k*f"{k+5},",f"{g}"))for k in b""][5]

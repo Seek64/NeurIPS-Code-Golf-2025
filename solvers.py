@@ -2427,7 +2427,8 @@ def solve_77fdfe62(I):
     O = fill(x8, ZERO, x9)
     return O
 
-
+# 302
+# Fill rectangles
 def solve_c0f76784(I):
     x1 = objects(I, T, F, F)
     x2 = colorfilter(x1, ZERO)
@@ -2441,7 +2442,8 @@ def solve_c0f76784(I):
     O = fill(x9, SIX, x5)
     return O
 
-
+# 027
+# Rotate and complete figure. Abuses that the figures are always diagonally aligned and almost centered.
 def solve_1b60fb0c(I):
     x1 = rot90(I)
     x2 = ofcolor(I, ONE)
@@ -2456,7 +2458,7 @@ def solve_1b60fb0c(I):
     O = underfill(I, TWO, x10)
     return O
 
-
+# 354
 def solve_ddf7fa4f(I):
     x1 = objects(I, T, F, T)
     x2 = sizefilter(x1, ONE)
@@ -2470,7 +2472,7 @@ def solve_ddf7fa4f(I):
     O = paint(I, x9)
     return O
 
-
+# 109
 def solve_47c1f68c(I):
     x1 = leastcolor(I)
     x2 = vmirror(I)
@@ -2484,7 +2486,7 @@ def solve_47c1f68c(I):
     O = replace(x9, x1, x5)
     return O
 
-
+# 160
 def solve_6c434453(I):
     x1 = objects(I, T, F, T)
     x2 = sizefilter(x1, EIGHT)
@@ -2498,7 +2500,7 @@ def solve_6c434453(I):
     O = fill(x6, TWO, x9)
     return O
 
-
+# 047
 def solve_23581191(I):
     x1 = objects(I, T, T, T)
     x2 = fork(combine, vfrontier, hfrontier)
