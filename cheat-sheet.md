@@ -54,6 +54,12 @@ If the first row is all black (which is often guaranteed by the generator), -2 b
 p=lambda g,h=0:[...for r in zip(*h or p(g,g))]
 ```
 
+## Rotate right
+
+```python
+[g.pop()]+g
+```
+
 ## Other tricks
 
 Getting the width as a variable in double list comprehension:
