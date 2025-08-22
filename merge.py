@@ -1,7 +1,7 @@
 import os, shutil
 
-source = "submission"
-dest = "../NeurIPS-Code-Golf-2025/submission"
+source = "solutions"
+dest = "../NeurIPS-Code-Golf-2025/solutions"
 
 existing_count = 0
 new_count = 0
