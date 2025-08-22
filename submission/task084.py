@@ -1,1 +1,4 @@
-p=lambda g:[g[i][:l-i]+[2]+i*[0]for i in range(20)if(l:=len(g)-1)>i]+[g[0][:1]+l*[4]]
+def p(g,i=0):
+ *h,l=g
+ for r in h:i-=1;r[i]=2;l[i]=4
+ return g

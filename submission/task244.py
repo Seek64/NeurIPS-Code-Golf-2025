@@ -1,1 +1,1 @@
-def p(g):n=~sorted({*map(g[0].index,g[0])})[1];return[r[::n]for r in g[::-n]]
+p=lambda g,s=2:[g:=r for*r,in zip(*g*~s or p(g,s-4))if r!=g][::s]

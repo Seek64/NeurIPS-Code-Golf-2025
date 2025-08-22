@@ -1,1 +1,1 @@
-p=lambda g:[*map(list,zip(sorted({*(l:=sum(g,[]))},key=l.count)[2::-1]))]
+p=lambda g:[[sorted({*(S:=sum(g,[]))},key=S.count)[i]]for i in(2,1,0)]

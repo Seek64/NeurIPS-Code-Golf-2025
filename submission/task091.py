@@ -1,1 +1,1 @@
-def p(g):l=sum(g,[]);w=len(g[0]);x=l.index(5);y=~l[::-1].index(5);return[r[x%w:y%w+1]for r in g[x//w-1:y//w+2or x]]
+p=lambda g,n=-3,X=[]:g*n or[r[::-1]for*r,in zip(*p(g,n+1))if(X:=X+[5in r])][X.index(1)-n%2:]

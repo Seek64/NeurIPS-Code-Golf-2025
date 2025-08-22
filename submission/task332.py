@@ -1,1 +1,1 @@
-p=lambda g:[[c-(i-len(r)%2+i&c%3)for i,c in enumerate(r)]for r in g]
+p=lambda g:[[r.pop(0)*-7**len(r)&7for x in r*1]for r in g]

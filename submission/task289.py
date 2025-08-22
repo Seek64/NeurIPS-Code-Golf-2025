@@ -1,1 +1,1 @@
-def p(g):N=len({*sum(g,[])})-1;return[[*sum(zip(*N*[g[i//N]]),())]for i in range(3*N)]
+p=lambda g:eval("[[g "+f"for g in g for _ in[*{{*'{g}'}}][5:]]"*2)

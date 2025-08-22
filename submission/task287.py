@@ -1,1 +1,1 @@
-R=range(16);p=lambda g:[[(v:=g[i][j],g[~i][~j])[v==4]for j in R]for i in R]
+p=lambda g:[[r.pop()&3-y|y&~4for y in g.pop()]for*r,in g*1]

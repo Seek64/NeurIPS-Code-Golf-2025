@@ -1,1 +1,1 @@
-p=lambda g:[[g[r][c]|(5in(3*sum((9*[0],*g)[r:r+3],[0]))[c+2::9])for c in range(9)]for r in range(9)]
+import re;p=lambda g:eval(re.sub("0(?=.{228,235}(.{29}){,2}5)","1",str(g+g)))[:9]

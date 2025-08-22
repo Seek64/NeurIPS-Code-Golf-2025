@@ -1,1 +1,1 @@
-p=lambda g:[[sum(r[:j+2][-3:])%5+5for j in range(11)]for r in[g[1]]*3+g[3:4]+3*g[5:6]]
+p=lambda g:g and[sum([[5]+3*[x+5]for x in g[1][1::4]],[])[1:]]*3+g[3:4]+p(g[4:])

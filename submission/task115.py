@@ -1,1 +1,1 @@
-p=lambda g,S={0}:[[v for v in r if S<(S:=S|{v})]for r in g if{*r}-S]
+p=lambda g,h=0:[sorted({*r},key=r.index)for r in zip(*h or p(g,g))]

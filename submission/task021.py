@@ -1,1 +1,1 @@
-p=lambda g:(len(g)-g.count(r:=g[0])+1)*[r[:1]*-~r.count(*{*r}-{r[0]})]
+exec("p=lambda g:[[g "+"for g,h in zip(g,[g]+g)if g!=h][::2]"*2)

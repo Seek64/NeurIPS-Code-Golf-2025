@@ -1,0 +1,1 @@
+r=range(16);p=lambda g:[[(x+y)%max(g[0])+1for x in r]for y in r]

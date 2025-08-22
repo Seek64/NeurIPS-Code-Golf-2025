@@ -1,0 +1,1 @@
+p=lambda g,h=0:[[x%~x&r[i//5*9]or x for i,x in enumerate(r)]for r in zip(*h or p(g,g))]

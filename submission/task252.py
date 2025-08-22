@@ -1,1 +1,1 @@
-p=lambda g:[[(v,4)[j%2*v>0]for j,v in enumerate(r)]for r in g]
+p=lambda g:[[(y:=-y)%(x+4)for x in r]for r in g if(y:=4)]

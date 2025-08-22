@@ -1,0 +1,1 @@
+p=lambda g:[[x|r[5]*(y>x)for x,y in zip(r,s[:6]*3)]for r,s in zip(g,g[:6]*3)]

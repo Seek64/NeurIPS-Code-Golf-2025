@@ -1,0 +1,1 @@
+p=lambda g,n=-3,R=0,S=[[0]*10]*9:eval(str(g).replace(*"03"))*n or p([(R:=R or{*r}=={max(S[-1])<1,2})and S.pop()or[r,S:=S+[r]][0]for[*r]in[*zip(*g)][::-1]],n+1)

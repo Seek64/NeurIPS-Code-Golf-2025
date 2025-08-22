@@ -1,1 +1,1 @@
-p=lambda g:[[v%~sorted(zip(*g)).index((*c,))%5for*c,v in zip(*g,r)]for r in g]
+p=lambda g,z=[0]*9:[z:=[x or y*sum(r)%6for x,y in zip(z,r)]for r in g]

@@ -1,0 +1,1 @@
+e=enumerate;p=lambda g:[[max({*r[j::3]}&{*r[j::-3]}|{*c[i::3]}&{*c[i::-3]})for j,c in e(zip(*g))]for i,r in e(g)]

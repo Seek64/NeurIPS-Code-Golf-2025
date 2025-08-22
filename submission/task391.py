@@ -1,1 +1,1 @@
-p=lambda g:[[v]for v in sorted({*sum(g,[])},key=sum(g,g).count)[2::-1]]
+p=lambda g:[[sorted({*(S:=sum(g,[]))},key=S.count)[i]]for i in(2,1,0)]

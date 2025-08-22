@@ -1,1 +1,1 @@
-p=lambda g:[[(max({*r,*c}-{r[j]}),r[j])[0in[*c]+r]for j,c in enumerate(zip(*g))]for r in g]
+p=lambda g:[[y-x+r[0]or x for x,y in zip(r,g[0])]for r in g]

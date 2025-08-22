@@ -1,1 +1,1 @@
-p=lambda g:[r for*r,in zip(*filter(any,zip(*[[*sum(zip(*2*[g[i//2]]),())]for i in range(18)])))if sum(r)]
+p=lambda g,h=0:[r for*r,in zip(*h or p(g,g))for _ in"11"*any(r)]

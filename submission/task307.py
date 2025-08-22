@@ -1,1 +1,1 @@
-p=lambda g:[[*sum(zip(r,r),())]for r in sum(zip(g,g),())]
+exec("p=lambda g:[[g"+" for g in g for _ in'12']"*2)

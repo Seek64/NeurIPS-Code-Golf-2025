@@ -1,0 +1,1 @@
+p=lambda g,X=0:[g:=[X:=x^x&X*(r==g)for x in r]for r in g]

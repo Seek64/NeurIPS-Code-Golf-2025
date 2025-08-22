@@ -1,1 +1,1 @@
-p=lambda g:2*[2*[sorted({*(l:=sum(g,[]))},key=l.count)[1]]]
+p=lambda g:[[max(range(1,10),key=sum(g,g).count)]*2]*2

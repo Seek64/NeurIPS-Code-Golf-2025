@@ -1,1 +1,1 @@
-p=lambda g:[g[~i][~r.index(3)::-1][:5]for i,r in enumerate(g)if 3in r]
+p=lambda g:[s[~r.index(3)::-1][:5]for r,s in zip(g,g[::-1])if 3in r]

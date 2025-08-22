@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=eval(re.sub("3(?=..[38])","8",f"{[*map(list,zip(*g[::-1]))]}"))for _ in g*4][-1]
+p=lambda g,n=-3:g*n or[[r.pop()*6**y%10for y in[0]+r[:0:-1]]for*r,in zip(*p(g,n+1))]

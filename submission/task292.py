@@ -1,0 +1,1 @@
+p=lambda g:[[x|x*~i%6for i,x in enumerate(r)]for r in g]

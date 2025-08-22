@@ -1,1 +1,1 @@
-p=lambda g:[[(r[i],5^r[i]+5)[8in r and(8in(c:=sum(g,[]))[i::17]or 8in c[i-1::17]and 8in c[i+1::17])]for i in range(17)]for r in g]
+p=lambda g,P=0:[[x-x%~(8in r)%~(P:=-~P*(8in[P*8]+c))*2for*c,x in zip(*g,r)]for r in g]

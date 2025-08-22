@@ -1,0 +1,1 @@
+p=lambda g:[[0]+r[:(k:=sum(n)and~(n.count(m:=max(r))>2)+len(r)-n[::-1].index(m))]+r[k+1:]for r,n in zip(g,g[1:])]+[g[-1]]

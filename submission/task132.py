@@ -1,1 +1,1 @@
-f=lambda l:{*sum(l,[])};p=lambda g:[[max(f(g[r:])&f(g[:r+1])&f((d:=[*map(list,zip(*g))])[c:])&f(d[:c+1]))for c in range(len(g[0]))]for r in range(len(g))]
+p=lambda g,n=-7:g*n or p([(P:=0)or[P:=max({*r}&{*c,P,r.pop()})for c in g[::-1]]for*r,in zip(*g)],n+1)

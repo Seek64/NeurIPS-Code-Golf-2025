@@ -1,1 +1,1 @@
-p=lambda g:[[r[i-5]or r[i]|r[i+5]for i in b""]for r in g]
+p=lambda g:[[r.pop(0)or r[4]|r[9]for i in g]for r in g]

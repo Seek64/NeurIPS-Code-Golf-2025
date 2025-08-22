@@ -1,1 +1,1 @@
-p=lambda g:[[max(L:=g[r][c:c+3]+g[r+1][c:c+3],key=L.count)for c in(0,3,6)]for r in(0,3,6)]
+p=lambda g:[[max({*r[j:j+3]}-{5})for j in(0,3,6)]for r in g[::3]]

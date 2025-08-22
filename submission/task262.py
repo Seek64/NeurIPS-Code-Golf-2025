@@ -1,1 +1,1 @@
-p=lambda g:[3*[2+-r.index(5)%3]for r in g]
+p=lambda g:[3*[c^6&b+~a]for a,b,c in g]

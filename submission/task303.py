@@ -1,1 +1,1 @@
-p=lambda g:[[(2,r[i])[any(r)*any([*zip(*g)][i])]for i in range(len(g[0]))]for r in g]
+p=lambda g:[[x|2&~any(c)-any(r)for*c,x in zip(*g,r)]for r in g]

@@ -1,1 +1,1 @@
-p=lambda g:[[*sum(zip(*3*[g[i//3]]),())]for i in range(9)]
+exec("p=lambda g:[[g "+"for g in g for _ in'1'*3]"*2)

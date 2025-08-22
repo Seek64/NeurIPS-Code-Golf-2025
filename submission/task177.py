@@ -1,1 +1,1 @@
-p=lambda g:[r[::-1]for*r,in zip(*filter(any,zip(*g)))if sum(r)]
+p=lambda g:[[x for x in r[::-1]if x]for r in g if[r]>g]

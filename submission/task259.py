@@ -1,1 +1,1 @@
-def p(g):g=[[1%v*v for v in r]for r in g];[g:=[*map(list,zip(*g[sum(g[0])<1:][::-1]))]for _ in g*4];return g
+p=lambda g,n=-7,X=0:g*n or[[x*(x>1)for x in r]for r in zip(*p(g,n+1)[::-1])if(X:=max(X,*r))]

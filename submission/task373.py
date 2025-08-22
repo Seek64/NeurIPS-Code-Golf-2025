@@ -1,1 +1,1 @@
-p=lambda g:[l:=sum(3*g,[])[::7],l[::-1]]
+p=lambda g:[T:=[*map(max,g)]*3,T[::-1]]

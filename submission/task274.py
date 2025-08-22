@@ -1,0 +1,1 @@
+p=lambda g:[[8,(n:=sum((5in x)-(8in x)for x in g))*3&8,n*2&8],[0,0,n//5*8],[0]*3]

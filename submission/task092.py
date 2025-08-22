@@ -1,1 +1,1 @@
-E=enumerate;p=lambda g:[[sum({*c[:i+1]}&{*c[i:]})or sum({*r[:j+1]}&{*r[j:]})for j,c in E(zip(*g))]for i,r in E(g)]
+p=lambda g,h=0:[[x or max({*c[:i+1]}&{*c[i:]})for i,x in enumerate(c)]for c in zip(*h or p(g,g))]

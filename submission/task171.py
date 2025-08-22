@@ -1,1 +1,1 @@
-p=lambda g:[[8,*r[2:],8]for r in[len(g[0])*[8],*g[2:],len(g[0])*[8]]]
+p=lambda g:eval("[[8,*r[2:],8]for r in zip(*"*2+"g)])]")

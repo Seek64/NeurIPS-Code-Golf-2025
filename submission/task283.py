@@ -1,1 +1,1 @@
-R=range(10);p=lambda g:[[g[i][j]*~(3*sum([[0,*a]for a in(10*[0],*g)][i:i+3],[0]))[j+3::11].count(5)%13for j in R]for i in R]
+p=lambda g:[[72%~sum(c)*3%5for c in zip(*g[i-11:i+2],[0]+r,r[1:]+[0])]for i,r in enumerate(g)]

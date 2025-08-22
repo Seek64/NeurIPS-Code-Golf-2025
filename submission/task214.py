@@ -1,1 +1,1 @@
-p=lambda g:[g[i][:4]+sum(g,g)[25+i::-11]+g[~i][3::-1]for i in(0,1,2)]
+p=lambda g:[r[:4]+(g.pop()[:4]+c)[::-1]for*c,r in zip(*g,g*1)]

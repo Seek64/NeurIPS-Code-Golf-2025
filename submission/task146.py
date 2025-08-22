@@ -1,1 +1,1 @@
-p=lambda g:[[*m]for m in zip(*[iter(g)]*3)if(*map(list,zip(*m)),)!=m][0]
+p=lambda g:(m:=g[:3])*(m!=[*map(list,zip(*m))])or p(g[3:])

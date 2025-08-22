@@ -1,0 +1,1 @@
+p=lambda g:[[c:=max(g[2^i-i%5]),*[c>>33%~i%7]*8,c]for i in range(10)]

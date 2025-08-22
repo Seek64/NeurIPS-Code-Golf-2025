@@ -1,1 +1,1 @@
-p=lambda g:[[1+6*any(a-c for a,b,c in g)]]
+p=lambda g:[[g[0]==g[2]or 7]]

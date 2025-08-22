@@ -1,1 +1,1 @@
-p=lambda g:[[v//4for v in r]for r in[g[-1]]+g[:-1]]
+p=lambda g:[[x%6for x in r]for r in[g.pop()]+g]

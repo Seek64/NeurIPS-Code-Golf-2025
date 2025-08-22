@@ -1,1 +1,1 @@
-p=lambda g:[[3*(-b<a)for a,b in zip(*t)]for t in zip(g,g[5:])]
+p=lambda g:[[x+r.pop(0)and 3for x in g.pop(5)]for r in g[:4]]

@@ -1,1 +1,1 @@
-R=range(9);p=lambda g:[g[i][:4]+[g[i%3][j%3]*g[1+i//3*3][5+j//3*3]for j in R]for i in R]
+R=range(9);p=lambda g:[g[i][:4]+[g[i-i%3+1][k-k%3+5]*g[i%3][k%3]for k in R]for i in R]

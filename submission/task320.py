@@ -1,1 +1,1 @@
-p=lambda g:[[(g[r][c],8)[2in[*zip(*g)][c][:r*2+1]]for c in range(9)]for r in range(-len(g),0)]
+p=lambda g:[[c[i]+6*(c[i:]+[1]<c[i::-1])for*c,in zip(*g)]for i in range(len(g))]

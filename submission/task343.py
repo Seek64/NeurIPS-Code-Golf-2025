@@ -1,0 +1,1 @@
+p=lambda g:[[r[:6]*9,r[:8]*9][r[:4]in[r[4:8],r[8:12]]][:len(r)]for r in g]

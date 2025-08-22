@@ -1,0 +1,1 @@
+r=range(9);p=lambda g:[[3%(j+3&i+3|1)for j in r][::1|1-g[1][0]]for i in r][::1|1-g[0][1]]

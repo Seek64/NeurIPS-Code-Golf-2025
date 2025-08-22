@@ -1,1 +1,1 @@
-p=lambda g:[[*sum(zip(*4*[g[1+i//4*2][1::2]]),())]for i in range(len(g)*2)]
+exec("p=lambda g:[[g"+" for g in g[1::2]for _ in'0'*4]"*2)

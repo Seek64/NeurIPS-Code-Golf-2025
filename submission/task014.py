@@ -1,1 +1,1 @@
-p=lambda g:[[k for*c,k in zip(*g,r)if v in c]for r in g if(v:=min({*(l:=sum(g,[]))}-{0},key=l.count))in r]
+p=lambda g:[[c for i,c in enumerate(r)if{*(*zip(*g),)[i]}==s]for r in g if len(s:={*r})>2]

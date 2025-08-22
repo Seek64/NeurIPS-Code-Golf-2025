@@ -1,0 +1,1 @@
+p=lambda g,M=0:[(P:=0)or[P:=x|P for x in r]+[M:=P or M]for*r,_ in g]

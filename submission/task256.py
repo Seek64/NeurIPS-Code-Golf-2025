@@ -1,0 +1,1 @@
+p=lambda g:[([2+((j:=g.index(max(g)))>i)-(j<i)]*(j-i+sum(g[j])//2)+g[0])[:len(g[0])]for i in range(len(g))]

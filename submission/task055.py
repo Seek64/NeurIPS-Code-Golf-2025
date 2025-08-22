@@ -1,0 +1,1 @@
+e=enumerate;p=lambda g:[[r[j]or 12257%~sum(c[:i]+3*r[:j])*3%7for j,[*c]in e(zip(*g))]for i,r in e(g)]

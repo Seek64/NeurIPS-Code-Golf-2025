@@ -1,1 +1,1 @@
-p=lambda g,i=-1:[[v&g[(i:=i+1)//27][i%9//3]for v in 3*r]for r in 3*g]
+p=lambda g:[[r&b for r in r for b in s]for r in g for s in g]

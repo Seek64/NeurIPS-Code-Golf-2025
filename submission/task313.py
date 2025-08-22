@@ -1,0 +1,1 @@
+p=lambda g:[(r[1:len({*r})]*(L:=len(g)))[:L]for r in g[:2]*99][:L]

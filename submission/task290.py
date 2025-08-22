@@ -1,1 +1,1 @@
-p=lambda g:[[max({*sum(g,r)}-{c})for c in r if c]for r in g if sum(r)]
+p=lambda g:[[sum({*sum(g,[-x])})for x in r if x]for r in g if sum(r)]
