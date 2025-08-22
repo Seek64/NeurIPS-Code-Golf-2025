@@ -2542,7 +2542,7 @@ def solve_3eda0437(I):
     O = fill(I, SIX, x9)
     return O
 
-
+# 351
 def solve_dc0a314f(I):
     x1 = ofcolor(I, THREE)
     x2 = replace(I, THREE, ZERO)
@@ -2556,7 +2556,7 @@ def solve_dc0a314f(I):
     O = subgrid(x1, x9)
     return O
 
-
+# 334
 def solve_d4469b4b(I):
     x1 = palette(I)
     x2 = other(x1, ZERO)
@@ -2570,7 +2570,7 @@ def solve_d4469b4b(I):
     O = fill(x9, FIVE, x8)
     return O
 
-
+# 170
 def solve_6ecd11f4(I):
     x1 = objects(I, F, T, T)
     x2 = argmax(x1, size)
@@ -2585,7 +2585,7 @@ def solve_6ecd11f4(I):
     O = fill(x5, ZERO, x10)
     return O
 
-
+# 077
 def solve_760b3cac(I):
     x1 = ofcolor(I, FOUR)
     x2 = ofcolor(I, EIGHT)
@@ -2600,7 +2600,8 @@ def solve_760b3cac(I):
     O = fill(I, EIGHT, x10)
     return O
 
-
+# 306
+# list conversion
 def solve_c444b776(I):
     x1 = objects(I, T, F, F)
     x2 = colorfilter(x1, ZERO)
@@ -2614,7 +2615,7 @@ def solve_c444b776(I):
     O = paint(I, x9)
     return O
 
-
+# 335
 def solve_d4a91cb9(I):
     x1 = ofcolor(I, EIGHT)
     x2 = ofcolor(I, TWO)
@@ -2629,7 +2630,7 @@ def solve_d4a91cb9(I):
     O = underfill(I, FOUR, x10)
     return O
 
-
+# 376
 def solve_eb281b96(I):
     x1 = height(I)
     x2 = width(I)
@@ -2644,7 +2645,7 @@ def solve_eb281b96(I):
     O = vconcat(x7, x10)
     return O
 
-
+# 399
 def solve_ff28f65a(I):
     x1 = objects(I, T, F, T)
     x2 = size(x1)
@@ -2658,7 +2659,8 @@ def solve_ff28f65a(I):
     O = merge(x9)
     return O
 
-
+# 192
+# list conversion
 def solve_7e0986d6(I):
     x1 = leastcolor(I)
     x2 = ofcolor(I, x1)
@@ -2672,7 +2674,7 @@ def solve_7e0986d6(I):
     O = fill(x3, x4, x9)
     return O
 
-
+# 011
 def solve_09629e4f(I):
     x1 = objects(I, F, T, T)
     x2 = argmin(x1, numcolors)
@@ -2683,7 +2685,7 @@ def solve_09629e4f(I):
     O = fill(x5, FIVE, x6)
     return O
 
-
+# 262
 def solve_a85d4709(I):
     x1 = ofcolor(I, FIVE)
     x2 = lbind(matcher, last)
@@ -2698,7 +2700,7 @@ def solve_a85d4709(I):
     O = fill(x10, FOUR, x8)
     return O
 
-
+# 398
 def solve_feca6190(I):
     x1 = objects(I, T, F, T)
     x2 = size(x1)
