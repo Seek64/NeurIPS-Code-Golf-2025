@@ -1,0 +1,3 @@
+[submodule "ARC-GEN"]
+	path = ARC-GEN
+	url = https://github.com/google/ARC-GEN.git
