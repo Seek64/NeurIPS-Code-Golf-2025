@@ -1,0 +1,1 @@
+E=enumerate;p=lambda g:[[(min([sum([r[i%3*4:][:3]for r in g[i//3*4:][:3]],[])for i in range(9)],key=sum)[i//4*3+j//4],v)[v==5]for j,v in E(r)]for i,r in E(g)]

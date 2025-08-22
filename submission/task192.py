@@ -1,0 +1,1 @@
+import re;p=lambda g:[g:=eval(re.sub(f"{min(l:=sum(g,[]),key=l.count)}"+r"(?=, ([^0]).{%d}\1)"%(3*len(g)-2)*s,s*r"\1"or"0",f"{[*map(list,zip(*g[::-1]))]}"))for s in[1]*7+[0]][7]

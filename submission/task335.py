@@ -1,0 +1,1 @@
+E=enumerate;p=lambda g:[g:=[[r[j]or(any(r[:j])*any(r[j:])|any(c[:i])*any(c[i:])or(2in r)*(8in c))*4for j,c in E(zip(*g))]for i,r in E(g)]for _ in g][1]
