@@ -60,10 +60,24 @@ p=lambda g,h=0:[...for r in zip(*h or p(g,g))]
 [g.pop()]+g
 ```
 
-## Other tricks
+# Regex
 
-Getting the width as a variable in double list comprehension:
+Many draw task can be used with the following "rotate-and-replace" strategy.
 
 ```python 
-[[... for c in range(w)]for r in range(len(g))if(w:=len(g[0]))]
+import re;p=lambda g:[g:=eval(re.sub("","",f"{[*zip(*g[::-1])]}"))for _ 4*g][-1]
+```
+
+If multiple different regex are required, one can do:
+
+```python 
+import re;p=lambda g:[g:=eval(re.sub(*s,f"{[*zip(*g[::-1])]}"))for s in[("","")]*M+[("","")]*N][-1]
+```
+
+If you need to fill the inside of a shape, the regex expression often looks something like this.
+In this example, we replace all 0 that have a right and bottom 1 with a 1.
+The "len(g)" can often be hardcoded if the field is a fixed-size square.
+
+```python 
+re.sub("0(?=, 1.{%d}1)"%(3*len(g)-2),"1",f"{[*zip(*g[::-1])]}")
 ```
