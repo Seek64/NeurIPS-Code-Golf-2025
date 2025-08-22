@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=[*map(list,zip(*eval(re.sub("0(?=(, .)*, [^0], %s, 0)"%v,v,f"{g}"))[::-1]))]for v in min(f"{g}",key=f"{g}".count)*4][3]
+import re;p=lambda g:[g:=[*zip(*eval(re.sub("0(?=(, .)*, [^0], %s, 0)"%v,v,f"{g}"))[::-1])]for v in min(f"{g}",key=f"{g}".count)*4][3]
