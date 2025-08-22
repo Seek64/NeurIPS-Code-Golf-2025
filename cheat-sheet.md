@@ -39,6 +39,21 @@ Figure needs to be fully connected and surrounding must be black.
 [r for*r,in zip(*filter(any,zip(*g)))if sum(r)]
 ```
 
+## Short any()
+
+If the first row is all black (which is often guaranteed by the generator), -2 bytes using:
+
+```python
+[...for r in g if any(g)]
+[...for r in g if[r]>g]
+```
+
+## Depth 2 Recursion
+
+```python
+p=lambda g,h=0:[...for r in zip(*h or p(g,g))]
+```
+
 ## Other tricks
 
 Getting the width as a variable in double list comprehension:
