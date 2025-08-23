@@ -63,9 +63,11 @@ p=lambda g,h=0:[...for r in zip(*h or p(g,g))]
 # Regex
 
 Many draw task can be used with the following "rotate-and-replace" strategy.
+The upper one is 1 byte shorter if few rotations are needed.
 
 ```python 
-import re;p=lambda g:[g:=eval(re.sub("","",f"{[*zip(*g[::-1])]}"))for _ 4*g][-1]
+import re;p=lambda g:[g:=eval(re.sub("","",f"{[*zip(*g[::-1])]}"))for _ in g][3]
+import re;p=lambda g,k=99:-k*g or p(eval(re.sub("","",f"{[*zip(*g[::-1])]}")),k-1)
 ```
 
 If multiple different regex are required, one can do:
