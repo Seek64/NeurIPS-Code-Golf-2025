@@ -1,0 +1,1 @@
+import re;p=lambda g:[g:=eval(re.sub(r"\((.), 0(?=[, 0-9]*\1)",r"(\1,\1",f"{[*zip(*g[::-1])]}"))for _ in 4*g]and g[:2]+[r[:2]+(len(g[0])-4)*(0,)+r[-2:]for r in g[2:-2]]+g[-2:]
