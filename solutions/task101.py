@@ -1,6 +1,11 @@
-#coding:L1
-import zlib
-exec(zlib.decompress(bytes("""xÚM?OÃ0Å÷|
-³ Ûq	ôºtªTeµ,Ô¦Nj©ç¦+Rñç³c!ØŞ½÷;ßù'ç	nı!Ó íµÛzíuOF:„Vgd’vbWÖŸ™…#ÆM‡T^E÷S:fzÒ©¦ÜÎtYÃûH"0Æx“äîGn'ïÕ¢z‰“ïöfòt'FöÉ²„“HäÍ]
-Òà?«ÆÂQ[ºd£´_Œ—±¬a‚³,UœÎEk|p*Uçëš·A²H¾ÌQ“i±Î±¶¬ä¤¤¯}
-@v·•âØü7e÷ñ½)‡2ô›o åÈ¸]”õ\x00r%’X«¸•¯¿·RqÚ_œ•áÕÇ´rŒœúû˜â´*Å›Åã%û›§}ª""","L1")))
+import math
+e=enumerate
+def p(g,m=3):
+ P=[(c,x,y)for x,r in e(g)for y,c in e(r)if c];R=max(B:={p for p in P for b in P if b[0]<2>math.dist(b,p)})
+ for q in P:
+  G=[m*[0]+r for r in g*9];n=len(B)*m
+  for c,x,y in B:
+   M=s=q[1]+m*(x-R[1]);t=q[2]-m*(~y+R[2])
+   while s<M+m:n-=G[s][t:t+m]==[c&2]*m;G[s][t:t+m]=[c|8]*m;s+=1
+  if(q!=R*m)*n<1:g=[G[i][m:]for i,_ in e(g)]
+ return[[c&7for c in r]for r in g]*(2-m)or p(g,m-1)

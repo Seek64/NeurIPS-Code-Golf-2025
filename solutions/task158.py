@@ -1,4 +1,10 @@
-#coding:L1
-import zlib
-exec(zlib.decompress(bytes("""xÚ]PÁnÃ ½ç+¸LÂ@Õ&¹AÙ5ı€"YLJUš†®J[¥İ´ŸI'm2¬÷Şû;ótÆ¼š¸Û7,¨^#oÔï#£÷‰Í©õ<Ì…İo¡—±íŠGìu/£KØ1a[:PÁ™ÎşDİÌô¼àÊA^i»™¥I!<ï…š„KÀOq¹E¾ÑvËS“:ø‚×Ò™Ú®2F°Š´(ˆ U`®®l…Z/r2:uağ¬^çı–ÕÒæ&Úú¥”¹i-ŠØœù.WõÎ\\´\x00îI4šì¤:âüóXŠ(sò9Ÿi„´ÈJ3œŒÊ£ˆªŸsk+<:
-'"Å¬u$%¾R€ aj†½{£[:gà]=M£(mĞ’w‚É‡£Ş—Ëèğ‘rÆF½4öo›‹å""","L1")))
+def p(g):
+ e=lambda i,j:[(a,b)for a in range(i)for b in range(j)]
+ T=lambda i,j,m:[r[j:j+m]for r in g[i:i+m]];h=len(g);w=len(g[0]);[(G:=H)for i,j in e(h-2,w-2)if len({*sum(H:=T(i,j,3),[])})>3];X=0
+ if G[0][0]in sum(G,[])[1:]:G=G[::-1]
+ while X<12:
+  X+=1;m=X%3+1;g=[*map(list,zip(*g))][::-1];h,w=w,h
+  for i,j in e(h-3*m+1,w-3*m+1):
+    if all(T(i+k*m,j+k*m,m)==[[G[k][k]]*m]*m for k in(0,2))*(g[i-1][j]^g[i][j]):
+     for x,y in e(m*3,m*3):g[i+x][j+y]=G[x//m][y//m]
+ return g

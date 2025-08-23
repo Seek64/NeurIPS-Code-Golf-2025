@@ -1,4 +1,5 @@
-#coding:L1
-import zlib
-exec(zlib.decompress(bytes("""xÚMÎÁnƒ0à;Oõ€lÒÒí²”ìÀ‰sÄÍó!Ğ4€(­¢Vc;ìÙG‡&í`[úlY¿7~¾Ÿ}t7ŸıI\\! NÄéÅ ×š…ßä—F¹lQûÅw°«Lc†ƒ5c®Şç~˜<qÉj.I±¶¹ùóïÂÍŸ@Y!{eª˜FmuõïdI¡Ófrçöè„“­eg¬ìMĞª€§Ò¸rò3ôˆ—PkCJ*™õäxŠ‘Z.÷o5uù3cê¦	jjs¥»|Ïˆ0
-ÓªG%YÉ~ı’}\rWÈòca7Æš²B¨Ù¢zál1â¡Y3ï0ÑßîqáÁÉ^Í""","L1")))
+e=enumerate
+def p(g):
+ for i,r in e(g):
+  for j,x in e(r):exec("B=T=i;R=j+1\nwhile[]<r[R:]<[1]:R+=1\nwhile~-any([*g,g*9][B][j:R]):B+=1\nwhile~x&(c:=lambda a,b=j,c=R,h=g:1-(0<=a<len(h))or((H:=[1,1,*h[a],1,1])[b]<2>H[c+3])&all(H[b+1:c+2]))(i-1)&c(B)&c(j-1,i,B,h:=[*zip(*g)])&c(R,i,B,h)&(T<B):g[T][j:R]=[4]*(R-j);T+=1")
+ return g
