@@ -1,0 +1,1 @@
+p=lambda g,n=-9:g*n or(g:=[*zip(*(h:=p(g,n+1)))])and[[*map(min,*r)]for r in zip(h,g[:2]+g[::-1],g)]
