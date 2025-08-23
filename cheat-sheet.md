@@ -70,9 +70,10 @@ import re;p=lambda g:[g:=eval(re.sub("","",f"{[*zip(*g[::-1])]}"))for _ in g][3]
 import re;p=lambda g,k=99:-k*g or p(eval(re.sub("","",f"{[*zip(*g[::-1])]}")),k-1)
 ```
 
-If multiple different regex are required, one can do:
+If multiple different regex are required, one can do one of:
 
 ```python 
+import re;p=lambda g:[g:=eval(re.sub(s[1:],s[0],f"{[*zip(*g[::-1])]}"))for s in[""]*M+[""]*N][-1]
 import re;p=lambda g:[g:=eval(re.sub(*s,f"{[*zip(*g[::-1])]}"))for s in[("","")]*M+[("","")]*N][-1]
 ```
 

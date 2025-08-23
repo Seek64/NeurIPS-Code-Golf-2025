@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=eval(re.sub(*s,f"{[*map(list,zip(*g[::-1]))]}"))for s in["03",("3, 3","2,2"),("2, [13]","1,1")]*8][-1]
+import re;p=lambda g:[g:=eval(re.sub(*s,f"{[*zip(*g[::-1])]}"))for s in["03",("3, 3","2,2"),("2, [13]","1,1")]*8][-1]

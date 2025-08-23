@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=eval(re.sub(*s,f"{[*map(list,zip(*g[::-1]))]}"))for s in[("9(?=..[\D0])","0")]*48+[("1(?=..[98])","8")]*15+["09"]][-1]
+import re;p=lambda g:[g:=eval(re.sub(s[1:],s[0],f"{[*zip(*g[::-1])]}"))for s in["09(?=..[\D0])"]*48+["81(?=..[98])"]*15+["90"]][-1]

@@ -1,1 +1,1 @@
-import re;p=lambda g,k=7:-k*g or p(eval(re.sub(("0(?=.{%d}2)"%(13-k%2*6),"2")[k<4],"00006783"[k],f"{[*map(list,zip(*g[::-1]))]}")),k-1)
+import re;p=lambda g,k=7:-k*g or p(eval(re.sub(("0(?=.{%d}2)"%(13-k%2*6),"2")[k<4],"00006783"[k],f"{[*zip(*g[::-1])]}")),k-1)

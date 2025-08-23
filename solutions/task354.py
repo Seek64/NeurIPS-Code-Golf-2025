@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=eval(re.sub("5(?=(, %s([^0]))"%s,r"\2",f"{[*map(list,zip(*g[::-1]))]}"))for s in["0)+, ",*31*")"]][-1]
+import re;p=lambda g:[g:=eval(re.sub("5(?=(, %s([^0]))"%s,r"\2",f"{[*zip(*g[::-1])]}"))for s in["0)+, ",*31*")"]][-1]
