@@ -1,0 +1,1 @@
+import re;p=lambda g,k=31:-k*g or p(eval(re.sub("(2|4), [^24](?=.( |.{%d})[24])"%len(3*g),r"\1,4",f"{[*zip(*g[::-1])]}")),k-1)
