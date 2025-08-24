@@ -52,11 +52,7 @@ If the first row is all black (which is often guaranteed by the generator), -2 b
 
 ```python
 p=lambda g,h=0:[...for r in zip(*h or p(g,g))]
-```
-
-Or,
-```python
-p=lambda g,*T:[...for r in zip(*
+p=lambda g,*G:[...for r in zip(*G or p(g,*g))]
 ```
 
 ## Recursion alternative
