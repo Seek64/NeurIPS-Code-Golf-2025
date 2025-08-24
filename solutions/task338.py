@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=eval(re.sub(*s,f"{g}"))for s in[("0(?=..[23].{%d}[23])"%(3*len(g[0])-2),"3")]*30+["20"]][-1]
+p=lambda g,n=59:g*-n or p([[[w|x&4-w,3>>w][n<1]for w,x in zip(r,[4]+r)]for*r,in zip(*g[::-1])],n-1)

@@ -1,1 +1,1 @@
-R=range(9);p=lambda g:[[any(sum(g[i//3::3],[])[j//3::3])*max(sum(g[i%3::3],[])[j%3::3])for j in R]for i in R]
+p=lambda g,*G:[*filter(any,zip(*G or p(g,*[[c&d for c in a for d in b]for a in g for b in g])))]

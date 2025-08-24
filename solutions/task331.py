@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=eval(re.sub("0(?=, 1)",s,f"{[*zip(*g[::-1])]}"))for s in"8627"][3]
+p=lambda g:[g:=eval(str([*zip(*g[::-1])]).replace('1, 0','1,'+k))for k in'2786'][3]

@@ -1,0 +1,1 @@
+p=lambda g:[g:=[[c|(r*2)[2*g.index(max(g,key=max))+1-i]for i,c in enumerate(r)]for r in zip(*g)]for _ in g][1]

@@ -1,1 +1,1 @@
-p=lambda g,n=-7,X=0:g*n or[[x*(x>1)for x in r]for r in zip(*p(g,n+1)[::-1])if(X:=max(X,*r))]
+p=lambda g:[g:=[[c*(c>1)for c in r]for*r,in zip(*g[any(g[-1])-2::-1])]for _ in g*9][23]

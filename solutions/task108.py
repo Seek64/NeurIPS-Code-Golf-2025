@@ -1,1 +1,1 @@
-exec("p=lambda g:[[g"+" for g in g[1::2]for _ in'0'*4]"*2)
+exec('p=lambda g:[[g\nfor g in g[1::2]for _ in"_"*4]#'*2)

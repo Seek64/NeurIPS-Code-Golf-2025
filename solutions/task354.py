@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=eval(re.sub("5(?=(, %s([^0]))"%s,r"\2",f"{[*zip(*g[::-1])]}"))for s in["0)+, ",*31*")"]][-1]
+p=lambda g:[g:=[[(c>0)*max({*w}-{5})or c for*w,c in zip([0]+r,r[1:]+[0],g[0],r)]for r in g]for _ in g][9]

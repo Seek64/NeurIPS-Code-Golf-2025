@@ -1,0 +1,1 @@
+def p(g):k=len(g);w=sum(g,[]);i=j=-1;a,b,_=[i for c in w if(i:=i+1)*c];return[[w[b]*(max(abs((j:=j+1)%k-b%k),abs(j//k-b//k))%abs(b%k-a%k)<1)for _ in g]for _ in g]

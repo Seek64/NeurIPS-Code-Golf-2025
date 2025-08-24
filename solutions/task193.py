@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=eval(re.sub("0, .(?=..[^1-9])","0,0",f"{[*zip(*g[::-1])]} "))for _ in g][3]
+p=lambda g,*G:[[w&max(k)for*k,w in zip([0]+r,r[1:]+[0],r)]for*r,in zip(*G or p(g,*g))]

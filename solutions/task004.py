@@ -1,1 +1,3 @@
-p=lambda g:[[0]+r[:(k:=sum(n)and~(n.count(m:=max(r))>2)+len(r)-n[::-1].index(m))]+r[k+1:]for r,n in zip(g,g[1:])]+[g[-1]]
+def p(g,w=2):
+	for r in g[::-1]:w=(w-3)*any(r)+2;del r[w<1and-~r.index(max(r))|w];r[:0]=0,
+	return g

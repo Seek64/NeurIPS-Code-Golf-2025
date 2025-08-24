@@ -1,1 +1,3 @@
-p=lambda g,n=9:(m:=[[v for*c,v in zip(*g,r)if n in c]for r in g if n in r])*all(x==x[::-1]for x in m)or p(g,n-1)
+def p(g,i=1):
+	for _ in(w:=g):k=1;w=[r for*r,in zip(*w)if(k:=k&(r==r[::-1]))<=i in r]
+	return w*k or p(g,i+1)

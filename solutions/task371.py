@@ -1,1 +1,2 @@
-E=enumerate;p=lambda g:[[(c,3)[abs((w:=len(g[0]))*i+j-((l:=sum(g,[])).index(1,k:=l.index(1)+1)+k>>1))in(0,1,w)]for j,c in E(r)]for i,r in E(g)]
+import re
+p=lambda g,n=3:g*-n or[*zip(*eval(re.sub(r'(1(.*)).{6}(0\2(1))|, 7,',r'\1+3,3\4%8,3+\3',str(p(g,n-1)))))]

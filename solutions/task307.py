@@ -1,1 +1,1 @@
-exec("p=lambda g:[[g"+" for g in g for _ in'12']"*2)
+exec('p=lambda g:[[g\nfor g in g for _ in"@@"]#'*2)

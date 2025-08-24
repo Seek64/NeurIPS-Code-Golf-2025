@@ -1,0 +1,1 @@
+p=lambda g,n=3:g*-n or[[r.pop()or(d*d%5*d|d)%9for d in[0]+r[:0:-1]]for*r,in zip(*p(g,n-1))]

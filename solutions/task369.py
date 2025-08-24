@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=eval(re.sub(*s,f"{[*zip(*g[::-1])]}"))for s in["03",("3, 3","2,2"),("2, [13]","1,1")]*8][-1]
+p=lambda g,n=7:g*-n or[[a*(a>4)or[a+b//4-.25,min(a,b)][n>3]for a,b in zip(r,[5]+r)]for*r,in zip(*p(g,n-1)[::-1])]

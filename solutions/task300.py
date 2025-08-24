@@ -1,1 +1,1 @@
-p=lambda g:[[r[i]for i in range(w)if v in l[i::w]]for r in g if(v:=max({*(l:=sum(g,[])),w:=len(g[0])}-{0},key=l.count))in r]
+p=lambda g,*G:[r for*r,in zip(*G or p(g,*g))if max(range(1,10),key=sum(g,g).count)in r]

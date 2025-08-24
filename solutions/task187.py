@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=eval(re.sub(*s,f"{[*zip(*g[::-1])]}"))for s in["02"]+[("2(?=..[\D3])","3")]*55][-1]
+p=lambda g,n=99:g*-n or[[(x**w==9)*3or w or 0**n*2for w,x in zip(r,[3]+r)]for*r,in zip(*p(g,n-1)[::-1])]

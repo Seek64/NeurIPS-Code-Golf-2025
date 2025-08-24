@@ -1,1 +1,1 @@
-e=enumerate;p=lambda g:[[r[j]or(24in(sum(r+r[:j]),sum(c+c[:i])))*3for j,c in e(zip(*g))]for i,r in e(g)]
+p=lambda g,k=0:[g:=[[c|(k:=k^sum(r)//16*c*6%9)>>c for c in r]for*r,in zip(*g)]for _ in g][1]

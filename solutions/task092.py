@@ -1,1 +1,1 @@
-p=lambda g,h=0:[[x or max({*c[:i+1]}&{*c[i:]})for i,x in enumerate(c)]for c in zip(*h or p(g,g))]
+p=lambda g,k=0:[g:=[[c+(k:=k^~-r.count(c)*c)%1or k for c in r]for*r,in zip(*g)]for _ in g][1]

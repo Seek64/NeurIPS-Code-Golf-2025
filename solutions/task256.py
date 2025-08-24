@@ -1,1 +1,4 @@
-p=lambda g:[([2+((j:=g.index(max(g)))>i)-(j<i)]*(j-i+sum(g[j])//2)+g[0])[:len(g[0])]for i in range(len(g))]
+def p(g):
+	w=sum(m:=max(g))//2;i=w+g.index(m)
+	for r in g:r[:i]=[(i>w)-~(i>=w)]*i;i-=i>0
+	return g

@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=eval(re.sub(*s,f"{[*zip(*g[::-1])]}"))for s in["01"]+[("1(?=..[\D0])","0")]*31][-1]
+p=lambda g,n=99:g*-n or[[~0**x&r.pop()or n<1for x in[0]+r[:0:-1]]for*r,in zip(*p(g,n-1))]

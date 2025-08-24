@@ -1,1 +1,4 @@
-p=lambda g:[[(R:=r[5:2:-1])+r[3:],r[:6]+R][g[3][3]<1]for r in g[:3]]+g[3:]
+def p(g):
+	x=g[3][5]%3*6
+	for l in g[:3]:l[x:x+3]=l[5:2:-1]
+	return g

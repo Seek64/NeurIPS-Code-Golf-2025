@@ -1,1 +1,1 @@
-def p(g):m=(l:=sum(g,g))[l.index(8)-14:];m[14],={*m[:3]}-{0};return[m[n:n+3]for n in(0,13,26)]
+def p(g):w=sum(g,g);g=[w[w.index(8)+i:][:3]for i in[-14,-1,12]];g[1][1]=max(g[0]);return g

@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=eval(re.sub(s[1:],s[0],f"{[*zip(*g[::-1])]}"))for s in["40"]*4+["04(?=..[\D0])"]*64][-1]
+p=lambda g,n=99:g*-n or[[r.pop()%(x+4)or 0**n*4for x in[0]+r[:0:-1]]for*r,in zip(*p(g,n-1))]

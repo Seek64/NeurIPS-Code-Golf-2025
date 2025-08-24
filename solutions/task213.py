@@ -1,0 +1,1 @@
+p=lambda g:any(map(all,g))*[w*(len({*sum(g,r)})-2)for r in g if(w:=[*{*r}-{5,0}])]or[*zip(*p([*zip(*g)]))]

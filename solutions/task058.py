@@ -1,0 +1,1 @@
+p=lambda g:exec('x=y=d=0\ng[y][x]=3\nif[*(g+g[-1:]*3)[y-d-d%-4],0,3,0][x+(d^-d)+2]:d=-~d%4\nelse:x+=1+7%~d;y+=2-d&d-4#'*999)or g

@@ -1,1 +1,2 @@
-R=range(10);p=lambda g:[g:=[[(g[i][j],n)[i*j>0<n==g[i-1][j-1]and n in sum(g,[])[i*10+j::11]]for j in R][::-1]for i in R]for n in[0,*R]*10][-1]
+import re
+p=lambda g,n=23:-n*g or[*zip(*eval(re.sub(r'(([^0]).{34})(?=(0.{34})+\2)',r'\1\2+',str(p(g,n-1)[::-1]))))]

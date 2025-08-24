@@ -1,1 +1,1 @@
-R=range(9);p=lambda g:[[m[i%3*3][j%3*3]&m[i][j]for j in R]for i in R if(m:=[r for*r,in zip(*filter(any,zip(*g)))if sum(r)])]
+p=lambda g:[g:=[r[::3]for*r,in zip(*g)if any(r)]for _ in'xx']*0+[[c&d for c in a for d in b]for a in g for b in g]

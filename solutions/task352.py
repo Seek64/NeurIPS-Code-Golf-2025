@@ -1,1 +1,1 @@
-p=lambda g,n=-3:g*n or p([(g:=[x|(2in[g.pop(0)]+g[:1])for x in r])[::-1]for*r,in zip(*g)],n+1)
+p=lambda g,n=3:g*-n or[[r.pop()or 6>>d&1for d in[0]+r[:0:-1]]for*r,in zip(*p(g,n-1))]
