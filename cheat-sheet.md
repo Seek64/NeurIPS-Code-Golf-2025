@@ -54,6 +54,27 @@ If the first row is all black (which is often guaranteed by the generator), -2 b
 p=lambda g,h=0:[...for r in zip(*h or p(g,g))]
 ```
 
+Or,
+```python
+p=lambda g,*T:[...for r in zip(*
+```
+
+## Recursion alternative
+
+Same length for a simple recursion:
+
+```python
+p=lambda g,n=-3:g*n or[[...]for r in transform(p(g,n+1))]
+p=lambda g:[g:=transform([[...]for r in g])for _ in g][4]
+```
+
+But if you need to access the results of the recursion multiple times, the latter form becomes much shorter:
+
+```python
+p=lambda g,n=-3:g*n or(T:=transform(p(g,n+1))and[[...for c in zip(*T)]for r in T]
+p=lambda g:[g:=transform([[...for c in zip(*g)]for r in g])for _ in g][4]
+```
+
 ## 1-D Rotate right
 
 ```python
