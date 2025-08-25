@@ -1,0 +1,1 @@
+p=lambda g,n=-3:g*n or p(eval(str(g).replace(s:=str(max(max(g[:sum(g,[]).index(8)//10]),key=bool)),"0").replace("8",s,1))[::-1],n+1)
