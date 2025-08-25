@@ -1,1 +1,1 @@
-exec("p=lambda g:[[g "+"for g,h in zip(g,[g]+g)if g!=h][::2]"*2)
+exec("p=lambda g:[[g\nfor g,h in zip(g,[g]+g)if g!=h][::2]#"*2)
