@@ -1,0 +1,1 @@
+p=lambda g,n=0:g*all(2&~len({*r})for r in g)or p([*zip(*[r[(k:=n%10<max(r)*9-9):]+r[:k]for r in zip(*g)])],n+1)
