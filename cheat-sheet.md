@@ -64,10 +64,10 @@ p=lambda g,n=-3:g*n or[[...]for r in transform(p(g,n+1))]
 p=lambda g:[g:=transform([[...]for r in g])for _ in g][4]
 ```
 
-But if you need to access the results of the recursion multiple times, the latter form becomes much shorter:
+But if you need to access the results of the recursion multiple times, the latter form can be better:
 
 ```python
-p=lambda g,n=-3:g*n or(T:=transform(p(g,n+1))and[[...for c in zip(*T)]for r in T]
+p=lambda g,n=-3:g*n or p(transform([[...for c in zip(*g)]for r in g]),n+1)
 p=lambda g:[g:=transform([[...for c in zip(*g)]for r in g])for _ in g][4]
 ```
 
