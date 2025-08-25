@@ -1,1 +1,1 @@
-p=lambda g:min(l:=[[r[i%5:][:2]for r in g[i//5:][:2]]for i in b"\0"],key=l.count)
+p=lambda g:min(l:=[[r[i%6:i%7]for r in g[i%9:][:2]]for i in b"HuK"],key=l.count)
