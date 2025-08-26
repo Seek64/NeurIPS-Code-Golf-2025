@@ -1,1 +1,1 @@
-p=lambda g,k=-1:[[(e>0)*g[(k:=k+1)//50*9][k//5%2*9]for e in l]for l in g]
+p=lambda g,k=-1:[[e%~e&g[(k:=k+1)//50*9][k//5%2*9]for e in l]for l in g]
