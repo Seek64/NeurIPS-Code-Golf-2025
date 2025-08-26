@@ -1,1 +1,1 @@
-r=b"";p=lambda g:[[g[y][x]%5+5for x in r+b"			"]for y in r[:len(g)]]
+p=lambda g:g and[[g[1][x]%5+5for x in b"			"]]*3+g[3:4]+p(g[4:])
