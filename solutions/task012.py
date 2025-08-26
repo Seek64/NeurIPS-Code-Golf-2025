@@ -1,0 +1,1 @@
+import re;p=lambda g:[g:=eval(re.sub(r"0(?=.{%d}([^0]).{34}\1, (.), \1)"%x,f"\\{x%9%5}",str([*zip(*g[::-1])])))for x in b"+%"*4][-1]
