@@ -17,6 +17,13 @@ max(l:=sum(g,[]),key=l.count)
 [*filter(int,l)]
 ```
 
+## Remove duplicates from list without changing the order
+
+```python 
+[*{v:0for v in r}]
+[*dict(zip(r,r))]
+```
+
 ## Upscale 
 
 Upscale by 2. Still not optimal, see Problem 307.
