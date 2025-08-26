@@ -1,7 +1,5 @@
-from re import*
+import re
 def p(g):
- for p in(w:=sum(g,[])):w.count(p)>3<w[::-1].index(p)+w.index(p)-392<7>(c:=p)
- for n in[11,271,1]*4:
-  if x:=search(f'{c}{"."*n}([1-9])',g:=str(g)):v=int(x[1]);[g:=sub(f'([v{c}]{"."*n})[0{v}]',r'\1v',g)for _ in g]
-  *g,=zip(*eval(g)[::-1])
- return g
+	c=max("987643251",key=str(g).count)
+	for n in[11,271,0]*96:s="."*n;x=(re.search(c+s+'([1-9])',g:=str(g))or"00")[1];*g,=zip(*eval(re.sub(f'({c+s}({x+s})*)0',r"\1 "+x,g))[::-1])
+	return g
