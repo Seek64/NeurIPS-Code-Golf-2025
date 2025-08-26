@@ -84,6 +84,14 @@ p=lambda g:[g:=transform([[...for c in zip(*g)]for r in g])for _ in g][4]
 [g.pop()]+g
 ```
 
+# Non-zero testing
+
+Pysearch will find this of course, but when manually writing formulas, this is a nice math trick:
+```python
+(a>0)*...
+a%~a*...
+```
+
 # Regex
 
 Many draw task can be used with the following "rotate-and-replace" strategy.
