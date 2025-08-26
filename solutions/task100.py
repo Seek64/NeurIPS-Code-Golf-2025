@@ -1,1 +1,1 @@
-p=lambda g:[[max(range(1,10),key=sum(g,g).count)]*2]*2
+p=lambda g:[[max(range(1,10),key=[max({*r}&{*c})for r in zip(*g)for c in g].count)]*2]*2
