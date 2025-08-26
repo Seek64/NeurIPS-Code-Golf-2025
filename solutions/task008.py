@@ -1,1 +1,1 @@
-p=lambda g,k=-7:(c:=k*g)or[l[::-1]for*l,in zip(*p(g,k+2)[::-1])if(k:=k&max(l)-8)+any(l)or c.append(l)]+c
+p=lambda g,k=-7:(c:=k*g)or[l[::-1]for*l,in zip(*p(g,k+2))if(k:=k&max(l)-8)+any(l)or c.append(l)]+c
