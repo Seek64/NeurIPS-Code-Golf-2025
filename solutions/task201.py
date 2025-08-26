@@ -1,2 +1,1 @@
-F=filter
-def p(g):m=*F(any,[[(r[j],0)[4in{*r[:j+1]}&{*r[j:]}]for j in range(13)]for r in zip(*g)]),;l=sum(g,g);w=len(m);a,b,*_=l[l.index(4)+13::w+1];return[z:=[4]+w*[0]+[4],*[[a,*r[::1-2*(b in m[0])],b]for r in F(any,zip(*m))],z]
+def p(g):m=*filter(any,[[r[j]&~-(4in{*r[:j+1]}&{*r[j:]})for j in range(13)]for r in zip(*g)]),;l=sum(g,g);a,*_,b=l[l.index(4)+13:][:len(m)+2];return[z:=[4,*_,4],*[[a,*r[::1|-(b in m[0])],b]for r in zip(*m)if sum(r)],z]
