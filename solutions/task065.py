@@ -1,1 +1,1 @@
-p=lambda g:min(l:=[(a:=[r[:(N:=len(g)//2)]for r in g])[:N],a[-N:],(b:=[r[-N:]for r in g])[:N],b[-N:]],key=l.count)
+p=lambda g,k=0:[[min(r,key=sum(g,l).count)for*r,in zip(l[len(l)//2+1:],l)]for*l,in zip(*k or p(g,g))]

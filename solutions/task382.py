@@ -1,0 +1,1 @@
+p=lambda g,k=-3:k*g or(g:=[*map(list,zip(*p(g,k+1)))][::-1])*(set(L:=g[0])>{2}or any(g[-1]))or[a&2and[2]+(L:=[0]+L[:-1])[1:]or b&2and(L:=L[1:]+[0])[:-1]+[2]or L for a,*l,b in g]

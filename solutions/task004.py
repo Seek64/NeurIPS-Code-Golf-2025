@@ -1,3 +1,1 @@
-def p(g,w=2):
-	for r in g[::-1]:w=(w-3)*any(r)+2;del r[w<1and-~r.index(max(r))|w];r[:0]=0,
-	return g
+p=lambda g:[[r[any(b)>f]for*r,f in zip(a,[0]+a,[0]+b)]for a,b in zip(g,g[1:]+g)]

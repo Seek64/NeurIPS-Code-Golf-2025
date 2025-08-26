@@ -1,1 +1,1 @@
-p=lambda g:[[max(c)*~x%10*any(r)for*c,x in zip(*g,r)]for r in g]
+p=lambda g:[[e or(c>[0]*99<l)*2for*c,e in zip(*g,l)]for l in g]

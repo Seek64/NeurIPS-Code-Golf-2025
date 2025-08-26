@@ -1,2 +1,1 @@
-import re
-p=lambda g:[g:=eval(re.sub('(([^0])(, 0)+, )8',r'\1\2',str([*zip(*g[::-1])])))for _ in g][3]
+p=lambda g,k=-3:k*g or[exec("l[l.index(8)]=l[0]#"*l[0])or l for*l,in zip(*p(g,k+1))][::-1]

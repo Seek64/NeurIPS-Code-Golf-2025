@@ -1,1 +1,1 @@
-p=lambda g:[[-x%5^r.pop(0)*3for x in g.pop(5)]for r in g[:4]]
+p=lambda g:[[b*3^-a%5for b,a in l]for l in map(zip,g,g[5:])]

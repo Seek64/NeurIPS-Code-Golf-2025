@@ -1,1 +1,1 @@
-e=enumerate;p=lambda g:[[r[j]or 12257%~sum(c[:i]+3*r[:j])*3%7for j,[*c]in e(zip(*g))]for i,r in e(g)]
+p=lambda g,p=1:[(p:=p+sum(l)-min(l)*3)and[p-(p:=p-c)or 130169%p%7for c in l]for l in g]

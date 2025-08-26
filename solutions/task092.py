@@ -1,1 +1,1 @@
-p=lambda g,k=0:[g:=[[c+(k:=k^~-r.count(c)*c)%1or k for c in r]for*r,in zip(*g)]for _ in g][1]
+p=lambda g,k=0,c=0:[[l.count(e)>1and(c:=c^e)or e for e in l]for l in zip(*k or p(g,g))]

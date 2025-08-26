@@ -1,1 +1,1 @@
-p=lambda g,n=99:g*-n or[[r.pop()%(x+4)or 0**n*4for x in[0]+r[:0:-1]]for*r,in zip(*p(g,n-1))]
+p=lambda g,k=11:-k*g or[(a:=0)or[a:=b^b-0**k>>a&4for b in l][::-1]for*l,in zip(*p(g,k-1))]

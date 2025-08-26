@@ -1,1 +1,1 @@
-p=lambda g:[[x-r.pop(0)and 3for x in g.pop(7)]for r in g[:6]]
+p=lambda g:[[(a!=b)*3for a,b in l]for l in map(zip,g,g[7:])]

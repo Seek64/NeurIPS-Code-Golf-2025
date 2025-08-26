@@ -1,1 +1,1 @@
-p=lambda g:[[c for*h,c in zip(*g,r)if{*h}=={*r}]for r in g if[*{*r}][2:]]
+p=lambda g,k=0:[e for*e,in zip(*k or p(g,g))if({*g[0]}^{*g[-1]})&{*e}]

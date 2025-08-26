@@ -1,1 +1,1 @@
-p=lambda g:[[sorted({*(S:=sum(g,[]))},key=S.count)[i]]for i in(2,1,0)]
+p=lambda g:[[e]for e in sorted(range(10),key=sum(g,g).count)][8:5:-1]

@@ -1,1 +1,1 @@
-p=lambda g:g and[sum([[5]+3*[x+5]for x in g[1][1::4]],[])[1:]]*3+g[3:4]+p(g[4:])
+r=b"";p=lambda g:[[g[y][x]%5+5for x in r+b"			"]for y in r[:len(g)]]

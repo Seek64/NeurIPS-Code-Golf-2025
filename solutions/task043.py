@@ -1,1 +1,1 @@
-p=lambda g:[[c[0]+r[9]&v+2for*c,v in zip(*g,r)]for r in g]
+p=lambda g:[[e*l[-1]%23+l.pop(0)for e in g[0]]for*l,in g]

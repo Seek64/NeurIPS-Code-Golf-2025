@@ -1,2 +1,1 @@
-import re
-p=lambda g:[g:=[*zip(*eval(re.sub('0(.{31}2|..(1))',r'4\2%17\1',str(g[::-1]))))]for _ in g][7]
+p=lambda g,k=-3:g*k or[g:=[l.pop(0)or(k==2)*4+((k:=o)==1)*7for o in g]for*l,in zip(*p(g,k+1))][::-1]

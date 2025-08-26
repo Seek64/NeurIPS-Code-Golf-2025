@@ -1,1 +1,1 @@
-p=lambda g:eval("[[8,*r[2:],8]for r in zip(*"*2+"g)])]")
+p=lambda g,*k:[[8,*e[2:],8]for*e,in zip(*k or p(g,*g))]
