@@ -1,1 +1,1 @@
-p=lambda g,k=-7:(c:=k*g)or[l[::-1]for*l,in zip(*p(g,k+2))if(k:=k&max(l)-8)+any(l)or c.append(l)]+c
+p=lambda g,k=0:[*zip(*sorted(([k//8*k,k:=k+max(l)][any(l)],l)for*l,in zip(*k*g or p(g,1))))][1]

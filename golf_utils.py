@@ -1,32 +1,42 @@
 from zlib import compress
 
-def pack(src):
+
+def pack(src: bytes):
     """Given a python program as a bytes object, returns a possibly shorter python program"""
-    
-    compression_level = 9 # Max Compression
 
-    # We prefer that compressed source not end in a quotation mark
-    while (compressed := compress(src, compression_level))[-1] == ord('"'): src += b"#"
-
-    def sanitize(b_in):
+    def sanitize(b_in: bytes, delim: bytes):
         """Clean up problematic bytes in compressed b-string"""
         b_out = bytearray()
-        for b in b_in:
-            if   b==0:         b_out += b"\\x00"
-            elif b==ord("\r"): b_out += b"\\r"
-            elif b==ord("\\"): b_out += b"\\\\"
-            else: b_out.append(b)
-        return b"" + b_out
+        for b, b_next in zip(b_in, [*b_in[1:], 0]):
+            if b == 0:
+                if b_next in b"0123456789abcdef":
+                    b_out += b"\\x00"
+                else:
+                    b_out += b"\\0"
+            elif b == ord("\r"):
+                b_out += b"\\r"
+            elif b == ord("\\") and b_next in b"0123456789abfxnrtvuUN'\"\\":
+                b_out += b"\\\\"
+            elif b == ord("\n") and len(delim) == 1:
+                b_out += b"\\n"
+            elif bytes([b]) == delim:
+                b_out += b"\\" + delim
+            else:
+                b_out.append(b)
+        return bytes(b_out)
 
-    compressed = sanitize(compressed)
+    codes = [src]
 
-    delim = b'"""' if ord("\n") in compressed or ord('"') in compressed else b'"'
+    for compression_level in range(-1, 10):
+        compressed = compress(src, compression_level)
 
-    compressed = b"#coding:L1\nimport zlib\nexec(zlib.decompress(bytes(" + \
-        delim + compressed + delim + \
-        b',"L1")))'
-  
-    if len(compressed) < len(src):
-        return compressed
-    else:
-        return src
+        for delim in [b"'", b'"', b"'''"]:
+            codes.append(
+                b"#coding:L1\nimport zlib\nexec(zlib.decompress(bytes("
+                + delim
+                + sanitize(compressed, delim)
+                + delim
+                + b',"L1")))'
+            )
+
+    return min(codes, key=len)
