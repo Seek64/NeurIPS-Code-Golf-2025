@@ -15,7 +15,7 @@ def pack(src: bytes):
                     b_out += b"\\0"
             elif b == ord("\r"):
                 b_out += b"\\r"
-            elif b == ord("\\") and b_next in b"0123456789abfxnrtvuUN'\"\\":
+            elif b == ord("\\") and b_next in b"01234567abfxnrtvuUN'\"\\":
                 b_out += b"\\\\"
             elif b == ord("\n") and len(delim) == 1:
                 b_out += b"\\n"
