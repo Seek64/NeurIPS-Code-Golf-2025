@@ -1,1 +1,1 @@
-p=lambda g:[[c[c.count(1)+~i]for c in zip(*g)]for i in range(10)]
+p=lambda g:[*zip(*[sorted(c,key=1 .__gt__)for c in zip(*g)])]
