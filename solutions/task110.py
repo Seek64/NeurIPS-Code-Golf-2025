@@ -1,0 +1,1 @@
+import re;p=lambda g,n=-31:g*n or eval(re.sub("0(?=([^0)]{30}).*(.)\\1)","\\2",str([*zip(*p(g,n+1))][::-1])))
