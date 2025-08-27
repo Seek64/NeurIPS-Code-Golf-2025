@@ -1,2 +1,1 @@
-import re
-p=lambda g:[[int(re.search(r"([^0]), 0[^\]]*\1",str(g))[1])]]
+p=lambda g:[[i for i in range(1,10)if[*{r.count(i)for r in g}][2:]]]
