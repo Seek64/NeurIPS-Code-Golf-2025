@@ -1,1 +1,1 @@
-def p(g):i=-1;w=sum(g,[]);z=w.index(J:=max(w));K=len(g);return[[J*(z%K-(i:=i+1)%K in[Z:=z//K-i//K,-Z])for c in r]for r in g]
+exec("p=lambda g:[[max((f:=l+g[0])[x+y-Y]|f[x-y+Y]\nfor %s,l in enumerate(g)%s#"*3%(*"Y)x]y]",))
