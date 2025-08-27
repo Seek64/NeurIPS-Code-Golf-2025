@@ -1,1 +1,1 @@
-p=lambda g:[[i]for i in range(1,10)if[*{r.count(i)for r in g}][2:]]
+p=lambda g,i=1:-2%len({r.count(i)for r in g})*[[i]]or p(g,i+1)
