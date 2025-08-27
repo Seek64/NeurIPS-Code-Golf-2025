@@ -1,0 +1,1 @@
+p=lambda g,h=0,n=0:(g:=[*zip(*h or p(g,g))])[n:n+3]*(str(M:=[[*map(bool,r)]for r in g]).count(str(M[n:n+3])[1:-1])<2)or p(g,h,n+3)
