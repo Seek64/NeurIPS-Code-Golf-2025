@@ -1,0 +1,1 @@
+p=lambda g,n=-3,i=0:g*n or p([[P:=r.pop()or(P*-any(r)<any(c))<<i&2for c in g[::-1]]for*r,in zip(*g)if[P:=0,i:=sum(map(bool,r))>3or i*2+any(r)]],n+1)
