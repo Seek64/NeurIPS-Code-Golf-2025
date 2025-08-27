@@ -1,1 +1,1 @@
-p=lambda g:eval("[[g "+f"for g in g for _ in[*{{*'{g}'}}][5:]]"*2)
+p=lambda g:eval("[[g\nfor g in g for _ in[*{*'%r'}][5:]]#"%g*2)
