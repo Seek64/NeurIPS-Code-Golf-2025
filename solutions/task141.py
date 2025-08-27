@@ -1,1 +1,1 @@
-def p(g):R=range(w:=len(g));l=sum(g,[]);x,y=divmod(l.index(v:=max(l)),w);return[[v*(i+j==x+y or i-j==x-y)for j in R]for i in R]
+def p(g):i=-1;w=sum(g,[]);z=w.index(J:=max(w));K=len(g);return[[J*(z%K-(i:=i+1)%K in[Z:=z//K-i//K,-Z])for c in r]for r in g]
