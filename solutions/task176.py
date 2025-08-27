@@ -1,1 +1,1 @@
-p=lambda g:[(P:=[4,4,*g[0][:4]*2,2,4]*9)[6:6+(L:=len(g[0]))],P[:2*L:2],P[:L]]
+p=lambda g,o=2:[[-o+(o:=o+e)or(o%6<2)*4for e in l]*(o:=1)for l in g]
