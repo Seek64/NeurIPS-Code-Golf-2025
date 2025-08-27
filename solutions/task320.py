@@ -1,1 +1,1 @@
-p=lambda g:[[c[i]+6*(c[i:]+[1]<c[i::-1])for*c,in zip(*g)]for i in range(len(g))]
+p=lambda g:[*zip(*[r[:-(k:=r.count(2)//2)or 99]+k*[8]for*r,in zip(*g)])]
