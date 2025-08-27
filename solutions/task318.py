@@ -1,1 +1,1 @@
-p=lambda g:[[x+r.pop(0)and 3for x in g.pop(5)]for r in g[:4]]
+p=lambda g:[[any(x)*3for x in z]for z in map(zip,g,g[5:])]
