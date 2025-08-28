@@ -1,1 +1,1 @@
-p=lambda g,i=1:(w:=(T:=lambda g:[r for*r,in zip(*g)if i in r])(T(g)))*(T(w)==T(w)[::-1])or p(g,i+1)
+p=lambda g,i=1:(T:=lambda g:[r for*r,in zip(*g)if i in r])(w:=T(T(T(g))))*(w==w[::-1])or p(g,i+1)
