@@ -1,1 +1,1 @@
-p=lambda g,i=1:[*zip(*(w:=eval((s:=f'[r for*r,in zip(*%s)if {i}in r]')%s%s%g)))]*(w==w[::-1])or p(g,i+1)
+p=lambda g,i=1:(w:=(T:=lambda g:[r for*r,in zip(*g)if i in r])(T(g)))*(T(w)==T(w)[::-1])or p(g,i+1)
