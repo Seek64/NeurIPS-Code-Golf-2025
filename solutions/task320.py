@@ -1,1 +1,1 @@
-p=lambda g:[*zip(*[r[:-(k:=r.count(2)//2)or 99]+k*[8]for*r,in zip(*g)])]
+p=lambda g:[*zip(*[r[:-(k:=sum(r)//4)or 99]+k*[8]for*r,in zip(*g)])]
