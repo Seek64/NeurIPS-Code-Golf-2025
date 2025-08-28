@@ -1,1 +1,1 @@
-exec(f'p=lambda g:[[{"g\nfor g in "*2}[g]*3]#'*2)
+exec('p=lambda g:[[%s[g]*3]#'%("g\nfor g in "*2)*2)
