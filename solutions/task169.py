@@ -1,1 +1,1 @@
-p=lambda g,k=11,o=999:-k*g or p([(a:=0)or[a:=c and[5-sum(g,g).count(c),max(o:=o-1,c,a)][k>0]for c in r][::-1]for*r,in zip(*g)],k-1,o)
+p=lambda g,k=7,o=99:-k*g or p([(a:=0)or[a:=c and[5-sum(g,g).count(c),max(o:=o-1,c,a)][k>0]for c in r][::-1]for*r,in zip(*g)],k-1,o)
