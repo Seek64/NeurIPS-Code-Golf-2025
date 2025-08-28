@@ -1,0 +1,1 @@
+p=lambda g,*p:[[p for*c,e in zip(*g,L)if[p:=e or p][any(c):]]+[p]for L,l in zip(g,g[1:]+[p])if~-any(l)]
