@@ -1,6 +1,1 @@
-def p(g):
- for i in range(100):
-  q=[i+i//10]
-  for x in q:q+=[k for o in b"AKMW"if~-((k:=x+o-76)in q)*[*[*g,11*[0]][k//11],0][k%11]]
-  g[i//10][i%10]>>=2-(6==len(q))
- return g
+p=lambda g,k=11,o=99:-k*g or p([(a:=0)or[a:=c and[1+(6==sum(g,g).count(c)),max(o:=o-1,c,a)][k>0]for c in r][::-1]for*r,in zip(*g)],k-1,o)
