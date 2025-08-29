@@ -1,1 +1,1 @@
-p=lambda g:[g:=[r[r.index(w)+1:]for*r,in zip(*g[::-1])if w in r]for w in[min(sum(g,[]),key=lambda p:len({(r+[p]).index(p)for r in g}))]*4][3]
+def p(g,w=1):h=g;[h:=[r[r.index(w)+x:]for*r,in zip(*h[::-1])if w in r]for x in[0]*4+[1]*4];return h*any(h)or p(g,w+1)
