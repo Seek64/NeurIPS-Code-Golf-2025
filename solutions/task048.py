@@ -1,1 +1,1 @@
-p=lambda g:[[8&(o:=hash((*b"f7%a:d"%g,)))%b'I+Cp:Izz}kds|znz|&qtPMa;~nL}.UsDen'[o%41]%~2]]
+p=lambda g:[[(o:=hash((*b"%a4A]o"%g,)))//b'6 (ZA"9gZ<@7(Y		"<[zm&#;'[o%39]%-3&8]]
