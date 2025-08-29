@@ -1,1 +1,2 @@
-import re;p=lambda g:[g:=eval(re.sub(k*"0, "+"(?=5.{34}[^0])",k*f"{k+5},",f"{g}"))for k in b""][5]
+import re
+p=lambda g:eval(re.sub('([^5]..5)((, 0)+)',lambda x:x[1]+(k:=len(x[2])//3)*f',{5+k}',str(g)))
