@@ -1,1 +1,1 @@
-T=0,1,2;p=lambda g:[[5*(i==j^(j|len({*sum(g,[])})^1)%3)for j in T]for i in T]
+T=1,2,4;p=lambda g:[[5*(i^25%len({*"%r"%g})*j%5<2)for j in T]for i in T]
