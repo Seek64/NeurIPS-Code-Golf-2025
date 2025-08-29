@@ -1,1 +1,1 @@
-p=lambda g:[[sum({*sum(g,[-x])})for x in r if x]for r in g if sum(r)]
+p=lambda g:[[sum({*sum(g,[-x])})for x in r if x]for r in g if[r]>g]
