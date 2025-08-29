@@ -1,1 +1,1 @@
-p=lambda g:[g:=[f for*f,in zip(*g)if k in f]for k in[max({*sum(g,[])},key=sum(g[-2:]+g,g).index)]*2][1]
+p=lambda g,*G:[f for*f,in zip(*G or p(g,*g))if max(sum(g,f),key=sum(g[-2:]+g,g).index)in f]
