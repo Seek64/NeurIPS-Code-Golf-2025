@@ -1,1 +1,1 @@
-p=lambda g:max([[g[j//7+i][j%7:][:3]for i in(0,1,2)]for j in range(49)],key=lambda l:0in l[0]or f"{l}".count("1"))
+exec(f"p=lambda g:max([g[0][0]*[str(g).count('1'),g]{'for*g,in map(zip,g,g[1:],g[2:])'*2}])[1]")
