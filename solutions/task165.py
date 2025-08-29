@@ -1,0 +1,1 @@
+p=lambda g:[*zip(*[r*(len({*r})<3)or r[:-(k:=r[::-1].index(max(r,key=lambda i:f"{g[:13]}".find("%d, "%i*3))))]+k*[max(r[-k:])]for*r,in zip(*g)])]
