@@ -1,1 +1,1 @@
-p=lambda g:[g:=[[c%~c&max({*w}-{5})or c for*w,c in zip([0]+r,r[1:]+[0],g[0],r)]for r in g]for _ in g][9]
+p=lambda g:[g:=[[sum({*w*c}-{5})or c for*w,c in zip([0]+r,g[0],r)][::-1]for r in g]for _ in g][9]
