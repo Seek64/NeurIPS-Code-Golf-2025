@@ -1,1 +1,1 @@
-import re;p=lambda g:[[int(re.search(r"([^0]), \1, \1.{%d}\1.....\1"%(3*len(g[0])-5),"%s"%g)[0][-4])]]
+p=lambda g:[[max(i*(str(g).count(f'{i}, '*3)<2)for i in sum(g,[]))]]
