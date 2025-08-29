@@ -1,4 +1,2 @@
 import re
-def p(g,i=18,c=1):
- while i:i-=1;s,n=re.subn("5"+i//2*", 5",f"{c}"+i//2*f",{c}",f"{[*zip(*g)]}");g=eval(s);c=(c+3*n)%5
- return g
+p=lambda g,i=43,c=1:-i*g or p(eval(s:=re.sub(i//4*", 5",i//4*f",{c}",S:=f"{[*zip(*g[::-1])]}")),i-1,(c+3*(s!=S))%5)
