@@ -1,1 +1,1 @@
-p=lambda g:[[x for x in r[::-1]if x]for r in g if[r]>g]
+p=lambda g:[[*filter(int,r[::-1])]for r in g if[r]>g]
