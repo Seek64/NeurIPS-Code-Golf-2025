@@ -1,0 +1,1 @@
+def p(g):*l,=b'%r'%g;w,x,y=map(l.index,b"]34");w+=2;l[x]=48;l[x+(y%w-x%w|16)//17*3+(y//w-x//w|16)//17*w]=51;return eval(bytes(l))
