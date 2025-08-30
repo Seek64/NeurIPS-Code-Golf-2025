@@ -1,1 +1,1 @@
-p=lambda g:[g:=[*zip(*[[*map(min,*r)]for r in zip(zip(*g),g[:2]+g[::-1],g)])]for _ in g][9]
+p=lambda g:[g:=[[*map(min,*r)]for r in zip(zip(*g),g[:2]+g[::-1],g)]for _ in g][9]
