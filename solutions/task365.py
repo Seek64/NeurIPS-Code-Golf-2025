@@ -1,1 +1,1 @@
-R=range(10);p=lambda g:max([[x[j:j+[*g[i][j:],0].index(0)]for x in g[i:i+[*[*zip(*g)][j][i:],0].index(0)]]for i in R for j in R],key=lambda m:sum(m,[]).count(2))
+p=lambda g:max((all(v:=sum(m:=[l[p%9:p%13]for l in g[p%8:p%11]],g)),v.count(2),len(v),m)for p in range(8**5))[3]
