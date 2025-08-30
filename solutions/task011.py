@@ -1,6 +1,1 @@
-def p(g,s=range(18)):
-	for u in s:
-		k=[]
-		for v in 0,1,2:w=g[u%9//3*4+v];n=u%3*4;k+=w[n:n+3];w[n:n+3]=[s[u%9]]*3
-		if 6%len({*k}):s=k
-	return g
+r=range(11);p=lambda g:min(("8"in str(t:=[[[5,g[y//4+p%3*4][x//4+p//4*4]][x%4<3>y%4]for x in r]for y in r]),t)for p in r)[1]
