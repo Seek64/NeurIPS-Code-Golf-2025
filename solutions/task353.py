@@ -1,1 +1,1 @@
-def p(g):*l,=b'%r'%g;w,x,y=map(l.index,b"]34");w+=2;l[x]=48;l[x+(y%w-x%w|16)//17*3+(y//w-x//w|16)//17*w]=51;return eval(bytes(l))
+p=lambda g,k=-3,*t,r=[]:k*g or[t:=l[::-1]for l in zip(*p(g,k+1))if{4}-{*t}or(r:=[t:=l])*0]+r
