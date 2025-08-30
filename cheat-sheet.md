@@ -55,6 +55,13 @@ If the first row is all black (which is often guaranteed by the generator), -2 b
 [...for r in g if[r]>g]
 ```
 
+If you have a conjunction of two `any`, then consider using:
+
+```python
+any(r)*any(c)
+(r>[0]*99<c)
+```
+
 ## Depth 2 Recursion
 
 ```python
