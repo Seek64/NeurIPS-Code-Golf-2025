@@ -1,0 +1,1 @@
+p=lambda g,R=0:[[[x,(r+r)[i:=i-1]][0<x!=g]for x in r]for r in g if(i:=R)==any(r)or[R:=R or-r[::-1].index(g:=max(r))+r.index(g)+len(r)]]
