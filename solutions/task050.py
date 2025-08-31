@@ -1,1 +1,1 @@
-p=lambda g,k=0:[g:=[[c|(k:=k^sum(r)//16*c*6%9)>>c for c in r]for*r,in zip(*g)]for _ in g][1]
+p=lambda g,h=0,k=0:[[c|(k:=k^sum(r)*c*6%9%6)>>c for c in r]for*r,in zip(*h or p(g,g))]
