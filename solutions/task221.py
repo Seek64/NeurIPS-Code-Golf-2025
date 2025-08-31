@@ -1,0 +1,1 @@
+def p(g):R=range(w:=sum(g,g).count(0)*3);return[[g[i%3][j%3]*(i//3*w+j<27-w)for j in R]for i in R]
