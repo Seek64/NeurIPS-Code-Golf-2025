@@ -1,1 +1,1 @@
-p=lambda g:[s[~r.index(1)::-1][:5]for r,s in zip(g,g[::-1])if 1in r]
+p=lambda g:[s[~r.index(1)::-1][:5]for r in g*1if 1in[s:=g.pop()]+r]
