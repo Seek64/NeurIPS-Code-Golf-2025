@@ -1,1 +1,1 @@
-p=lambda g:[g:=[[max(r[i::min(range(4,21),key=lambda x:len({*g[0][1::x]}-{0})+len({*g[4][::x]}-{0}))])for i in range(21)]for*r,in zip(*g[::-1])]for _ in g][3]
+R=range(21);p=lambda g:[g:=[[max(r[i::min(R[4:],key=lambda x:len([*{*g[0][1::x]}-{0},*{*g[4][::x]}-{0}]))])for i in R]for*r,in zip(*g[::-1])]for _ in g][3]
