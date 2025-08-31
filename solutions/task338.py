@@ -1,1 +1,1 @@
-p=lambda g,n=59:g*-n or p([[[w|x&4-w,3>>w][n<1]for w,x in zip(r,[4]+r)]for*r,in zip(*g[::-1])],n-1)
+p=lambda g:[(c:=0)or[(c:=e+80-c>>c&9-e)%2*3for e in l]for l in g]
