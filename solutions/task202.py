@@ -1,0 +1,1 @@
+p=lambda g,n=-3,P=[]:g*n or[P:=[y*(len({*r+P,0})>2-x)for x,y in zip(P+r,r)]for*r,in zip(*p(g,n+1))][::-1]
