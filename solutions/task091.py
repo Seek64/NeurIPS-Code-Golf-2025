@@ -1,1 +1,1 @@
-p=lambda g,n=-3,X=[]:g*n or[r[::-1]for*r,in zip(*p(g,n+1))if(X:=X+[5in r])][X.index(1)-n%2:]
+p=lambda g,k=46:~k*g or p([*zip(*g[(5in g[k%2-2])-2::-1])],k-1)
