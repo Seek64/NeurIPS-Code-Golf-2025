@@ -1,0 +1,1 @@
+p=lambda g,k=17:-k*g or p([[[[*{*r,*c}-{v},v][0]for c in g],r][k>0]for*r,in zip(*g)if("%d, "%(v:=max(l:=sum(g,g),key=l.count))*3)[:7]in(k//2+3>len({*r}))*f"{r}"],k-1)
