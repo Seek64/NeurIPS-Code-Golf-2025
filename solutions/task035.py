@@ -1,1 +1,1 @@
-p=lambda g,k=-3:k*g or[exec("l[l.index(8)]=l[0]#"*l[0])or l for*l,in zip(*p(g,k+1))][::-1]
+p=lambda g,k=-3:k*g or[[l[k*9+(k:=e)!=8]or e for e in l]for*l,in zip(*p(g,k+1))][::-1]
