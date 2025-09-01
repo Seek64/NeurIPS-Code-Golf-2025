@@ -1,1 +1,1 @@
-def p(g):R=range(w:=sum(g,g).count(0)*3);return[[g[i%3][j%3]*(i//3*w+j<27-w)for j in R]for i in R]
+def p(g):w=sum(g,g).count(0);return[(r*(9+~i*w)+[0]*99)[:3*w]for i in range(w)for r in g]
