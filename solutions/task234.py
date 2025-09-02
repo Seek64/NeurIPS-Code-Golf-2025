@@ -1,0 +1,1 @@
+p=lambda g,k=-3,*m:k*g or p([*zip(*[l for l in g if[m:=m or max(l)][0<sum(l)==max(l)!=m:]or g.append(g[0])])][::-1],k+1)
