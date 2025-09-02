@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=eval(re.sub(f"{min(l:=sum(g:=[*zip(*g[::-1])],()),key=l.count)}"+r"(?=, ([^0]).{%d}\1)"%(3*len(g[0])-2)*s,s*r"\1"or"0",f"{g}"))for s in[1]*7+[0]][7]
+p=lambda g,h=0:[[[x*any(c),max(c)][sum(g,g).count(x)<30]for*c,x in zip([0]+r,r[1:]+[0],r)]for*r,in zip(*h or p(g,g))]
