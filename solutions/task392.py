@@ -1,2 +1,2 @@
-r=range(10)
-p=lambda g,k=31:-k*g or p([[g[y][x]|g[y][min(x+(e:=3-(f"0, {max(sum(g,[]))}, "*2in"%a"%g)),9)]*all(l[x:x+e]==e*[0]for*l,in g[max(y-e+1,0):y]+g[y+1:y+e])or 0**k*5for y in r]for x in r][::-1],k-1)
+R=range(10)
+p=lambda g:[[[w:=max(max(g)),5,5][min([max(abs(x-X),abs(y-Y))for X in R for Y in R if g[Y][X]])%(3-(f'0, {w}, '*2in'%s'%g))]for x in R]for y in R]
