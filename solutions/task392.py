@@ -1,2 +1,2 @@
 r=range(10)
-p=lambda g,k=31:-k*g or p([[g[y][x]|(g[y]+[0]*3)[x+(e:=3-(f"0, {max(sum(g,[]))}, "*2in"%a"%g))]*all(l[x:x+e]==e*[0]for*l,in g[max(y-e+1,0):y]+g[y+1:y+e])or 0**k*5for y in r]for x in r][::-1],k-1)
+p=lambda g,k=31:-k*g or p([[g[y][x]|g[y][min(x+(e:=3-(f"0, {max(sum(g,[]))}, "*2in"%a"%g)),9)]*all(l[x:x+e]==e*[0]for*l,in g[max(y-e+1,0):y]+g[y+1:y+e])or 0**k*5for y in r]for x in r][::-1],k-1)
