@@ -1,0 +1,1 @@
+p=lambda g,n=11,k=120:-n*g or p([(a:=0)or[a:=c%~c&[max(a,c,k:=k-1),2-(c+sum(w:=sum(g,[]))%1982in[51,86]or(F:=w.count)(c)==max(F(k)for k in w if k))][n<1]for c in r]for r in zip(*g[::-1])],n-1,0)
