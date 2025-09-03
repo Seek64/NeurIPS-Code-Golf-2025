@@ -1,1 +1,1 @@
-p=lambda g,N=0:[g:=[[N+(N:=all(c)*(I:=(x:=r[i])in r[i+1:])*x)|x*(I|all(c)|any(min(g)))for i,c in enumerate(g)]for*r,in zip(*g)][::-1]for _ in g][3]
+p=lambda g,N=0:[g:=[[N+(N:=all(c)*(I:=(x:=r.pop(0))in r)*x)|x*(I|all(c)|any(min(g)))for c in g]for*r,in zip(*g)][::-1]for _ in g][3]
