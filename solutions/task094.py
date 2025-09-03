@@ -1,2 +1,2 @@
 import re
-def p(g):m=eval(re.sub("(%s.{79}1, 8, )8, 8, 1"%(5*"1, "),r"\1 6,8,1","%s"%g));return[[-(-r[i]|2*(6in(*r,*[*zip(*m)][i])))for i in range(15)]for r in m]
+def p(g):m=eval(re.sub("8(?=.{52}1.{43}1, 1)","6",str(g)));return[[v+6%-v*(6in r+c)for*c,v in zip(*m,r)]for r in m]
