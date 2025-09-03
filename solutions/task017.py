@@ -1,1 +1,1 @@
-R=range(21);p=lambda g:[g:=[[max(r[i::min(R[4:],key=lambda x:len([*{*g[0][1::x]}-{0},*{*g[4][::x]}-{0}]))])for i in R]for*r,in zip(*g[::-1])]for _ in g][3]
+import re;p=lambda g,n=-23:g*n or eval(re.sub("0(?=([^0)]{15}).*(.)\\1)","\\2",str([*zip(*p(g,n+1))][::-1])))
