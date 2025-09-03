@@ -1,1 +1,1 @@
-p=lambda g,k=0:[g:=[[max({*r[i:]}&{r[0]*t,c})for i,c in enumerate(r)]for*r,in zip(*g[::-1])if k|(k:=k^all(r))|t]for t in[0]*4+[1]*4][7]
+p=lambda g,k=99:-k*g or p([[g:=e or(l[0]==g<k<19)*l[0]for e in l[::-1]]for*l,in zip(*g[0in g[0]:])],k-1)
