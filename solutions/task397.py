@@ -1,1 +1,1 @@
-def p(g):x=648;exec(x*"x-=1;j=x%9\nif x%8<2*len(l:={*g[i:=x//72][j:j+2]+g[i+1][j:j+2]})*all(l):g[i+2+x%8//2][j+x%2]=3\n");return g
+p=lambda g,x=648:g[:exec(x*"x-=1;j=x%9\nif x%8<2*len(l:={*g[i:=x//72][j:j+2]+g[i+1][j:j+2]})*all(l):g[i+2+x%8//2][j+x%2]=3\n")]
