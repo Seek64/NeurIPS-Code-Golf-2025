@@ -1,1 +1,1 @@
-p=lambda g:(S:=sum(g,P:=[]),k:=S.count)and[*zip(*[P:=[c]*k(c)+[0]*len(P)for c in sorted({*S},key=k)[::-1]])]
+p=lambda g,*P:[*zip(*[P:=-n*c+[0]*len(P)for n,*c in sorted((-sum(g,g).count(e),e)for e in{*sum(g,[])})])]
