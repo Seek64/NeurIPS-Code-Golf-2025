@@ -1,1 +1,1 @@
-p=lambda g:(g[-2-len(g)%2:][:2]+g[:-2],[r[-2-len(g[0])%2:][:2]+r[:-2]for r in g])[max(map(sum,g))>7]
+p=lambda g:max(map(sum,g))<8and g[-2-len(g)%2:][:2]+g[:-2]or[*zip(*p([*zip(*g)]))]
