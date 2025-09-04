@@ -1,0 +1,1 @@
+p=lambda g,x=0:(G:=[(x%3*(i//(H:=x%2+2))*[0]+g[i%H])[:10]for i in range(10)])*(G[:5]==g[:5])or p(g,x+1)
