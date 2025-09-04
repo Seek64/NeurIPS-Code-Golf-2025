@@ -1,1 +1,1 @@
-p=lambda g:[[x|r[5]*(y>x)for x,y in zip(r,s[:6]*3)]for r,s in zip(g,g[:6]*3)]
+p=lambda g,p=-1:[[e|l[5]*(e<g[(p:=p+1)//17%6][p%17%6])for e in l]for l in g]
