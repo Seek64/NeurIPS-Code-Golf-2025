@@ -1,2 +1,2 @@
 import re
-p=lambda g:[*zip(*eval(re.sub('0(?=, [47].{25}[47])','7',str(g[18423:]or p(g*2)))))][::-1]
+p=lambda g:g[36855:]or[*zip(*eval(re.sub('0(?=, [47].{25}[47])','7',str(p(g*2)))))][::-1]
