@@ -1,1 +1,1 @@
-S="[::-1]for*b,a in zip(*g,g)]";exec(f"p=lambda g:[a+b{S}+[b+a{S}[::-1]")
+p=lambda g:(w:=g+[*zip(*g)][::-1])+[k+[*w.pop()][::-1]for*k,in w*1]
