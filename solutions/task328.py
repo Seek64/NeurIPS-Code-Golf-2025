@@ -1,1 +1,1 @@
-e=enumerate;p=lambda g:[[(S:=sum(sorted([(X:=x-i)**2+(Y:=y-j)**2,~max(X**2,Y**2)%2*c]for x,r in e(g)for y,c in e(r)if c),[]))[1]*(S<[S[2]])for j,_ in e(g)]for i,_ in e(g)]
+e=enumerate;p=lambda g:[[(S:=sum(sorted([(X:=x-i)*X+(Y:=y-j)*Y,~max(X*X,Y*Y)%2*c]for x,r in e(g)for y,c in e(r)if c),[]))[1]*(S<[S[2]])for j,_ in e(g)]for i,_ in e(g)]
