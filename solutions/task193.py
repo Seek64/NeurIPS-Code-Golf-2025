@@ -1,1 +1,1 @@
-p=lambda g,*G:[[w&max(k)for*k,w in zip([0]+r,r[1:]+[0],r)]for*r,in zip(*G or p(g,*g))]
+p=lambda g,*G:[[r.pop(0)&(b|[*r,0][0])for b in[0]+r[:-1]]for*r,in zip(*G or p(g,*g))]
