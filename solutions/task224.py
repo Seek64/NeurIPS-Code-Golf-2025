@@ -1,2 +1,2 @@
-E=enumerate
-def p(g):l=sum(g,[]);w=len(g[0]);a,y,z,b=[i for i,n in E(l)if n==5];a//=w;b//=w;y,z=sorted([y%w,z%w]);return[[(c,max({*l}-{5}))[i in(a+1,b-1)and y<j<z or j in(y+1,z-1)and a<i<b]for j,c in E(r)]for i,r in E(g)]
+import re
+p=lambda g,n=-3:n*g or p(eval(re.sub(r"(5.*?\).*?%s.,)([^)]*)%s(?=.*([^)05]),)"%(x:="(?=(.{%d})*5)"%(len(g)*3+2),x),r"\1*[\5]*len([\3]),",str([*zip(*g[::-1])]),1)),n+1)

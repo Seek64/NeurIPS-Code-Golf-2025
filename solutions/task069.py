@@ -1,2 +1,6 @@
-import re;r=re.sub
-def p(g):S=r("[^1-79]",X:="(.)",G:=str(g)).strip(X);h=r(D:="[1-79]","0",G);[h:=r(r(D,"8",S),r(r"\(..",r"\\g<%d>",S)%(*range(1,S.count(X)+1),),h)for _ in g];return eval(h)
+R=range(100)
+def p(g):
+ f=sum(g,[]);P=[[i,f[i]]for i in R if f[i]%8]
+ for i in R:
+  for j,x in(f[i]==8)*P:f[j],f[i+j-P[0][0]]=0,x
+ return[f[i:i+10]for i in R[::10]]

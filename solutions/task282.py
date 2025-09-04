@@ -1,2 +1,1 @@
-import re
-p=lambda g:eval(re.sub('0, ([^0]), 0',r'2^\1,78%\1,2^\1',str([*zip(*g[9:]or p(g*2))])))
+p=lambda g,n=3:-n*g or p([[y^-x&5-y%(n+5)for x,y in zip([0]+r,r)]for*r,in zip(*g[::-1])],n-1)

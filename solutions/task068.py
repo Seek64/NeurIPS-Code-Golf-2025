@@ -1,1 +1,1 @@
-p=lambda g,i=88:[[[v:=min(l:=3*sum(g,[]),key=l.count),(v in(3*l[(i:=i+1):i+29])[::10])*2][e!=v]for e in c]for c in g]
+p=lambda g,n=7:[[y*(sum(g,g).count(y)-7*n<9)or(x>0<n)*2for x,y in zip([0]+r,r)]for*r,in-n*g or zip(*p(g,n-2)[::-1])]

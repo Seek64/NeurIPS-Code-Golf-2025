@@ -1,1 +1,1 @@
-import re;p=lambda g,k=7:-k*g or p(eval(re.sub(("0(?=.{%d}2)"%(13-k%2*6),"2")[k<4],"00006783"[k],f"{[*zip(*g[::-1])]}")),k-1)
+p=lambda g,x=[[0]*5]:[[l+7&(i-k or~j)-7for l,k,i,j in zip(q[1:]+[0],[0]+q,s[1:]+[0],[0]+s)]for q,s in zip(x+g,g[1:]+x)]

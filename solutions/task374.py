@@ -1,2 +1,1 @@
-import re
-p=lambda g,i=43,c=1:-i*g or p(eval(s:=re.sub(i//4*", 5",i//4*f",{c%5}",S:=f"{[*zip(*g[::-1])]}")),i-1,c+3*(s!=S))
+p=lambda g,c=1,i=51:-i*g or p([*zip(*eval(str(g).replace(i//5*", 5",i//5*f", {c}")))][::-1],7&c*9>>(str(c)in str(g)),i-1)

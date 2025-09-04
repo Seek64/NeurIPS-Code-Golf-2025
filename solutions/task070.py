@@ -1,1 +1,1 @@
-p=lambda g,P=0:[[x-x%~(8in r)%~(P:=-~P*(8in[P*8]+c))*2for*c,x in zip(*g,r)]for r in g]
+p=lambda g:[[x|-x&max({*c,hash((*c,))%709}&{*r})%6for*c,x in zip(*g,r)]for r in g]

@@ -1,1 +1,1 @@
-def p(g):k=len(g);w=sum(g,[]);i=j=-1;a,b,_=[i for c in w if(i:=i+1)*c];return[[w[b]*(max(abs((j:=j+1)%k-b%k),abs(j//k-b//k))%abs(b%k-a%k)<1)for _ in g]for _ in g]
+def p(g):f=sum(g,[]);a=f.index;x=a(m:=max(f));y=a(m,x+1);R=range(l:=len(g));return[[m*(max(i-y//l,j-y%l,key=abs)%(y%l-x%l)==0)for j in R]for i in R]

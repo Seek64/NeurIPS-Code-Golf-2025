@@ -1,1 +1,2 @@
-p=lambda g:[*zip(*[r*(len({*r})<3)or r[:-(k:=r[::-1].index(max(r,key=lambda i:f"{g[:13]}".find("%d, "%i*3))))]+k*[max(r[-k:])]for*r,in zip(*g)])]
+import re
+p=lambda g,n=-89:n*g or p(eval(re.sub(r'(([1-9])(?=(.{58}\2){3}).*(?=\2)(?=(.{62})*(?!\2|0)(\d))(.{62})*)0',r'\1\5',str(g))),n+1)

@@ -1,1 +1,2 @@
-p=lambda g,n=-3:g*n or p(eval(str(g).replace(s:=str(max(max(g[:sum(g,[]).index(8)//10]),key=bool)),"0").replace("8",s,1))[::-1],n+1)
+import re
+p=lambda g,n=-3:n*g or p(eval(re.sub("([1-9])((.{32})+?[^)]+?)8",r"0\2\1",str([*zip(*g[::-1])]))),n+1)

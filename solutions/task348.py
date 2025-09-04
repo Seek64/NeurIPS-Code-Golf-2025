@@ -1,2 +1,1 @@
-import re
-p=lambda g:[g:=eval(re.sub("0(?=.{%d}(.{6})?(7|8))"%(3*len(r)-2),r"15^\2",str(g)))for r in 2*g][9]
+p=lambda g,n=-13:n*g or p([[x|-y%15for x,y in zip(r,s[1:]+[0])][::-1]for r,s in zip(g,g[1:]+g[-1:])],n+1)

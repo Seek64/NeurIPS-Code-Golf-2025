@@ -1,1 +1,1 @@
-p=lambda g,k=0:[*zip(*sorted(([k//8*k,k:=k+max(l)][any(l)],l)for*l,in zip(*k*g or p(g,1))))][1]
+p=lambda g,*n:sorted(zip(*n or p(g,*g)),key=lambda r,u=[]:u.extend(r)or any(r)/2or 8in u)

@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=eval(re.sub(*s,f"{[*zip(*g[::-1])]}"))for s in[("0(?=..[\D9])","9")]*44+[("1(?=..[03])","3")]*7+["90"]][-1]
+p=lambda g,n=51:-n*g or p([[[(y|2&x%3-y)%(n+4),y|x&4-y][n>4]for x,y in zip([4]+r,r)]for*r,in zip(*g[::-1])],n-1)

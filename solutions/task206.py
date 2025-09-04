@@ -1,1 +1,4 @@
-def p(g):w=len(g[i:=0]);l=sum(g,[])+99*[0];m=max([x for k in range(120)if~-(5in(x:=(3*l[k:k+3*w-1])[::w]))],key=sum);x=l.index(5);exec(3*"g[x//w-1+i][x%w-1:x%w+2]=m[i::3];i+=1;");return g
+def p(g):
+ t=sum(g,[]).index(5);l=len(g[0])
+ for r,a in zip(g[t//l-1:][:3],[[x for*c,x in zip(*g,r)if{*c}-{0,5}]for r in g if{*r}-{0,5}]):r[t%l-1:t%l+2]=a
+ return g

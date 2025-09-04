@@ -1,1 +1,1 @@
-def p(g):w,*L=len(g),3;k=2-w%2;g=[L*k]*k;exec('W=len(g);g[:]=L*W,[0]*~-W+L,*zip(*g[::-1]);'*(w-k));return g
+p=lambda g:g and[[3]*len(g),*(g[1:]and[[3,3]*(len(g)<3)+[*g[0][1:],3]]),*zip(*p([*zip(*g[2:])])[::-1])]

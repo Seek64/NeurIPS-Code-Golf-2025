@@ -1,1 +1,1 @@
-p=lambda g,p=1:[(p:=p+sum(l)-min(l)*3)and[p-(p:=p-c)or 130169%p%7for c in l]for l in g]
+p=lambda g,i=0:[[max(x,(i:=i+x)*9%(i^20)%7)for x in r]for r in g if[i:=i%8+r[0]%5]]

@@ -1,2 +1,1 @@
-import re
-p=lambda g:[g:=eval(re.sub("0(?=(%s.{28})([2-9]))"%s,r"\2",f"{[r[::-1]for r in g[::-1]]}"))for s in["..|..0"]*5+[".{60,66}|"]][5]
+p=lambda g,n=0,*q:[(q:=[x or(1in{*q[:i+1]}&{*q[i:]})*~-sum({*q})for i,x in enumerate(r)])for r in(n or p(g,g))[::-1]]

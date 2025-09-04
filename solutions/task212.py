@@ -1,2 +1,1 @@
-import re
-p=lambda g,n=-19:n*g or eval(re.sub('(5[^)]*(1), 0|5[^)]*0(?=, (2)))',r'\1+\2\3',str([*zip(*p(g,n+1)[::-1])])))
+p=lambda g,n=-1,d=[0]*10:n*g or p([(d:=[x or(y%2==(5in d))*y%5for x,y in zip(r,d)]+d)[:10]for r in g[::-1]],n+1)

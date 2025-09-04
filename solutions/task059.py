@@ -1,5 +1,2 @@
-def p(g):
-	*G,=b'%r'%g
-	for i,s in zip(L:=b"\0#&)FIL",S:=[sum(G[k+i*4+2]for k in L)for i in L]):
-		for k in L:G[k+i*4+2]=sorted({*G}-{53})[2+s//max(S)]
-	return eval(bytes(G))
+R=range(11)
+p=lambda g:[[(g[i][j]==5)*5or(max(l:=[sum(sum(r[i%3*4:][:3])for r in g[i//3*4:][:3])for i in R])==l[i//4*3+j//4])*sum({*sum(g,[-5])})for j in R]for i in R]

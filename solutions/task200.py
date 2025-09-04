@@ -1,1 +1,1 @@
-p=lambda g:[*zip(*(g[:g[9].index(v:=max(g[9]))]+3*[r:=10*[v],[5]+9*[0],r,9*[0]+[5]])[:10])]
+p=lambda g:[(g[9].index(m:=max(g[9]))*[0]+[m,5*0**i,m,(i>8)*5]*9)[:10]for i in range(10)]

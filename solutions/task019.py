@@ -1,1 +1,1 @@
-import re;p=lambda g,h=0:eval(re.sub("0(?=(.{6})?.{%s}[1-79])"%(3*len((g:=h or p(g,[r*2for r in 2*g]))[0])-2),"8",f"{g[::-1]}"))
+p=lambda g,n=7,q=[0]*99:-n*g or-~0**n*[-~0**n*(q:=[y or(8&x%-8)for x,y in zip([0]+q,r)])[::-1]for r in zip(*p(g,n-1))]

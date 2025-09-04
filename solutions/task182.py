@@ -1,2 +1,2 @@
-from re import*
-p=lambda g:eval([g:=S(S(w:=max(str(m:=findall('5, 5'+r'.{43}5, (.{15})5'*5,g:=str(g))[0])),'1','.{47}'.join(m)),lambda x:''.join(S('1',w,k:=x[0][i*62:])[:13]+k[13:62]for i in range(5)),g)for S in[sub]*2][1])
+import re
+p=lambda g,n=-3:n*g or p(eval(re.sub("(.{47})%s"*5%eval(re.sub("2|3","1",str(a:=re.findall(".{46}(.{15})5"*5+".{46}5",s:=str(g))[0]))),"\%d %%s"*5%(1,2,3,4,5)%a,s)),n+1)

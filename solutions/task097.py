@@ -1,1 +1,1 @@
-E=enumerate;p=lambda g:[[v*(sum([[0,*x,0][j:j+3]for x in[99*[0],*g,99*[0]]][i:i+3],g).count(0)<8)for j,v in E(r)]for i,r in E(g)]
+*Z,p=[0]*99,lambda g:[[x*(sum(sum([(),*zip(*r)][i:i+3],()))>x)for i,x in enumerate(r[1])]for r in zip(Z+g,g,g[1:]+Z)]

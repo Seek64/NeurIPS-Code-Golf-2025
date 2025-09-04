@@ -1,0 +1,1 @@
+def p(g,n=3):*h,=zip(*g[::-1]);f=sum(h,()).index;return-n*g or p(sorted(h+(f(2)<f(3))*(len(g)<len(h))*[len(g)*[8]],key=lambda r,u=[]:u.extend(r)or any(r)/2or 2in u)[:len(h)],n-1)

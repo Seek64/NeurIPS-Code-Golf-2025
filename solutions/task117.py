@@ -1,1 +1,1 @@
-p=lambda g:[g:=[[c|(2*r)[(w:=sum(g,[])).index(*{*w}-{*max(map(max,g,g[::-1]),key=any)})//len(g)*2+2-i]for i,c in enumerate(r)]for*r,in zip(*g)]for _ in g][1]
+p=lambda g,n=-47:n*g or p([*zip(*g*((f:=str(h:=[[*map(max,r,(r*3)[n//3::-1])]for r in g])).count(m:=min(f,key=f.count))!=str(g).count(m))or h)],n+1)

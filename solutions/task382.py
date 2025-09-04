@@ -1,1 +1,1 @@
-p=lambda g,k=-3:k*g or(g:=[*map(list,zip(*p(g,k+1)))][::-1])*(set(L:=g[0])>{2}or any(g[-1]))or[a&2and[2]+(L:=[0]+L[:-1])[1:]or b&2and(L:=L[1:]+[0])[:-1]+[2]or L for a,*l,b in g]
+p=lambda g,n=3,u=[]:-n*g or p([*zip(*[[*map(max,r*str(g[1:]).count("8")or(u:=(r[0]==2)*[0]+u[r[-1]==2:]+r),r)]for*r,in g][::-1])],n-1)
