@@ -1,1 +1,3 @@
-p=lambda g,i=-1:[[c|((k:=abs((i:=i+1)-sum([r*2for r in g],[]).index(8)))>3<~k%50in b"10/")*5for c in r*2][:13]for r in g]
+import re
+S=re.sub
+p=lambda g,n=0:eval(S("]","][::-1]",S("0(?=(.{76})*(.{40}|.{75}(.{3}){,2})8)","5",str(n or p(g,g)))))
