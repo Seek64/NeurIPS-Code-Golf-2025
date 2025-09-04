@@ -1,1 +1,1 @@
-p=lambda g,o=2:[[-o+(o:=o+e)or(o%6<2)*4for e in l]*(o:=1)for l in g]
+p=lambda g,o=5:[[o-(o:=o-e)or~o*o%6for e in l]*(o:=1)for l in g]
