@@ -1,1 +1,1 @@
-import re;p=lambda g:[g:=eval(re.sub("0(?=[^5(]*5[^5]{,9}\))","8",f"{[*zip(*g[::-1])]}"))for _ in g][3]
+import re;p=lambda g:eval(re.sub("0(?=[^5(]*5[^5]{,9}\))","8",f"{[*zip(*g[70:]or p(g*2))][::-1]}"))

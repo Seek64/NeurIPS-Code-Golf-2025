@@ -1,1 +1,1 @@
-p=lambda g:[g:=[[c|r.pop()%2for c in[0]+r[:0:-1]]for*r,in zip(*g)]for _ in g][3]
+p=lambda g:[[c|r.pop()%2for c in[0]+r[:0:-1]]for*r,in zip(*g[63:]or p(g*2))]
