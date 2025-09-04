@@ -1,1 +1,1 @@
-p=lambda g:[[r[:len(r)//2]for r in g],g[:(L:=len(g)//2)]][g==g[L<2:L]*2]
+p=lambda g:(X:=g[:53%~-len(g)])*(g==X+X)or[*zip(*p([*zip(*g)]))]
