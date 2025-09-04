@@ -1,1 +1,1 @@
-p=lambda g:[r for*r,in zip(*g[9:]or p(g*2))for _ in"11"*any(r)]
+p=lambda g,*k:[e for*e,in zip(*k or p(*g))for _ in"  "*any(e)]
