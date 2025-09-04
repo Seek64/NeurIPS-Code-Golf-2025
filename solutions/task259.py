@@ -1,1 +1,1 @@
-p=lambda g:[g:=[[c*(c>1)for c in r]for*r,in zip(*g[any(g[-1])-2::-1])]for _ in g*9][23]
+p=lambda g,k=-23:k*g or p(eval(str([*zip(*g[any(g[-1])-2::-1])]).replace(*"10")),k+1)
