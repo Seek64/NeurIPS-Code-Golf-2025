@@ -1,1 +1,1 @@
-p=lambda g,n=7,q=[0]*99:-n*g or-~0**n*[-~0**n*(q:=[y or(8&x%-8)for x,y in zip([0]+q,r)])[::-1]for r in zip(*p(g,n-1))]
+p=lambda g,n=7,q=[0]*11:-n*g*2or-~0**n*[q:=[y or 8&x%-8for x,y in zip([0]+q,r)]for r in zip(*p(g,n-1)[::-1])]
