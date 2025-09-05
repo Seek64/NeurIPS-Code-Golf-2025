@@ -1,1 +1,1 @@
-p=lambda g,*n:sorted(zip(*n or p(g*1,*g)),key=lambda r:g.extend(r)or any(r)/2or 8in g)
+p=lambda g,*n:sorted(zip(*n or p([],*g)),key=lambda r:g.extend(r)or any(r)/2or 8in g)
