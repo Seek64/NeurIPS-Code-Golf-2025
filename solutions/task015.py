@@ -1,1 +1,1 @@
-p=lambda g,k=-3:g*k or[g:=[l.pop(0)or(k==2)*4+((k:=o)==1)*7for o in g]for*l,in zip(*p(g,k+1))][::-1]
+p=lambda g,k=-3:g*k or[g:=[l.pop()or(k==2)*4+((k:=o)==1)*7for o in g]for*l,in zip(*p(g,k+1))]
