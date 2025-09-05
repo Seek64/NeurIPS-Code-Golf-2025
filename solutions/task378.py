@@ -1,2 +1,2 @@
 import re
-p=lambda g:[g:=eval(re.sub(f"0(?=(.{{%d}}0)*, 0{2*'.{%d}0, ([^0])'})"%(k:=3*len(g)+4,k-6,2*k-2),"\\3",str([*zip(*g[::-1])])))for _ in g][3]
+p=lambda g:[g:=eval(re.sub(r"(?=(.{%d})+([^0]), \2.{%d}\2, 0, (.))0"%(x:=len(g)*3+5,x*2-10),r"\3",str([*zip(*g[::-1])])))for _ in g][3]
