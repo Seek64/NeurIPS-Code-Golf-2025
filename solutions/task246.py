@@ -1,4 +1,1 @@
-def p(g):
- (i,j),(x,y)=map(divmod,map(sum(g,[]).index,[2,3]),2*[len(g[0])])
- while j-y:x+=(x<i)-(i<x);g[x][y]=8;y+=(-1,1)[y<j]*(x==i)
- return g
+p=lambda g,n=3:(x:=-n*g)or p([[r.pop()or(2+n%2in r!=3-n%2in(x:=x+g.pop()))*8for _ in r*1]for*r,in zip(*g)],n-1)
