@@ -1,5 +1,2 @@
 import re
-def p(g):
-	w=len(g[0])*3-2;l=[f'{g}#28']*3
-	for s in['8?5(, )5(.{%d})5(, )5'%w,'2?5'+'(, )5'*2,'2?5'+'(.{%d}...)5'%w*2]*1300:G,*l=l;l+=[s[0].join(re.split(s,G,1))]*3
-	return eval(min(l,key=set))
+def p(g):l=len(g[0])*3-2;return max([p(x)for i in["8?5(, )5(.{%d})5(, )5"%l,"2?5"+"(.{%d}...)5"%l*2,"2?5(, )5(, )5"]if(x:=eval(i[0].join(re.split(i,s:=str(g),1))))!=g]+[('5'not in s)*g])
