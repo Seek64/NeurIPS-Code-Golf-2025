@@ -1,2 +1,2 @@
 import re
-def p(g):m=eval(re.sub("8(?=.{52}1.{43}1, 1)","6",str(g)));return[[v+6%-v*(6in r+c)for*c,v in zip(*m,r)]for r in m]
+p=lambda g:g[225:]or[*zip(*eval(re.sub("8(?=(.{47})*, 1, 1, [86])","6",str(p(g*2)))))][::-1]
