@@ -1,1 +1,1 @@
-p=lambda g,k=-15:k*g or p([[r[3>max(r)in[*filter(any,g)][0]]for r in zip(l,[0]+l)]for*l,in zip(*g)][::-1],k+1)
+p=lambda g,k=-15:k*g or p([[r[3>max(r)in max(g,key=any)]for r in zip(l,[0]+l)]for*l,in zip(*g)][::-1],k+1)
