@@ -1,1 +1,1 @@
-p=lambda g:[[max(sum(g:=g[1:3]+g,r)[9::3])for _ in r]for r in g]
+p=lambda g:eval(f'[{"max(sum(g:=g[1:3]+g,[])[2::3]),"*7}],'*7)
