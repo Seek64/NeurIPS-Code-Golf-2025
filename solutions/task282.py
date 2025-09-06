@@ -1,1 +1,1 @@
-p=lambda g,n=3:-n*g or p([[y^-x&5-y%(n+5)for x,y in zip([0]+r,r)]for*r,in zip(*g[::-1])],n-1)
+p=lambda g,n=23:-n*g or p([[y^-x&5-y%n for x,y in zip([0]+r,r)]for*r,in zip(*g[::-1])],n-6)
