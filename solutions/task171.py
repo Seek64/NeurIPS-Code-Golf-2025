@@ -1,1 +1,1 @@
-p=lambda g,*k:[[8,*e[2:],8]for*e,in zip(*k or p(g,*g))]
+p=lambda g,*k:[*zip(R:=[8]*9,*(k or p(g,*g))[2:],R)]
