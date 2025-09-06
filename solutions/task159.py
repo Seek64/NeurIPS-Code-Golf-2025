@@ -1,3 +1,1 @@
-def p(g):
-	for w in[sum(g,[])]*2:g=[[2,*r,2]for*r,in zip(*g)for _ in w.count(2)//12*'@'if max({*w}-{2})in r]
-	return[j:=[2]*len(g[0]),*g,j]
+p=lambda g,*G:[*zip(a:=[2]*99,*[r for*r,in G or p(g,*g)for _ in sum(g,g).count(2)//12*'@'if sum({*r})&13],a)]
