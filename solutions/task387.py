@@ -1,5 +1,6 @@
 def p(g):
- for _ in g*4:
-  g=[*map(list,zip(*g[::-1]))];w=len(g[0]);l=sum(g,[]);i,j={l.index(x):0for x in l if x%5}
-  while j-i>3:i+=2;j-=2;g[i//w][i%w]=g[i//w][j%w]=5
- return[[r[1][j]or len(q:={*l}-{*(3*sum(r,[0]))[j+2::w],5})%2*max(q)for j in range(w)]for r in zip(g[:1]+g,g,g[1:]+g[:1])]
+ for j in range(4):
+  w=len(g[0]);h=len(g);l=sum(g,[]);i,j={l.index(x):0for x in l if x%5}
+  while j-i>3:l[i:=i+2]=l[j:=j-2]=5
+  g=[l[j-w::-w]for j in range(w)]
+ return[[g[i][j]or len(q:={*l}-{*(3*sum((g[:1]+g)[i:i+3],[0]))[j+2::h],5})%2*max(q)for j in range(h)]for i in range(w)]
