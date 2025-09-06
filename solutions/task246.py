@@ -1,1 +1,1 @@
-p=lambda g,n=3:-n*g or p([[r.pop()or(2+n%2in r!=3-n%2in(g:=g.pop()+g))*8for _ in r*1]for*r,in zip(*g)],n-1)
+p=lambda g,n=3:-n*g or p([[r.pop()or(n|2in r!=3-n%2in(g:=g.pop()+g))*8for _ in r*1]for*r,in zip(*g)],n-1)
