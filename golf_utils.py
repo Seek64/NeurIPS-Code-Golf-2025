@@ -1,5 +1,6 @@
-from zlib import compress as compress1
-from zopfli.zlib import compress as compress2
+import zlib
+import zopfli.zlib
+import deflate
 
 
 def pack(src: bytes):
@@ -29,11 +30,21 @@ def pack(src: bytes):
     codes = [src]
 
     compressed: list[bytes] = []
-    for i in range(10):
-        compressed.append(compress2(src, numiterations=1 << i))
-    for compression_level in range(-1, 10):
-        compressed.append(compress1(src, compression_level))
 
+    # Zopfli attempts (varying numiterations)
+    for i in range(10):
+        compressed.append(zopfli.zlib.compress(src, numiterations=1 << i))
+
+    # Standard zlib attempts (compression level -1 to 9)
+    for compression_level in range(-1, 10):
+        compressed.append(zlib.compress(src, compression_level))
+
+    # deflate (libdeflate) attempts
+    for level in range(1, 13):
+        c = deflate.zlib_compress(src, level)
+        compressed.append(c)
+
+    # Wrap compressed bytes in Python exec statements
     for c in compressed:
         for delim in [b"'", b'"', b"'''"]:
             codes.append(
@@ -44,4 +55,5 @@ def pack(src: bytes):
                 + b',"L1")))'
             )
 
+    # Return the shortest
     return min(codes, key=len)

@@ -1,1 +1,2 @@
 zopfli==0.2.3.post1
+deflate==0.8.1
