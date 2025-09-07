@@ -1,4 +1,5 @@
-from zlib import compress
+from zlib import compress as compress1
+from zopfli.zlib import compress as compress2
 
 
 def pack(src: bytes):
@@ -27,14 +28,16 @@ def pack(src: bytes):
 
     codes = [src]
 
+    compressed = [compress2(src, numiterations=100)]
     for compression_level in range(-1, 10):
-        compressed = compress(src, compression_level)
+        compressed.append(compress1(src, compression_level))
 
+    for i in compressed:
         for delim in [b"'", b'"', b"'''"]:
             codes.append(
                 b"#coding:L1\nimport zlib\nexec(zlib.decompress(bytes("
                 + delim
-                + sanitize(compressed, delim)
+                + sanitize(i, delim)
                 + delim
                 + b',"L1")))'
             )
