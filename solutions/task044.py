@@ -1,2 +1,2 @@
 import re
-def p(g,x=9):u="5, 5, 5",*[str([5]+[(y!=x)*5for*r,y in zip(*g,r)if x in r]+[5])[1:-1]for r in g if x in r],"5, 5, 5";f,y=re.subn(f"(.{{{32-len(u[1])}}})".join(u),re.sub(*"0x","\%d ".join(u))%(*range(1,len(u)),),str(g));return-x*g or p(eval(re.sub(str(x),"0x"[y<1],f)),x-1)
+def p(g,n=9):u="5, 5, 5",*[str([5]+[(y!=n)*5for*r,y in zip(*g,r)if n in r]+[5])[1:-1]for r in g if n in r],"5, 5, 5";f,y=re.subn(f"(.{{{32-len(u[1])}}})".join(u),re.sub(*"0n","\%d ".join(u))%(*range(1,len(u)),),str(g));return-n*g or p(eval(re.sub(str(n),"0n"[y<1],f)),n-1)
