@@ -1,1 +1,1 @@
-def p(g):b,a,_=g[-1][::len(g)//2];c=g[r:=-2].index(b);exec(c*"c-=1;r-=1;g[r][c]=a;g[r][~c]=a;");return g
+def p(g):c=g[r:=-2].count(0)//2;exec(c*"c-=1;r-=1;g[r][c]=g[r][~c]=g[-1][len(g)//2];");return g
