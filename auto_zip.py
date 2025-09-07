@@ -4,6 +4,7 @@ source = "solutions"
 submission = "submission"
 
 total_save = 0
+min_pack_length = 200
 
 os.makedirs(submission, exist_ok=True)
 
@@ -16,14 +17,15 @@ for task_num in range(1, 401):
     with open(path_in, "rb") as task_in:
         task_src = task_in.read()
 
-    zipped_src = golf_utils.pack(task_src)
+    if len(task_src) >= min_pack_length:
+        zipped_src = golf_utils.pack(task_src)
 
-    improvement = len(task_src) - len(zipped_src)
+        improvement = len(task_src) - len(zipped_src)
 
-    if improvement > 0:
-        print(f"Task {task_num:03d}: {len(task_src)} -> {len(zipped_src)} (+{improvement})")
-        task_src = zipped_src
-        total_save += improvement
+        if improvement > 0:
+            print(f"Task {task_num:03d}: {len(task_src)} -> {len(zipped_src)} (+{improvement})")
+            task_src = zipped_src
+            total_save += improvement
 
     with open(path_out, "wb") as task_out:
         task_out.write(task_src)

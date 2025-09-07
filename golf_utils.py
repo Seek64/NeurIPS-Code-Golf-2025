@@ -28,16 +28,18 @@ def pack(src: bytes):
 
     codes = [src]
 
-    compressed = [compress2(src, numiterations=100)]
+    compressed: list[bytes] = []
+    for i in range(10):
+        compressed.append(compress2(src, numiterations=1 << i))
     for compression_level in range(-1, 10):
         compressed.append(compress1(src, compression_level))
 
-    for i in compressed:
+    for c in compressed:
         for delim in [b"'", b'"', b"'''"]:
             codes.append(
                 b"#coding:L1\nimport zlib\nexec(zlib.decompress(bytes("
                 + delim
-                + sanitize(i, delim)
+                + sanitize(c, delim)
                 + delim
                 + b',"L1")))'
             )
