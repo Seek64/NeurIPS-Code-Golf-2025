@@ -21,6 +21,7 @@ max(l:=sum(g,[]),key=l.count)
 
 ```python 
 [*{v:0for v in r}]
+[*{}.fromkeys(r)]
 [*dict(zip(r,r))]
 ```
 
