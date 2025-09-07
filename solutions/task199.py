@@ -1,1 +1,1 @@
-p=lambda g,c=1:[(r,(20*[4,0])[max(g).index(sum(max(g))):][:len(r)])[c:=c>>max(r)]for r in[g.pop()]+g]
+p=lambda g:-~(i:=g.index(k:=max(g)))*[(20*[4,0])[k.index(max(k)):][:len(g)]]+g[i:-1]
