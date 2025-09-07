@@ -1,1 +1,1 @@
-p=lambda g:[g:=[[[c,Q[2+c%~c]][f'{Q}'[1:8]in'%s'%r]for c in r]for*r,in zip(*g[::-1])]for*Q,in[{c:0for c in sum(g,[])}]*4][3]
+p=lambda g:[g:=[[[c,Q[2+c%~c]][f'{Q}'[1:8]in'%s'%r]for c in r]for*r,in zip(*g[::-1])]for*Q,in[{}.fromkeys(sum(g,[]))]*4][3]
