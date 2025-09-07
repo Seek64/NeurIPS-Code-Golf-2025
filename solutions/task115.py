@@ -1,1 +1,1 @@
-p=lambda g,h=0:[[*dict(zip(r,r))]for r in zip(*h or p(g,g))]
+p=lambda g:[*map(F:=lambda*x:[*{}.fromkeys(x)],*map(F,*g))]
