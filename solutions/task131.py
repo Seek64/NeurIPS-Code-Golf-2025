@@ -1,1 +1,1 @@
-p=lambda g,n=3:-n*g or p(sorted([*zip(*g[::-1]),len(g)*[8&max(g[0],key=bool)*6]],key=lambda r:g.extend(r)or any(r)/2or 2in g)[:-1],n-1)
+p=lambda g,n=3:-n*g or p(sorted([*zip(*g[::-1]),len(g)*[8&max(g[0],key=bool)*6]],key=lambda r:g.extend(r)or(2in g)*3^any(r))[:-1],n-1)
