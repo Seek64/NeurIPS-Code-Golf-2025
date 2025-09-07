@@ -31,18 +31,26 @@ def pack(src: bytes):
 
     compressed: list[tuple[bytes, int]] = []
 
-    # Zopfli attempts
-    for i in range(10):
-        compressed.append((zopfli.zlib.compress(src, numiterations=1 << i)[2:-4], -15))
-    
     # Standard zlib attempts
     for level in range(-1, 10):
         for wbits in range(-15, -8):
             compressed.append((zlib.compress(src, level=level, wbits=wbits), wbits))
 
+    # Zopfli attempts
+    for i in range(10):
+        result = zopfli.zlib.compress(src, numiterations=1 << i)[2:-4]
+        if zlib.decompress(result, wbits=-10) == src:
+            compressed.append((result, -10))
+        else:
+            compressed.append((result, -15))
+    
     # deflate (libdeflate) attempts
     for level in range(1, 13):
-        compressed.append((deflate.deflate_compress(src, compresslevel=level), -15))
+        result = deflate.deflate_compress(src, compresslevel=level)
+        if zlib.decompress(result, wbits=-10) == src:
+            compressed.append((result, -10))
+        else:
+            compressed.append((result, -15))
 
     # Wrap compressed bytes in Python exec statements
     for compressed_code, wbits in compressed:
@@ -52,7 +60,7 @@ def pack(src: bytes):
                 + delim
                 + sanitize(compressed_code, delim)
                 + delim
-                + b',"L1"),~%d))'%~wbits
+                + b',"L1"),~%d))' % ~wbits
             )
 
     # Return the shortest
