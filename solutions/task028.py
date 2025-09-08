@@ -1,1 +1,1 @@
-p=lambda g:[[w:=max(g[y%8]),*[y%3*w]*8,w]for y in b'jrjrroogog']
+p=lambda g:[[w:=max(g[y%15]),*[y&w]*8,w]for y in b'/ /  ppp']
