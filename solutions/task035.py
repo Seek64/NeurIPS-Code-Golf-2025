@@ -1,1 +1,1 @@
-p=lambda g,k=3:-k*g or[[l[8<<k!=(k:=e)]or e for e in l]for*l,in zip(*p(g,k-1))][::-1]
+p=lambda g,k=3:-k*g or[[k:=l[8<<k!=e]or e for e in l]for*l,in zip(*p(g,k-1))][::-1]
