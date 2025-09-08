@@ -68,6 +68,7 @@ any(r)*any(c)
 ```python
 p=lambda g,h=0:[...for r in zip(*h or p(g,g))]
 p=lambda g,*G:[...for r in zip(*G or p(g,*g))]
+p=lambda g:[*map(F:=lambda*r:...,*map(F,*g))]
 ```
 
 ## Recursion alternative
