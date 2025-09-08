@@ -1,1 +1,1 @@
-p=lambda g,n=0:g*all(sum(r)%7<1for r in g)or p([*zip(*[r[(k:=n%10<max(r)*9-9):]+r[:k]for r in zip(*g)])],n+1)
+p=lambda g:[*zip(*[r[(k:=(f:=sum(g,[]).index)(max(r))//10-f(1)//10):]+r[:k]for*r,in zip(*g)])]
