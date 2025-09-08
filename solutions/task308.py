@@ -1,0 +1,1 @@
+def p(g):l=sum(g,[]);w=len(g[0]);*c,b=sorted((len(l)-l[::-1].index(v)-l.index(v),v)for v in{*l});n=c[-1][0]//w+1;l+=(m:=n*w*[b[1]]);[m:=[(m[i],v)[l[l.index(v)+i-(~-n*w+n-d)//2]==v]for i in range(n*w)]for d,v in c];return[m[i*w:][:n]for i in range(n)]
