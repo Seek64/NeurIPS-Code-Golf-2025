@@ -1,1 +1,1 @@
-p=lambda g,n=7:-n*g or[[a:=b|-(2|a&8>>a)//~b for b in r]for*r,in zip(*p(g,n-1)[::-1])if(a:=3)]
+p=lambda g,*r:[g:=b|-(2|g&8>>g)//~b for b in r][::-1]or g[400:]or[*map(p,K:=[3]*50,*p(K+g))]
