@@ -1,6 +1,2 @@
-def p(g):
-	*g,=zip(*g);s=i=0
-	while i<len(g):
-		r=g[i];g[i]=[x if x-5else max({*g[i-1],*r,*g[i+1]}-{5})for x in r*2][s%3:][:3];s+=max([*g,[1]][i+1])<1and g[i+2].index(5)-r.index(5);i+=(k:=max(g[i-1])>0)
-		if k<1:del g[i-1]
-	return[*zip(*g)]
+*Z,h=(0,)*3,lambda g,d=0:[[x and sum({*q+r+s}-{5})for x in 3*r][3-d:][:3]for q,r,s in zip(Z+g,g,g[1:]+Z)if any(r)or(5in q and(d:=d+q.index(5)-s.index(5)))*0]
+p=lambda g:[*zip(*h([*zip(*g)]))]
