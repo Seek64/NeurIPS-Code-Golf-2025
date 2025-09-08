@@ -1,1 +1,1 @@
-p=lambda g,*G:[f for*f,in zip(*G or p(g,*g))if[*{}.fromkeys(sum(g[-2:]+g,[]))][-1]in f]
+p=lambda g,*G:[f for*f,in zip(*G or p(g,*g))if{*f}-{*sum(g[:5]+g[-4:],[])}]
