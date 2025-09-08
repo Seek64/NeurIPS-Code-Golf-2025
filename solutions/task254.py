@@ -1,1 +1,1 @@
-p=lambda g:[[v%4*(([*(l:=sorted({*zip(*g)}))[-2]]<c)+2*([*l[2]]>c))for*c,v in zip(*g,r)]for r in g]
+p=lambda g:[[sorted(zip(*g)).index(c)%6*sum(g[8])%7%6&-r.pop(0)for c in zip(*g)]for*r,in g]
