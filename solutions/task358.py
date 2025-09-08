@@ -1,1 +1,1 @@
-p=lambda g:[*map(F:=lambda*r:r*((w:=len({*r})-1)<2)or[max(r[i%w::w])for i in range(len(r))],*map(F,*g))]
+p=lambda g,*r:r*((w:=len({*r})-1)<2)or[max(r[i%w::w])for i in range(len(r))]or[*map(p,g,*map(p,g,*g))]
