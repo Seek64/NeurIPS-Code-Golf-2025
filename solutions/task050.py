@@ -1,1 +1,1 @@
-p=lambda g,h=0,k=0:[[c|(k:=k^sum(r)*c*6%9%6)>>c for c in r]for*r,in zip(*h or p(g,g))]
+p=lambda g:[*map(F:=lambda*r,k=0:[c|(k:=k^sum(r)*c*6%9%6)>>c for c in r],*map(F,*g))]

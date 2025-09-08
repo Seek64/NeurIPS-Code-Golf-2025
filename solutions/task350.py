@@ -1,1 +1,1 @@
-p=lambda g,k=0:[(a:=1)*[[e,8][l.count(1)>=(a:=a+e%2)>1>e]for e in l]for l in zip(*k or p(g,g))]
+p=lambda g:[*map(F:=lambda*l,a=1:[[e,8][l.count(1)>=(a:=a+e%2)>1>e]for e in l],*map(F,*g))]

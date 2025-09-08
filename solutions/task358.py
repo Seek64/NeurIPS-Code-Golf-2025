@@ -1,1 +1,1 @@
-p=lambda g,*G:[r*((w:=len({*r})-1)<2)or[max(r[i%w::w])for i in range(len(r))]for*r,in zip(*G or p(g,*g))]
+p=lambda g:[*map(F:=lambda*r:r*((w:=len({*r})-1)<2)or[max(r[i%w::w])for i in range(len(r))],*map(F,*g))]

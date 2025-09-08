@@ -1,1 +1,1 @@
-p=lambda g,k=0,c=0:[[l.count(e)>1and(c:=c^e)or e for e in l]for l in zip(*k or p(g,g))]
+p=lambda g:[*map(F:=lambda*l,c=0:[l.count(e)>1and(c:=c^e)or e for e in l],*map(F,*g))]

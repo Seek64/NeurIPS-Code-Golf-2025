@@ -1,1 +1,1 @@
-p=lambda g,h=0:[[*map(max,r,(R:=[*r,4]*9)[10:],R[20:])]for*r,in zip(*h or p(g,g))]
+p=lambda g:[*map(F:=lambda*r:[*map(max,r,(R:=[*r,4]*9)[10:],R[20:])],*map(F,*g))]

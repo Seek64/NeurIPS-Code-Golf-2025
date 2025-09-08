@@ -1,1 +1,1 @@
-p=lambda g,k=0:[[min(r,key=sum(g,l).count)for*r,in zip(l[len(l)//2+1:],l)]for*l,in zip(*k or p(g,g))]
+p=lambda g:[*map(F:=lambda*l:[min(r,key=sum(g,r).count)for*r,in zip(l[len(l)//2+1:],l)],*map(F,*g))]
