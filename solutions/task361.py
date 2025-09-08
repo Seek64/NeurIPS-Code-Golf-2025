@@ -1,2 +1,2 @@
 import re
-def p(g):s,e=re.search(r"( [^0]{7}.{24}){3}|(([^0]), \3).{28}\2.{28}",str(g)).span();x=s%32//3;return[g:=[[*map(max,*r)]for r in zip(g,(3*[*zip(*(3*g[::-1])[20-x-e//32:])])[10-s//32+x:])]for _ in g][3]
+def p(g):s,e=re.search(r"( [^0]{7}.{24}){3}|(([^0]), \3).{28}\2.{28}",str(g)).span();x=s%32//3;return[g:=[[*map(max,*r)]for r in zip(g,(3*[*zip(*(3*g)[9+e//32+x::-1])])[10-s//32+x:])]for _ in g][3]
