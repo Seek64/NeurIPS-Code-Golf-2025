@@ -1,1 +1,2 @@
-import re;p=lambda g,n=-23:g*n or eval(re.sub("0(?=([^0)]{15}).*(.)\\1)","\\2",str([*zip(*p(g,n+1))][::-1])))
+import re
+p=lambda g:[g:=eval(re.sub("0(?=([^0)]{12}).*(.)\\1)","\\2",str([*zip(*g)][::-1])))for _ in g][19]
