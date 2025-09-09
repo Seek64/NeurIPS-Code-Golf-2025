@@ -1,1 +1,1 @@
-def p(g):E=enumerate;x=30*[2];m=[[2,*r,2]for r in[x,*g,x]];l={(i-1,j-1):(r[j:].index(2)+r[j-1::-1].index(2))*(c[i:].index(2)+c[i-1::-1].index(2))for i,r in E(m)for j,c in E(zip(*m))if r[j]<1};return[[v or(q:=l[i,j])==max(V:=l.values())or(q==min(V))*8for j,v in E(r)]for i,r in E(g)]
+def p(g,n=3,k=-999):f=sum(g,[2]*999);X=sorted({*map(C:=f.count,f)});return-n*g or p([(a:=1)*[a:=2*(c>1)or[min(c,k:=k+1,a),{X[-2]:1,X[0]:8}.get(C(c),0)][n<1]for c in r]for*r,in zip(*g)],n-1,0)
