@@ -5,10 +5,10 @@ import deflate
 from reencoder import reencode
 
 
-def pack(src: bytes):
+def pack(src: bytes) -> bytes:
     """Given a python program as a bytes object, returns a possibly shorter python program"""
 
-    def sanitize(b_in: bytes, delim: bytes):
+    def sanitize(b_in: bytes, delim: bytes) -> bytes:
         """Clean up problematic bytes in compressed b-string"""
         b_in = reencode(b_in, delim)
         b_out = bytearray()
@@ -32,7 +32,7 @@ def pack(src: bytes):
 
     codes = [src]
 
-    compressed: list[bytes] = []
+    compressed: list[bytes | bytearray] = []
 
     # Standard zlib attempts
     for level in range(-1, 10):
@@ -40,11 +40,11 @@ def pack(src: bytes):
 
     # Zopfli attempts
     for i in range(10):
-        compressed.append(zopfli.zlib.compress(src, numiterations=1 << i)[2:-4])
+        compressed.append(zopfli.zlib.compress(src, numiterations=1 << i)[2:-4]) # type: ignore[reportUnknownArgumentType]
 
     # deflate (libdeflate) attempts
     for level in range(1, 13):
-        compressed.append(deflate.deflate_compress(src, compresslevel=level))
+        compressed.append(deflate.deflate_compress(src, compresslevel=level)) # type: ignore[reportUnknownArgumentType]
 
     # Wrap compressed bytes in Python exec statements
     for compressed_code in compressed:
