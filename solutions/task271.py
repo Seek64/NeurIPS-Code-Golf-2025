@@ -1,1 +1,1 @@
-exec(f"p=lambda g:max([g[0][0]*[str(g).count('1'),g]{'for*g,in map(zip,g,g[1:],g[2:])'*2}])[1]")
+exec(f"p=lambda g:max([[str(g).count('1'),g]{'for*g,in map(zip,g,g[1:],g[2:])'*2}])[1]")
