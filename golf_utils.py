@@ -2,16 +2,19 @@ import zlib
 import zopfli.zlib
 import deflate
 
+from reencoder import reencode
+
 
 def pack(src: bytes):
     """Given a python program as a bytes object, returns a possibly shorter python program"""
 
     def sanitize(b_in: bytes, delim: bytes):
         """Clean up problematic bytes in compressed b-string"""
+        b_in = reencode(b_in, delim)
         b_out = bytearray()
         for b, b_next in zip(b_in, [*b_in[1:], 0]):
             if b == 0:
-                if b_next in b"0123456789abcdef":
+                if b_next in b"01234567":
                     b_out += b"\\x00"
                 else:
                     b_out += b"\\0"
@@ -38,7 +41,7 @@ def pack(src: bytes):
     # Zopfli attempts
     for i in range(10):
         compressed.append(zopfli.zlib.compress(src, numiterations=1 << i)[2:-4])
-    
+
     # deflate (libdeflate) attempts
     for level in range(1, 13):
         compressed.append(deflate.deflate_compress(src, compresslevel=level))
