@@ -111,6 +111,12 @@ import re;p=lambda g:[g:=eval(re.sub("","",f"{[*zip(*g[::-1])]}"))for _ in g][3]
 import re;p=lambda g,k=99:-k*g or p(eval(re.sub("","",f"{[*zip(*g[::-1])]}")),k-1)
 ```
 
+If 180 deg rotations are acceptable/required:
+
+```python
+import re;p=lambda g:eval([g:=re.sub("","",f"{g}"[::-1])for _ in g][1])
+```
+
 If multiple different regex are required, one can do one of:
 
 ```python 
