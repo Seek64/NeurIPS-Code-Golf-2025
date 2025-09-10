@@ -5,7 +5,6 @@ submission/
 submission.zip
 solutions/__pycache__/
 .python-version
-.my_cache
 *.pyd
 *.so
-build
+build/
