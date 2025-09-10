@@ -5,7 +5,7 @@ from __future__ import annotations
 import io
 import zlib
 from collections import defaultdict
-from typing import NamedTuple, Optional, Self
+from typing import NamedTuple, Optional
 
 CLEN_ORDER = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15]
 
@@ -33,16 +33,16 @@ class BitString(NamedTuple):
     value: int
     size: int
 
-    def __add__(self, other: tuple[object, ...]) -> Self:
+    def __add__(self, other: tuple[object, ...]) -> BitString:
         if not isinstance(other, BitString):
             return NotImplemented
-        return type(self)(
+        return BitString(
             (other.value << self.size) | self.value, self.size + other.size
         )
 
-    def to_bytes(self) -> tuple[bytes, Self]:
+    def to_bytes(self) -> tuple[bytes, BitString]:
         data = self.value.to_bytes((self.size >> 3) + 1, "little")
-        return data[:-1], type(self)(data[-1], self.size & 7)
+        return data[:-1], BitString(data[-1], self.size & 7)
 
 
 class Huffman:
@@ -83,8 +83,8 @@ class Huffman:
             code += 1
         return rev_tree
 
-    @classmethod
-    def parse(cls, deflate: bytes) -> Self:
+    @staticmethod
+    def parse(deflate: bytes) -> Huffman:
         reader = BitReader(deflate)
 
         final = reader.read(1)
@@ -100,7 +100,7 @@ class Huffman:
         lengths: list[int] = [0] * len(CLEN_ORDER)
         for sym in CLEN_ORDER[:hclen]:
             lengths[sym] = reader.read(3)
-        cl_tree = cls._build_tree(lengths)
+        cl_tree = Huffman._build_tree(lengths)
 
         used = 17 + 3 * hclen
 
@@ -127,9 +127,9 @@ class Huffman:
                 lengths.extend([0] * (reader.read(7) + 11))
                 used += 7
 
-        return cls(
-            cls._build_rev_tree(lengths[:hlit]),
-            cls._build_rev_tree(lengths[hlit:]),
+        return Huffman(
+            Huffman._build_rev_tree(lengths[:hlit]),
+            Huffman._build_rev_tree(lengths[hlit:]),
             BitString(BitReader(deflate).read(used), used),
         )
 

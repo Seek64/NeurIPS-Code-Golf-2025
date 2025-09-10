@@ -36,8 +36,8 @@ def pack(src: bytes) -> bytes:
 
     # Standard zlib attempts
     # for level in range(-1, 10):
-    #     compressed.append(zlib.compress(src, level=level, wbits=-10))
-    compressed.append(zlib.compress(src, level=9, wbits=-10))
+    #     compressed.append(zlib.compress(src, level=level))
+    compressed.append(zlib.compress(src, level=9))
 
     # Zopfli attempts
     # for i in range(10):
