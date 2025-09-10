@@ -35,20 +35,24 @@ def pack(src: bytes) -> bytes:
     compressed: list[bytes | bytearray] = []
 
     # Standard zlib attempts
-    for level in range(-1, 10):
-        compressed.append(zlib.compress(src, level=level, wbits=-10))
+    # for level in range(-1, 10):
+    #     compressed.append(zlib.compress(src, level=level, wbits=-10))
+    compressed.append(zlib.compress(src, level=9, wbits=-10))
 
     # Zopfli attempts
-    for i in range(10):
-        compressed.append(zopfli.zlib.compress(src, numiterations=1 << i)[2:-4]) # type: ignore[reportUnknownArgumentType]
+    # for i in range(10):
+    #     compressed.append(zopfli.zlib.compress(src, numiterations=1 << i)[2:-4]) # type: ignore[reportUnknownArgumentType]
+    compressed.append(zopfli.zlib.compress(src, numiterations=256)[2:-4]) # type: ignore[reportUnknownArgumentType]
 
     # deflate (libdeflate) attempts
-    for level in range(1, 13):
+    # for level in range(1, 13):
+    for level in range(7, 13):
         compressed.append(deflate.deflate_compress(src, compresslevel=level)) # type: ignore[reportUnknownArgumentType]
 
     # Wrap compressed bytes in Python exec statements
     for compressed_code in compressed:
-        for delim in [b"'", b'"', b"'''"]:
+        # for delim in [b"'", b'"', b"'''"]:
+        for delim in [b"'", b'"']:
             codes.append(
                 b"#coding:L1\nimport zlib\nexec(zlib.decompress(bytes("
                 + delim

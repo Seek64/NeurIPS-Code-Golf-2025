@@ -97,14 +97,14 @@ class Huffman:
         hdist = reader.read(5) + 1
         hclen = reader.read(4) + 4
 
-        lengths = [0] * len(CLEN_ORDER)
+        lengths: list[int] = [0] * len(CLEN_ORDER)
         for sym in CLEN_ORDER[:hclen]:
             lengths[sym] = reader.read(3)
         cl_tree = cls._build_tree(lengths)
 
         used = 17 + 3 * hclen
 
-        lengths.clear()
+        lengths = []
         while len(lengths) < hlit + hdist:
             code = length = 0
             while (code, length) not in cl_tree:
