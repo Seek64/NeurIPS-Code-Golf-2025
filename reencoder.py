@@ -104,7 +104,7 @@ class Huffman:
 
         used = 17 + 3 * hclen
 
-        lengths: list[int] = []
+        lengths.clear()
         while len(lengths) < hlit + hdist:
             code = length = 0
             while (code, length) not in cl_tree:
@@ -144,6 +144,7 @@ class Huffman:
                 code = self.lit.get(sym)
                 return code + BitString(x - start, extra_bits) if code else None
             start += 1 << extra_bits
+        return None
 
     def encode_dist(self, x: int) -> Optional[BitString]:
         start, extra_bits = 1, 0
@@ -153,6 +154,7 @@ class Huffman:
                 code = self.dist.get(sym)
                 return code + BitString(x - start, extra_bits) if code else None
             start += 1 << extra_bits
+        return None
 
 
 class State(NamedTuple):
@@ -208,10 +210,10 @@ def lz77(data: bytes, huffman: Huffman, delim: bytes) -> bytes:
             curr.append(start)
 
     initial = State(0, BitString(0, 0))
-    start, cost = merge(initial, huffman.raw, delim)
+    start_state, cost = merge(initial, huffman.raw, delim)
 
     dp: list[dict[State, tuple[int, int, State, BitString]]] = [{} for _ in range(len(data) + 2)]
-    dp[0][start] = (cost, -1, initial, huffman.raw)
+    dp[0][start_state] = (cost, -1, initial, huffman.raw)
 
     for i in range(len(data) + 1):
         for state, (cost, _, _, _) in dp[i].items():
