@@ -1,1 +1,1 @@
-p=lambda g:max((all(v:=sum(m:=[l[p%17:p%21]for l in g[p%19:p%23]],g)),v.count(2),len(v),m)for p in range(8**6))[3]
+p=lambda g:max((-(c:=sum(l:=[r[x%17:x%21]for r in g[x%19:x%22]],g).count)(0),c(2),c(1),l)for x in range(8**6))[3]
