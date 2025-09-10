@@ -1,1 +1,1 @@
-exec("p=lambda g:[[g\nfor g,h in zip(g,[g]+g)if g!=h][::2]#"*2)
+p=lambda g:g*-1*-1or[p(g:=r)for r in g if g!=r][::2]
