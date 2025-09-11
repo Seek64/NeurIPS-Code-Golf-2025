@@ -1,2 +1,1 @@
-import re
-p=lambda g:g[36855:]or[*zip(*eval(re.sub('0(?=, [47].{25}[47])','7',str(p(g*2)))))][::-1]
+p=lambda g,w=83:-w*g or[[c%(w:=w*2|c>>2)or 9%~(w&514)%9for c in r]for*r,in zip(*p(g,w-7)[::-1])]
