@@ -42,7 +42,7 @@ def compress(src: bytes) -> bytes:
     # Standard zlib attempts
     for level in ZLIB_LEVELS:
         # compressed.append(zlib.compress(src, level=level)[2:-4])
-        compressor = zlib.compressobj(wbits=-10)
+        compressor = zlib.compressobj(level=level, wbits=-10)
         compressor.compress(src)
         compressed.append(compressor.flush())
     # Zopfli attempts
