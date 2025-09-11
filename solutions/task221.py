@@ -1,1 +1,1 @@
-def p(g,i=2):w=sum(g,g).count(0);return[(r*(9-(i:=i+1)//3*w)+[0]*99)[:3*w]for r in g*w]
+def p(g):w=sum(g,g).count(i:=0);return[(r*(9+(i:=i-1)//3*w)+[0]*99)[:3*w]for r in g*w]
