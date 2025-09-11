@@ -1,1 +1,2 @@
-import re;p=lambda g:[g:=eval(re.sub(r"0(?=.{%d}([^0]).{34}\1, (.), \1)"%x,f"\\{x%9%5}",str([*zip(*g[::-1])])))for x in b"+%"*4][-1]
+import re
+p=lambda g:eval([g:=re.sub(r"0(?=.{%d}([^0])..(.)..\1.{34}\1)"%x,f"\{895%x%5}",str(g)[::-1])for x in b"BHN%"*2][-1])
