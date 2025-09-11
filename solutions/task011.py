@@ -1,1 +1,2 @@
-r=range(11);p=lambda g:min(("8"in str(t:=[[[5,g[y//4+p%3*4][x//4+p//4*4]][x%4<3>y%4]for x in r]for y in r]),t)for p in r)[1]
+R=range(11)
+p=lambda g:min(({*str(t:=[[[5,g[y//4+p%3*4][x//4+p//4*4]][x%4<3>y%4]for x in R]for y in R])},t)for p in R)[1]
