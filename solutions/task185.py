@@ -1,1 +1,1 @@
-p=lambda g,Z={-1},n=-1:g*n or(g:=[*zip(*p(g,{*g[0]},n+1))])and[[x*(P==(P:=x)!=max(Z))for*c,x in zip(*g,r)if{*c}-Z][1:]for r in g if{*r,P:=0}-Z]
+p=lambda g:[g:=[*zip(*[[x*(P==(P:=x)!=max(Z))for*c,x in zip(*g,r)if{*c}-Z][1:]for r in g if{*r,P:=0}-Z])]for Z in({*g[0]},{-1})][1]
