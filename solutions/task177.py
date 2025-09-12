@@ -1,1 +1,1 @@
-p=lambda g:[[*filter(int,r[::-1])]for r in g if[r]>g]
+p=lambda g,*G:[*filter(any,zip(*G or p(*g)[::-1]))]
