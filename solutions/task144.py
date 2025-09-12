@@ -1,1 +1,1 @@
-p=lambda g:[[3>>x+r.pop(0)for x in g.pop(5)]for r in g[:4]]
+p=lambda g,u=[]:g*0!=0and[*map(p,g,u+g[5:])]or 3>>g+u

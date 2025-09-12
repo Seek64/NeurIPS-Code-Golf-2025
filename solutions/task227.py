@@ -1,1 +1,1 @@
-p=lambda g:[[b+~l.pop(0)&2for b in g.pop(4)]for*l,in g]
+p=lambda g,u=[]:g*0!=0and[*map(p,g,u+g[4:])]or~g+u&2

@@ -1,1 +1,1 @@
-p=lambda g:[[(a!=b)*3for a,b in l]for l in map(zip,g,g[7:])]
+p=lambda g,u=[]:g*0!=0and[*map(p,g,u+g[7:])]or(g!=u)*3

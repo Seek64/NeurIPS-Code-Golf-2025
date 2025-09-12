@@ -1,1 +1,1 @@
-p=lambda g:[[b*3^-a%5for b,a in l]for l in map(zip,g,g[5:])]
+p=lambda g,u=[]:g*0!=0and[*map(p,g,u+g[5:])]or-u%5^g*3
