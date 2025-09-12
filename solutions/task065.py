@@ -1,1 +1,1 @@
-p=lambda g:[*map(F:=lambda*l:[min(r,key=sum(g,r).count)for*r,in zip(l[len(l)//2+1:],l)],*map(F,*g))]
+exec("p=lambda g:[[min(S:=g[0]+g[1],key=S.count)\nfor*g,in map(zip,g,g[len(g)//2+1:])]#"*2)
