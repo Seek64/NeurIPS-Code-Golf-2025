@@ -1,1 +1,1 @@
-p=lambda g:[[c^84%c%3*13for c in r]for r in g]
+p=lambda g:g*-1and g^84%g%3*13or[*map(p,g)]
