@@ -1,1 +1,1 @@
-p=lambda g:[g:=[x*-1*-1or y*sum(r)%6for x,y in zip(g,r)]for r in g]
+p=lambda g:[g:=[(x*-5or y*sum(r))%6for x,y in zip(g,r)]for r in g]
