@@ -1,1 +1,1 @@
-p=lambda g,c=1,i=51:-i*g or p([*zip(*eval(str(g).replace(i//5*", 5",i//5*f", {c%5}")))][::-1],c+3*(str(c)in'%s'%g),i-1)
+p=lambda g,i=51:-i*g or p([*zip(*eval(str(g).replace(i//5*", 5",i//5*f", {len({*str(g)})**2%7}")))][::-1],i-1)
