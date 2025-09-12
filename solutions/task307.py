@@ -1,1 +1,1 @@
-exec('p=lambda g:[[%s[g]*2]#'%("g\nfor g in "*2)*2)
+p=lambda g:g*0!=0and[*map(p,sum(zip(g,g),()))]or g
