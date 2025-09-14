@@ -1,1 +1,1 @@
-p=lambda g,d=[0]*10:g[30:]or[(d:=[x or(y%2==(5in d))*y%5for x,y in zip(r,d)]+d)[:10]for r in p(g*2)[::-1]]
+p=lambda g,d=[0]*10:g[30:]or[d:=[r.pop(0)or(y%2==(5in(g:=g+d)))*y%5for y in d]for r in p(g*2)[::-1]]
