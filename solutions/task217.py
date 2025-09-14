@@ -1,1 +1,1 @@
-p=lambda g,*G:[*filter(any,zip(*G or p(g,*[[c&d for c in a for d in b]for a in g for b in g])))]
+p=lambda g:[*filter(any,zip(*g[81:]or p([[c&d for c in a for d in b]for a in g*2for b in g])))]
