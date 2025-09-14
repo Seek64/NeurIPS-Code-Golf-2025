@@ -1,1 +1,1 @@
-p=lambda g,h=0:[[[x*any(c),max(c)][sum(g,g).count(x)<30]for*c,x in zip([0]+r,r[1:]+[0],r)]for*r,in zip(*h or p(g,g))]
+p=lambda g,h=0:[[[max(c),x*any(c)][f"{x}, "*3in"%s"%g]for*c,x in zip([0]+r,r[1:]+[0],r)]for*r,in zip(*h or p(g,g))]
