@@ -1,5 +1,7 @@
 import re
-def p(g):
-	L=[0]*25;g=L,*[[0,*r,0]for r in g],L;z=re.sub(*'10',re.sub('[^1]+',lambda x:f"({re.sub('[^%d]'%(4-(']'in x[0])),'.',x[0])})",re.search('1.*1',str(g))[0]))
-	for n in[1,-1,1]*4:*g,=zip(*eval('1'.join(re.split(z,str(g[::n])))))
-	return[r[1:-1]for r in g[1:-1]]
+def p(e):
+ def p(e):
+  return'(%s)'%re.sub('[^%d]'%(4-(']'in e[0])),'.',e[0])
+ *e,=[0]*25,*[[0,*r,0]for r in e],[0]*25;z=re.sub(*'10',re.sub('[^1]+',p,re.search('1.*1','(%s)'%e)[0]))
+ for r in[1,-1,1]*4:*e,=zip(*eval('1'.join(re.split(z,'(%s)'%e[::r]))))
+ return[r[1:-1]for r in e[1:-1]]
