@@ -1,1 +1,1 @@
-p=lambda g,X=0:[[g:=g+[X:=X%(96^X*9)*any(r)+r[0]-r[-1]]*(8in r)]and[(-X in g)*8>>x|332%(2+sum(r[:i+1])*sum(r[i:]))for i,x in enumerate(r)]for r in g]
+p=lambda g,X=0:[[X:=sum(r)%8*-~(X%63),[(X in g)*8>>x|332%(2+sum(r[:i+1])*sum(r[i:]))for i,x in enumerate(r)],g:=g+[X]*(8in r)][1]for r in g]
