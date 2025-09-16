@@ -1,1 +1,1 @@
-def p(g):m={0,y:=max(i*(f"0, {i}, 0"in"%r"%g)for i in range(10))};n=len(g:=[[y*len({x}-m)for*c,x in zip(*g,r)if{*c}-m]for r in g if{*r}-m])//3;return[r[::n]for r in g[::n]]
+def p(g,y=1):m={0,y};n=len(h:=[[y*len({x}-m)for*c,x in zip(*g,r)if{*c}-m]for r in g if{*r}-m])//3;return[r[::n]for r in h[::n]]*(f"0, {y}, 0"in"%r"%g)or p(g,y+1)
