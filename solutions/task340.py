@@ -1,1 +1,1 @@
-p=lambda g,n=-3:n*g or[[z*(z!=y<sum(g,g).count(z)+1)for z in r]+[y*(y in r)+x,y]for*r,x,y in zip(*p(g,n+1)[::-1])]
+p=lambda g,n=-3:n*g or[[z*(z!=y<=sum(g,g).count(z))for z in r]+[y*(y in r)+x,y]for*r,x,y in zip(*p(g,n+1)[::-1])]
