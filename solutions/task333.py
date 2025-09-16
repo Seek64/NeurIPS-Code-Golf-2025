@@ -1,1 +1,1 @@
-p=lambda g:[[r[~i]or(3in r[:~i])*sum(r[~i:])for i in range(10)]for*r,in zip(*g[70:]or p(g*2))]
+p=lambda g:[(P:=0)or[P:=r.pop()or(3in r)*P for _ in r*1]for*r,in zip(*g[70:]or p(g*2))]
