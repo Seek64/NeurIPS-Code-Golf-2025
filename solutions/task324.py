@@ -5,5 +5,5 @@ def p(g,*t):
    if g[i][j]in f:m[g[i][j]]=g[i][j];m[max(l:=[g[i][j-1],g[i][j-len(g[i])+1],g[i-1][j],g[i-len(g)+1][j]],key=lambda x:(l.count(x),-(len(g[i])*[x]in g)))]=g[i][j];f+=-i-j,;t+=i-j,
  for i in range(len(g)):
   for j in range(len(g[i])):
-   g[i][j]=(g[i][j],m[g[i][j]])[i-j in t or-i-j in f]
+   if i-j in t or-i-j in f:g[i][j]=m[g[i][j]]
  return g
