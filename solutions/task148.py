@@ -1,1 +1,1 @@
-p=lambda g,X=0,Y=0:[[X:=-~X*r[0],Y:=-~Y*r[-1],[(X-Y in g)*8>>x|332%(2+sum(r[:i+1])*sum(r[i:]))for i,x in enumerate(r)],g:=g+[Y-X]*(8in r)][2]for r in g*1]
+p=lambda g,X=0:[[g:=g+[X:=X%(96^X*9)*any(r)+r[0]-r[-1]]*(8in r)]and[(-X in g)*8>>x|332%(2+sum(r[:i+1])*sum(r[i:]))for i,x in enumerate(r)]for r in g]
