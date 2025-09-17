@@ -1,2 +1,2 @@
 import re
-def p(g):l=sum(g,[]);w=len(g);a,b,c,d=max(({*(q:=l[i:i+3]+l[i-2*~w::w*w]),0},i,q)for i in range(w*w))[2];return[g:=eval(re.sub(f"(?={-~l.index(b)*x*'.'}{a})0","y",str([*zip(*g[::-1])])))for x,y in[(3,c)]*4+[(3*w+5,d)]*4][7]
+def p(g):l=sum(g,[]);w=len(g);a,b,c,d=max(({*(q:=l[i:i+3]+l[i-2*~w::w*w]),0},i,q)for i in range(w*w))[2];return[g:=eval(re.sub(f"(?={-~l.index(b)*x*'.'}{a})0","y",f"{*zip(*g[::-1]),}"))for x,y in[(3,c)]*4+[(3*w+5,d)]*4][7]

@@ -1,1 +1,1 @@
-p=lambda g:[g:=eval(str([*zip(*g[::-1])]).replace('1, 0','1,'+k))for k in'2786'][3]
+p=lambda g:[g:=eval(f"{*zip(*g[::-1]),}".replace('1, 0','1,'+k))for k in'2786'][3]
