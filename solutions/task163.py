@@ -1,1 +1,1 @@
-R=range(11);p=lambda g:[[5*(3in[x%4,y%4])or(x//4==(I:=sum(g,[]).index(4))//11%4)*(y//4==I%11%4)*g[I//44*4+x%4][I%11//4*4+y%4]for y in R]for x in R]
+R=range(11);p=lambda g:[[5*(g[x][y]==5)or(x//4==(I:=sum(g,[]).index(4))//11%4)*(y//4==I%11%4)*g[I//44*4+x%4][I%11//4*4+y%4]for y in R]for x in R]
