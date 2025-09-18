@@ -1,1 +1,1 @@
-p=lambda g:[[72%~sum(c)*3%5for c in zip(*g[i-11:i+2],[0]+r,r[1:]+[0])]for i,r in enumerate(g)]
+p=lambda g:g[150:]or[*map(lambda*r,P=0:[P:=x*22**P%77%9for x in r],*p(g*2)[::-1])]
