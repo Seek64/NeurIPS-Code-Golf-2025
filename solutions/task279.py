@@ -1,1 +1,1 @@
-p=lambda g,k=67:-k*g or[(a:=0)or[a:=[b%(a+9),b%(9|3-a)&9,b or 9][k>>5]for b in l]for*l,in zip(*p(g,k-1)[::-1])]
+p=lambda g,k=67:-k*g or[*map(lambda*l,a=0:[a:=[b%(a+9),b%(9|3-a)&9,b or 9][k>>5]for b in l],*p(g,k-1)[::-1])]

@@ -1,1 +1,1 @@
-p=lambda g,n=51:-n*g or p([[[(y|2&x%3-y)%(n+4),y|x&4-y][n>4]for x,y in zip([4]+r,r)]for*r,in zip(*g[::-1])],n-1)
+p=lambda g,n=51:-n*g or p([*map(lambda*r,x=4:[[(y|2&x%3-y)%(n+4),y|x&4-y,x:=y][n>4]for y in r],*g[::-1])],n-1)
