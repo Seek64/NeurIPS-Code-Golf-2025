@@ -1,1 +1,1 @@
-p=lambda g,n=3:-n*g or p([*zip(*[((s:=[x or 3for x in r[:[*map(max,*g),2].index(2)]])+s[::-1]+[3]*9,r)["0, 2"in str(g)][:10]for*r,in g][::-1])],n-1)
+p=lambda g,n=3:-n*g or p([*zip(*[((s:=[x or 3for x in r[:[*map(max,*g),2].index(2)]])+s[::-1]+[3]*9,r)["0, 2"in"%r"%g][:10]for*r,in g][::-1])],n-1)
