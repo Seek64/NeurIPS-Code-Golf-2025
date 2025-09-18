@@ -1,1 +1,1 @@
-p=lambda g:[[r&b for r in r for b in s]for r in g for s in g]
+p=lambda*g:[[min,p][r*0!=0](r,s)for r in g[0]for s in g[-1]]
