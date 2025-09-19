@@ -1,1 +1,1 @@
-p=lambda g:[[(8|9>>c|a*6)%9for a,c in zip([0]+r,r[1:]+[0])]for*r,in zip(*g[3:]or p(g*2))]
+p=lambda g:g[9:]or[[(8|9>>c|a*6)%9for a,c in zip([0]+r,r[1:]+[0])]for*r,in zip(*p(g*2))]
