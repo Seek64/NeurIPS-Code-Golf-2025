@@ -1,1 +1,1 @@
-p=lambda g,x=[[0]*5]:[[l+7&(i-k or~j)-7for l,k,i,j in zip(q[1:]+[0],[0]+q,s[1:]+[0],[0]+s)]for q,s in zip(x+g,g[1:]+x)]
+p=lambda g:[[(8|9>>c|a*6)%9for a,c in zip([0]+r,r[1:]+[0])]for*r,in zip(*g[3:]or p(g*2))]
