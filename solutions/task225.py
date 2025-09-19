@@ -1,1 +1,2 @@
-p=lambda g,k=3,c=0,i=0:-k*g or p([[(v,c)[i in b""]for v in[0]+r if(i:=i-c%~c)or~(c:=v*(sum(g,g).count(v)<2))][1:]for*r,in zip(*g[::-1])],k-1)
+import re
+p=lambda g:[g:=eval(re.sub(r"0(?=.{27}(...)?(.{20})?0, ([^0])(?!, \3).{19}0)",r"\3",str([*zip(*g[::-1])])))for _ in g][3]
