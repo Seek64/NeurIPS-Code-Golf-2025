@@ -1,2 +1,1 @@
-R=0,1,2,3
-p=lambda g:[[max(g[i][j::5])or max(g[i+5][j::5])for j in R]for i in R]
+p=lambda g:[g:=[*zip(*[[r.pop(0)or x for x in r[5:]]for*r,in g])]for _ in g][1]
