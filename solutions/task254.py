@@ -1,1 +1,1 @@
-p=lambda g:[[sorted(zip(*g)).index(c)%6*sum(g[8])%7%6&-r.pop(0)for c in zip(*g)]for*r,in g]
+p=lambda g:[[(sum(g[-sum(c)//5])|5)%sum(g[8])*r.pop(0)%3for c in zip(*g)]for*r,in g]
