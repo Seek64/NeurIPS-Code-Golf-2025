@@ -1,6 +1,7 @@
 def p(g):
- a=min(i for i in range(8)if any(g[i]))
+ f=min(p for p in range(8)if any(g[p]))
  for n in range(8):
-  for i in range(b:=min(i for i in range(a,9)if any(g[i])-1)+1,a-b+16):
-   if j:=[4-j for j in range(5)if all((2*g[i+k-a][:1]+g[i+k-a])[c+j]==g[k][c]*(c<9-n)for k in range(a,b)for c in range(8))]:j=j[0];g[i:i+b-a]=[[g[i+k-a][c]or(g[i+k-a][:2]+g[k]+g[k][-2:])[c+j]%7for c in range(10)]for k in range(a,b)]
+  for a in range(r:=min(r for r in range(f,9)if any(g[r])-1),f-r+16):
+   for p in range(5):
+    if min((2*g[a+r-f][:1]+g[a+r-f])[i+4-p]==g[r][i]*(i<9-n)for r in range(f,r)for i in range(8)):g[a:a+r-f]=[[g[a+r-f][i]or(g[a+r-f][:2]+g[r]+g[r][-2:])[i+p]%7for i in range(10)]for r in range(f,r)]
  return g
