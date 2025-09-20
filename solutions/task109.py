@@ -1,1 +1,1 @@
-p=lambda g:(w:=len(g)//2)and[all(g)and p(r)or(r>0)*g[w]for r in g[:w]+g[w-1::-1]]
+def p(g):w=len(g)//2;return[all(g)and p(r)or(r>0)*g[w]for r in g[:w]+g[w-1::-1]]
