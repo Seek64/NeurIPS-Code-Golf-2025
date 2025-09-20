@@ -1,9 +1,9 @@
-def p(g):
- l=sum(g,t:=[]);f=sorted(l,key=l.count)[:2]
- for i in range(len(g)):
-  for j in range(len(g[i])):
-   if g[i][j]in f:l[g[i][j]]=g[i][j];l[max(l,key=lambda l:[g[i][j-1],g[i][j-len(g[i])+1],g[i-1][j],g[i-len(g)+1][j]].count(l))]=g[i][j];f+=-i-j,;t+=i-j,
- for i in range(len(g)):
-  for j in range(len(g[i])):
-   if i-j in t or-i-j in f:g[i][j]=l[g[i][j]]
- return g
+def p(m):
+ s=sum(m,t:=[]);r=sorted(s,key=s.count)[:2]
+ for d in range(len(m)):
+  for o in range(len(m[d])):
+   if m[d][o]in r:s[m[d][o]]=s[max(s,key=[m[d][o-1],m[d][o-len(m[d])+1],m[d-1][o],m[d-len(m)+1][o]].count)]=m[d][o];r+=-d-o,;t+=d-o,
+ for d in range(len(m)):
+  for o in range(len(m[d])):
+   if d-o in t or-d-o in r:m[d][o]=s[m[d][o]]
+ return m
