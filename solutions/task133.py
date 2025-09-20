@@ -1,12 +1,12 @@
-def p(g,*l):
- for a in g:l+=*a,0
- for a in{*l}:
-  q,*s=[l.index(a)],
-  for k in q:q+=[i+k for i in(~len(g[0]),-1,1,-~len(g[0]))if(i+k in q)==0<=i+k<len(l)>0<l[i+k]];s+=l[k],
-  if~-len(s)==s.count(a)>1:v,={*s}-{a};n=min(k for k in q if l[k]==v);z=q
- for a in{*l}-{v}:
-  q,*s=[l.index(a)],
-  for k in q:q+=[i+k for i in(~len(g[0]),-1,1,-~len(g[0]))if(i+k in q)==0<=i+k<len(l)>0<l[i+k]];s+=l[k],
-  for k in z:
-   for i in range(s.count(v)):u=(s.count(v)^6)%6;x=min(k for k in q if l[k]==v)+k*u-n*u;g[x//-~len(g[0])+i//u][x%-~len(g[0])+i%u]=g[x//-~len(g[0])+i//u][x%-~len(g[0])+i%u]or a
- return g
+def p(n,*x):
+ for e in n:x+=*e,0
+ for e in{*x}:
+  g,*o=[x.index(e)],
+  for d in g:g+=[i+d for i in(~len(n[0]),-1,1,-~len(n[0]))if(i+d in g)==0<=i+d<len(x)>0<x[i+d]];o+=x[d],
+  if~-len(o)==o.count(e)>1:r,={*o}-{e};t=min(d for d in g if x[d]==r);c=g
+ for e in{*x}-{r}:
+  g,*o=[x.index(e)],
+  for d in g:g+=[i+d for i in(~len(n[0]),-1,1,-~len(n[0]))if(i+d in g)==0<=i+d<len(x)>0<x[i+d]];o+=x[d],
+  for d in c:
+   for i in range(o.count(r)):a=(o.count(r)^6)%6;u=min(d for d in g if x[d]==r)+d*a-t*a;n[u//-~len(n[0])+i//a][u%-~len(n[0])+i%a]=n[u//-~len(n[0])+i//a][u%-~len(n[0])+i%a]or e
+ return n
