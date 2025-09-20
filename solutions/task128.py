@@ -1,1 +1,1 @@
-p=lambda g:[*zip(*map(lambda*c:(c[-c.count(0):]+c)[:15],*g))]
+p=lambda g:[*zip(*map(lambda*c:c[c.count(max(c)):]+c,*g))]
