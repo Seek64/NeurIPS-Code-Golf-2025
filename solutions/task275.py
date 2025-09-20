@@ -1,4 +1,1 @@
-def p(g):
- l=len(g);a,b=g[:l//2],g[l//2:]
- if'8'in'%s'%a:a,b=b,a
- return[[l//5*k for k in i for l in j]for i in a for j in b]*(l>5)or[*zip(*p([*zip(*g)]))]
+p=lambda g,n=3:-n*g or p([*zip(*((l:=len(g)//2)>2<8in g[0]+g[1])*[[k*l%7for k in i for l in j]for i in g[l:]for j in g[:l]]or g)][::-1],n-1)
