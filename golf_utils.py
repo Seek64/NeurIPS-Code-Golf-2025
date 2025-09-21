@@ -1,15 +1,12 @@
-import zlib
 import zopfli.zlib
 import deflate
 
 from reencoder import reencode
 
-ZLIB_LEVELS = [9]
-ZOPFLI_ITERS = [256]
+ZOPFLI_ITERS = [2048]
 DEFLATE_LEVELS = range(7, 13)
 DELIMS = [b"'", b'"']
 
-# ZLIB_LEVELS = range(-1, 10)
 # ZOPFLI_ITERS = [1 << i for i in range(10)]
 # DEFLATE_LEVELS = range(1, 13)
 # DELIMS = [b"'", b'"', b"'''"]
@@ -39,12 +36,6 @@ def compress(src: bytes) -> bytes:
     """Given a bytes object, returns a zlib compressed literal"""
     compressed: list[bytes | bytearray] = []
 
-    # Standard zlib attempts
-    for level in ZLIB_LEVELS:
-        # compressed.append(zlib.compress(src, level=level)[2:-4])
-        compressor = zlib.compressobj(level=level, wbits=-10)
-        compressor.compress(src)
-        compressed.append(compressor.flush())
     # Zopfli attempts
     for i in ZOPFLI_ITERS:
         compressed.append(zopfli.zlib.compress(src, numiterations=i)[2:-4])  # type: ignore[reportUnknownArgumentType]
