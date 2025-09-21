@@ -1,2 +1,2 @@
 import re
-p=lambda g:eval(re.sub("0(?=[^5(]*5.{,9}\))","8",f"{[*zip(*g[70:]or p(g*2))][::-1]}"))
+p=lambda g:eval(re.sub("0(?=[^5(]*5.{,9}\))","8",f"{*zip(*g[70:]or p(g*2)),}"))[::-1]
