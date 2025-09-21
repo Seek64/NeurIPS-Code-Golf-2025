@@ -1,1 +1,1 @@
-p=lambda g:[[r.pop()&3-y|y&~4for y in g.pop()]for*r,in g*1]
+p=lambda g,u=[]:g*-1and g&3-u|u&~4or[*map(p,u+g,g[::-1])]
