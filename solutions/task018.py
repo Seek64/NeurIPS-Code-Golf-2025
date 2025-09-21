@@ -1,10 +1,11 @@
-def T(O):return*zip(*[((u,c,r),(u,-r,c))for u,r,c in O]),
-def p(d,*E):
- W,*U=len(d[0]),
- for z in range(len(d)*W):
-  for u,r,c in(O:=[(v:=d[i:=z//W][j:=z%W],i,j)]*v):d[r][c]=0;O+=[(u,x,y)for z in range(9)if(x:=r+z//3-1)//len(d)|(y:=c+z%3-1)//W==0<(u:=d[x][y])]
-  U+=O*(len(O)<5*v);E+=T((u,r-i,c-j)for u,r,c in O)
- for z in range(len(d)*W):
-  for O in sum(map(T,E),E):
-   for u,r,c in(O:=[(u,r+z//W,c+z%W)for u,r,c in O])*(len({*U}&{*O})>2):d[r][c]=u
- return d
+def p(e,*s):
+ def p(z):
+  return *zip(*[((i,m,n),(i,-n,m))for i,n,m in z]),
+ d,*r=len(e[0]),
+ for u in range(len(e)*d):
+  for i,n,m in(z:=[(t:=e[g:=u//d][j:=u%d],g,j)]*t):e[n][m]=0;z+=[(i,o,z)for u in range(9)if(o:=n+u//3-1)//len(e)|(z:=m+u%3-1)//d==0<(i:=e[o][z])]
+  r+=z*(len(z)<5*t);s+=p((i,n-g,m-j)for i,n,m in z)
+ for u in range(len(e)*d):
+  for z in sum(map(p,s),s):
+   for i,n,m in(z:=[(i,n+u//d,m+u%d)for i,n,m in z])*(len({*r}&{*z})>2):e[n][m]=i
+ return e
