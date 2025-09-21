@@ -1,1 +1,1 @@
-exec('p=lambda g:[[g\nfor g in g[1::2]for _ in"_"*4]#'*2)
+p=lambda g:g*0!=0and[*map(p,(g*8)[:78]*5)][1::20]or g
