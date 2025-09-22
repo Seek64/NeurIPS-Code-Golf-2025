@@ -1,1 +1,1 @@
-p=lambda g:[(P:=0)or[P:=x+-P%(max(r)+5)for x in r]for r in g]
+p=lambda g:[(P:=0)or[P:=x+-P%sum(r,5)for x in r]for r in g]
