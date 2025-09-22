@@ -1,6 +1,5 @@
-def p(g,n=7):
- l=len(g)*3+2;*h,=f"{*zip(*g[::-1]),}#"*3;i=-1
- for x,y in zip(h,h[3:l*25]):
-  i+=1;s=[i]*(x>'0'<y!=x)
-  for j in s:h[j-j%l+(i+i-j)%l+3]=y;s+={k for d in range(9)if h[k:=j+d//3*l-l+d%3*3-3]==x}-{*s}
- return-n*g or p(eval("".join(h)),n-1)
+def p(h,n=7):
+ for e in range(len(h)):
+  for i in range(len(h)):
+   for q,g in(f:=[(e,i)]):*h[q],=h[q];h[q][i+i-g-1]=h[e][i-1];f+=[(p+q,g+n)for p in range(-1,2)for n in range(-1,2)if 0<h[e][i-1]!=(2*(2*h)[p+q])[g+n]==h[e][i]>0==h[p+q][i+i-g-n-1]]
+ return-n*h or p([*zip(*h[::-1])],n-1)
