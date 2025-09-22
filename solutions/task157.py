@@ -1,5 +1,1 @@
-def p(g):
- for i in range(64):
-  *h,=zip(*g);w=4-i//16;i%=16-w
-  for j in range(w*4*all(5in r for r in h[i:i+w])):m=max((-(1in sum(h[j:j+w],())),-len(q:={y.index(5)-q.index(min(q))for q,y in zip(h[j:j+w],h[i:i+w])}),min(q),j%w,j)for j in range(16-w));g[6+j%4-m[2]][m[4]+j//4]+=g[6+j%4][i+j//4]%4;g[6+j%4][i+j//4]=0
- return g
+def p(n):p,i,*r=range,15;m=sum(n,[]);n=[[]];[(n:=[n+[(f,r)]for n in n for f in p(45)if m[f]<1],r:=[])for f in p(16)if r==(r:=r+[p for p in p(f,150,i)if(i>f)&m[p]])>[]];return max([*zip(*[((any(p-f+min(n)in n*(f%i-p%i<6)for f,n in n)|m[p]%5)%3for p in p(150))]*i)]for n in n)
