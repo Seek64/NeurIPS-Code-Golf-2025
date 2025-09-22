@@ -1,2 +1,2 @@
 import re
-p=lambda g,n=7:g*-n or p(eval(re.sub(f'({1+n//4}),([^(]*)({7>>n//4})',r'\1,\3+\2 0',f"{*zip(*g[::-1]),}")),n-1)
+p=lambda g:[g:=eval(re.sub(f'({n})([^(]*)0(?=, {8%n})',r'0\2\1',f"{*zip(*g[::-1]),}"))for n in(7,3,3)*8][-1]
