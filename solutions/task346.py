@@ -1,1 +1,1 @@
-p=lambda g:[[max(i*(str(g).count(f'{i}, '*3)<2)for i in sum(g,[]))]]
+p=lambda g:[[min(f:=sum(g[:4]+g,[])[16:-13],key=f.count)]]
