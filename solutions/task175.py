@@ -1,1 +1,1 @@
-R=range(2,23);p=lambda g:[[g[a:=i//j+j//i-1<<1or 1][0]|g[0][a]for j in R]for i in R]
+p=lambda g:[g:=[y|z or x for x,y,z in zip([0]+g,r,c)]for*c,r in zip(*g,g)]
