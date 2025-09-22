@@ -1,7 +1,7 @@
 def p(u):
  i=range(9);c={};f=lambda a:[a(p,s,[u[p+a//3][s+a%3]for a in i])for p in range(len(u)-2)for s in range(len(u[0])-2)]
  def p(p,s,n):
-  if len(r:={*n})==2and r&{0,2}=={2}:
+  if(0 in n)<1<len(r:={*n}):
    n=tuple(a==2for a in n);k={n:sum(r)-2}
    for a in range(4):c[n]=k;n=tuple(n[a%3*3+2-a//3]for a in i)
    for a in i:u[p+a//3][s+a%3]=0
