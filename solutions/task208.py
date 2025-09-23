@@ -1,2 +1,2 @@
 import re
-def p(g,x=9,S=re.sub):l=[str([y for*c,y in zip(*g,r)if x in c])[1:-1]for r in g if x in r];return-x*g or p(eval(S("".join("(.{%d})"%(65-len(r))+S(str(x),"[^%d]"%x,r)for r in l)[7:],"\%d ".join(l)%(*range(1,len(l)),),str(g))),x-1)
+def p(g,x=9):l=[str([y for*c,y in zip(*g,r)if x in c])[1:-1]for r in g if x in r];return-x*g or p(eval(re.sub("".join("(.{%d})"%(65-len(r))+re.sub(str(x),"[^%d]"%x,r)for r in l)[7:],"\%d ".join(l)%(*range(1,len(l)),),str(g))),x-1)
