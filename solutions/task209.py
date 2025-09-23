@@ -1,8 +1,7 @@
-e=enumerate
-def p(g,m=2):
- C=[(c^4,x,y)for x,r in e(g)for y,c in e(r)if c];Y,Z=sorted(C)[:4:3];_,P,Q=C[2];D=C[C.index(Z)+1:]
- for a,b,c in D:
-  G=[r*9for r in g*2];n=5
-  for u,v,w in D:s=P+m*(v-b);t=Q+m*(w-c);n+=1+m*m*(G[s][t]==u^4);exec("G[s][t:t+m]=[u^4]*m;s+=1;"*m)
-  if n>len(C):return[r[Y[2]:Z[2]+1]for r in G[Y[1]:Z[1]+1]]
- return p(g,m+1)
+def p(f,l=2):
+ m=[(r^4,a,i)for a,l in enumerate(f)for i,r in enumerate(l)if r];u,q=sorted(m)[:4:3]
+ for a,b,r in m[m.index(q)+1:]:
+  x=[l*9for l in f*2];t=5
+  for a,o,w in m[m.index(q)+1:]:y=m[2][1]+l*(o-b);i=m[2][2]+l*(w-r);t+=l*l*(x[y][i]==a^4)+1;exec("x[y][i:i+l]=[a^4]*l;y+=1;"*l)
+  if t>len(m):return[l[u[2]:q[2]+1]for l in x[u[1]:q[1]+1]]
+ return p(f,l+1)
