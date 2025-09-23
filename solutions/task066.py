@@ -1,6 +1,6 @@
-def p(g):
- def p(g,x,y,u,v,t=5):
-  g=[x*1for x in g]
-  while 0<x<len(g)-1>y>0==(c:=g[x+u][y+v]):x+=u;y+=v;g[x][y]=3
-  return p(g,x,y,v,u,t+1)or p(g,x,y,-v,-u,t+1)if c>7>t else(c==2)*g
- return max(p(g,x,y,u,v)for x in range(len(g))for y in range(len(g))for u in range(-1,2)for v in range(-1,2)if g[x][y]==3==g[x][y-v])
+def p(e):
+ def p(e,u,n,a,r,i=5):
+  e=[u*1for u in e]
+  while 0<u<len(e)-1>n>0==(d:=e[u+a][n+r]):u+=a;n+=r;e[u][n]=3
+  return p(e,u,n,r,a,i+1)or p(e,u,n,-r,-a,i+1)if d>7>i else(d==2)*e
+ return max(p(e,u,n,a,r)for u in range(len(e))for n in range(len(e))for a in range(-1,2)for r in range(-1,2)if e[u][n]==3==e[u][n-r])
