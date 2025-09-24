@@ -1,2 +1,1 @@
-import re
-p=lambda g:eval([g:=re.sub(r"0(?=([^]0]{15}).*(.)\1)",r"\2",str(g)[::-1])for _ in g][-2])
+p=lambda g:[[*map(max,*[s for s in g if all(0in[i,j,i-j]for i,j in zip(r,s))])]for r in g]
