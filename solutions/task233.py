@@ -1,26 +1,22 @@
-def p(g):
- e={}
- for q in range(len(g)-2):
-  for u in range(len(g[0])-2):
-   r=[g[q+f//3][u+f%3]for f in range(9)]
-   i=*(g<1for g in r),
-   if(0 in r)<1<len({*r}):
-    i=*(g==2for g in r),;p={i:sum({*r})-2}
-    for f in range(9):e[i]=p;i=*(i[2+f%3*3-f//3]for f in range(9)),;g[q+f//3][u+f%3]=0
- g=[[*g]for g in zip(*g)if any(g)]
- g=[[*g]for g in zip(*g)if any(g)]
- for q in range(len(g)-2):
-  for u in range(len(g[0])-2):
-   r=[g[q+f//3][u+f%3]for f in range(9)]
-   i=*(g<1for g in r),
-   if e.get(i,{}).get(i,{}):
-    l=e.get(i,{}).popitem()[1]
-    for f in range(9):g[q+f//3][u+f%3]=i[f]*2 or l
- for q in range(len(g)-2):
-  for u in range(len(g[0])-2):
-   r=[g[q+f//3][u+f%3]for f in range(9)]
-   i=*(g<1for g in r),
-   if e.get(i,{}):
-    l=e.get(i,{}).popitem()[1]
-    for f in range(9):g[q+f//3][u+f%3]=i[f]*2 or l
- return g
+def p(r,l={}):
+ for z in range(len(r)-2):
+  for e in range(len(r[0])-2):
+   i=*[r[z+m//3][e+m%3]==2for m in range(9)],
+   if len(o:={r[z+m//3][e+m%3]for m in range(9)})>1>(0 in o):
+    o={i:sum(o)-2}
+    for m in range(9):r[z+m//3][e+m%3]=0;l[i]=o;i=*[i[2+m%3*3-m//3]for m in range(9)],
+ r=[[*m]for m in zip(*r)if sum(m)]
+ r=[[*m]for m in zip(*r)if sum(m)]
+ for z in range(len(r)-2):
+  for e in range(len(r[0])-2):
+   i=*[r[z+m//3][e+m%3]==0for m in range(9)],
+   if l.get(i,{}).get(i,{}):
+    o=l.get(i,{}).popitem()[1]
+    for m in range(9):r[z+m//3][e+m%3]=i[m]*2or o
+ for z in range(len(r)-2):
+  for e in range(len(r[0])-2):
+   i=*[r[z+m//3][e+m%3]==0for m in range(9)],
+   if l.get(i,{}):
+    o=l.get(i,{}).popitem()[1]
+    for m in range(9):r[z+m//3][e+m%3]=i[m]*2or o
+ return r
