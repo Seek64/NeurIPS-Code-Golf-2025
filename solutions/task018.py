@@ -3,7 +3,7 @@ def p(e,*s):
   return *zip(*[((i,m,n),(i,-n,m))for i,n,m in z]),
  d,*r=len(e[0]),
  for u in range(len(e)*d):
-  for i,n,m in(z:=[(t:=e[g:=u//d][j:=u%d],g,j)]*t):e[n][m]=0;z+=[(i,o,z)for u in range(9)if(o:=n+u//3-1)//len(e)|(z:=m+u%3-1)//d==0<(i:=e[o][z])]
+  for i,n,m in(z:=[(t:=e[g:=u//d][j:=u%d],g,j)]*t):e[n][m]=0;z+=[(i,o,z)for u in range(9)if(i:=((e+e)[o:=n+u//3-1]+[0])[z:=m+u%3-1])]
   r+=z*(len(z)<5*t);s+=p((i,n-g,m-j)for i,n,m in z)
  for u in range(len(e)*d):
   for z in sum(map(p,s),s):
