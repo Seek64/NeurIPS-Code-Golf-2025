@@ -1,1 +1,1 @@
-p=lambda g,n=-13:n*g or p([[x|-y%15for x,y in zip(r,s[1:]+[0])][::-1]for r,s in zip(g,g[1:]+g[-1:])],n+1)
+p=lambda g,n=-13:n*g or p([[r.pop()|-y%15for y in[0]+s[:0:-1]]for r,s in zip(g,g[1:]+g[-1:])],n+1)
