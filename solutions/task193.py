@@ -1,1 +1,1 @@
-p=lambda g,*G:[[r.pop(0)&(b|[*r,0][0])for b in[0]+r[:-1]]for*r,in zip(*G or p(g,*g))]
+m=map;p=lambda g,*r:[*m(min,r,m(max,[0,*r],[*r[1:],0]))]or[*m(p,g,*m(p,g,*g))]
