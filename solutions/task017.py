@@ -1,2 +1,1 @@
-import re
-p=lambda g:[g:=eval(re.sub("0(?=([^0)]{12}).*(.)\\1)","\\2",f"{*zip(*g[::-1]),}"))for _ in g][19]
+p=lambda g:[[*map(max,*[r*any(i*j*(i-j)for i,j in zip(r,s))+s for s in g])]for*r,in zip(*g)]

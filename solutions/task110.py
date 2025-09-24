@@ -1,1 +1,1 @@
-p=lambda g:[[*map(max,*[s for s in g if all(0in[i,j,i-j]for i,j in zip(r,s))])]for r in g]
+p=lambda g:[[*map(max,*[r*any(i*j*(i-j)for i,j in zip(r,s))+s for s in g])]for r in g]
