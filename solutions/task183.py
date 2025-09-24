@@ -1,1 +1,1 @@
-p=lambda g,i=0:[[v%7*g[1+(i:=i-1)*2//len(g)**2][i*2//len(g)%2-1]for v in r][2:-2]for r in g][2:-2]
+p=lambda g,k=0,i=0:g*0!=0and[p(e,(k or g)[1+(i:=i-2)//len(g)])for e in g][2:-2]or g%7*k
