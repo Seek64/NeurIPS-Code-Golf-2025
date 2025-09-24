@@ -1,1 +1,1 @@
-p=lambda g:[g:=[*zip(*map(max,g,g[10:]+g[9:10]+g))]for _ in g][3]
+p=lambda g:[g:=[*zip(*map(max,g,g[:10]+g))][::-1]for _ in g][7]
