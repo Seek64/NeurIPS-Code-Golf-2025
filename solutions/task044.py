@@ -1,2 +1,2 @@
 import re
-def p(e,n=9):f="5, 5, 5, 5",*[str([5]+[(t!=n)*5for*e,t in zip(*e,t)if n in e]+[5])[1:-1]for t in e if n in t],"5, 5, 5, 5";f,s=re.subn("(.{,25})".join(f),re.sub(*"0n","\%s ".join(f))%(*range(1,len(f)),),"%s"%e,1);return-n*e or p(eval(re.sub(str(n),"n0"[s],f)),n-1)
+p=lambda e,n=9:-n*e or p(eval(re.sub("%s"%n,"n0"["n"in(e:="".join(n or"n"for n in re.split(re.sub("0",")0()(","(.{,25})".join(["(5, 5, 5, 5)",*[f"{5,*[(t!=n)*5for*e,t in zip(*e,t)if n in e],5}"for t in e if n in t],"(5, 5, 5, 5)"])),"%s"%e,1)))],e)),n-1)
