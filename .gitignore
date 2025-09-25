@@ -8,3 +8,4 @@ solutions/__pycache__/
 *.pyd
 *.so
 build/
+tasks/
