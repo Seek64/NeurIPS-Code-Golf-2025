@@ -1,2 +1,1 @@
-import re
-p=lambda g:eval(re.sub(r"(?<=([1-9]).{%d})\1(?=.{%d}\1)"%(x:=len(g[0])*3+4,x),"8",str(g)))
+*Z,p=[0]*99,lambda g,h=[],i=[]:g*0!=0and[*map(p,g,(h or g)[1:]+Z,Z+i+g)]or[g,8][0<g==h==i]
