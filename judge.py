@@ -20,22 +20,28 @@ def judge(task_num: int):
     tests = sum(task.values(), [])
 
     start = time.process_time()
+    fail = False
 
     try:
         scope = {}
         exec(code, scope)
         p = scope["p"]
-    except Exception:
-        return
 
-    for test in tests:
-        try:
-            p(test["input"])
-        except Exception:
-            pass
+        for test in tests:
+            output = p(test["input"])
+            normalized = json.loads(json.dumps(output))
+
+            if normalized != test["output"]:
+                fail = True
+                break
+    except Exception:
+        fail = True
 
     elapsed = time.process_time() - start
-    if MIN_REPORT < elapsed:
+
+    if fail:
+        print(f"Task {task_num:03d}: FAIL")
+    elif MIN_REPORT < elapsed:
         print(f"Task {task_num:03d}: {elapsed:.3f}s")
 
 
