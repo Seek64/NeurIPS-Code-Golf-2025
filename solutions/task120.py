@@ -1,1 +1,1 @@
-*Z,p=[0]*99,lambda g,h=[],i=[]:g*0!=0and[*map(p,g,(h or g)[1:]+Z,Z+i+g)]or[g,8][0<g==h==i]
+*Z,p=[0]*99,lambda g,h=0,i=[]:g*0!=0and[*map(p,g,(h or g)[1:]+Z,Z+i+g)]or[g,8][0<g==h==i]
