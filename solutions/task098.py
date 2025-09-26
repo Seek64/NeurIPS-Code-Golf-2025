@@ -1,1 +1,1 @@
-p=lambda g:[[y*(0in x)for*x,y in zip([0]+q,s[1:]+s,r)]for q,r,s in zip(g[:1]+g,g,g[1:]+g)]
+p=lambda g,h=[],i=[]:g*0!=0and[*map(p,g[:1]+g[:-1],h+g,(i+g)[1:]+g)]or(g*i<1)*h
