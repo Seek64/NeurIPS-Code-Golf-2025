@@ -1,8 +1,8 @@
 import re
-def p(g):
- m=-1;a=[max(S:=sum(g,[]),key=S.count)]
- for l in range(6,0,-1):
-  if M:=[i*[c]for i in range(1%l+1,7)for c in{*S}-{*a}if re.search(f"{c}.."*i+f"[^{c}].."*(2*l-1-2*i)+f"{c}"*(i<l),f"{g,*zip(*g)}"+f"{g,*zip(*g)}"[::-1])]:
-   if(m:=m+1)<1:r=[a*(2*l-1)]*(2*l-1)
-   for i in(1,1,-1)*4:r=[r[::i]for*r,in zip(*r)];a+=M[0];r[m][m:m+len(M[0])]=M[0]
- return r
+def p(n):
+ z=-1;c=[max(a:=sum(n,[]),key=a.count)]
+ for i in range(6,0,-1):
+  if r:=[f*[s]for f in range(1%i+1,7)for s in{*a}-{*c}if re.search(f"{s}.."*f+f"[^{s}].."*(2*i-1-2*f)+f"{s}"*(f<i),f"{n,*zip(*n)}"+f"{n,*zip(*n)}"[::-1])]:
+   if(z:=z+1)<1:u=[c*(2*i-1)]*(2*i-1)
+   for f in(1,1,-1)*4:u=[u[::f]for*u,in zip(*u)];c+=r[0];u[z][z:z+len(r[0])]=r[0]
+ return u
