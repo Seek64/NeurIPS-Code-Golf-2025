@@ -1,1 +1,1 @@
-R=range(11);p=lambda g:[[max(5*(g[y][x]==5)or(g[p%3*4+y//4][p//4*4+x//4]==4)*g[p%3*4+y%4][p//4*4+x%4]for p in R)for x in R]for y in R]
+R=range(11);p=lambda g:[[max(5*(g[y][x]==5)or(g[p%3*4+y//4][p&-4|x//4]==4)*g[p%3*4+y%4][p&-4|x%4]for p in R)for x in R]for y in R]
