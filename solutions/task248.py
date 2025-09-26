@@ -1,1 +1,3 @@
-p=lambda g:(([P:=g[-1]]+(X:=[P:=[0]+P[:-1]for i in P[1:]])+X[-2::-1])*9)[9::-1]
+def p(g,i=9):
+	for l in g:w=len(l)-1;l[abs(w-(w+i)%(2*w))]=1;i-=1
+	return g
