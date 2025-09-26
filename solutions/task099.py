@@ -1,1 +1,1 @@
-p=lambda g,n=0,*q:[q:=[x or(1in{*q[:i+1]}&{*q[i:]})*~-sum({*q})for i,x in enumerate(r)]for r in(n or p(g,g))[::-1]]
+p=lambda g,n=0,*q:[q:=[r[i]or(1in{*q[:i+1]}&{*q[i:]})*~-sum({*q})for i in range(10)]for r in(n or p(g,g))[::-1]]
