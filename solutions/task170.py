@@ -1,1 +1,1 @@
-def p(g):b,*l=filter(int,sum(g,[]));m=[[v for*c,v in zip(*g,r)if b in c[:15]]for r in g if b in r];R=range(o:=4-(len({*l[:-9]})<3));n=len(m[0])//o;return[[m[i*n][j*n]and l[-o*o+i*o+j]for j in R]for i in R]
+def p(g):*l,=filter(int,sum(g,[]));m=[[v for*c,v in zip(*g,r)if[c[:15]]>g]for r in g if[r]>g];R=range(o:=4-(len({*l[:-9]})<3));n=len(m[0])//o;return[[m[i*n][j*n]and l[-o*o+i*o+j]for j in R]for i in R]
