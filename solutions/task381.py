@@ -1,1 +1,1 @@
-p=lambda g:g[:1]+[(P:=0)or[P:=r.pop(0)or any(r*P)*9for _ in g]for r in g[1:9]]+g[9:]
+p=lambda g:[r*(P:=r in g[::9])or[P:=r.pop(0)or any(r*P)*9for _ in g]for r in g]
