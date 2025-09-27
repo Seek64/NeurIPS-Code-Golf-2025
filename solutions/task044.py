@@ -1,2 +1,2 @@
 import re
-p=lambda e,n=9:-n*e or p(eval(re.sub("%s"%n,"n0"["n"in(e:="".join(n or"n"for n in re.split(re.sub("0",")0()(","(.{,25})".join(["(5, )"*4,*[f"{5,*[(t!=n)*5for*e,t in zip(*e,t)if n in e],5}"for t in e if n in t],"(5, )"*4])),"%s"%e,1)))],e)),n-1)
+p=lambda o,n=9:-n*o or p(eval(re.sub("%s"%n,"n0"["n"in(o:="".join(n or"n"for n in re.split(re.sub("0",")0()(","(.{,25})".join(["(5, )"*4,*[f"{5,*[(c!=n)*5for*o,c in zip(*o,c)if n in o],5}"for c in o if n in c],"(5, )"*4])),"%s"%o,1)))],o)),n-1)

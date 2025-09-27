@@ -1,9 +1,9 @@
-def p(g,n=59):
- w=n//4;d=c=-2
- while c<31-w:
-  c+=1;i=0;h=[*map(list,g)];t=lambda J,N=9,C=c,W=w:i<31*all(N>>x&1for y in g[i:i+J]for x in y[max(0,C):C+W])
-  if c<0:g=h
-  if t(9):
-   while(i:=i+1)*(c>d)*(t(1,1)+t(5)):g[i-1][c+1:c+w-1]=-2%w*[3]
-   if t(5,1,d:=c+1,w-2):g=h
- return g*(3-w)or p([*zip(*g)][::-1],n-1)
+def p(b,n=59):
+ a=n//4;e=z=-2
+ while z<31-a:
+  z+=1;c=0;d=[[*b]for b in b];l=lambda n,l=9,d=z,a=a:c<31*all(l>>b&1for b in b[c:c+n]for b in b[max(0,d):d+a])
+  if z<0:b=d
+  if l(9):
+   while(c:=c+1)*(z>e)*(l(1,1)+l(5)):b[c-1][z+1:z+a-1]=-2%a*[3]
+   if l(5,1,e:=z+1,a-2):b=d
+ return b*(3-a)or p([*zip(*b)][::-1],n-1)

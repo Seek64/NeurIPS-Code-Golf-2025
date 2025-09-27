@@ -1,13 +1,13 @@
-def p(g):
- w,*l=len(g[0])+2,
- for x in g:l+=*x,0,0
- q=[l.index(1)]
- for x in q:q+=[x for x in(x-w,x-1,x+1,x+w)if(x in q)==0<x<len(l)>0<l[x]]
- a=min(x for x in q if l[x]>1);r=q
- for i in range(len(l)):
-  q=[i]
-  for x in q:q+=[x for x in(x-w,x-1,x+1,x+w)if(x in q)==0<x<len(l)>0<l[x]]
-  u=6+26%len(q)>>2
-  for x in r:
-   for j in range(u*u*all(l[x]>1for x in q)):l[i+u*x-u*a+j//u*w+j%u]=l[x]
- return[l[i*w:][:w-2]for i in range(len(g))]
+def p(m):
+ i,*o=len(m[0])+2,
+ for f in m:o+=*f,0,0
+ d=[o.index(1)]
+ for f in d:d+=[f for f in(f-i,f-1,f+1,f+i)if(f in d)==0<f<len(o)>0<o[f]]
+ j=min(f for f in d if o[f]>1);n=d
+ for r in range(len(o)):
+  d=[r]
+  for f in d:d+=[f for f in(f-i,f-1,f+1,f+i)if(f in d)==0<f<len(o)>0<o[f]]
+  l=6+26%len(d)>>2
+  for e in n:
+   for f in range(l*l*all(o[f]>1for f in d)):o[r+l*e-l*j+f//l*i+f%l]=o[e]
+ return[o[r*i:][:i-2]for r in range(len(m))]

@@ -1,6 +1,6 @@
-def p(g):
- for j in range(4):
-  w=len(g[0]);h=len(g);l=sum(g,[]);i,j={l.index(j):0for j in l if j%5}
-  while j-i>3:l[i:=i+2]=l[j:=j-2]=5
-  g=[l[j-w::-w]for j in range(w)]
- return[[g[i][j]or len(q:={*l}-{*(3*sum((g[:1]+g)[i:i+3],[0]))[j+2::h],5})%2*max(q)for j in range(h)]for i in range(w)]
+def p(l):
+ for r in range(4):
+  n=len(l[0]);m=len(l);e=sum(l,[]);r,l={e.index(l):0for l in e if l%5}
+  while l-r>3:e[r:=r+2]=e[l:=l-2]=5
+  l=[e[r-n::-n]for r in range(n)]
+ return[[l[r][f]or len(n:={*e}-{*(3*sum((l[:1]+l)[r:r+3],[0]))[f+2::m],5})%2*max(n)for f in range(m)]for r in range(n)]

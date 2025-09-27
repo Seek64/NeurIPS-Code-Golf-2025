@@ -1,2 +1,2 @@
 import re
-p=lambda r:[eval(','.join(r))for r in zip(*[iter(sorted(re.findall('(?=([^0]{7}).{%r}([^0]{7}).{%r}([^0]{7}))., .,'%(len(r[0])*3-5,len(r[0])*3-5),'%r'%r),key=lambda r:(r[0][3]=='5',r[2][3]!='5',r[1][6]!='5',r[1][0]=='5')))]*3)for r in zip(*r)]
+p=lambda a:[eval(','.join(c))for c in zip(*[iter(sorted(re.findall('(?=([^0]{7}).{%a}([^0]{7}).{%a}([^0]{7}))., .,'%(len(a[0])*3-5,len(a[0])*3-5),'%a'%a),key=lambda a:(a[0][3]=='5',a[2][3]!='5',a[1][6]!='5',a[1][0]=='5')))]*3)for c in zip(*c)]

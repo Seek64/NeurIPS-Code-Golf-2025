@@ -53,7 +53,7 @@ def compress(src: bytes) -> bytes:
 
 def pack(src: bytes) -> bytes:
     """Given a python program as a bytes object, returns a possibly shorter python program"""
-    codes = [src]
+    codes = []
 
     codes.append(
         b"#coding:L1\nimport zlib\nexec(zlib.decompress(bytes("

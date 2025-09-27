@@ -1,6 +1,6 @@
 import re
-def p(g):
- l=sum(g,[]);a,b,c,*d={}.fromkeys((9*l[1:])[7::30]+l[240:])
- for i in[i for i in range(838)if(l[i+62]==c)and({*l[i+61:i+64]}&{a,b}or(j:=i))]+[j]:
-  for o in range(25):g[i//30+o//5][i%30+o%5]=a*(i==j)or(l[o//5*30+o%5+i],l[o//5*30+o%5+j])[l[o//5*30+o%5+j]!=a!=b==l[o//5*30+o%5+i]]
- return[g:=eval(re.sub(f"{b}, (?=([^{a}], )\\1+{c})","\\1",f"{*zip(*g[::-1]),}"))for i in l][63]
+def p(i):
+ f=sum(i,[]);r,l,m,*z={}.fromkeys((9*f[1:])[7::30]+f[240:])
+ for k in[k for k in range(838)if(f[k+62]==m)and({*f[k+61:k+64]}&{r,l}or(p:=k))]+[p]:
+  for n in range(25):i[k//30+n//5][k%30+n%5]=r*(k==p)or(f[n//5*30+n%5+k],f[n//5*30+n%5+p])[f[n//5*30+n%5+p]!=r!=l==f[n//5*30+n%5+k]]
+ return[i:=eval(re.sub(f"{l}, (?=([^{r}], )\\1+{m})","\\1",f"{*zip(*i[::-1]),}"))for n in f][63]

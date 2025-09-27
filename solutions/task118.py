@@ -1,7 +1,8 @@
-def p(p):
- t={(l,n)for l in range(len(p))for n in range(len(p[0]))if p[l][n]&2};d=lambda i,l:[i and(d(i[1:],l)or not i[0]&l and d(i[1:],l|i[0])),l][t<l]
+def p(l,e=set()):
+ def p(l,e=set()):
+  return [l and(p(l[1:],e)or not l[0]&e and p(l[1:],e|l[0])),e][d<e]
+ d={(u,n)for u in range(len(l))for n in range(len(l[0]))if l[u][n]&2}
  for n in 2,3:
-  l=[l for d in range(len(p))for i in range(len(p[0]))for l in[{(l,n)for l in range(-n,n+1)for l,n in[(d+l,i),(d,i+l)]if len(p)>l>-1<n<len(p[0])}]if min(p[l][n]for l,n in l)]
-  if l:=d(l,set()):
-   for l,n in l:p[l][n]+=3*(p[l][n]&1)
-   return p
+  if e:=p([e for f in range(len(l))for e in range(len(l[0]))for e in[{(u,n)for n in range(-n,n+1)for u,n in[(f+n,e),(f,e+n)]if len(l)>u>-1<n<len(l[0])}]if min(l[u][n]for u,n in e)]):
+   for u,n in e:l[u][n]+=(l[u][n]&1)*3
+   return l

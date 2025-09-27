@@ -1,7 +1,7 @@
-def p(f,l=2):
- m=[(r^4,a,i)for a,l in enumerate(f)for i,r in enumerate(l)if r];u,q=sorted(m)[:4:3]
- for a,b,r in m[m.index(q)+1:]:
-  x=[l*9for l in f*2];t=5
-  for a,o,w in m[m.index(q)+1:]:y=m[2][1]+l*(o-b);i=m[2][2]+l*(w-r);t+=l*l*(x[y][i]==a^4)+1;exec("x[y][i:i+l]=[a^4]*l;y+=1;"*l)
-  if t>len(m):return[l[u[2]:q[2]+1]for l in x[u[1]:q[1]+1]]
- return p(f,l+1)
+def p(f,s=2):
+ e=[(t^4,u,d)for u,t in enumerate(f)for d,t in enumerate(t)if t];h,i=sorted(e)[:4:3]
+ for d,m,q in e[e.index(i)+1:]:
+  x=[u*9for u in f*2];t=5
+  for g,u,c in e[e.index(i)+1:]:r=e[2][1]+s*(u-m);d=e[2][2]+s*(c-q);t+=s*s*(x[r][d]==g^4)+1;exec("x[r][d:d+s]=[g^4]*s;r+=1;"*s)
+  if t>len(e):return[u[h[2]:i[2]+1]for u in x[h[1]:i[1]+1]]
+ return p(f,s+1)

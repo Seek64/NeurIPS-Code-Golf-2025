@@ -1,1 +1,1 @@
-def p(g):l=sum(g,[]);w=len(g[0]);*c,b=sorted((len(l)-l[::-1].index(v)-l.index(v),v)for v in{*l});n=c[-1][0]//w+1;l+=(m:=n*w*[b[1]]);[m:=[(m[i],v)[l[l.index(v)+i-(n*w-w+n-d)//2]==v]for i in range(n*w)]for d,v in c];return[m[i*w:][:n]for i in range(n)]
+def p(t):e=sum(t,[]);r=len(t[0]);*n,u=sorted((len(e)-e[::-1].index(n)-e.index(n),n)for n in{*e});p=n[-1][0]//r+1;e+=(t:=p*r*[u[1]]);[t:=[(t[u],n)[e[e.index(n)+u-(p*r-r+p-s)//2]==n]for u in range(p*r)]for s,n in n];return[t[u*r:][:p]for u in range(p)]
