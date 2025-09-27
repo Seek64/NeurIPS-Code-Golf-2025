@@ -1,1 +1,1 @@
-p=lambda g,*P:[*zip(*[P:=-n*c+[0]*len(P)for n,*c in sorted((-sum(g,g).count(e),e)for e in{*sum(g,[])})])]
+p=lambda g:[*filter(any,zip(*sorted([c:=-sum(g,g).count(e)]+[e]*-c+[0]*99for e in{*sum(g,[])})))][1:]
