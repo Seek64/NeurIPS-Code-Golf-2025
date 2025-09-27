@@ -1,1 +1,1 @@
-p=lambda g:[g:=[*zip(*[[r.pop(0)or x for x in r[5:]]for*r,in g])]for _ in g][1]
+p=lambda g,*G:[*zip(*[[r.pop(0)or x for x in r[5:]]for*r,in G or p(g,*g)])]
