@@ -1,2 +1,1 @@
-E=enumerate
-p=lambda g:[[r[j]or 1>>(a:=sum(r[:j]+c[:i]))|3>>(b:=sum(r+c)-a)|2*(a==b==sum(r[j:]+c[:i]))for j,[*c]in E(zip(*g))]for i,r in E(g)]
+p=lambda g:[[r.pop(0)or 3>>(a:=sum(r+c[i:]))|1>>(b:=sum(g[i]+c)-a)|2*(a==b==sum(r+c[:i]))for*c,in zip(*g)]for i,[*r]in enumerate(g)]
