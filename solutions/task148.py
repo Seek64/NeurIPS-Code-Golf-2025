@@ -1,1 +1,1 @@
-p=lambda g,X=0:[[i:=0,X:=-any(r)&1+X%6,[332%(2+sum(r[i:])*sum(r[:(i:=i+1)]))or(X in g)*8for _ in r],g:=g+[X]*(8in r)][2]for r in g]
+p=lambda g,X=0:[[s:=0,X:=-any(r)&1+X%6,[332%(2+(sum(r)-s)*(s:=s+v))or(X in g)*8for v in r],g:=g+s//8*[X]][2]for r in g]
