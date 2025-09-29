@@ -1,2 +1,1 @@
-import re
-p=lambda g,n=-3:n*g or p(eval(re.sub(r"(5.*?\).*?%s.,)([^)]*)%s(?=.*([^)05]),)"%(x:="(?=(.{%d})*5)"%(len(g)*3+2),x),r"\1*[\5]*len([\3]),",f"{*zip(*g[::-1]),}",1)),n+1)
+p=lambda g,n=-3,a=4:g*n or p([[a:=a*5-20or 5in r]and[r.pop()|(9>(a:=a+(b:=c.count(5)))>5+b)*sum({*sum(g,[-5])})for c in g[::-1]]for*r,in zip(*g)],n+1)
