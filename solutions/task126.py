@@ -1,1 +1,1 @@
-p=lambda g:g[:-1]+[[sum(c)%~max(c)%2*4for c in zip(*g)]]
+p=lambda g:g[:-1]+[[4*(0<sum(c)in c)for c in zip(*g)]]
