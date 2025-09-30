@@ -1,1 +1,1 @@
-def p(g,w=1):h=g;return[h:=[r[x:]for*r,in zip(*h[::-1])if w in r]for x in[0]*4+[1]*5][7]*(h==[])or p(g,w+1)
+def p(g,w=1):h=g;return[h:=[r[~x::-1]for*r,in zip(*h)if w in r]for x in[0]*4+[1]*5][7]*(h==[])or p(g,w+1)
