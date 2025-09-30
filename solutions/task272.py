@@ -1,1 +1,1 @@
-p=lambda g,n=7:-n*g or[*map(lambda*r,b=0:[b:=[b+3>>1,a>>0**n][a-1]for a in r],*p(g,n-1)[::-1])]
+p=lambda g,n=7:-n*g or[*map(lambda*r,b=0:[b:=a*~0**n%3//~b%3for a in r],*p(g,n-1)[::-1])]
