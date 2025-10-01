@@ -1,1 +1,1 @@
-p=lambda g,h=0:[[[max(c),x*any(c)][f"{x}, "*3in"%s"%g]for*c,x in zip([0]+r,r[1:]+[0],r)]for*r,in zip(*h or p(g,g))]
+p=lambda g,h=0:[[max(x,max(c),key=([0]*99+r).count)for*c,x in zip([0]+r,r[1:]+[0],r)]for*r,in zip(*h or p(g,g))]
