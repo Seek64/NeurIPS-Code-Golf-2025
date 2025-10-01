@@ -1,1 +1,1 @@
-*Z,p=0,lambda g,h=0:[[max(x,max(c),key=(Z*99+r).count)for*c,x in zip(Z+r,r[1:]+Z,r)]for*r,in zip(*h or p(g,g))]
+Z=0,;p=lambda g:[*map(F:=lambda*r:[max(x,a|b,key=(Z*99+r).count)for a,b,x in zip(Z+r,r[1:]+Z,r)],*map(F,*g))]
