@@ -1,1 +1,1 @@
-p=lambda g,n=-3:g*n or[[r.pop()*6**y%10for y in[0]+r[:0:-1]]for*r,in zip(*p(g,n+1))]
+p=lambda g,n=3:-n*g or[*map(lambda*r,b=0:[b:=a*6**b%10for a in r],*p(g,n-1)[::-1])]
