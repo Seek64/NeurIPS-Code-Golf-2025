@@ -1,1 +1,1 @@
-p=lambda g:([max(g[::3]),*g[4:6]]*9)[:len(g)]
+p=lambda g:[*map(max,g,g[3:6]*9,g[6:9]*9)]
