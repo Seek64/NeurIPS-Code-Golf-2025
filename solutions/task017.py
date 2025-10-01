@@ -1,1 +1,1 @@
-p=lambda g:[[*map(max,*[r*any(0<i!=j>0for i,j in zip(r,s))+s for s in g])]for*r,in zip(*g)]
+p=lambda g:[[*map(max,*[r*any(-i^-j>0for i,j in zip(r,s))+s for s in g])]for*r,in zip(*g)]
