@@ -1,1 +1,1 @@
-p=lambda g,n=299:g*-n or[[r.pop()or(x%8>0)*max({*sum(g,[])}^{x,8})for x in[0]+r[:0:-1]]for*r,in zip(*p(g,n-1))]
+p=lambda g,n=299:g*-n or[[r.pop()or(x%8>0)*sum({*sum(g,[-x-8])})for x in[0]+r[:0:-1]]for*r,in zip(*p(g,n-1))]
