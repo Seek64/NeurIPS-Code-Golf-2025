@@ -1,1 +1,15 @@
-def p(m):b=max(m[0],key=m[0].count);y,=[y for x in range(len(m)*2-2)for l in range(len(m[0])-2)if len(set(y:=[(m+m[::-1])[x+e//3][l+e%3]for e in range(9)]))>3>0<y[0]!=y[8]];[(o:=lambda y=b,n=b,a=b,*m:[y]*l+[n]*l+[a]*l)(o(y[0])[::e],o(),o(a=y[8])[::e])!=[(m+m[::-1])[x+d][a:a+3*l]for d in range(3*l)]or exec('for d in range(3*l):(m+m[::-1])[x+d][a:a+3*l]=o(*y[d//l*3:])[::e]')for l in range(4)for e in(1,-1)for x in range(len(m)*2-3*l+1)for a in range(len(m[0])-2)];return m
+def p(g):
+ for l in(3,2,1):
+  for e in(-1,1):
+   for i in range(len(g)*2-3*l+1):
+    for j in range(len(g[0])-3*l+1):
+     m=[r[j:j+3*l][::e]for r in(g+g[::-1])[i:i+3*l]]
+     if len({*f"{m}"})>7>0<m[0][0]!=m[-1][-1]:q=m
+ for l in(3,2,1):
+  for e in(-1,1):
+   for i in range(len(g)*2-3*l+1):
+    for j in range(len(g[0])-3*l+1):
+     m=[r[j:j+3*l][::e]for r in(g+g[::-1])[i:i+3*l]]
+     if m[0][:l]==q[0][:1]*l!=m[-1][-l:]==m[-l][-l:]==q[-1][-1:]*l!=m[0][l]==m[-1][~l]:
+      for k in range(3*l*3*l):(g+g[::-1])[i+k//(3*l)][j+k%(3*l)]=q[k//(3*l)//l][::e][k%(3*l)//l]
+ return g
