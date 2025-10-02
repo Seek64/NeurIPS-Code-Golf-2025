@@ -1,1 +1,1 @@
-def p(g):f=sum(g,[]);a=f.index;x=a(m:=max(f));y=a(m,x+1);R=range(l:=len(g));return[[m*(max(i-y//l,j-y%l,key=abs)%(y%l-x%l)==0)for j in R]for i in R]
+def p(g):R=range(len(g));c,d=[(i,a:=j)for j in R for i in R if g[i][j]][1];return[[g[c][d-max(i-c,j-d,c-i,d-j)%(a-d)]for j in R]for i in R]
