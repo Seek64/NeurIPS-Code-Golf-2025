@@ -1,3 +1,3 @@
-def p(g,i=9):
-	for l in g:w=len(l)-1;l[abs(w-(w+i)%(2*w))]=1;i-=1
-	return g
+def p(g,i=10):
+ for l in g:w=len(l)*2-2;l[min(i:=~-i%w,w-i)]=1
+ return g
