@@ -1,3 +1,1 @@
-def p(g,i=10):
- for l in g:x=len(l);w=x*2-2;l[:]=[8]*x;l[min(i:=~-i%w,w-i)]=1
- return g
+p=lambda g,i=10:[([8]*min(i:=~-i%(w:=(x:=len(l))*2-2),w-i)+[1]+[8]*x)[:x]for l in g]
