@@ -1,1 +1,1 @@
-p=lambda g:[g:=[*zip(*[r for r in g[:1]*99+g if r.count(max(max(g,key=any)))!=1][:~len(g):-1])]for _ in g][3]
+p=lambda g:[g:=[*zip(*[r for r in g[:1]*99+g if~-r.count(max(max(g,key=any)))][:~len(g):-1])]for _ in g][3]
