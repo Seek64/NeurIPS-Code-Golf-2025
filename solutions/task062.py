@@ -1,1 +1,1 @@
-p=lambda g:[g:=[*zip(*[((s:=[x or 3for x in r[:[*map(max,*g),2].index(2)]])+s[::-1]+[3]*9,r)["0, 2"in"%r"%g][:10]for*r,in g][::-1])]for _ in g][3]
+p=lambda g,*q:[g:=((g:=[q:=[i or 3for i in r]for*r,in zip(*g)if(x:=x-({*r}=={2,3}>{3}<{*q}))])+g[::-1]+g[:1]*9)[9::-1]for _ in g if(x:=1)][7]
