@@ -1,12 +1,12 @@
 def p(g):
- for i in range(12):
-  l=3-i//4;g=[[*g]for g in zip(*g[::-1])]
+ for k in range(12):
+  l=3-k//4;g=[[*k]for k in zip(*g[::-1])]
   for i in range(len(g)-3*l+1):
    for j in range(len(g[0])-3*l+1):
     m=[g[i+k//(3*l)][j+k%(3*l)]for k in range(3*l*3*l)]
-    if m[0]!=m[8]!=7<len({*f"{m}"}):q=m
- for i in range(12):
-  l=3-i//4;g=[[*g]for g in zip(*g[::-1])]
+    if m[0]!=m[8]!=3<len({*m}):q=m
+ for k in range(12):
+  l=3-k//4;g=[[*k]for k in zip(*g[::-1])]
   for i in range(len(g)-3*l+1):
    for j in range(len(g[0])-3*l+1):
     m=[g[i+k//(3*l)][j+k%(3*l)]for k in range(3*l*3*l)]
