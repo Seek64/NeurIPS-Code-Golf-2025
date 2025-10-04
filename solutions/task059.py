@@ -1,1 +1,1 @@
-R=range(11);p=lambda g,n=36,o=0:[[(g[i][j]==5)*5or(sum(S:=sum([r[j&12:][:3]for r in g[i&12:][:3]],[]))>n!=[o:=1])*max(S)for j in R]for i in R]*o or p(g,n-1)
+R=range(11);p=lambda g,n=36,o=0:[[(g[i][j]==5)*5or(sum(S:=[g[i&12|k%3][j&12|k//3]for k in R[:9]])>n!=[o:=1])*max(S)for j in R]for i in R]*o or p(g,n-1)
