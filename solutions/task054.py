@@ -1,6 +1,18 @@
-import re
-def p(i):
- f=sum(i,[]);r,l,m,*z={k:0for k in(9*f[1:])[7::30]+f[240:]}
- for k in[k for k in range(838)if(f[k+62]==m)and({*f[k+61:k+64]}&{r,l}or(p:=k))]+[p]:
-  for n in range(25):i[k//30+n//5][k%30+n%5]=r*(k==p)or(f[n//5*30+n%5+k],f[n//5*30+n%5+p])[f[n//5*30+n%5+p]!=r!=l==f[n//5*30+n%5+k]]
- return[i:=eval(re.sub(f"{l}, (?=([^{r}], )\\1+{m})","\\1",f"{*zip(*i[::-1]),}"))for n in f][63]
+def p(g):
+ h=[r*1for r in g]
+ for i in range(28):
+  for j in range(28):
+   if g[i][j+1]==g[i][j-1]!=g[i][j]!=g[i+1][j]==g[i-1][j]>0<len({g[i+1][j],g[i][j+1],g[i+1][j+1]})>1:
+    for k in range(28):
+     for l in range(28):
+      if g[i][j]==g[k][l]:
+       for m in range(-1,2):
+        for n in range(-1,2):
+         if g[i+m][j+n]!=g[i+1][j+2]:
+          o=1;h[k+m*o][l+n*o]=g[i+m][j+n];o+=1
+          if g[i][j]!=g[i+m*o][j+n*o]!=g[i+1][j+2]:
+           while g[k+m*o][l+n*o]!=g[i+1][j+2]:h[k+m*o][l+n*o]=g[i+m][j+n];o+=1
+    for m in range(-2,3):
+     for n in range(-2,3):
+      h[i+m][j+n]=g[i+1][j+2]
+    return h
