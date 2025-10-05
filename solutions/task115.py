@@ -1,1 +1,1 @@
-p=lambda g:[*zip(*map(F:={}.fromkeys,zip(*map(F,g))))]
+p=lambda g,F={}.fromkeys:[*F(zip(*zip(*map(F,g))))]
