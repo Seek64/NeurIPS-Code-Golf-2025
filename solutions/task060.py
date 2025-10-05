@@ -1,1 +1,1 @@
-p=lambda g:[[i]*5+[i%~i%6]+[j]*5for i,*r,j in g]
+p=lambda g:[r[:1]*5+[i%~i%6]+[i]*5for*r,i in g]
