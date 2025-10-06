@@ -1,1 +1,1 @@
-p=lambda g,X=0:[g:=[X:=x>>X*(r==g)for x in r]for r in g]
+p=lambda g:g*0!=0and[g:=[p(r),r][r!=g]for r in g]
