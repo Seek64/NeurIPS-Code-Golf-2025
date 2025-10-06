@@ -1,8 +1,6 @@
 import re
-def p(p):
- f=-1;a=[max(e:=sum(p,[]),key=e.count)]
- for i in range(6,0,-1):
-  if r:=[f*[u]for f in range(1%i+1,7)for u in{*e}-{*a}if re.search(f"{u}.."*f+f"[^{u}].."*(2*i-1-2*f)+f"{u}"*(f<i),f"{p,*zip(*p)}"+f"{p,*zip(*p)}"[::-1])]:
-   if(f:=f+1)<1:n=[a*(2*i-1)]*(2*i-1)
-   for u in(1,1,-1)*4:n=[a[::u]for*a,in zip(*n)];a+=r[0];n[f][f:f+len(r[0])]=r[0]
- return n
+def p(l):
+ f=re.sub(', ','',str(l+[*zip(*l)]));i=int(max(f,key=f.count));a={0:(0,i)}
+ for m in range(10):
+  if(m!=i)*re.findall(f'{m}+',f+f[::-1]):n=len(max(re.findall(f'{m}{m}([^]){m}]+){m}|$',f+f[::-1])));a[len(max(re.findall(f'{m}+',f+f[::-1])))*((n>0)+1)+n>>1]=1+n>>1,m
+ return[[[a[max(abs(m),abs(e))][1],i][a[max(abs(m),abs(e))][0]>min(abs(m),abs(e))]for m in range(-max(a),max(a)+1)]for e in range(-max(a),max(a)+1)]
