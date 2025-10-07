@@ -1,1 +1,1 @@
-p=lambda g:[(c:=0)or[(c:=e+80-c>>c&9-e)%2*3for e in l]for l in g]
+p=lambda g,c=0:g*0!=0and[p(l)or(c:=l+80-c>>c&9-l)%2*3for l in g]
