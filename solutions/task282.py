@@ -1,1 +1,1 @@
-p=lambda g,n=23:-n*g or p([*map(lambda*r,x=0:[y^-x&5-(x:=y)%n for y in r],*g[::-1])],n-6)
+p=lambda g:[*map(lambda*r,x=0:[x//5|x^(x:=y)for y in r],*g[63:]or p(g*2))][::-1]
