@@ -1,1 +1,1 @@
-p=lambda g:g and[[3]*len(g),*(g[1:]and[[3,3]*(len(g)<3)+[*g[0][1:],3]]),*zip(*p([*zip(*g[2:])])[::-1])]
+p=lambda g:g and[[3]*len(g),*(g and[[3,3]*(len(g)<3)+[*g[0][1:],3]]),*zip(*p([*zip(*g[2:])])[::-1])]
