@@ -1,13 +1,10 @@
 import zopfli.zlib
 import deflate
-import random
 
 from reencoder import reencode
 
-random.seed(0)
-ZOPFLI_SEEDS = [2 << 32 | 1] + [random.getrandbits(64) for _ in range(256)]
 ZOPFLI_ITERS = [2048]
-DEFLATE_LEVELS = list(range(7, 13))
+DEFLATE_LEVELS = range(7, 13)
 DELIMS = [b"'", b'"']
 
 # ZOPFLI_ITERS = [1 << i for i in range(10)]
@@ -35,29 +32,15 @@ def sanitize(b_in: bytes, delim: bytes) -> bytes:
     return bytes(b_out)
 
 
-def find_best_zopfli_settings(src: bytes) -> tuple[int, int]:
-    best_settings = ZOPFLI_SEEDS[0], ZOPFLI_ITERS[0]
-    best_length = len(src)
-
-    for seed in ZOPFLI_SEEDS:
-        for i in ZOPFLI_ITERS:
-            length = len(pack(src, zopfli_seed=seed, zopfli_iters=i, deflate_levels=[]))  # type: ignore[reportUnknownArgumentType]
-
-            if length < best_length:
-                best_settings = seed, i
-                best_length = length
-
-    return best_settings
-
-
-def compress(src: bytes, zopfli_seed: int = ZOPFLI_SEEDS[0], zopfli_iters: int = ZOPFLI_ITERS[0], deflate_levels: list[int] = DEFLATE_LEVELS) -> bytes:
+def compress(src: bytes) -> bytes:
     """Given a bytes object, returns a zlib compressed literal"""
-    compressed: list[bytes] = []
+    compressed: list[bytes | bytearray] = []
 
     # Zopfli attempts
-    compressed.append(zopfli.zlib.compress(src, numiterations=zopfli_iters, seed=zopfli_seed)[2:-4])  # type: ignore[reportUnknownArgumentType]
+    for i in ZOPFLI_ITERS:
+        compressed.append(zopfli.zlib.compress(src, numiterations=i)[2:-4])  # type: ignore[reportUnknownArgumentType]
     # deflate (libdeflate) attempts
-    for level in deflate_levels:
+    for level in DEFLATE_LEVELS:
         compressed.append(deflate.deflate_compress(src, compresslevel=level))  # type: ignore[reportUnknownArgumentType]
 
     literals: list[bytes] = []
@@ -68,25 +51,24 @@ def compress(src: bytes, zopfli_seed: int = ZOPFLI_SEEDS[0], zopfli_iters: int =
     return min(literals, key=len)
 
 
-def pack(src: bytes, zopfli_seed: int = ZOPFLI_SEEDS[0], zopfli_iters: int = ZOPFLI_ITERS[0], deflate_levels: list[int] = DEFLATE_LEVELS) -> bytes:
+def pack(src: bytes) -> bytes:
     """Given a python program as a bytes object, returns a possibly shorter python program"""
+    codes = []
+
+    codes.append(
+        b"#coding:L1\nimport zlib\nexec(zlib.decompress(bytes("
+        + compress(src)
+        + b',"L1"),~9))'
+    )
+
     if src.startswith(b"import"):
         imports = src.split()[1]
-        packed = (
+        codes.append(
             b"#coding:L1\nimport zlib,"
             + imports
             + b"\nexec(zlib.decompress(bytes("
-            + compress(src[len(imports) + 8:], zopfli_seed, zopfli_iters, deflate_levels)
-            + b',"L1"),~9))'
-        )
-    else:
-        packed = (
-            b"#coding:L1\nimport zlib\nexec(zlib.decompress(bytes("
-            + compress(src, zopfli_seed, zopfli_iters, deflate_levels)
+            + compress(src[len(imports) + 8:])
             + b',"L1"),~9))'
         )
 
-    if len(packed) > len(src):
-        return src
-    
-    return packed
+    return min(codes, key=len)
