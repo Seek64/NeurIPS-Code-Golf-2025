@@ -1,1 +1,1 @@
-p=lambda g,i=1:-2%len({r.count(i)for r in g})*[[i]]or p(g,i+1)
+p=lambda g,i=1:4%len({r.count(i)for r in g})*[[i]]or p(g,i+1)
