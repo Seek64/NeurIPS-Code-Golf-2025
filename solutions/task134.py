@@ -1,1 +1,1 @@
-def p(g,y=1):m={0,y};n=len(h:=[[y*len({x}-m)for*c,x in zip(*g,r)if{*c}-m]for r in g if{*r}-m])//3;return[r[::n]for r in h[::n]]*(f"0, {y}, 0"in"%r"%g)or p(g,y+1)
+p=lambda g,y=1:[(s:=[y*(0<x!=y)for*c,x in zip(*g,r)if{*c}-{0,y}])[::(n:=len(s)//3)]for r in g if{*r}-{0,y}][::n]*(f"0, {y}, 0"in"%r"%g)or p(g,y+1)
