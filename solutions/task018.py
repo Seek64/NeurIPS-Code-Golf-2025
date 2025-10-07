@@ -1,11 +1,11 @@
-def p(e,*s):
- def p(z):
-  return *zip(*[((i,m,n),(i,-n,m))for i,n,m in z]),
+def p(e,*h):
+ def p(f):
+  return *zip(*[((z,i,s),(z,-s,i))for z,s,i in f]),
  d,*r=len(e[0]),
  for u in range(len(e)*d):
-  for i,n,m in(z:=[(t:=e[g:=u//d][j:=u%d],g,j)]*t):e[n][m]=0;z+=[(i,o,z)for u in range(9)if(i:=((e+e)[o:=n+u//3-1]+[0])[z:=m+u%3-1])]
-  r+=z*(len(z)<5*t);s+=p((i,n-g,m-j)for i,n,m in z)
+  for z,s,i in(f:=[(m:=e[n:=u//d][u:=u%d],n,u)]*m):e[s][i]=0;f+=[(z,o,f)for u in range(9)if(z:=((e+e)[o:=s+u//3-1]+[0])[f:=i+u%3-1])]
+  r+=f*(len(f)<5*m);h+=p((z,s-n,i-u)for z,s,i in f)
  for u in range(len(e)*d):
-  for z in sum(map(p,s),s):
-   for i,n,m in(z:=[(i,n+u//d,m+u%d)for i,n,m in z])*(len({*r}&{*z})>2):e[n][m]=i
+  for f in sum(map(p,h),h):
+   for z,s,i in(f:=[(z,s+u//d,i+u%d)for z,s,i in f])*(len({*r}&{*f})>2):e[s][i]=z
  return e
