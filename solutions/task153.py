@@ -1,1 +1,1 @@
-T=0,1,2;p=lambda g:max(all(sum(G:=[[g[x-i%10][y-i%11+1]^g[x-i%13+3][y-i%17+7]for y in T]for x in T],G))*G for i in range(8**5))
+T=0,1,2;p=lambda g:max(all(sum(G:=[[g[x-i%10][y-i%11+1]^g[x-i%13+3][y-i%7+7]for y in T]for x in T],G))*G for i in range(8**5))
