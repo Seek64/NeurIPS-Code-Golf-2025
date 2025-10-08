@@ -21,7 +21,7 @@ def sanitize(b_in: bytes, delim: bytes) -> bytes:
             b_out += b"\\x00" if b_next in b"01234567" else b"\\0"
         elif b == ord("\r"):
             b_out += b"\\r"
-        elif b == ord("\\") and b_next in b"01234567abfxnrtvuUN'\"\\":
+        elif b == ord("\\") and b_next in b"\0\n\r\"'01234567NU\\abfnrtuvx":
             b_out += b"\\\\"
         elif b == ord("\n") and len(delim) == 1:
             b_out += b"\\n"
