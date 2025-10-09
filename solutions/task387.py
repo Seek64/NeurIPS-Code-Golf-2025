@@ -1,6 +1,10 @@
 def p(o):
  for q in range(4):
-  r=sum(o,[]);q,p,q,p,=[r.index(q)for q in r if q%5]
-  while q-p>3:p+=2;q-=2;r[p]=r[q]=5
+  r=sum(o,[]);n,q,p,*n={r.index(q):0for q in r}
+  while p-q>3:q+=2;p-=2;r[p]=r[q]=5
   o=[r[q-len(o[0])::-len(o[0])]for q in range(len(o[0]))]
- return[[o[q][n]or len(p:={*r}-{*(3*sum((o[:1]+o)[q:q+3],[0]))[n+2::len(o[0])],5})%2*max(p)for n in range(len(o[0]))]for q in range(len(o))]
+ for q in range(4):
+  r=sum(o,[]);n,q,p,*n={r.index(q):0for q in r}
+  for q in[1,3,1+len(o[0]),2+len(o[0]),3+len(o[0]),1-len(o[0]),2-len(o[0]),3-len(o[0])]:r[p-q]=r[n[0]]
+  o=[r[q-len(o[0])::-len(o[0])]for q in range(len(o[0]))]
+ return o
