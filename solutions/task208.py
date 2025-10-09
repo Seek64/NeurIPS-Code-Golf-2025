@@ -1,2 +1,2 @@
-import re
-p=lambda g:eval((z:=str(x:=min(f:=sum(g,[]),key=f.count))).join(re.split("".join("(.{%d})"%(67-len(s:=f"{*[y for*c,y in zip(*g,r)if x in c],}"))+re.sub(z,")[^%s]("%z,s)[2:-2]for r in g if x in r)[7:],str(g))))
+from re import*
+p=lambda g:eval((i:=min(k:=str(g)+'#[]'*X,key=k.count)).join(split(sub(i,w:=f'[^{i}]',sub(f'({w}+)',r'(\1)',sub(w*30+'+',lambda x:'.'*len(x[0]),*findall(i+'.*'+i,k)))),k)))
