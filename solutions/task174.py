@@ -1,1 +1,1 @@
-p=lambda g,i=1,w=3:g*-w or[r*(r==r[::1|w%-2])for*r,in zip(*p(g,i,w-1))if i in r]or p(g,i+1)
+p=lambda g,i=7:[r*(r==r[::1|i%-2])for*r,in zip(*g[70:]or p(g*2,i-1))if i//4in r]or p(g,i+4)
