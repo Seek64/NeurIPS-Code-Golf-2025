@@ -1,1 +1,1 @@
-p=lambda g:max(map(sum,g))<8and g[-2-len(g)%2:][:2]+g[:-2]or[*zip(*p([*zip(*g)]))]
+p=lambda g:'3, 0'in'%s'%max(g)and[*map(p,g)]or g[-2-len(g)%2:][:2]+g[:-2]
