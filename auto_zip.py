@@ -1,5 +1,10 @@
-import os, golf_utils, zipfile
+import os, golf_utils, zipfile, argparse
 from multiprocessing import Pool, cpu_count
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--pad", help="Extra bytes to write to submission.zip", type=int)
+args = parser.parse_args()
+padding = args.pad
 
 source = "solutions"
 submission = "submission"
@@ -42,4 +47,10 @@ if __name__ == "__main__":
         for task_num in range(1, 401):
             src_path = f"{submission}/task{task_num:03d}.py"
             if os.path.exists(src_path):
-                zipf.write(src_path, arcname=f"task{task_num:03d}.py")
+                with open(src_path, "rb") as task_in:
+                    task_src = task_in.read()
+                    if padding:
+                        print(f"Adding {padding} bytes of padding to {task_num:03d}")
+                        task_src += b"#" * padding
+                        padding = 0
+                    zipf.writestr(f"task{task_num:03d}.py", task_src);
