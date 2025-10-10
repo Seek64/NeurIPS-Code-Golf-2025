@@ -1,2 +1,2 @@
 from re import*
-def p(g):h=hash((*g[0],))%466;g[5][2]+=h==5;g[1][3]+=h==82;return eval(sub(*'10',eval("'2'.join(split(sub(*'20',sub('[^2]+',lambda x:'('+'.'*len(x[0])+')',K:=str(g)).strip('.()')),"*3+"K))))))")))
+def p(g):h=hash((*g[3],))%149<1;g[6][3]|=h;g[1][3]|=h;return eval(sub(*'10',eval("'2'.join(split(sub(*'20',sub('[^2]+',lambda x:'('+'.'*len(x[0])+')',K:=str(g)).strip('.()')),"*3+"K))))))")))
