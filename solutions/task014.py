@@ -1,1 +1,1 @@
-p=lambda g,k=0:[e for*e,in zip(*k or p(g,g))if({*g[0]}^{*g[-1]})&{*e}]
+p=lambda g,k=0:[r for*r,s in zip(*k or p(zip(*g),g),g)if len({*s})>2]
