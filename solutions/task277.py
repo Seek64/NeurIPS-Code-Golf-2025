@@ -1,1 +1,1 @@
-p=lambda g,n=11,k=120:-n*g or p([(a:=0)or[a:=c%~c&[max(a,c,k:=k-1),2-(c+sum(w:=sum(g,[]))%1982in[51,86]or(F:=w.count)(c)==max(F(k)for k in w if k))][n<1]for c in r]for r in zip(*g[::-1])],n-1,0)
+p=lambda g,k=1199,q=[0]*9:-k*g or p([q:=(a:=0)or[a:=c%~c&[max(a,c,d,k:=k-1),1+(min(map(F:=(w:=sum(g,[])).count,w))==F(c))][k<99]for d,c in zip([0]+q,r)]for r in zip(*g[::-1])],k)
