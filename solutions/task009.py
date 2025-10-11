@@ -1,1 +1,1 @@
-p=lambda g,n=0:[[max({*s[:i],x}&{*s[i::3],x})for i,x in enumerate(r)]for*r,s in zip(*n or p(zip(*g),g),g)]
+p=lambda g,*r,i=-1:[max({*g[:(i:=i+1)],x}&{*g[i::3],x})for x in r]or[*map(p,g,*map(p,zip(*g),*g))]
