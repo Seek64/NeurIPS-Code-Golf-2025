@@ -1,1 +1,1 @@
-p=lambda g,s=2:[g:=r for*r,in zip(*g*~s or p(g,-s))if r!=g][::s]
+p=lambda g,w=2:[[0,max,p][w](g:=r,-2)for r in g if g!=r][::w]
