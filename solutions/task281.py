@@ -1,1 +1,1 @@
-def p(g,k=3):*_,a,b,c=map(g.index,filter(any,g));return-k*g or p([*zip(*(g,g[:a]+(c-a)*[g[a]]+[g[b]]+g[c+1:])[{*g[c]}=={0,8}][::-1])],k-1)
+def p(g,k=3):*_,a,b,c=map(g.index,filter(any,g));return-k*g or p([*zip(*(g,g[:a]+(c-a)*[g[a]]+[g[b]]+g[c+1:])[b<a<c][::-1])],k-1)
