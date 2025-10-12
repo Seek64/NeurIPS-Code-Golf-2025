@@ -1,1 +1,1 @@
-p=lambda g:[[x|x*~i%6for i,x in enumerate(r)]for r in g]
+p=lambda g,i=0:g*0!=0and[*map(p,g,b''*9)]or i*g%7
