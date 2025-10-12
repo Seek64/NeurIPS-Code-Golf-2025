@@ -1,1 +1,1 @@
-p=lambda g,i=0:[[max(x,(i:=i+x)*9%(i^20)%7)for x in r]for r in g if[i:=i%8+r[0]%5]]
+p=lambda g,i=0:[[x|(i:=i+x)*9%(i^20)%7>>x for x in r]for r in g if[i:=i%8+r[0]%5]]
