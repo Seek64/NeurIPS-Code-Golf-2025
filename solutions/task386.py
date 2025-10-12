@@ -1,1 +1,1 @@
-p=lambda g:[[3>>x+r.pop(4)for x in r[:3]]for r in g]
+p=lambda g:[eval('3>>r.pop(0)+r[3],'*3)for r in g]
