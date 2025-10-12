@@ -1,1 +1,1 @@
-p=lambda g,*p:[[p for*c,e in zip(*g,L)if[p:=e or p][any(c):]]+[p]for l in g+[p]if~-any(l)or(L:=l)*0]
+p=lambda g,h=0,q=[0]*99:[[q,q:=r][0]for r in zip(*h or p(g,g))if[q:=[*map(max,q,r)]][any(r):]]+[q]
