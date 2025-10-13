@@ -1,1 +1,1 @@
-p=lambda g,h=[],i=0:g*0==[]and[*map(p,g[:6]*3,h+g,g[5:6]*17)]or(g>h)*i|h
+p=lambda g,h=[],i=0:g*0!=0and[*map(p,g[:6]*3,h+g,g[5:6]*17)]or(g>h)*i|h
