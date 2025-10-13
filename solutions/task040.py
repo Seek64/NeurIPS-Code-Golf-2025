@@ -1,1 +1,1 @@
-p=lambda g,h=[]:g*0!=0and[*map(p,g[:1]*5+g[-1:]*5,h+g)]or h%~h&g
+p=lambda g,h=[]:g*0!=0and[*map(p,g[:1]*5+g[9:]*5,h+g)]or h%~h&g
