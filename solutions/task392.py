@@ -1,1 +1,1 @@
-p=lambda g,n=23:-n*g or[eval("r.pop()or(r[-1:]>[0])*[5,w:=max(max(g))][n//4%((f'0, {w}, '*2in'%s'%g)-3)],"*10)for*r,in zip(*p(g,n-1))]
+p=lambda g,n=23:-n*g or[eval("r.pop()or[5,w:=max(max(g))][n//4%((f'0, {w}, '*2in'%s'%g)-3)]*any(r[-1:]),"*10)for*r,in zip(*p(g,n-1))]
