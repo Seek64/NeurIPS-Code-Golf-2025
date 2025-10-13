@@ -1,1 +1,1 @@
-p=lambda g,k=16:~k*g or p([[min(r+c,key=K)for c in-k*g]or r for*r,in zip(*g)if r.count(max(l:=sum(g,g),key=(K:=l.count)))+2>6>len({*r})*2-k],k-1)
+p=lambda g,k=16:~k*g or p([[min(r+c,key=K)for c in-k*g]or r for*r,in zip(*g)if~-len({*r})*2-k<4<r.count(max(l:=sum(g,g),key=(K:=l.count)))],k-1)
