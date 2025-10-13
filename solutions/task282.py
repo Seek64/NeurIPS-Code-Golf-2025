@@ -1,1 +1,1 @@
-p=lambda g:[*map(lambda*r,x=0:[x//5|x^(x:=y)for y in r],*g[63:]or p(g*2))][::-1]
+p=lambda g:[eval(8*"+(x:=r.pop()),x//5|x^0")for*r,in zip(*g[63:]or p(g*2))]
