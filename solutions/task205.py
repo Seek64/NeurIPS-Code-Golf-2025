@@ -1,1 +1,1 @@
-p=lambda g,k=17:-k*g or p([r*(k>0)or[min(r+c,key=K)for c in g]for*r,in zip(*g)if"%d, "%max(l:=sum(g,g),key=(K:=l.count))*3in(k+5>len({*r})*2)*f"{r*2}"],k-1)
+p=lambda g,k=16:~k*g or p([[min(r+c,key=K)for c in-k*g]or r for*r,in zip(*g)if r.count(max(l:=sum(g,g),key=(K:=l.count)))+2>6>len({*r})*2-k],k-1)
