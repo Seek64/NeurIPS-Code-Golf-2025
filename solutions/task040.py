@@ -1,1 +1,1 @@
-p=lambda g,k=9:[[e%~e&g[(k:=k+1)//60*9][k//5%-2]for e in l]for l in g]
+p=lambda g,h=[]:g*0!=0and[*map(p,g[:1]*5+g[-1:]*5,h+g)]or h%~h&g
