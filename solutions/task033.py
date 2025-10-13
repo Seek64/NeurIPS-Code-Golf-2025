@@ -1,1 +1,1 @@
-p=lambda g,p=-1:[[e|l[5]*(e<g[(p:=p+1)//17%6][p%17%6])for e in l]for l in g]
+p=lambda g,h=[],i=0:g*0==[]and[*map(p,g[:6]*3,h+g,g[5:6]*17)]or(g>h)*i|h
