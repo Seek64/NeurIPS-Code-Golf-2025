@@ -1,1 +1,1 @@
-p=lambda g,P=0:[eval(~P%11*"(P:=r.pop()or(3in r)*P),")for*r,in zip(*g[70:]or p(g*2))]
+p=lambda g:[eval("P"+9*",(P:=r.pop()or(3in r)*P)")for*r,P in zip(*g[70:]or p(g*2))]
