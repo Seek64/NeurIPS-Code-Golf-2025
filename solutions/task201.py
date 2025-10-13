@@ -1,1 +1,1 @@
-def p(g):f=1;l=sum(g,g);a,*_,b=l[l.index(4)+13:][:len(m:=[R for r in zip(*g)if any(R:=[x&-f*(f:=f^(x==4))for x in r])])+2];return[z:=[4,*_,4],*[[a,*r[::1|-(b in m[0])],b]for*r,in zip(*m)if r>_],z]
+def p(g):f=1;l=sum(g,g);a,*_,b=l[l.index(4)+13:][:len(m:=[R for r in zip(*g)if any(R:=[x&-f*(f:=f^(x==4))for x in r])])+2];return[z:=[4,*_,4],*[[a,*r[::a in m[0]or-1],b]for*r,in zip(*m)if r>_],z]
