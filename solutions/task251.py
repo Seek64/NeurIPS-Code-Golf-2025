@@ -1,1 +1,1 @@
-p=lambda g,n=99:g*-n or[[~0**x&r.pop()or n<1for x in[0]+r[:0:-1]]for*r,in zip(*p(g,n-1))]
+p=lambda g,n=7:g*-n or[*map(lambda*r,b=0:[b:=~0**b&e or n<1for e in r][::-1],*p(g,n-1))]
