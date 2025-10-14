@@ -1,1 +1,1 @@
-def p(g,d=3):g=(5,),*zip(*g);return*zip(*[[x%~x&sum({*q+r+s}-{5})for x in 3*r][d:3+d]for q,r,s in zip(g,g[1:],g[2:]+g)if any(r)or(d:=d-[*q,5].index(5)+s.index(5))*0]),
+def p(g,d=3):g=(5,),*zip(*g);return*zip(*[[sum({*x*(q+r+s)}-{5})for x in 3*r][d:3+d]for q,r,s in zip(g,g[1:],g[2:]+g)if any(r)or(d:=d-[*q,5].index(5)+s.index(5))*0]),
