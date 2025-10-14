@@ -1,2 +1,1 @@
-R=range
-p=lambda g:[[g[y][x]**5%415%10or(sum((g[i//5]+g*2)[x-y+i%5-2+i//5]==5for i in R(50))==1)*sum({*max(g)}-{5})for x in R(10)]for y in R(10)]
+p=lambda g,i=0:[[(sum((g[f:=i//5%10]+g*2)[i//50%10+i%5-(i:=i+1)//500-2+f]==5for _ in g*5)==1)*sum({*max(g)}-{5})|e*(e!=5)for e in r]for r in g]
