@@ -1,1 +1,1 @@
-p=lambda g:[g:=[[*map(max,r,(r*2)[2*g.index(max(g,key=max))+1::-1]+[0]*99)]for*r,in zip(*g)]for _ in g][1]
+p=lambda g:[g:=[[*map(M:=max,r,(r*2)[2*g.index(M(g,key=M))+1::-1]+[0]*99)]for*r,in zip(*g)]for _ in g][1]
