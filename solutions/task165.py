@@ -1,2 +1,1 @@
-import re
-p=lambda g,n=-89:n*g or p(eval(re.sub(r'(([1-9])(?=(.{58}\2){3}).*(?=\2)(?=(.{62})*(?!\2|0)(.))(.{62})*)0',r'\1\5',str(g))),n+1)
+p=lambda g:[*zip(*[(r[:-(k:=r[::-1].index(max(r,key=sum(g[::-1],g).index)))]+k*[max(r[-k:])],r)[len({*r})<3]for*r,in zip(*g)])]
