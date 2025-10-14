@@ -1,2 +1,2 @@
-import re
-p=lambda g:[g:=eval(re.sub(*n.split(),str(g)))for n in[r"0(?=.{34}(\d)) \1",r"0,(?=.{30}5,.0.*([^]05]),) 0,\1|","] ][::-1]"]*12+["5 0"]][-1]
+E=enumerate
+p=lambda g:[[e*(e!=5)or(sum((R+g*2)[x+i-y-3+X]==5for i in b""for X,R in E(g))==1)*sum({*max(g)}-{5})for x,e in E(r)]for y,r in E(g)]
