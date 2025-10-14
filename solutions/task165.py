@@ -1,1 +1,1 @@
-p=lambda g:[*zip(*[(r[:-(k:=r[::-1].index(max(r,key=sum(g[::-1],g).index)))]+k*[max(r[-k:])],r)[len({*r})<3]for*r,in zip(*g)])]
+p=lambda g:[*zip(*[r[:-(k:=r[::-1].index(max(r,key=sum(g[::-1],g).index)))]+k*[max(r[-k:])]+r for*r,in zip(*g)])]
