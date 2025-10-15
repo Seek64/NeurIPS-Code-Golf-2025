@@ -1,2 +1,2 @@
 import re
-p=lambda o,n=9:-n*o or p(eval(re.sub("%s"%n,"n0"["n"in(o:="n".join(re.split("(?<=5..5.{25}"+re.sub("\(..\.","(..5",re.sub("\...\)","5..)",re.sub("%s"%n,")0(",re.sub("[^%s]"%n,".",o:="%s"%o))).strip("."))+"?=..5.{25}5..5)",o,1)))],o)),n-1)
+p=lambda o,n=19,T=10,S=re.sub:-n*o or p(eval(S(x:="%s"%(n%T),"0"," or n%T".join(s:=re.split(r:="(?<=5..%s..5)"%S(x,"0)(",S("[^%s]"%x,".",o:="%s"%o)).strip("."),o))*(s.count(", 5")==1<14<len(r)<140))or o),n-1)
