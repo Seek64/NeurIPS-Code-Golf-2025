@@ -1,1 +1,1 @@
-R=range(10);p=lambda g:[[g[i][j]|2*all(sum(sum([r[:j:d]for r in g[:i:d]],[]))%8for d in(-1,1))for j in R]for i in R]
+p=lambda g,k=0:[g:=[[max(c,(k:=k^c)-1)*n%6for c in r]for*r,in zip(*g)]for n in[1,4]][1]
