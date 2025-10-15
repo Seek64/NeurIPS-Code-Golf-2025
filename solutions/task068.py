@@ -1,1 +1,1 @@
-p=lambda g,n=23,x=0:-n*g or[[[x*2,y][x:=sum(g,g).count(y)<n-3]for y in r][::-1]for*r,in zip(*p(g,n-6))]
+p=lambda g,x=0:[[(x:=x*2|2>>sum(g,g).count(y))%2*y|(x>>89&7345159>0)*2for y in r]for*r,in g*2][10:]
