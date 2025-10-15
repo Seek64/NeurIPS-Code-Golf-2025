@@ -1,1 +1,1 @@
-p=lambda g,n=7:[[y*(sum(g,g).count(y)-7*n<9)or(x>0<n)*2for x,y in zip([0]+r,r)]for*r,in-n*g or zip(*p(g,n-2)[::-1])]
+p=lambda g,n=23,x=0:-n*g or[[[x*2,y][x:=sum(g,g).count(y)<n-3]for y in r][::-1]for*r,in zip(*p(g,n-6))]
