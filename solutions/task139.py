@@ -1,1 +1,1 @@
-p=lambda g,w=83:-w*g or[[c%(w:=w*2|c%3)or(~w&514<1)*7for c in r]for*r,in zip(*p(g,w-7)[::-1])]
+p=lambda g,w=11:-w*g or[[c|(~(w:=w*2|c%3)&515==1)*7for c in r]for*r,in zip(*p(g,w-1)[::-1])]
