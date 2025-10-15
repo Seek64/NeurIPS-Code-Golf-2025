@@ -1,1 +1,1 @@
-exec("p=lambda g:[[min(S:=g[0]+g[1],key=S.count)\nfor*g,in map(zip,g,g[len(g)//2+1:])]#"*2)
+p=lambda*g:min(g,key=g.count)if g[3:]else[*map(p,*g,*[h[len(h)//2+1:]for h in g])]
