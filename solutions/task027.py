@@ -1,1 +1,1 @@
-R=range(10);p=lambda g:[[g[i][j]or 2*g[~j+([*[*zip(*g)][5]][:5]<g[5][:4:-1])][i]for j in R]for i in R]
+R=range(10);p=lambda g:[[g[i][j]or 2*g[~j+([*[*zip(*g)][5]]<g[5][:4:-1])][i]for j in R]for i in R]
