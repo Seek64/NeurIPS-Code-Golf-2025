@@ -1,1 +1,1 @@
-p=lambda g:g*-1and g%5+5or g and[p(g[1])]*3+g[3:4]+p(g[4:])
+p=lambda g:g*-1and g+5or g and[p(g[1])]*3+g[3:4]+p(g[4:])
