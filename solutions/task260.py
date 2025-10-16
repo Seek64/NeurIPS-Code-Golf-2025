@@ -1,1 +1,1 @@
-p=lambda g,i=0:[[(sum((e+g*2)[i//10%5-2+i%10+i//50%10-(i:=i+1)//500]==5for e in g*5)==1)*sum({*max(g)}-{5})|e*(e!=5)for e in r]for r in g]
+p=lambda g,i=0:[[sum({*max(g)*(sum((e+g*2)[i//10%5-2+i%10+i//50%10-(i:=i+1)//500]==5for e in g*5)==1or e%5)}-{5})for e in r]for r in g]
