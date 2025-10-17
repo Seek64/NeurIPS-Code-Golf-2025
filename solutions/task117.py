@@ -1,1 +1,1 @@
-p=lambda g,n=63:-n*g or p([*zip(*[g,h:=[[*map(max,r,(r*3)[n%-15::-1])]for r in g]][(f:=str(h)).count(min(f,key=f.count))==5])],n-1)
+p=lambda g,n=39:-n*g or p([*zip(*[g,h:=[[*map(max,r,(r*3)[n%-17::-1])]for r in g]][5in map(str(h).count,str(h))])],n-1)
