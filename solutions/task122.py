@@ -1,1 +1,1 @@
-p=lambda g:'3, 0'in'%s'%max(g)and[*map(p,g)]or min(g[:2],g[4:6])+g[:-2]
+p=lambda g:'3, 0'in'%s'%max(g)and[*map(p,g)]or min(g,g[4:])[:2]+g[:-2]
