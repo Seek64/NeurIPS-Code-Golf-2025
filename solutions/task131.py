@@ -1,1 +1,1 @@
-p=lambda g,n=3:-n*g or p([*zip(*sorted(f:=g+[9*[8]],key=lambda r:g.extend(r)or 2-any(2//max(max(f,key=any))*r)in g)[-2::-1])],n-1)
+p=lambda g,n=3:-n*g or p([*zip(*sorted(f:=g+[9*[8]],key=lambda r:g.extend(r)!=2-any(r)in max(f,key=any)!=2in g)[-2::-1])],n-1)
