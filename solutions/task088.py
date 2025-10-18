@@ -1,1 +1,1 @@
-p=lambda g,n=-79:n*[[c%~c&g[0][0]for c in r]for _,*r,_ in g[1:-1]]or p([*zip(*g[any(g[-1])-2::-1])],n+1)
+p=lambda g,n=-79:n*[[g[1>c][0]for c in r]for _,*r,_ in g[1:-1]]or p([*zip(*g[any(g[-1])-2::-1])],n+1)
