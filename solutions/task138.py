@@ -1,1 +1,1 @@
-p=lambda g,k=99:-k*g or p([[g:=e or(l[0]==g<k<19)*l[0]for e in l[::-1]]for*l,in zip(*g[0in g[0]:])],k-1)
+p=lambda g,k=35:-k*g or p([[g:=[e,g][l[0]==g>e<1<9>k]for e in l[::-1]]for*l,in zip(*g[0in g[0]:])],k-1)
