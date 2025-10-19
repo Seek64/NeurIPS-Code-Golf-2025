@@ -1,1 +1,1 @@
-p=lambda g,*G:[*zip(a:=[2]*99,*[r for*r,in G or p(g,*g)for _ in sum(g,g).count(2)//12*'@'if sum({*r})&13],a)]
+p=lambda g,*G:[*zip(a:=[2]*99,*[r for*r,in G or p(g,*g)for c in g[::3]if c.count(2)==2if{*r}-{0,2}],a)]
