@@ -1,1 +1,1 @@
-def p(g,n=7,l=2):X=sorted({*map(C:=int.bit_count,sum(g,[]))});return-n*g or p([(a:=0)or[a:=[n and c|a|(l:=l*2)or X[1]//C(c)*8+C(c)//X[-1],2][c==2]for c in r]for*r,in zip(*g[::-1])],n-1,0)
+p=lambda g,n=7,l=2:-n*g or p([(a:=0)or[a:=[n and c|a|(l:=l*2)or(X:=sorted({*map(C:=int.bit_count,sum(g,[]))}))[1]//C(c)*8+C(c)//X[-1],2][c==2]for c in r]for*r,in zip(*g[::-1])],n-1,0)
