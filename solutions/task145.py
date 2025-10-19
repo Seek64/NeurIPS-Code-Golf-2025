@@ -1,1 +1,1 @@
-def p(g,n=3,k=-999):f=sum(g,[2]*999);X=sorted({*map(C:=f.count,f)});return-n*g or p([(a:=1)*[a:=2*(c>1)or[min(c,k:=k+1,a),{X[-2]:1,X[0]:8}.get(C(c),0)][n<1]for c in r]for*r,in zip(*g)],n-1,0)
+def p(g,n=7,l=2):X=sorted({*map(C:=int.bit_count,sum(g,[]))});return-n*g or p([(a:=0)or[a:=[n and c|a|(l:=l*2)or X[1]//C(c)*8+C(c)//X[-1],2][c==2]for c in r]for*r,in zip(*g[::-1])],n-1,0)
