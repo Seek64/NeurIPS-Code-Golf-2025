@@ -1,1 +1,1 @@
-p=lambda g,k=342:~k*g or p([(a:=1)*[a:=c and[1+(6==sum(g,g).count(c)),max(k:=k-c%2*8,c,a)][k>0]for c in r][::-1]for*r,in zip(*g)],k-2)
+p=lambda g,k=1199:-k*g or p([(a:=1)*[a:=c%~c&[1+(6==sum(g,g).count(c)),max(k:=k-1,c,a)][k>98]for c in r][::-1]for*r,in zip(*g)],k)
