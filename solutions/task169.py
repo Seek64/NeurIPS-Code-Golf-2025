@@ -1,1 +1,1 @@
-p=lambda g,k=799:-k*g or p([(a:=1)*[a:=c%~c&[5-sum(g,g).count(c),max(k:=k-1,c,a)][k>98]for c in r][::-1]for*r,in zip(*g)],k)
+p=lambda g,k=7,l=4:-k*g or p([(a:=1)*[a:=c%~c&[a|c|(l:=l*2),7-c.bit_count()][k<1]for c in r][::-1]for*r,in zip(*g)],k-1,0)
