@@ -1,1 +1,1 @@
-p=lambda g,k=-1727,a=1:k*g or p([[a:=[[min(k:=k+1,a,c),132132>>sum(g,g).count(c)&2][k>-143],5][c>4]for c in r]for r in zip(*g[::-1])],k)
+p=lambda g,k=7,l=4,a=1:-k*g or p([[a:=[[a|c|(l:=l*2),528528>>c.bit_count()&2][k<1],5][c==5]for c in r]for r in zip(*g[::-1])],k-1,0)
