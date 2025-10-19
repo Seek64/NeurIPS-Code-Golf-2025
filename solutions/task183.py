@@ -1,1 +1,1 @@
-p=lambda g,k=0,i=0:g*0!=0and[p(e,(k or g)[1+(i:=i-2)//len(g)])for e in g][2:-2]or g%7*k
+p=lambda g,h=0:g*0!=0and[*map(p,len(g)//2*g[:1]+g[-1:]*9,h or g)][2:-2]or h%7*g
