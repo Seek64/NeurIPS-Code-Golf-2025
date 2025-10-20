@@ -1,1 +1,1 @@
-p=lambda g,h=[]:g*0!=0and[*map(p,3*[g[i:=(str(g[6])[-26:]>'7')*7]]+3*[g[i+1]],(h+g)[3>>i:])]or h%2*g
+p=lambda g,h=[]:g*0!=0and[*map(p,3*[g[i:=(str(g[6])[-2:]>'7')*7]]+3*[g[i+1]],(h+g)[3>>i:])]or h%2*g
