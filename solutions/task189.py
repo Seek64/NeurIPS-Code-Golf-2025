@@ -1,1 +1,1 @@
-R=range(6);p=lambda g:[[g[x:=i+g[2][0]*6%9][y:=j+g[0][2]*6%9]%2*g[7+i//3>>x-i][7+j//3>>y-j]for j in R]for i in R]
+p=lambda g,h=[]:g*0!=0and[*map(p,3*[g[i:=(str(g[6])[-26:]>'7')*7]]+3*[g[i+1]],(h+g)[3>>i:])]or h%2*g
