@@ -1,1 +1,1 @@
-m=map;p=lambda g,*r:[*m(min,r,m(max,[0,*r],[*r[1:],0]))]or[*m(p,g,*m(p,g,*g))]
+Z=0,;m=map;p=lambda g,*r:[*m(min,r,m(max,Z+r,r[1:]+Z))]or[*m(p,g,*m(p,g,*g))]
