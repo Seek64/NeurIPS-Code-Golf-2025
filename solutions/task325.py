@@ -1,1 +1,1 @@
-p=lambda g,k=999:(k<(n:=len({*sum(g,[])})-1))*[i*[0]+[8]+(n+~i)*[0]for i in range(n)]or p([(a:=0)or[a:=c and max(c,a,k:=k-1)for c in r]for r in zip(*g[::-1])],k)
+p=lambda g,k=999,*a:[a:=a[-1:]+a[:-1]for _ in(k<0)*a]or p([[a:=c and max(c,a,k:=k-1)for c in[0]+r]for*r,in zip(*g[::-1])],k,*[0]*~-~-len({*sum(g,[])})+[8])
