@@ -1,8 +1,2 @@
-def p(l,e=set()):
- def p(l,e=set()):
-  return [l and(p(l[1:],e)or not l[0]&e and p(l[1:],e|l[0])),e][d<e]
- d={(u,n)for u in range(len(l))for n in range(len(l[0]))if l[u][n]&2}
- for n in 2,3:
-  if e:=p([e for f in range(len(l)-n)for e in range(len(l[0])-n)for e in[{(u,n)for n in range(-n,1+n)for u,n in[(f+n,e),(f,e+n)]if 1+n}]if min(l[u][n]for u,n in e)]):
-   for u,n in e:l[u][n]+=l[u][n]-2
-   return l
+import re
+p=lambda g,k=27,n=2:-k*g or p(eval(re.sub(["(?<=[28], )5(?=[^0)]{,9}2)","5(?=.{,%d}[28], [28].{%d}[28]|..{%d}(, [28]){%d}|(, [28]){%d}..([ 0]|.{15}8, 8))"%(3*n,3*len(g)-2,3*len(g)-2-3*n,1+2*n,2*n)][k<12],"8",f"{*zip(*g[::-1]),}")),k-1,n|(re.search(6*", [28]",f"{*zip(*g[::-1]),}")!=None))
