@@ -1,1 +1,1 @@
-p=lambda g:eval(f"{g}".replace(*"62"))
+p=lambda g:g*-1and-g%6|2or[*map(p,g)]
