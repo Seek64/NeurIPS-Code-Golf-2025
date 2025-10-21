@@ -1,1 +1,1 @@
-p=lambda g,n=3:-n*g or p([*zip(*[[k*l%7for k in i for l in j]for i in g[:len(g)//2]for j in g[len(i):]if'8'in'%r'%g[4:]]or g)][::-1],n-1)
+p=lambda g,n=3:-n*g or p([*zip(*[[k*l%7for k in i for l in j]for i in g[len(g[0]):]for j in g[:len(i)]if 8in g[0]+g[1]]or g)][::-1],n-1)
