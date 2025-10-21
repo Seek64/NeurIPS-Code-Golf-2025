@@ -1,1 +1,1 @@
-p=lambda g,u=[]:[g,u][g==4]*-1*-1or[*map(p,u+g,g[::-1])]
+p=lambda*g:g[g[0]==4]*-1*-1or[*map(p,g[-1],g[0][::-1])]
