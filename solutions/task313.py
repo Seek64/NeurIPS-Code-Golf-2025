@@ -1,1 +1,1 @@
-p=lambda g:[(r[1:3+(l:=len(g))//12]*9)[:l]for r in g[:2]*10][:l]
+p=lambda g,u=[]:g*-1*-1or[*map(p,g[u>[]:2--len(u)//11]*10,g)]
