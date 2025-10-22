@@ -1,1 +1,1 @@
-p=lambda g:[[i%2*5,i%7,i%9]for i in b" 6666"[max(max(g))::3]]
+p=lambda g:[[i%7,i%6,i%11]for i in b" M~M~MM"[max(max(g))::3]]
