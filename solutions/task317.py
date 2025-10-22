@@ -1,1 +1,1 @@
-p=lambda g:g and[*map([bool,p][all(g)],g[1:2]*3)]+p(g[3:])
+p=lambda g:g==5or g and[*map(p,g[1:2]*3)]+p(g[3:])
