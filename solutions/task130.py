@@ -1,1 +1,1 @@
-p=lambda g:[[max({*r[j:j+3]}-{5})for j in(0,3,6)]for r in g[::3]]
+p=lambda g:g!=5and(g*-1*-1or g and[max(map(p,g[:3]))]+p(g[3:]))
