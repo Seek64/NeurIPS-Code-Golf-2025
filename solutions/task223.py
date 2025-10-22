@@ -1,1 +1,1 @@
-exec('p=lambda g:[[%s[g]*3]#'%("g\nfor g in "*2)*2)
+p=lambda g:g*-1*-1or g and[p(g[0])]*3+p(g[1:])
