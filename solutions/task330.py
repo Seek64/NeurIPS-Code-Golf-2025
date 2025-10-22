@@ -1,1 +1,1 @@
-p=lambda g,k=11,l=1:-k*g or p([(b:=1)*[b:=a%~a&[b|a|(l:=l*8),1+(a%7==4)][k<1]for a in r]for r in zip(*g[::-1])],k-1,0)
+p=lambda g,k=11,l=5:-k*g or p([(b:=1)*[b:=a%~a&[b|a|(l:=l*8),2-a**6%7][k<1]for a in r]for r in zip(*g[::-1])],k-1,0)
