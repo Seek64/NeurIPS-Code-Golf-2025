@@ -1,1 +1,1 @@
-p=lambda g:g!=5and(g*-1*-1or g and[max(map(p,g[:3]))]+p(g[3:]))
+p=lambda g:g*(g!=5)and(g*-1*-1or[max(map(p,g[:3]))]+p(g[3:]))
