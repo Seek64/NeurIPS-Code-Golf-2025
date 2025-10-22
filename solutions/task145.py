@@ -1,1 +1,1 @@
-p=lambda g,n=7,l=1:-n*g or p([(a:=0)or[a:=[n and c|a|(l:=l<<9)or(X:=sorted({x%511for x in sum(g,r)}))[1]//(c%511)*8+c%511//X[-1],2][c==2]for c in r]for*r,in zip(*g[::-1])],n-1,0)
+p=lambda g,n=7,l=1:-n*g or p([(a:=0)or[a:=[n and c|a|(l:=l<<9)or(X:=sorted({x%511for x in sum(g,r)}))[1]//(C:=c%511)*8+C//X[-1],2][c==2]for c in r]for*r,in zip(*g[::-1])],n-1,0)
