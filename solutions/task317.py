@@ -1,1 +1,1 @@
-p=lambda g:eval("[[g>0"+"for g in g[1::3]for _ in[0]*3]"*2)
+p=lambda g:g and[*map([bool,p][all(g)],g[1:2]*3)]+p(g[3:])
