@@ -1,1 +1,1 @@
-p=lambda g:g and[[sum((sum(g[:3],[9])*11)[j::45])>6for j in b""]]+p(g[4:])
+p=lambda g:g and[[sum((sum(g[:3],[0])*3)[j::11])>6for j in b""]]+p(g[4:])
