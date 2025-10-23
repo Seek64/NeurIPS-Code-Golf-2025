@@ -1,2 +1,2 @@
 import re
-p=lambda g:[g:=eval(re.sub("0, [^0](?=[^(]*\([^0])","4,4",f"{*zip(*g[::-1]),}"))for _ in g][3]
+p=lambda g:exec('g[::-1]=eval(re.sub("0, [^0](?=[^(]*\([^0])","4,4",f"{*zip(*g),}"));'*4)or g
