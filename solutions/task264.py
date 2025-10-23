@@ -1,1 +1,1 @@
-T=0,1,2;p=lambda g:[sum([eval(f"sorted(['0'in'%s'%g,*[i!='5'for i in'%s'%g],*g]{'for*g,in map(zip,g,g[1:],g[2:])'*2})#{g}")[(X+78^57*~Y)%9][x-3]for Y in T],())for X in T for x in T]
+T=1,2,3;p=lambda g:[sum([eval(f"sorted([0in(S:=sum(g,T)),*[i!=5for i in S],*g]{'for*g,in map(zip,g,g[1:],g[2:])'*2})#{g}")[(X+77^57*-Y)%9][x-4]for Y in T],())for X in T for x in T]
