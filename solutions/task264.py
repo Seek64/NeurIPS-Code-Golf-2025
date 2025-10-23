@@ -1,2 +1,1 @@
-import re
-p=lambda a:[eval(','.join(c))for c in zip(*[iter(sorted(re.findall('(?=([^0]{7}).{%a}([^0]{7}).{%a}([^0]{7}))., .,'%(len(a[0])*3-5,len(a[0])*3-5),'%a'%a),key=lambda a:(a[0][3]=='5',a[2][3]!='5',a[1][6]!='5',a[1][0]=='5')))]*3)for c in zip(*c)]
+T=0,1,2;p=lambda g:[sum([eval(f"sorted(['0'in'%s'%g,*[i!='5'for i in'%s'%g],*g]{'for*g,in map(zip,g,g[1:],g[2:])'*2})#{g}")[(X+78^57*~Y)%9][x-3]for Y in T],())for X in T for x in T]
