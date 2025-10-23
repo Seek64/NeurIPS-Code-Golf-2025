@@ -1,1 +1,1 @@
-p=lambda g,n=3:-n*g or[*map(lambda*r,b=0:[b:=a*6**b%10for a in r],*p(g,n-1)[::-1])]
+p=lambda g:exec('g[:]=map(lambda*r,b=0:[b:=a*6**b%10for a in r],*g[::-1]);'*4)or g
