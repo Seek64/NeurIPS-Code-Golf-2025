@@ -1,1 +1,1 @@
-p=lambda g,*r:[g:=b|-(2|g&8>>g)//~b for b in r][::-1]or g[400:]or[*map(p,K:=[3]*50,*p(K+g))]
+p=lambda g:exec('g[:]=map(lambda*r,a=3:[a:=b|-(2|a&8>>a)//~b for b in r],*g[::-1]);'*8)or g
