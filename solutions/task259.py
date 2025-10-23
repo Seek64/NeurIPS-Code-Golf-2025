@@ -1,1 +1,1 @@
-p=lambda g,k=-23:k*g or p(eval(f"{*zip(*g[any(g[-1])-2::-1]),}".replace(*"10")),k+1)
+p=lambda g:exec('g[:]=zip(*eval(str(g).replace(*"10"))[any(g[-1])-2::-1]);'*24)or g
