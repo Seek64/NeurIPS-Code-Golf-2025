@@ -1,1 +1,1 @@
-p=lambda g:[[r.pop(0)or r[4]|r[9]for i in g]for r in g]
+p=lambda g:[eval("r.pop(0)or r[4]|r[9],"*4)for r in g]
