@@ -1,1 +1,1 @@
-p=lambda g,n=-95:g*n or[*zip(*eval(str(p(g,n+1)).replace("1, 0","1,1")))][::-1]
+p=lambda g:exec('g[::-1]=zip(*eval(str(g).replace("1, 0","1,1")));'*80)or g
