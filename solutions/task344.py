@@ -1,1 +1,1 @@
-p=lambda g,n=3:g*-n or[*zip(*eval(str(p(g,n-1)).replace('3, 2','8,0')))][::-1]
+p=lambda g:exec('g[:]=zip(*eval(str(g[::-1]).replace("3, 2","8,0")));'*4)or g
