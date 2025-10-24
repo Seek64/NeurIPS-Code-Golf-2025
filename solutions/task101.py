@@ -1,13 +1,13 @@
-def p(e):
- m,*t=len(e[0])+2,
- for f in e:t+=*f,0,0
- i=[t.index(1)]
- for f in i:i+=[f for f in(f-m,f-1,f+1,f+m)if len(t)>f>(f in i)*m<t[f]]
- n=i
- for r in range(len(t)):
-  i=[r]
-  for f in i:i+=[f for f in(f-m,f-1,f+1,f+m)if len(t)>f>(f in i)*m<t[f]]
-  l=6+26%len(i)>>2
-  for a in n:
-   for f in range(l*l*all(t[f]>1for f in i)):t[r+l*a-l*min(f for f in n if t[f]>1)+f//l*m+f%l]=t[a]
- return[t[r*m:][:m-2]for r in range(len(e))]
+def p(r):
+ t,*d=len(r[0])+2,
+ for a in r:d+=*a,0,0
+ f=[d.index(1)]
+ for a in f:f+=[a for a in(a-t,a-1,a+1,a+t)if len(d)>a>(a in f)*t<d[a]]
+ e=f
+ for i in range(len(d)):
+  f=[i]
+  for a in f:f+=[a for a in(a-t,a-1,a+1,a+t)if len(d)>a>(a in f)*t<d[a]]
+  l=58%len(f)+2>>1
+  for a in e:
+   for p in range(l*l*all(d[a]>1for a in f)):d[i+l*a-l*min(a for a in e if d[a]>1)+p//l*t+p%l]=d[a]
+ return[d[i*t:][:t-2]for i in range(len(r))]
