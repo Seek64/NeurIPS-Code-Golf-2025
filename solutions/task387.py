@@ -1,10 +1,10 @@
-def p(o):
- for q in range(4):
-  r=sum(o,[]);n,v,p,*n={r.index(q):0for q in r}
-  for q in range(p-v>>2):r[p+~q*2]=r[v-~q*2]=5
-  o=[r[q-len(o[0])::-len(o[0])]for q in range(len(o[0]))]
- for q in range(4):
-  r=sum(o,[]);n,v,p,*n={r.index(q):0for q in r}
-  for q in range(8):r[p-q%-3+~(q//3%-3)*len(o[0])-3]=r[n[0]]
-  o=[r[q-len(o[0])::-len(o[0])]for q in range(len(o[0]))]
- return o
+def p(f):
+ for i in range(4):
+  d=sum(f,[]);b,h,g,*e={d.index(i):0for i in d}
+  for i in range(g-h>>2):d[g+~i*2]=d[h-~i*2]=5
+  f=[d[i-len(f[0])::-len(f[0])]for i in range(len(f[0]))]
+ for i in range(4):
+  d=sum(f,[]);b,h,g,*e={d.index(i):0for i in d}
+  for i in range(8):d[g-i%-3+~(i//3%-3)*len(f[0])-3]=d[e[0]]
+  f=[d[i-len(f[0])::-len(f[0])]for i in range(len(f[0]))]
+ return f
