@@ -1,10 +1,10 @@
-def p(b,n=51,z=-2):
- a=n//4
- for c in b:
-  z+=1
-  d=[[*b]for b in b];c=0;l=lambda n,l=9,a=a:c<31*all(l>>b&1for b in b[c:c+n]for b in b[z-30:z+a])
-  if l(9):
-   while(c:=c+1)*(l(1,1)+l(5)):b[c-1][1+z:a-1+z]=(a-2)*[3]
-   if l(5,1,a-2):b=d
-   z+=5
- return b*(3-a)or p([[*b]for b in zip(*b)][::-1],n-1)
+def p(e,h=51,i=-2):
+ f=h//4
+ for l in e:
+  i+=1
+  o=[[*o]for o in e];l=0;g=lambda o,k=9,g=f:l<31*all(k>>o&1for o in e[l:l+o]for o in o[i-30:i+g])
+  if g(9):
+   while(l:=l+1)*(g(1,1)+g(5)):e[l-1][1+i:f-1+i]=(f-2)*[3]
+   if g(5,1,f-2):e=o
+   i+=5
+ return e*(3-f)or p([[*o]for o in zip(*e)][::-1],h-1)
