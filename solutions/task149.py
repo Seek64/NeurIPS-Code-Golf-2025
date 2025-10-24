@@ -1,1 +1,1 @@
-p=lambda g:g and[[sum((sum(g[:3],[0])*3)[j::11])>6for j in b""]]+p(g[4:])
+p=lambda g:g and[[sum((b"%.104r"%g*7)[j::35])>894for j in b""]]+p(g[4:])
