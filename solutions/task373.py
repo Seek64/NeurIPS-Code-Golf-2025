@@ -1,1 +1,1 @@
-p=lambda g:[T:=[*map(max,g)]*3,T[::-1]]
+p=lambda g:[T:=max(zip(*g))*3,T[::-1]]
