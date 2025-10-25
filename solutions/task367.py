@@ -1,1 +1,1 @@
-p=lambda g,k=95:-k*g or p([g:=[c*((r!=[5]*3)>c%-4<r[2])|(96-k in l)*4for*r,c in zip([4]*2+g,g,[4]+l,l)]for*l,in zip(*g[::k%3-1|1])],k-1)
+p=lambda g,k=94:~k*g or p([g:=[c*((r!=[5]*3)>c%-4<r[2])|(k^95in l)*4for*r,c in zip([4]*2+g,g,[4]+l,l)]for*l,in zip(*g[::k%3-1|1])],k-1)
