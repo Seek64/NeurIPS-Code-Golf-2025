@@ -1,1 +1,1 @@
-p=lambda g:[eval(8*"+(x:=r.pop()),x//5|x^0")for*r,in zip(*g[63:]or p(g*2))]
+p=lambda g:g[99:]or[eval(8*"+(x:=r.pop()),x//5|x^0")for*r,in zip(*p(g*2))]
