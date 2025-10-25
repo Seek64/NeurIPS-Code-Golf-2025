@@ -1,1 +1,1 @@
-p=lambda g:[g:=[r[:(i:=sum(g,g).index(2)//10-2):-1]+[max(r[:i+1])]+i*[0]for*r,in zip(*g)]for _ in g][3]
+p=lambda g:[g:=[r[:(i:=sum(g,g).index(2)//10-2):-1]+[max(r[:i])]+i*[0]for*r,in zip(*g)]for _ in g][3]
