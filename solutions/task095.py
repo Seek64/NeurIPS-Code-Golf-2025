@@ -1,1 +1,1 @@
-p=lambda g:[eval("r.pop()|any(r[-1:]),"*9)for*r,in zip(*g[63:]or p(g*2))]
+p=lambda g:g[135:]or[eval("r.pop()|r[-1]%4,"*9)for*r,in zip(*p(g*2)*2)]
