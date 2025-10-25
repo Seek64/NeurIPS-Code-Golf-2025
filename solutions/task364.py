@@ -1,2 +1,1 @@
-import re
-p=lambda g:[g:=eval(re.sub('3(?=, '+a%'.{%d}3, '%(len(g)*3-2),a[0],f"{*zip(*g[::-1]),}"))for a in['2|%s3, 3)']*24+['6|, 3(%s0?)+3)']*31+['1%s|)']][-1]
+p=lambda g,k=95,L=[0]*99:-k*g or p([L:=[c and[c|a|(k//88*(c>0<b>0<a)<<k),c%3*4%5^2][k<2]for c,a,b in zip(r,[0]+r,L)]for*r,in zip(*g[::-1])],k-2)
