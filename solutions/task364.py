@@ -1,1 +1,1 @@
-p=lambda g,k=95:-k*g or p([g:=[c and[c|a|(k//88*all([a,b*-1,c])<<k),c%3*4%5^2][k<2]for c,a,b in zip(r,[0]+r,g)]for*r,in zip(*g[::-1])],k-2)
+p=lambda g,k=95:-k*g or p([g:=[c and[c|a|all([a,b*-1,c,k>87])<<k,c%3*4%5^2][k<2]for c,a,b in zip(r,[0]+r,g)]for*r,in zip(*g[::-1])],k-2)
