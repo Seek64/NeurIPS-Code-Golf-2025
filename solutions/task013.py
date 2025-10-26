@@ -1,1 +1,1 @@
-import re;p=lambda g,n=23:g*-n or[eval(re.sub("(([1-9])(.*)[^0]\\3)0",r"\1\2",str([[max(c)]*len(c),c][c[1:-1]>c])))for c in zip(*p(g,n-1))]
+p=lambda g,h=0,l=[]:[[(l:=[max(c+[j*(i>0)for i,j in zip(l,l[1::2])])]+l)[:1]*len(c),c][c[1:-1]>c]for*c,in zip(*h or p(g,g))]
