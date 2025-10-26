@@ -1,1 +1,1 @@
-p=lambda g:[[1,0,(S:=sum(sum(g,[]))%7)>1],[0,S>2,0],[S>3,0,S>4]]
+p=lambda g:[*zip(*[map(sum(sum(g,[])).__gt__,b"_	___ ")]*3)]
