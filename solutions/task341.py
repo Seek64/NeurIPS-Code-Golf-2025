@@ -1,2 +1,1 @@
-import re
-p=lambda g:[g:=eval(re.sub(s,r"8^\1",f"{*zip(*g[::-1]),}"))for s in["(?<=[^0],)([0, ]+ [^0])"]*12+["(8, 0)"]*4][-1]
+p=lambda g:[g:=[[g[i][j]or(g[i-1]==g[i-9]!=9>j>=2<len({*g[i]}))*8for i in R]for j in R]for R in[range(10)]*2][1]
