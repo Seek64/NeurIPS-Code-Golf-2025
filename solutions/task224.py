@@ -1,1 +1,1 @@
-p=lambda g,n=-3,a=4:g*n or p([[r.pop()|(9>(a:=a+(b:=c.count(5)))>5+b)*sum({*sum(g,[-5])})for c in g[::-1]]for*r,in zip(*g)if[a:=a*5-20or 5in r]],n+1)
+p=lambda g,n=-3,a=4:g*n or p([[r.pop()|(a>5)*(9>(a:=a+c.count(5)))*sum({*sum(g,[-5])})for c in g[::-1]]for*r,in zip(*g)if[a:=a*5-20or 5in r]],n+1)
