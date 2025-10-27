@@ -1,1 +1,1 @@
-p=lambda g,n=-7:n*g or[[P:=P*(r.pop()==sorted(g[0])[5])*(r.count(max({*r,n}-{x,P}))>2)or x for x in r[::-1]]for*r,in zip(*p(g,n+2))if[P:=0]]
+p=lambda g,n=-7:n*g or p([[P:=[x:=r.pop(),P][r.count(max({*r*P*(g[0].count(x)>3),n}-{x,P}))>2]for _ in g]for*r,in zip(*g)if[P:=0]],n+2)
