@@ -1,1 +1,1 @@
-p=lambda g:[g:=[[*map(M:=max,r,(r*2)[2*g.index(M(g,key=M))+1::-1]+[0]*99)]for*r,in zip(*g)]for _ in g][1]
+p=lambda g:exec('g[:]=zip(*map(M:=max,g,(g*2)[2*g.index(M(g,key=M))+1::-1]+g[::-1]));'*2)or g
