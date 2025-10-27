@@ -1,1 +1,1 @@
-p=lambda g:[g:=[[g[i][j]or(g[i-1]==g[i-9]!=9>j>=2<len({*g[i]}))*8for i in R]for j in R]for R in[range(10)]*2][1]
+p=lambda g:[g:=[[g[i][j]or(9>j>=2<len({*min(g[i-1:][:3])}))*8for i in R]for j in R]for R in[range(10)]*2][1]
