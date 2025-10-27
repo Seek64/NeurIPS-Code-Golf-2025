@@ -1,1 +1,1 @@
-import re;p=lambda g,n=23:-n*g or eval(re.sub(r'0|3(?=, 4|[^)]*([^34]), \1)','4-0**n',f"{*zip(*p(g,n-1)[::-1]),}"))
+p=lambda g,k=95:-k*g or[(a:=1)*[a:=c or(k<9>r.count(0)or a==4)*4|k//95*3for c in r]for r in zip(*p(g,k-3)[::-1])]
