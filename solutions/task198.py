@@ -1,1 +1,1 @@
-p=lambda g,k=95:-k*g or[*map(lambda*r,a=1:[a:=c or(k<9>r.count(0)or a==4)*4|k//95*3for c in r][::-1],*p(g,k-3))]
+import re;p=lambda g:exec("g[::-1]=zip(*eval(re.sub(r'(?=0|3, 4|3[^)]*[^)34]{6})','6^5-',str(g))));"*24)or g
