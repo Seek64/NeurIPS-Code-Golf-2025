@@ -1,2 +1,1 @@
-import re
-p=lambda g:[g:=eval(re.sub(f"{a,b}(?={e}*[^{a,b}])","a,a",f"{*zip(*g[::-1]),}"))for a,*e,b in[sorted(sum(g,[]),key=sum(g,g).count)]*56][-1]
+p=lambda g,n=-7:n*g or[[P:=P*(r.pop()==sorted(g[0])[5])*(r.count(max({*r,n}-{x,P}))>2)or x for x in r[::-1]]for*r,in zip(*p(g,n+2))if[P:=0]]
