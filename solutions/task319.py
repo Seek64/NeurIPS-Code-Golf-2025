@@ -1,1 +1,1 @@
-p=lambda g,h=0:[[L[-(e!=L[0])]for e in r]for*r,in zip(*h or p(g,g))if(L:=sorted(set(w:=sum(g,[])),key=w.count)[(o:=hash((*b'%ro84'%g,)))//b">x0dugAm|6#pyQm`3~D~}-x`i\RxrDrtjfTi^z"[o%43]&1:])[0]in r]
+p=lambda g,h=0:[[L[-(e!=L[0])]for e in r]for*r,in zip(*h or p(g,g))if(L:=sorted(set(w:=sum(g,[])),key=w.count)[(o:=hash((*w,*b'$,>N')))//b"==w~Y`NyFgvkM_~hqx2g`	Qyrjqx~~}#Km<q~ML"[o%43]&1:])[0]in r]
