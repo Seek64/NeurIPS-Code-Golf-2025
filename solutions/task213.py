@@ -1,1 +1,1 @@
-p=lambda g:[l[o:]for r in g if(l:=[e for e in r if e%5])[~(o:=2-len({*sum(g,r)})):]][o:]
+p=lambda g:[l[o:]for r in g if(l:=[e for e in r if e%5])[~(o:=6-len({*"%s"%g})):]][o:]
