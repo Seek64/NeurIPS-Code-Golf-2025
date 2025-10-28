@@ -1,2 +1,1 @@
-import re
-p=lambda g:[g:=eval(re.sub('0(?=(.{%d}5){2})'%(len(g)*3+4),k,f"{*zip(*g[::-1]),}"))for k in'3421'][3]
+exec("p=lambda g,Z=[[0]*30]:[[(114>>hash((*b'%rr&R'%g,))%9^2)%6"+"for*g,in map(zip,Z+g,g,g[1:]+Z)]"*2)
