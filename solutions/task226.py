@@ -1,1 +1,1 @@
-p=lambda g:[[r.pop(0)or 3>>(a:=sum(r+c[i:]))|1>>(b:=sum(g[i]+c)-a)|2*(a==b==sum(r+c[:i]))for*c,in zip(*g)]for i,[*r]in enumerate(g)]
+p=lambda g,i=0:[[-j+(j:=j+x)or(1+i*2/(C:=sum(c)))*(i*2%C<1!=i*sum(r)==j*C)for*c,x in zip(*g,r)]for r in g if[i:=i+r[j:=0]]]
