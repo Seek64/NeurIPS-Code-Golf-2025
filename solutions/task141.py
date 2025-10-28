@@ -1,1 +1,1 @@
-exec("p=lambda g:[[max((f:=l+g[0])[x+y-Y]|f[x-y+Y]\nfor %s,l in enumerate(g)%s#"*3%(*"Y)x]y]",))
+p=lambda g:[[*map(max,r[:(a:=abs(g.index(m:=max(g))-i))]+m,m[a:]+r,r)]for i,r in enumerate(g)]
