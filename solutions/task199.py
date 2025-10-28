@@ -1,1 +1,1 @@
-p=lambda g:-~(i:=g.index(k:=max(g)))*[(20*[4,0])[k.index(max(k)):][:len(g)]]+g[i:-1]
+p=lambda g:-~(i:=g.index(k:=max(g)))*[(20*[4,0])[[k[1::2]]>g:][:len(g)]]+g[i:-1]
