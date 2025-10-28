@@ -1,1 +1,1 @@
-p=lambda g:[[*map(max,r[:(a:=abs(g.index(m:=max(g))-i))]+m,m[a:]+r,r)]for i,r in enumerate(g)]
+p=lambda g,i=-1:[[*map(max,r[:(a:=abs(g.index(m:=max(g))-(i:=i+1)))]+m,m[a:]+r,r)]for r in g]
