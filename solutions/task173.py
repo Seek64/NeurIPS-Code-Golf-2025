@@ -1,1 +1,1 @@
-def p(e):[((g:=[e[s-n//3][r-n%3]for n in range(9)])==g[::-1])*g[4]*any(g[:4])*(sum((e[f-n//3][a-n%3]==g[n])<<3*(n==4)for n in range(9))//8)and exec('for n in range(9):e[f-n//3][a-n%3]=g[n]')for f in range(len(e))for s in range(len(e))for a in range(len(e[0]))for r in range(len(e[0]))];return e
+p=lambda f:[(e:=[f[a-n//3][i-n%3]for n in range(9)])==e[::-1]*any(e[:sum((f[c-n//3][m-n%3]==e[n])<<3*(n==4)for n in range(9))//8*4]*e[4])==exec('for n in range(9):f[c-n//3][m-n%3]=e[n]')for c in range(len(f))for a in range(len(f))for m in range(len(f[0]))for i in range(len(f[0]))]and f
