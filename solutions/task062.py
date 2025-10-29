@@ -1,1 +1,1 @@
-p=lambda g:((g:=[q:=[i or 3for i in r]for*r,in zip(*g[670:]or p(g*2))if(g:=g!=({*r}=={2,3}<{2,*q}))])+g[::-1]+g[:1]*9)[9::-1]
+p=lambda g:((g:=[q:=[i or 3for i in r]for*r,in zip(*g[670:]or p(g*2))if(g:=g!=({*r}=={2,3}<{2,*q}))])[:1]*9+g+g[::-1])[~9:]
