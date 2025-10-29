@@ -1,1 +1,1 @@
-p=lambda g,h=0:(g:=[*zip(*h or p(g,g))])[:3]*((M:=str([+(x>"0")for x in"%s"%g])).count(M[4:94])<2)or p(g[3:]+g[:3])
+p=lambda g,h=0:(g:=[*zip(*h or p(g,g))])[:3]*((M:=str([x//49for x in b"%r"%g])).count(M[4:94])<2)or p(g[3:]+g[:3])
