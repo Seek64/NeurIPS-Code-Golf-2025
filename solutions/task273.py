@@ -1,1 +1,1 @@
-p=lambda g:[*map(F:=lambda*r,k=0:[c+(k:=k^c)%6and c^2for c in r],*map(F,*g))]
+p=lambda g,*r,k=0:[c+(k:=k^c)%6and c^2for c in r]or[*map(p,g,*map(p,g,*g))]
