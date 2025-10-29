@@ -1,2 +1,1 @@
-import re
-p=lambda g,k=67:-k*g or p(eval(re.sub(*["[4-9] 2","0(?=(,.0){,%d},.%d) 3"%(k%5,k%5+4),r"0(?=[^1-9)]*(2(,.3)+)) len([\1])+2"][k>>5].split(),f"{*zip(*g[::-1]),}")),k-1)
+p=lambda g,n=11:-n*g or[[P:=[((a:=(8%~P<x)*a+x%2*8|2)>2>x)*a,(P-7>1>x)*(3|P-8),x&3][n//4]or x for x in r]for r in zip(*p(g,n-1))if[a:=0,P:=0]][::-1]
