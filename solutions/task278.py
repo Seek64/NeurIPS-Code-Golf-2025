@@ -1,2 +1,1 @@
-import re
-p=lambda g:[g:=eval(re.sub("0(?=(|.{,9}.{%s})..2..2)"%(3*len(g)-7),"3",f"{*zip(*g[::-1]),}"))for _ in g][3]
+p=lambda g,n=7:-n*g or[[[x|6&y**x,x&n//7*4-1or 3%-~y][n>3]for x,y in zip(r,[0]+r)]for*r,in zip(*p(g,n-1))][::-1]
