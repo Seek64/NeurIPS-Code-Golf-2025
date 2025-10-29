@@ -1,1 +1,1 @@
-p=lambda g,h=0:(g:=[*zip(*h or p(g,g))])[:3]*((M:=bytes(x>48for x in b"%r"%g)).count(M[1:31])<2)or p(g[3:]+g[:3])
+p=lambda g,h=0:(g:=[*zip(*h or p(g,g))])[:3]*-(M:=bytes(map(bool,sum(g,())))).find(M[:9],9)or p(g[3:]+g[:3])
