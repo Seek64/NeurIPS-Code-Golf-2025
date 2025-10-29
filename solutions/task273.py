@@ -1,1 +1,1 @@
-p=lambda g,n=4,k=0:-n*g or[[max(c,(k:=k^c)-1)*n%6for c in r]for*r,in zip(*p(g,6%n-1))]
+p=lambda g:[*map(F:=lambda*r,k=0:[c+(k:=k^c)%6and c^2for c in r],*map(F,*g))]
