@@ -1,1 +1,1 @@
-p=lambda g:exec("s=g[-1];g[::-1]=[s:=[r.pop()|-y%15for y in s[1:]]+r for r in g[::-1]];"*2)or g
+p=lambda g,G=0,*s:[s:=[r.pop()|-y%15for y in s[1:]]+r for r in(G or p(g,g))[::-1]][::-1]
