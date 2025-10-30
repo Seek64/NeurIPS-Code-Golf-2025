@@ -1,2 +1,1 @@
-import re
-p=lambda g,i=35:-i*g or p(eval(re.sub(f"[01](?=([^)]{['*)','{%d}|(...){,%d}(.{%d}){,%d}.{%d})'%(k:=i%5,4*k+3,w:=3*len(g)+2,k,w+~k*9)][i<35]+-~k*2*'..9'})","13"[i<35],f"{*zip(*g[::-1]),}")),i-1)
+p=lambda g,n=15:-n*g or[[P:=[max(x:=r.pop(),x%~x&P,a:=x and a+143163392|9),x or P&16**n*7and~8&P-16**n|3,x&15,x|(n-3in r)][n//4]for _ in g]for*r,in zip(*p(g,n-1))if[P:=0,a:=0]]
