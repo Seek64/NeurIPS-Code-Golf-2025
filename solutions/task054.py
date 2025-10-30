@@ -8,8 +8,9 @@ def p(r):
       if r[p][t]==r[e][n]:
        for o in range(-1,2):
         for h in range(-1,2):
-         if r[p+o][t+h]!=r[p+1][t+2]:
-          i=1;f[e+o*i][n+h*i]=r[p+o][t+h];i+=1
+         i=1
+         if r[p+o*i][t+h*i]!=r[p+1][t+2]:
+          f[e+o*i][n+h*i]=r[p+o][t+h];i+=1
           if r[p][t]!=r[p+o*i][t+h*i]!=r[p+1][t+2]:
            while r[e+o*i][n+h*i]!=r[p+1][t+2]:f[e+o*i][n+h*i]=r[p+o][t+h];i+=1
     for o in range(-2,3):
