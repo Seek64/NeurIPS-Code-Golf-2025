@@ -1,1 +1,1 @@
-p=lambda g,k=-3,*t,r=[]:k*g or[t:=l[::-1]for l in zip(*p(g,k+1))if{4}-{*t}or(r:=[t:=l])*0]+r
+p=lambda g:exec("*x,q=[0]*99,;g[:]=zip(*[[q,q:=r][4in(x:=x+r)]for*r,in g[::-1]]);"*4)or g
