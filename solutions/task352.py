@@ -1,1 +1,1 @@
-p=lambda g,n=3:g*-n or[[r.pop()or 0<d<3for d in[0]+r[:0:-1]]for*r,in zip(*p(g,n-1))]
+p=lambda g:[g:=[[r.pop()or[1]<=r[-1:]<[3]for _ in g]for*r,in zip(*g)]for _ in g][3]
