@@ -1,5 +1,5 @@
 def p(r):
- *a,=r
+ a=r
  for l in range(len(r)):
   for e in range(len(r[0])):
    if a[l][e]==1:q={(e,l)}
