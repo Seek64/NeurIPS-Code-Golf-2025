@@ -1,1 +1,1 @@
-p=lambda g:exec("*x,q=[0]*99,;g[:]=zip(*[[q,q:=r][4in(x:=x+r)]for*r,in g[::-1]]);"*4)or g
+p=lambda g:exec("g+=[0]*99,;g.pop([*map(max,g)].index(4)+1);g[:]=zip(*g[::-1]);"*4)or g
