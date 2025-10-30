@@ -1,1 +1,1 @@
-p=lambda g,n=15:-n*g or[[P:=[max(x:=r.pop(),x%~x&P,a:=x and a+143163392|9),x or P&16**n*7and~8&P-16**n|3,x&15,x|(n-3in r)][n//4]for _ in g]for*r,in zip(*p(g,n-1))if[P:=0,a:=0]]
+p=lambda g,n=15:-n*g or[[P:=[max(x:=r.pop(),x%~x&P,a:=x and a+1198080|9),x or P&8**n*7and~8&P-8**n|3,x&15,x|(n-3in r)][n//4]for _ in g]for*r,in zip(*p(g,n-1))if[P:=0,a:=0]]
