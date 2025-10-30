@@ -1,1 +1,1 @@
-p=lambda*g:[*map([*g,max,p][2],*[r[len(g)*2:]for r in g],*g)]
+p=lambda*g:[*map([*g,max,p][2],*[r[-3:]for r in g],*g)]
