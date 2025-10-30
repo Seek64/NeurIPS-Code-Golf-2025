@@ -1,13 +1,13 @@
-def p(g):
- *G,=g
- for y in range(len(g)):
-  for x in range(len(g[0])):
-   if G[y][x]==1:s={(x,y)}
- for y in g:s={(X+x,Y+y)for x,y in s for X in range(-1,2)for Y in range(-1,2)if Y+y in range(len(g))!=X+x in range(len(g[0]))!=0<g[Y+y][X+x]}
- for y in(1,1,-1)*4:
-  g=[x for*x,in zip(*g[::y])]
-  for Y in range(-13,13):
-   for X in range(-13,13):
-    if all(Y+y in range(len(g))!=X+x in range(len(g[0]))!=G[y][x]in(1,3,g[Y+y][X+x])for x,y in s):
-     for x,y in s:g[Y+y][X+x]=G[y][x]
- return g
+def p(r):
+ *a,=r
+ for l in range(len(r)):
+  for e in range(len(r[0])):
+   if a[l][e]==1:q={(e,l)}
+ for l in r:q={(e+z,i+l)for z,l in q for e in range(-1,2)for i in range(-1,2)if i+l in range(len(r))!=e+z in range(len(r[0]))!=0<r[i+l][e+z]}
+ for l in(1,1,-1)*4:
+  r=[z for*z,in zip(*r[::l])]
+  for i in range(-13,13):
+   for e in range(-13,13):
+    if all(i+l in range(len(r))!=e+z in range(len(r[0]))!=a[l][z]in(1,3,r[i+l][e+z])for z,l in q):
+     for z,l in q:r[i+l][e+z]=a[l][z]
+ return r
