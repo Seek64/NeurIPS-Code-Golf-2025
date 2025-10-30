@@ -1,1 +1,1 @@
-p=lambda g,n=11:-n*g or[[[(i:=((x:=r.pop())+i>0)*-~i)%2*sum(r[:2-i])**4%5*5or x,x or P%5and P|80,sum({*sum(g*(x>9),[])}-{5,x%16})or x][n//4]for P in[0]+r[:0:-1]]for*r,in zip(*p(g,n-1))if[i:=0]]
+p=lambda g,n=11:-n*g or[[[(i:=((x:=r.pop())+i>0)*-~i)%2*sum(r[:2-i])**4%5*5or x,x or-P**4%5*P*4,sum({*sum(g*(x>9),[])}-{5,x%15})or x][n//4]for P in[0]+r[:0:-1]]for*r,in zip(*p(g,n-1))if[i:=0]]
