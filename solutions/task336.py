@@ -1,1 +1,1 @@
-p=lambda g:g[150:]or[eval("r.pop()or(r.count(5)==1<5in r[:4])*8,"*10)for*r,in zip(*p(g*2))]
+p=lambda g:g[150:]or[eval("r.pop()or(5in{*r[:4]}-{*r[4:]})*8,"*10)for*r,in zip(*p(g*2))]
