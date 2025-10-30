@@ -1,1 +1,1 @@
-p=lambda g,e=enumerate:[[max({*r[:j+1]}&{*r[j:]}|{*h[:i]}&{*h[i:]})for j,h in e(zip(*g))]for i,r in e(g)]
+p=lambda g,*r,i=0:[max({*g[i:],x}&{*g[:(i:=i+1)],x})for x in r]or[*map(p,g,*map(p,zip(*g),*g))]
