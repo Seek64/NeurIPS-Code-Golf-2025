@@ -1,2 +1,14 @@
-import re
-def p(g):s,e=re.search(r"( [^0]{7}.{24}){3}|(([^0]), \3).{28}\2.{28}",str(g)).span();x=s%32//3;return[g:=[[*map(max,*r)]for r in zip(g,(3*[*zip(*(3*g)[9+e//32+x::-1])])[10-s//32+x:])]for _ in g][3]
+def p(f):
+ k=2
+ for s in range(10-k):
+  for e in range(10-k):
+   if all(all(f[e:e+k])for f in f[s:s+k]):p=2*s+k-1;r=2*e+k-1
+ k=3
+ for s in range(10-k):
+  for e in range(10-k):
+   if all(all(f[e:e+k])for f in f[s:s+k]):p=2*s+k-1;r=2*e+k-1
+ k=0
+ for s in range(10-k):
+  for e in range(10-k):
+   if l:=f[s][e]:g=2*s-p;e=2*e-r;g,e=-e,g;f[p+g>>1][e+r>>1]=l;g,e=-e,g;f[p+g>>1][e+r>>1]=l;g,e=-e,g;f[p+g>>1][e+r>>1]=l
+ return f
