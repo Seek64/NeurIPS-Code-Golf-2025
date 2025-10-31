@@ -1,0 +1,1424 @@
+Task 001  Bytes: 58
+p=lambda*g:[[*g,min,p][2](r,s)for r in g[0]for s in g[-1]]
+
+Task 002  Bytes: 88
+p=lambda g,k=11:-k*g or[*map(lambda*l,a=0:[a:=b^b-0**k>>a&4for b in l][::-1],*p(g,k-1))]
+
+Task 003  Bytes: 58
+p=lambda g:[[x*2for x in r]for r in g+g[g==2*g[:3]:][2:5]]
+
+Task 004  Bytes: 79
+p=lambda g:[[r[b>[f]+b]for*r,f in zip(a,[0]+a,[0]+b)]for a,b in zip(g,g[1:]+g)]
+
+Task 005  Bytes: 174
+import re
+def p(g):c=max("987643251",key=str(g).count);return[g:=eval(re.sub(f'(?=(\d{"."*n})*{c}.*([^0]){"."*n+c})0',r"\2",f"{*zip(*g[::-1]),}#"*2))for n in[11,271,0]*4][-1]
+
+Task 006  Bytes: 49
+p=lambda g:[eval('r.pop(0)*r[3]*2,'*3)for r in g]
+
+Task 007  Bytes: 62
+p=lambda g:eval(f'[{"max(sum(g:=g[1:3]+g,[])[2::3]),"*7}],'*7)
+
+Task 008  Bytes: 84
+p=lambda g,*n:sorted(zip(*n or p([],*g)),key=lambda r:g.extend(r)or(8in g)*3^any(r))
+
+Task 009  Bytes: 95
+p=lambda g,*r,i=0:[x|max({*g[i::3]}&{*g[:(i:=i+1)]})for x in r]or[*map(p,g,*map(p,zip(*g),*g))]
+
+Task 010  Bytes: 66
+p=lambda g:[g:=[(x*-5or y*sum(r))%6for x,y in zip(g,r)]for r in g]
+
+Task 011  Bytes: 120
+R=range(11)
+p=lambda g:min(({*str(t:=[[[5,g[y//4+p%3*4][x//4+p-p%4]][x%4<3>y%4]for x in R]for y in R])},t)for p in R)[1]
+
+Task 012  Bytes: 122
+import re
+p=lambda g:eval([g:=re.sub(r"0(?=.{%d}([^0])..(.)..\1)"%x,f"\{895%x%5}",str(g)[::-1])for x in b'HHNB%'*2][-1])
+
+Task 013  Bytes: 124
+p=lambda g,h=0,l=[]:[[(l:=[max(c+[j*(i>0)for i,j in zip(l,l[1::2])])]+l)[:1]*len(c),c][c[1:-1]>c]for*c,in zip(*h or p(g,g))]
+
+Task 014  Bytes: 57
+p=lambda g:[p(zip(r,*g))or r[0]for r in[*g]if[*{*r}][2:]]
+
+Task 015  Bytes: 92
+p=lambda g,k=-3:g*k or[g:=[l.pop()|(k==2)*4+((k:=o)==1)*7for o in g]for*l,in zip(*p(g,k+1))]
+
+Task 016  Bytes: 43
+p=lambda g:[[x**10%95%18^4for x in g[0]]]*3
+
+Task 017  Bytes: 90
+p=lambda g:[[*map(max,*[r*any(-i^-j>0for i,j in zip(r,s))+s for s in g])]for*r,in zip(*g)]
+
+Task 018  Bytes: 301 (compressed)
+def p(i,*s):
+ e,*g=len(i[0]),
+ for f in range(len(i)*e):
+  for q,h,p in (n:=[(t:=i[f//e][f%e],f//e,f%e)]*t):i[h][p]=0;n+=[(((i+i)[h+f//3-1]+[0])[p+f%3-1],h+f//3-1,p+f%3-1)for f in range(9)if((i+i)[h+f//3-1]+[0])[p+f%3-1]]
+  g+=n*(len(n)<5*t);s+=*zip(*[((q,p-f%e,h-f//e),(q,f//e-h,p-f%e))for q,h,p in n]),
+ for f in range(len(i)*e):
+  for n in sum([(*zip(*[((q,p,h),(q,-h,p))for q,h,p in n]),)for n in s],s):
+   for q,h,p in (n:=[(q,h+f//e,p+f%e)for q,h,p in n])*(len({*g}&{*n})>2):i[h][p]=q
+ return i
+
+Task 019  Bytes: 103
+p=lambda g,n=7:-n*g or p(-~(n>5)*[g:=[r.pop()or(x*-1or 0)%-8&8for x in[0]+g[:-1]]for*r,in zip(*g)],n-1)
+
+Task 020  Bytes: 138
+import re
+p=lambda g:[g:=eval(re.sub("0(?=.{%d}(.))(?=.{%d}[^0][^1-9]*$)"%(57|324%x,x),r"\1",f"{*zip(*g[::-1]),}"))for x in b"b?"*12][-1]
+
+Task 021  Bytes: 52
+p=lambda g:g*-1*-1or[p(g:=r)for r in g if g!=r][::2]
+
+Task 022  Bytes: 91
+r=-1,0,1
+p=lambda g:[[dict(sorted(zip(o:=sum(g,[]),o[x*11+y:]+o)))[5]for y in r]for x in r]
+
+Task 023  Bytes: 195
+import re
+def p(g):l=len(g[0])*3-2;return max([p(x)for i in["8?5(, )5(.{%d})5(, )5"%l,"2?5"+"(.{%d}...)5"%l*2,"2?5(, )5(, )5"]if(x:=eval(i[0].join(re.split(i,s:=str(g),1))))!=g]+[0**('5'in s)*g])
+
+Task 024  Bytes: 62
+p=lambda g:[[3%-~max(r)or(2in x)*2for x in zip(*g)]for r in g]
+
+Task 025  Bytes: 127
+p=lambda g,N=0:[g:=[[any(min(g)+[I:=(x:=r.pop())in r,A:=all(c)])*x|N+(N:=A*I*x)for c in g[::-1]]for*r,in zip(*g)]for _ in g][3]
+
+Task 026  Bytes: 50
+p=lambda g:[eval('8>>r.pop(0)+r[3],'*3)for r in g]
+
+Task 027  Bytes: 97
+R=range(10);p=lambda g:[[g[i][j]or 2*g[~j+([*[*zip(*g)][5]]<g[5][::-1])][i]for j in R]for i in R]
+
+Task 028  Bytes: 63
+p=lambda g:[[w:=max(g[y%15]),*[y&w]*8,w]for y in b'/ /  ppp']
+
+Task 029  Bytes: 103
+p=lambda g,w=9:g*w and p(g,w-1)+[g:=[r[~x::-1]for*r,in zip(*g)if w in r]for x in[0]*4+[1]*5][7]*([]==g)
+
+Task 030  Bytes: 93
+p=lambda g:[*zip(*map(lambda*r:r[(k:=(f:=sum(g,[]).index)(max(r))//10-f(1)//10):]+r[:k],*g))]
+
+Task 031  Bytes: 45
+p=lambda g,*G:[*filter(any,zip(*G or p(*g)))]
+
+Task 032  Bytes: 39
+p=lambda g:[*zip(*map(sorted,zip(*g)))]
+
+Task 033  Bytes: 71
+p=lambda g,h=[],i=0:g*0!=0and[*map(p,g[:6]*3,h+g,g[5:6]*17)]or(g>h)*i|h
+
+Task 034  Bytes: 116
+import re
+p=lambda g,n=-35:n*g or eval(re.sub("([^02]), 2(.{28})0",r"*[\1]*3\2\1,2",f"{*zip(*p(g,n+1)),*g}"))[8::-1]
+
+Task 035  Bytes: 82
+p=lambda g:g[150:]or[[g:=l[e!=8or g>0]or e for e in l]for*l,in zip(*p(g*2))][::-1]
+
+Task 036  Bytes: 75
+p=lambda g,*G:[f for*f,in zip(*G or p(g,*g))if{*f}-{*sum(g[:5]+g[-4:],[])}]
+
+Task 037  Bytes: 101
+import re
+p=lambda g:g[:~99]or p(eval(re.sub(r"(?<=(.).{34})(?=(.{35})*\1)0",r"\1",str(g[9::-1])))+g)
+
+Task 038  Bytes: 51
+p=lambda g:[(str(g).count("1, 1")*[1]+9*[0])[:9:2]]
+
+Task 039  Bytes: 60
+p=lambda g:[*eval("zip(*[*filter(any,"*2+"g)]))][:3])")][:3]
+
+Task 040  Bytes: 63
+p=lambda g,h=[]:g*0!=0and[*map(p,g[:1]*5+g[9:]*5,h+g)]or h%~h&g
+
+Task 041  Bytes: 49
+p=lambda g,a=0:[[v|(a:=a^v)for v in r]for r in g]
+
+Task 042  Bytes: 136
+import re
+p=lambda g,n=23:-n*g or[*zip(*eval(re.sub("(?=0.*0(, 3){%d}, 0)(?=.{%d}3)"*2%(x:=n%5,x*38,x,x*67),"8|",str(p(g,n-1))))[::-1])]
+
+Task 043  Bytes: 56
+p=lambda g:[[x+r[-1]&r.pop(0)+2for x in g[0]]for*r,in g]
+
+Task 044  Bytes: 201
+from re import*
+p=lambda o,n=X:-n*o or p(eval([o:="%s"%o,sub(x:=str(n%S),"0","|n%S".join(s:=split("(?<=5.{28}5..%s)(?=..5.{28}5)"%sub(x,"0)(",sub("[^%s]"%x,".",o)).strip("."),o)))][s.count("")%2]),n-1)
+
+Task 045  Bytes: 45
+p=lambda g:[(r*10)[::10|len({*r})]for r in g]
+
+Task 046  Bytes: 166
+def p(g,d=3):g=(5,),*zip(*g);return*zip(*[[sum({*x*(q+r+s)}-{5})for x in 3*r][d:3+d]for q,r,s in zip(g,g[1:],g[2:]+g)if any(r)or(d:=d-[*q,5].index(5)+s.index(5))*0]),
+
+Task 047  Bytes: 55
+p=lambda g:[[sum({*r+c})%13for*c,in zip(*g)]for r in g]
+
+Task 048  Bytes: 95
+p=lambda g:[[(o:=hash((*b"'%a3byQ"%g,)))//b'Y(_4Lhacy17vZ4%_R|K~~,|~(xs2E,]{'[o%37]%-3&8]]
+
+Task 049  Bytes: 81
+p=lambda g:[r*[v]for l in g if(r:=l.count(v:=min(r:=sum(g,[0]*99),key=r.count)))]
+
+Task 050  Bytes: 84
+p=lambda g:[*map(F:=lambda*r,k=0:[max(c,k:=k^sum(r)*c*6%9%6)for c in r],*map(F,*g))]
+
+Task 051  Bytes: 114
+import re
+p=lambda g:[g:=eval(re.sub(r"0(?=[^)]*?([^0]), ((?!\1).), 0)",r"\2",f"{*zip(*g[::-1]),}"))for _ in g][3]
+
+Task 052  Bytes: 40
+p=lambda g:[[len({*r})%2*5]*3for r in g]
+
+Task 053  Bytes: 21
+p=lambda g:(2*g)[2:5]
+
+Task 054  Bytes: 266 (compressed)
+def p(r):
+ f=[p*1for p in r]
+ for p in range(28):
+  for t in range(28):
+   if r[p][t+1]==r[p][t-1]!=r[p][t]!=r[p+1][t]==r[p-1][t]!={r[p][t+1],r[p+1][t+1]}!={r[p+1][t]}:
+    for e in range(28):
+     for n in range(28):
+      if r[p][t]==r[e][n]:
+       for o in range(-1,2):
+        for h in range(-1,2):
+         i=1
+         if r[p+o*i][t+h*i]!=r[p+1][t+2]:
+          f[e+o*i][n+h*i]=r[p+o][t+h];i+=1
+          if r[p][t]!=r[p+o*i][t+h*i]!=r[p+1][t+2]:
+           while r[e+o*i][n+h*i]!=r[p+1][t+2]:f[e+o*i][n+h*i]=r[p+o][t+h];i+=1
+    for o in range(-2,3):
+     for h in range(-2,3):f[p+o][t+h]=r[p+1][t+2]
+ return f
+
+Task 055  Bytes: 79
+p=lambda g,i=8:[x*0!=0and p(x,i:=i+x[0]%5)or 9967%(i:=i+x)*i%7>>x|x for x in g]
+
+Task 056  Bytes: 40
+p=lambda g:[[2^3%4**g[1][0]+0**g[0][0]]]
+
+Task 057  Bytes: 48
+p=lambda g:[*filter(any,zip(*g[8:]or p(g*2)*2))]
+
+Task 058  Bytes: 86
+p=lambda g:g and[[3]*len(g),[3,3,*g[0],3][3%-~len(g):],*zip(*p([*zip(*g[2:])])[::-1])]
+
+Task 059  Bytes: 151
+R=range(11);p=lambda g,n=36,o=0:[[(g[i][j]==5)*5or(sum(S:=[g[i&12|k%3][j&12|k//3]for k in R[:9]])>n!=[o:=1])*max(S)for j in R]for i in R]*o or p(g,n-1)
+
+Task 060  Bytes: 47
+p=lambda g:[r[:1]*5+[i%~i%6]+[i]*5for*r,i in g]
+
+Task 061  Bytes: 63
+r=range(18);p=lambda g:[[x*y%max(g[-1])+1for x in r]for y in r]
+
+Task 062  Bytes: 123
+p=lambda g:((g:=[q:=[i or 3for i in r]for*r,in zip(*g[670:]or p(g*2))if(g:=g!=({*r}=={2,3}<{2,*q}))])[:1]*9+g+g[::-1])[~9:]
+
+Task 063  Bytes: 74
+p=lambda g:[[x|3>>x+sum(r[1:-any(c)])for _,*c,_,x in zip(*g,r)]for r in g]
+
+Task 064  Bytes: 135
+p=lambda g,n=-7:n*g or p([[P:=[x:=r.pop(),P][r.count(max({*r*P*(g[0].count(x)>3),n}-{x,P}))>2]for _ in g]for*r,in zip(*g)if[P:=0]],n+2)
+
+Task 065  Bytes: 82
+p=lambda*g:min(g,key=g.count)if g[3:]else[*map(p,*g,*[h[len(h)//2+1:]for h in g])]
+
+Task 066  Bytes: 240 (compressed)
+def p(e):
+ def p(e,o,n,i,r,l=5):
+  e=[o*1for o in e]
+  while 0<o<len(e)-1>n>0==(d:=e[o+i][n+r]):o+=i;n+=r;e[o][n]=3
+  return p(e,o,n,r,i,l+1)or p(e,o,n,-r,-i,l+1)if d>7>l else(d==2)*e
+ return max(p(e,o,n,i,r)for o in range(len(e))for n in range(len(e))for i in range(-1,2)for r in range(-1,2)if 3==e[o][n]==e[o][n-r])
+
+Task 067  Bytes: 33
+p=lambda g:[r[:len(g)]for r in g]
+
+Task 068  Bytes: 99
+p=lambda g,x=0:[[(x:=x*2|2>>sum(g,g).count(y))%2*y|(x>>89&7345159>0)*2for y in r]for*r,in g*2][10:]
+
+Task 069  Bytes: 148
+R=range(320)
+def p(g):
+ *f,=U=b'%r'%g
+ for i in R:
+  for j in(P:=[j for j in R if U[j]&503%f[i]>48]):f[j],f[i+j-P[0]]=48,U[j]
+ return eval(bytes(f))
+
+Task 070  Bytes: 80
+p=lambda g:[[(8in{*c,hash(c)%3673}&{*r})*2-3%~c[0]for c in zip(r,*g)]for r in g]
+
+Task 071  Bytes: 115
+p=lambda g,R=0:[[x*r[i:=i%16-1]and g for x in r]for r in g if[i:=(R:=R or r[::-1].index(g:=max(r))*15+r.index(g))]]
+
+Task 072  Bytes: 54
+p=lambda g,u=[]:g*0!=0and[*map(p,g,u+g[7:])]or(g!=u)*3
+
+Task 073  Bytes: 46
+p=lambda g:3*g[:1]+[g[3],[5^n*4for n in g[2]]]
+
+Task 074  Bytes: 77
+p=lambda g:g[90:]or p(g+[*zip(*map(map,[min]*30,p(g[:30]+g),g[:2]+g[::-1]))])
+
+Task 075  Bytes: 86
+R=range(9);p=lambda g:[g[i][:4]+[g[i-i%3+1][k-k%3+5]*g[i%3][k%3]for k in R]for i in R]
+
+Task 076  Bytes: 258 (compressed)
+def p(r):
+ a=r
+ for n in range(len(r)):
+  for f in range(len(r[0])):
+   if a[n][f]==1:z={(f,n)}
+ for n in r:z={(f+l,e+n)for l,n in z for f in range(-1,2)for e in range(-1,2)if e+n in range(len(r))!=f+l in range(len(r[0]))!=0<r[e+n][f+l]}
+ for n in(1,1,-1)*4:
+  r=[z for*z,in zip(*r[::n])]
+  for e in range(-13,13):
+   for f in range(-13,13):
+    if all(e+n in range(len(r))!=f+l in range(len(r[0]))!=a[n][l]in(1,3,r[e+n][f+l])for l,n in z):
+     for l,n in z:r[e+n][f+l]=a[n][l]
+ return r
+
+Task 077  Bytes: 124
+import re
+p=lambda g,k=31:-k*g or p(eval(re.sub("(?<=[24], )[^2](?=.( |.{%d})[24])"%len(3*g),"4",f"{*zip(*g[::-1]),}")),k-1)
+
+Task 078  Bytes: 60
+p=lambda g:[*zip(*map(lambda*c:sorted(c,key=1 .__gt__),*g))]
+
+Task 079  Bytes: 107
+exec(f'p=lambda g:max(M:=[g {"for*g,in map(zip,g,g[1:],g[2:])"*2}if(0,)*3not in[*zip(*g)]+g],key=M.count)')
+
+Task 080  Bytes: 232
+import re
+def p(g):l=sum(g,[]);w=len(g);a,b,c,d=max(({*(q:=l[i:i+3]+l[i-2*~w::w*w]),0},i,q)for i in range(w*w))[2];return[g:=eval(re.sub(f"(?={-~l.index(b)*x*'.'}{a})0","y",f"{*zip(*g[::-1]),}"))for x,y in[(3,c)]*4+[(3*w+5,d)]*4][7]
+
+Task 081  Bytes: 90
+import re
+p=lambda g:eval(re.sub('0(?=, 8.{19}8)','1',f"{*zip(*g[49:]or p(g*2)),}"))[::-1]
+
+Task 082  Bytes: 50
+p=lambda g:[r:=g[0],[*map(max,[0]+r,r[1:]+[0])]]*3
+
+Task 083  Bytes: 40
+p=lambda g:[r+r[::-1]for r in g+g[::-1]]
+
+Task 084  Bytes: 62
+def p(g,i=0):
+ *h,l=g
+ for r in h:i-=1;r[i]=2;l[i]=4
+ return g
+
+Task 085  Bytes: 49
+p=lambda g:g*0!=0and[g:=[p(r),r][r!=g]for r in g]
+
+Task 086  Bytes: 166
+p=lambda g,i=-1:[[sum({*sum(g*x,[i:=i+1])})-i-x or p(c*2,i//len(g))|p(r*98,i)for*c,x in zip(*g,r)]for r in-i*g]or g[i+1]|g[i-1]or g.count(0)%-len(g)%3*(g[i+2]|g[i-2])
+
+Task 087  Bytes: 36
+p=lambda g:[r[::-1]for r in g[::-1]]
+
+Task 088  Bytes: 98
+p=lambda g:[[g[1>c][0]for c in r]for _,*r,_ in g[1:-1:exec('g[:]=zip(*g[any(g[-1])-2::-1]);'*80)]]
+
+Task 089  Bytes: 233 (compressed)
+p=lambda n:[[[*[n[b-r][m-o*(n[b][m]>2or-1)]for r in range(-2,3)for o in range(-2,3)if i+r<13>p+o>-1<n[i+r][p+o]in(2,3)for b in range(13)for m in range(13)if(b,m)!=(i+r,p+o)!=-1<b-r<13>m-o*(n[b][m]>2or-1)>-1<n[b][m]==n[i+r][p+o]!=n[b-r][m-o*(n[b][m]>2or-1)]in{n[b-r][m-o]for r in range(-1,2)for o in range(-1,2)if b-r<13>m-o}-{0}],n[i][p]][0]for p in range(13)]for i in range(13)]
+
+Task 090  Bytes: 147
+import re
+p=lambda g:eval('6'.join(max([re.split((f'(..{{{len(g[0])*3-i%8*3}}})0{i%8*"(, )0"}'*(i%5+2))[8:],str(g),1)for i in range(40)],key=len)))
+
+Task 091  Bytes: 62
+p=lambda g,k=46:~k*g or p([*zip(*g[(5in g[k|-2])-2::-1])],k-1)
+
+Task 092  Bytes: 86
+p=lambda g:[*map(F:=lambda*l,c=0:[l.count(e)>1and(c:=c^e)or e for e in l],*map(F,*g))]
+
+Task 093  Bytes: 98
+import re
+p=lambda g:g[57330:]or eval(re.sub("[^05],([0, ]*5)",r"\1,5",f"{*zip(*p(2*g)[::-1]),}"))
+
+Task 094  Bytes: 102
+import re
+p=lambda g:g[225:]or[*zip(*eval(re.sub("8(?=(.{47})*, 1, 1, [86])","6",str(p(g*2)))))][::-1]
+
+Task 095  Bytes: 70
+p=lambda g:g[99:]or[eval("r.pop()|r[-1]%4,"*9)for*r,in zip(*p(g*2)*2)]
+
+Task 096  Bytes: 284 (compressed)
+import re
+def p(a):
+ s=re.sub(', ','',str(a+[*zip(*a)]));f=int(max(s,key=s.count));r={0:(0,f)}
+ for l in range(10):
+  if(l!=f)*re.findall(f'{l}',s):e=len(max(re.findall(f'{l}{l}([^]){l}]+){l}|',s+s[::-1])));r[len(max(re.findall(f'{l}+',s)))*((e>0)+1)+e>>1]=1+e>>1,l
+ return[[[r[max(abs(l),abs(s))][1],f][r[max(abs(l),abs(s))][0]>min(abs(l),abs(s))]for l in range(-max(r),max(r)+1)]for s in range(-max(r),max(r)+1)]
+
+Task 097  Bytes: 96
+exec("p=lambda g,Z=[[0]*30]:[[g[1][1]&sorted(b'%r'%g)[-4]"+"for*g,in map(zip,Z+g,g,g[1:]+Z)]"*2)
+
+Task 098  Bytes: 74
+p=lambda g,h=[],i=[]:g*0!=0and[*map(p,g,(h+g)[1:]+g,g[:1]+i+g)]or(h*i<1)*g
+
+Task 099  Bytes: 93
+p=lambda g,n=0:[g:=[r.pop()or 1in g!=x>0and~-sum({*g})for x in g]for r in(n or p(g,g))[::-1]]
+
+Task 100  Bytes: 85
+p=lambda g:[max(y*[r.count(y)*c.count(y),y]for r in g for*c,y in zip(*g,r))[-1:]*2]*2
+
+Task 101  Bytes: 271 (compressed)
+def p(r):
+ t,*d=len(r[0])+2,
+ for a in r:d+=*a,0,0
+ f=[d.index(1)]
+ for a in f:f+=[a for a in(a-t,a-1,a+1,a+t)if len(d)>a>(a in f)*t<d[a]]
+ e=f
+ for i in range(len(d)):
+  f=[i]
+  for a in f:f+=[a for a in(a-t,a-1,a+1,a+t)if len(d)>a>(a in f)*t<d[a]]
+  l=58%len(f)+2>>1
+  for a in e:
+   for p in range(l*l*all(d[a]>1for a in f)):d[i+l*a-l*min(a for a in e if d[a]>1)+p//l*t+p%l]=d[a]
+ return[d[i*t:][:t-2]for i in range(len(r))]
+
+Task 102  Bytes: 126
+p=lambda g,k=7,l=1,a=1:-k*g or p([[a:=[[a|c|(l:=l<<7),4228224>>c%127&2][k<1],5][c==5]for c in r]for r in zip(*g[::-1])],k-1,0)
+
+Task 103  Bytes: 29
+p=lambda g:[[g[0]==g[2]or 7]]
+
+Task 104  Bytes: 84
+p=lambda g:[[*[u%4]*4+[u%5]*4,0][::1|1-g[1][2]]for u in b"####0000("][::1|1-g[2][1]]
+
+Task 105  Bytes: 134
+p=lambda g,n=-3,i=0:g*n or p([[P:=r.pop()or any(r*P+c)<<i&2for c in g[::-1]]for*r,in zip(*g)if[i:=sorted(r)[P:=-4]or i*2+any(r)]],n+1)
+
+Task 106  Bytes: 67
+p=lambda g:(w:=g+[*zip(*g)][::-1])+[k+[*w.pop()][::-1]for*k,in w*1]
+
+Task 107  Bytes: 161
+import re
+p=lambda g,n=7:-n*g or p(eval(re.sub("0(?=(, 0, .{%d})*(?<=0, [^02]))"%len(3*g),"02"[n<4],str([r for*r,in zip(*g[::-1])for _ in{*n//6*g[-1],0}]))),n-1)
+
+Task 108  Bytes: 52
+p=lambda g:g*0!=0and[*map(p,(g*8)[2:]*5)][9::20]or g
+
+Task 109  Bytes: 80
+def p(g):w=len(g)//2;return[all(g)and p(r)or(r>0)*g[w]for r in g[:w]+g[w-1::-1]]
+
+Task 110  Bytes: 84
+p=lambda g:[[*map(max,*[r*any(-i^-j>0for i,j in zip(r,s))+s for s in g])]for r in g]
+
+Task 111  Bytes: 60
+p=lambda g:[(l:=sum(g,g))[l.index(5)+n:][:3]for n in b"	"]
+
+Task 112  Bytes: 91
+p=lambda g:exec('g[:]=zip(*map(M:=max,g,(g*3)[2*g.index(M(g,key=M))-~len(g)::-1]));'*2)or g
+
+Task 113  Bytes: 25
+p=lambda g:g[:5]+g[4::-1]
+
+Task 114  Bytes: 64
+*Z,p=0,lambda g:[Z+g[0]+Z,*[r[:1]+r+r[-1:]for r in g],Z+g[-1]+Z]
+
+Task 115  Bytes: 51
+p=lambda g,F={}.fromkeys:[*F(zip(*zip(*map(F,g))))]
+
+Task 116  Bytes: 20
+p=lambda g:g[::-1]+g
+
+Task 117  Bytes: 115
+p=lambda g,n=-79:n*g or p([*zip(*[g,h:=[*map(max,g,i:=(g*3)[n%-21::-1])]][40in map(str(i+6*h).count,str(h))])],n+1)
+
+Task 118  Bytes: 245 (compressed)
+import re
+p=lambda o,n=23,d=2:-n*o or p(eval(re.sub(["(?<=[^)05], )5(?=[^)]{,8}2)","5(?=.{,%d}[^)05], [^)05].{%d}[^)05]|..{%d}[^)05]{%d}|[^)05]{%d}..( |0|.{15}8, 8))"%(3*d,3*len(o)-2,3*len(o)-2-3*d,3+6*d,6*d)][n<12],"8",f"{*zip(*o[::-1]),}")),n-1,d|("p"in re.sub(20*"[^)05]","p",f"{o}")))
+
+Task 119  Bytes: 102
+import re
+p=lambda g:exec('g[::-1]=zip(*eval(re.sub("0(?=.{40}[38].{40}[238])","3",str(g))));'*40)or g
+
+Task 120  Bytes: 89
+*Z,p=[0]*99,lambda g,h=0,i=[]:g*0!=0and[*map(p,g,(h or g)[1:]+Z,Z+i+g)]or[g,8][0<g==h==i]
+
+Task 121  Bytes: 89
+def p(g):w=sum(g,g);g=[w[w.index(8)+i-99:][:3]for i in b"Ubo"];g[1][1]=max(g[0]);return g
+
+Task 122  Bytes: 70
+p=lambda g:'3, 0'in'%s'%max(g)and[*map(p,g)]or min(g,g[4:])[:2]+g[:-2]
+
+Task 123  Bytes: 72
+p=lambda g:[[(w:=[*filter(int,g[0]*9)])[x]]*x+w[x:10]for x in range(10)]
+
+Task 124  Bytes: 97
+p=lambda g,x=0,y=2:(G:=[(i//y*x*[0]+g[i%y])[:10]for i in range(10)])*(G[:4]<g<G)or p(g,~-x%3,y^1)
+
+Task 125  Bytes: 118
+import re
+p=lambda g:exec(r'g[::-1]=zip(*eval(re.sub("[38](?=(..(4|6).{40}|.{49})[46])",r"4-1\2%2",str(g))));'*20)or g
+
+Task 126  Bytes: 54
+p=lambda g:g[:-1]+[[4*(0<sum(c)in c)for c in zip(*g)]]
+
+Task 127  Bytes: 57
+p=lambda g:g*-1and g+5or g and[p(g[1])]*3+g[3:4]+p(g[4:])
+
+Task 128  Bytes: 57
+p=lambda g:[*zip(*map(lambda*c:c[c.count(c[-1]):]+c,*g))]
+
+Task 129  Bytes: 47
+p=lambda g:[[max(h:=sum(g,g),key=h.count)]*3]*3
+
+Task 130  Bytes: 61
+p=lambda g:g*(g!=5)and(g*-1*-1or[max(map(p,g[:3]))]+p(g[3:]))
+
+Task 131  Bytes: 126
+p=lambda g,n=3:-n*g or p([*zip(*sorted(f:=g+[9*[8]],key=lambda r:g.extend(r)!=2-any(r)in max(f,key=any)!=2in g)[-2::-1])],n-1)
+
+Task 132  Bytes: 86
+p=lambda g,k=0:[g:=[[k|(k:=k^max({*h}&{*r}))for h in g]for r in zip(*g)]for _ in g][1]
+
+Task 133  Bytes: 307 (compressed)
+def p(n,*x):
+ for e in n:x+=*e,0
+ for e in{*x}:
+  g,*o=[x.index(e)],
+  for d in g:g+=[i+d for i in(~len(n[0]),-1,1,-~len(n[0]))if(i+d in g)==0<=i+d<len(x)>0<x[i+d]];o+=x[d],
+  if~-len(o)==o.count(e)>1:r,={*o}-{e};t=min(d for d in g if x[d]==r);c=g
+ for e in{*x}-{r}:
+  g,*o=[x.index(e)],
+  for d in g:g+=[i+d for i in(~len(n[0]),-1,1,-~len(n[0]))if(i+d in g)==0<=i+d<len(x)>0<x[i+d]];o+=x[d],
+  for d in c:
+   for i in range(o.count(r)):a=(o.count(r)^6)%6;u=min(d for d in g if x[d]==r)+d*a-t*a;n[u//-~len(n[0])+i//a][u%-~len(n[0])+i%a]=n[u//-~len(n[0])+i//a][u%-~len(n[0])+i%a]or e
+ return n
+
+Task 134  Bytes: 146
+p=lambda g,y=1:[(s:=[y*(0<x!=y)for*c,x in zip(*g,r)if{*c}-{0,y}])[::(n:=len(s)//3)]for r in g if{*r}-{0,y}][::n]*(f"0, {y}, 0"in"%r"%g)or p(g,y+1)
+
+Task 135  Bytes: 32
+p=lambda g:[r[6:]for r in g[:3]]
+
+Task 136  Bytes: 94
+import re
+p=lambda g:eval([g:=re.sub('0(?=(.{34}%s){2})'%x,x,str(g)[::-1])for x in"21"*8][-1])
+
+Task 137  Bytes: 139
+def p(g):R=range(len(g));c,d=[(i,a:=j)for j in R for i in R if g[i][j]][1];return[[g[c][d-max(i-c,j-d,c-i,d-j)%(a-d)]for j in R]for i in R]
+
+Task 138  Bytes: 103
+p=lambda g,k=35:-k*g or p([[g:=[e,g][l[0]==g>e<1<9>k]for e in l[::-1]]for*l,in zip(*g[0in g[0]:])],k-1)
+
+Task 139  Bytes: 92
+p=lambda g,w=11:-w*g or[[c|(~(w:=w*2|c%3)&515==1)*7for c in r]for*r,in zip(*p(g,w-1)[::-1])]
+
+Task 140  Bytes: 36
+p=lambda g:[r[::-1]for r in g[::-1]]
+
+Task 141  Bytes: 92
+p=lambda g,i=1:[[*map(max,r[:(a:=abs(g.index(m:=max(g))+(i:=i-1)))]+m,m[a:]+r,r)]for r in g]
+
+Task 142  Bytes: 40
+p=lambda g:[r+r[::-1]for r in g+g[::-1]]
+
+Task 143  Bytes: 127
+def p(g,i=1):
+	*R,=G=b'%r'%g
+	for k in b'"%(BEH':R[k+i]=(48%G[k]or-5)%G[k+i]+5
+	return{*G}>{*R}and eval(bytes(R))or p(g,i+1)
+
+Task 144  Bytes: 53
+p=lambda g,u=[]:g*0!=0and[*map(p,g,u+g[5:])]or 3>>g+u
+
+Task 145  Bytes: 177
+p=lambda g,n=7,l=1:-n*g or p([(a:=0)or[a:=[n and c|a|(l:=l<<9)or(X:=sorted({x%511for x in sum(g,r)}))[1]//(C:=c%511)*8+C//X[-1],2][c==2]for c in r]for*r,in zip(*g[::-1])],n-1,0)
+
+Task 146  Bytes: 58
+p=lambda g:(m:=g[:3])*(m!=[*map(list,zip(*m))])or p(g[3:])
+
+Task 147  Bytes: 81
+p=lambda g:[*eval('map(lambda*r,b=0:[b:=a*6**b%10for a in r][::-1],*'*4+'g))))')]
+
+Task 148  Bytes: 118
+p=lambda g,X=0:[[s:=0,X:=-any(r)&1+X%6,[332%(2+sum(r,-s)*(s:=s+v))or(X in g)*8for v in r],g:=g+s//8*[X]][2]for r in g]
+
+Task 149  Bytes: 75
+p=lambda g:g and[[sum((b"%.104r"%g*7)[j::35])>894for j in b""]]+p(g[4:])
+
+Task 150  Bytes: 30
+p=lambda g:[r[::-1]for r in g]
+
+Task 151  Bytes: 103
+import re
+p=lambda g:exec('g[::-1]=eval(re.sub("0, [^0](?=[^(]*\([^0])","4,4",f"{*zip(*g),}"));'*4)or g
+
+Task 152  Bytes: 40
+p=lambda g:[r+r[::-1]for r in g+g[::-1]]
+
+Task 153  Bytes: 118
+T=0,1,2;p=lambda g:max(all(sum(G:=[[g[x+i%7][y+i%8]^g[x-i%9][y-i%11]for y in T]for x in T],G))*G for i in range(5544))
+
+Task 154  Bytes: 98
+import re
+p=lambda g,k=0:eval(re.sub("[^(2]{9}2"*2+"?","*[\g<0>][::-1]",f"{*zip(*k or p(g,g)),}"))
+
+Task 155  Bytes: 18
+p=lambda g:g[::-1]
+
+Task 156  Bytes: 118
+import re
+p=lambda g:eval(g:=re.sub("(?<=4.{34}4)(?=.{34}4(.*0.{31}(4))?)",r"*(X:=g.count)('X\2X')//X('+')+1",str(g)))
+
+Task 157  Bytes: 240 (compressed)
+def p(n):i=sum(n,e:=[]);r=[e];[(r:=[r+[(n,e)]for r in r for n in range(45)if i[n]<1],e:=[])for n in range(16)if e==(e:=e+[r for r in range(n,150,15)if(15>n)&i[r]])>[]];return max([*zip(*[((any(r-i+min(n)in n*(i%15-r%15<6)for i,n in n)|i[r]%5)%3for r in range(150))]*15)]for n in r)
+
+Task 158  Bytes: 261 (compressed)
+def p(n):
+ for h in range(12):
+  d=3-h//4;n=[[*h]for h in zip(*n[::-1])]
+  for e in range(len(n)+1-3*d):
+   for g in range(len(n[0])+1-3*d):
+    i=[n[e+h//(3*d)][g+h%(3*d)]for h in range(3*d*3*d)]
+    if i[0]!=i[8]!=3<len({*i}):p=i
+ for h in range(12):
+  d=3-h//4;n=[[*h]for h in zip(*n[::-1])]
+  for e in range(len(n)+1-3*d):
+   for g in range(len(n[0])+1-3*d):
+    i=[n[e+h//(3*d)][g+h%(3*d)]for h in range(3*d*3*d)]
+    if i[:d]==i[d*3*d-3*d:][:d]==p[:1]*d!=i[-d:]==p[8:]*d!=i[~d]==i[d]:
+     for h in range(3*d*3*d):n[e+h//(3*d)][g+h%(3*d)]=p[h//(3*d)//d*3+h%(3*d)//d]
+ return n
+
+Task 159  Bytes: 103
+p=lambda g,*G:[*zip(a:=[2]*99,*[r for*r,in G or p(g,*g)for c in g[::3]if c.count(2)==2if{*r}-{0,2}],a)]
+
+Task 160  Bytes: 104
+import re
+p=lambda g:g[150:]or eval(re.sub('1..1..1(.{25}).{6}[12]',r'0,2,0\1 2,2,2',str(p(g*2)[::-1])))
+
+Task 161  Bytes: 82
+p=lambda g:[[sum({min(S:=sum(g,[]),key=S.count)}&{a,b})for b in g[0]]for*r,a in g]
+
+Task 162  Bytes: 96
+import re;p=lambda g,k=0:eval('1,1,1'.join(re.split(("(.{55})0, 0, 0"*3)[7:],str(k or p(g,g)))))
+
+Task 163  Bytes: 130
+R=range(11);p=lambda g:[[max(5*(g[y][x]==5)or(g[p%3*4+y//4][p&-4|x//4]==4)*g[p%3*4+y%4][p&-4|x%4]for p in R)for x in R]for y in R]
+
+Task 164  Bytes: 32
+p=lambda g:[r+r[::-1]for r in g]
+
+Task 165  Bytes: 112
+p=lambda g:[*zip(*map(lambda*r:r[:-(k:=r[::-1].index(max(r,key=sum(g[::-1],g).index)))]+k*(max(r[-k:]),)+r,*g))]
+
+Task 166  Bytes: 61
+p=lambda g:[[e+(c>[e]*99<l)*2for*c,e in zip(*g,l)]for l in g]
+
+Task 167  Bytes: 72
+T=1,2,4;p=lambda g:[[5*(i^25%len({*"%r"%g})*j%5<2)for j in T]for i in T]
+
+Task 168  Bytes: 110
+import re
+p=lambda g:eval(re.sub(r'0(?=(.{35})+.(.[^0]).{27}\2,\2)',r'\2',f"{*zip(*g[70:]or p(g*2)),}"))[::-1]
+
+Task 169  Bytes: 108
+p=lambda g,k=11,l=6:-k*g or p([(a:=1)*[a:=[c%7,a|c|(l:=l*8)][k>0<c]for c in r][::-1]for*r,in zip(*g)],k-1,0)
+
+Task 170  Bytes: 166
+def p(g,n=3):*l,=filter(int,sum(g,[]));i=~9-1%len({*l[:-9]})*7;return[[v%~v&l[i:=i+1]for*c,v in[*zip(*g,r)][::n]if[c[:15]]>g]for r in g[::n]if[r]*~i>g]*-i or p(g,n+1)
+
+Task 171  Bytes: 51
+p=lambda g:g*all(g[0])or p([*zip(*g[:0:-1],[8]*9)])
+
+Task 172  Bytes: 20
+p=lambda g:g+g[::-1]
+
+Task 173  Bytes: 207 (compressed)
+p=lambda f:[(e:=[f[a-n//3][i-n%3]for n in range(9)])==e[::-1]*any(e[:sum((f[c-n//3][m-n%3]==e[n])<<3*(n==4)for n in range(9))//8*4]*e[4])==exec('for n in range(9):f[c-n//3][m-n%3]=e[n]')for c in range(len(f))for a in range(len(f))for m in range(len(f[0]))for i in range(len(f[0]))]and f
+
+Task 174  Bytes: 91
+p=lambda g,i=7:[r*(r==r[::1|i%-2])for*r,in zip(*g[70:]or p(g*2,i-1))if i//4in r]or p(g,i+4)
+
+Task 175  Bytes: 74
+p=lambda g:[g:=[y|z or x for x,y,z in zip([0]+g,r,c)]for*c,r in zip(*g,g)]
+
+Task 176  Bytes: 64
+p=lambda g,o=5:[[o-(o:=o-e)or~o*o%6for e in l]*(o:=1)for l in g]
+
+Task 177  Bytes: 51
+p=lambda g,*G:[*filter(any,zip(*G or p(*g)[::-1]))]
+
+Task 178  Bytes: 47
+p=lambda g:g*-1*-1or[p(g:=r)for r in g if g!=r]
+
+Task 179  Bytes: 21
+p=lambda g:[*zip(*g)]
+
+Task 180  Bytes: 79
+p=lambda g:[[max(s,key=bool)for s in zip(r[4:],g[4],g.pop(4)[4:],r)]for r in g]
+
+Task 181  Bytes: 67
+def p(g):
+	for l in g[:3]:x=6>>g[3][3];l[x:x+3]=l[5:2:-1]
+	return g
+
+Task 182  Bytes: 160
+from re import*
+p=lambda g,h=0:eval(sub(sub("2|3","1","(.{47})".join(a:=findall(".*5, "+"5.{46}(.{15})"*5,s:=str(h or p(g,g)))[0])),"\%d ".join(a)%(1,2,3,4),s))
+
+Task 183  Bytes: 79
+p=lambda g,h=0:g*0!=0and[*map(p,len(g)//2*g[:1]+g[-1:]*9,h or g)][2:-2]or h%7*g
+
+Task 184  Bytes: 91
+p=lambda g,*h,q=[]:[q+0*(q:=r)for*r,in zip(*h or p(*g))if[0,*r,q:=[*map(max,q+r,r)]]>r]+[q]
+
+Task 185  Bytes: 107
+p=lambda g,*P:[g:=[[x*(P==(P:=x)!=max(Z))for c,x in zip(g,r)if{*c}-{*Z}][1:]for r in zip(*g)]for Z in g][1]
+
+Task 186  Bytes: 60
+p=lambda g:[[2,1%(n:=sum(sum(g,[])))*2,2%n],[0,6%n,0],3*[0]]
+
+Task 187  Bytes: 91
+p=lambda g:exec('g[:]=map(lambda*r,a=3:[a:=b|-(2|a&8>>a)//~b for b in r],*g[::-1]);'*8)or g
+
+Task 188  Bytes: 53
+p=lambda g:(X:=g[:53%~-len(g)])*(g==X+X)or[*map(p,g)]
+
+Task 189  Bytes: 95
+p=lambda g,h=[]:g*0!=0and[*map(p,3*[g[i:=('0'in'%r'%g[2])*7]]+3*[g[i+1]],(h+g)[3>>i:])]or h%2*g
+
+Task 190  Bytes: 105
+import re
+p=lambda g:exec(r'g[::-1]=zip(*eval(re.sub("0((.{31}0, ([^0])){2})",r"\3\1",str(g))));'*20)or g
+
+Task 191  Bytes: 221
+from re import*
+def p(l):
+ X=[0]*U;r=*l,=X,*zip(X,*l,X),X
+ for e in[1,1,-1]*8:l[::e]=zip(*eval('1'.join(split(sub('1',')0(',sub('[^1]+'*S,lambda l:'.'*len(l[0]),str(r))).strip('(.)'),'%s'%l))))
+ return[*zip(*l[1:e])][1:e]
+
+Task 192  Bytes: 109
+Z=0,;p=lambda g:[*map(F:=lambda*r:[max(x,a|b,key=(Z*99+r).count)for a,b,x in zip(Z+r,r[1:]+Z,r)],*map(F,*g))]
+
+Task 193  Bytes: 77
+Z=0,;m=map;p=lambda g,*r:[*m(min,r,m(max,Z+r,r[1:]+Z))]or[*m(p,g,*m(p,g,*g))]
+
+Task 194  Bytes: 67
+p=lambda g:(w:=g+[*zip(*g)][::-1])+[k+[*w.pop()][::-1]for*k,in w*1]
+
+Task 195  Bytes: 103
+p=lambda g:[[c&d for c in a for d in b]for a in g*any(g[0])for b in g]or p([*zip(*filter(any,g))][::3])
+
+Task 196  Bytes: 110
+p=lambda g,n=51:-n*g or p([*map(lambda*r,x=4:[[(y|2&x%3-y)%(n+4),y|x&4-y,x:=y][n>4]for y in r],*g[::-1])],n-1)
+
+Task 197  Bytes: 54
+p=lambda g:[[r[g[1].index(v)]for v in g[1]]for r in g]
+
+Task 198  Bytes: 107
+import re;p=lambda g:exec("g[::-1]=zip(*eval(re.sub('(?=0|3, 4|3[^)]*[^)34]{6})','6^5-',str(g))));"*24)or g
+
+Task 199  Bytes: 79
+p=lambda g:-~(i:=g.index(k:=max(g)))*[(8*[4,0])[[k[1::2]]>g:][:len(g)]]+g[i:-1]
+
+Task 200  Bytes: 84
+p=lambda g,c=5:[(g[9].index(m:=max(g[9]))*[0]+[m,c,m,c:=any(r)*5]*9)[:10]for r in g]
+
+Task 201  Bytes: 187
+def p(g):f=1;m=[R for r in zip(*g)if any(R:=[x*(f*(f:=f^(x==4))or(g:=g+[x])>g)for x in r])];return[z:=[4,*[0]*len(m),4],*[[a:=g[15],*r[::a in m[0]or-1],g[-2]]for*r,in zip(*m)if any(r)],z]
+
+Task 202  Bytes: 103
+p=lambda g,P=[1]*50:g[200:]or[P:=[y*(len({*r+P,0})>2-x)for x,y in zip(P,r)]for*r,in zip(*p(P+g))][::-1]
+
+Task 203  Bytes: 64
+p=lambda g:[[g[n:=len(g)//2][r.index(c)+n]for c in r]for r in g]
+
+Task 204  Bytes: 93
+import re
+p=lambda g:eval(re.sub('([^1]..1,)([^1]+)',r'\1*(k:=len([\2]))*[2+k%2*5],',str(g)))
+
+Task 205  Bytes: 144
+p=lambda g,k=16:~k*g or p([[min(r+c,key=K)for c in-k*g]or r for*r,in zip(*g)if~-len({*r})*2-k<4<r.count(max(l:=sum(g,g),key=(K:=l.count)))],k-1)
+
+Task 206  Bytes: 140
+def p(g):
+ t=sum(g,[]).index(5);l=len(g[0]);q=lambda h:[r for r in zip(*h)if{*r}-{0,5}]
+ for g[t//l-1][t%l-1:t%l+2]in q(q(g)):t+=l
+ return g
+
+Task 207  Bytes: 80
+p=lambda g:min(l:=[[r[i%4:i%6]for r in g[i%7:i%9]]for i in b"8wP;"],key=l.count)
+
+Task 208  Bytes: 163
+from re import*
+p=lambda g:eval((i:=min(k:=str(g)+'#[]'*X,key=k.count)).join(split(sub(i,f')[^{i}](',sub("[^%s]+"%i*18,lambda x:'.'*len(x[0]),k)).strip(".()"),k)))
+
+Task 209  Bytes: 278 (compressed)
+def p(g):
+ e=[(n^4,r,o)for r,g in enumerate(g)for o,n in enumerate(g)if n]
+ for o,n in enumerate(g):
+  for q,j,n in e[e.index(sorted(e)[3])+1:]:
+   d=[r*9for r in g*2];f=5
+   for q,r,l in e[e.index(sorted(e)[3])+1:]:r=e[2][1]+o*(r-j);f+=o*o*(d[r][e[2][2]+o*(l-n)]==q^4)+1;exec(o*"d[r][e[2][2]+o*(l-n):e[2][2]+o*(l-n)+o]=o*[q^4];r+=1;")
+   if f>len(e):return[r[e[0][2]:sorted(e)[3][2]+1]for r in d[e[0][1]:sorted(e)[3][1]+1]]
+
+Task 210  Bytes: 20
+p=lambda g:g+g[::-1]
+
+Task 211  Bytes: 48
+p=lambda g:[r[::-1]+r for r in(g[::-1]+g)*2][:9]
+
+Task 212  Bytes: 99
+p=lambda g,d=[0]*10:g[30:]or[d:=[r.pop()or(y%2==(5in(g:=g+d)))*y%5for y in d]for r in p(g*2)[::-1]]
+
+Task 213  Bytes: 86
+p=lambda g:[l[o:]for r in g if(l:=[e for e in r if e%5])[~(o:=6-len({*"%s"%g})):]][o:]
+
+Task 214  Bytes: 62
+p=lambda g:[r[:4]+(g.pop()[:4]+c)[::-1]for*c,r in zip(*g,g*1)]
+
+Task 215  Bytes: 42
+p=lambda g:[*map(max,g,g[3:6]*9,g[6:9]*9)]
+
+Task 216  Bytes: 113
+p=lambda g:max((-(c:=sum(l:=[r[x%17:x%21]for r in g[x%19:x%22]],g).count)(0),c(2),c(1),l)for x in range(8**6))[3]
+
+Task 217  Bytes: 95
+p=lambda g:[*filter(any,zip(*g[81:]or p([[c&d for c in a for d in b]for a in g*2for b in g])))]
+
+Task 218  Bytes: 56
+p=lambda g,*h:[*{r:0for r in zip(*h or p(*g))if any(r)}]
+
+Task 219  Bytes: 242 (compressed)
+def p(i):
+ f=min(r for r in range(8)if any(i[r]))
+ for d in range(8):
+  for e in range(r:=min(r for r in range(f,9)if any(i[r])-1),f-r+16):
+   for y in range(5):
+    if min((2*i[e+r-f][:1]+i[e+r-f])[o+4-y]==i[r][o]*(o<9-d)for r in range(f,r)for o in range(8)):i[e:e+r-f]=[[i[e+r-f][o]or(i[e+r-f][:2]+i[r]+i[r][-2:])[o+y]%7for o in range(10)]for r in range(f,r)]
+ return i
+
+Task 220  Bytes: 89
+p=lambda g:[g:=[[r.pop()or d**4%84%15for d in[0]+r[:0:-1]]for*r,in zip(*g)]for _ in g][3]
+
+Task 221  Bytes: 86
+def p(g):w=sum(g,g).count(i:=0);return[(r*(9+(i:=i-1)//3*w)+[0]*99)[:3*w]for r in g*w]
+
+Task 222  Bytes: 102
+p=lambda g:[g:=[[x*(2*f"{x}, "in"%s"%r!=sum(g,g).count(x)>8)for x in r]for*r,in zip(*g)]for _ in g][3]
+
+Task 223  Bytes: 46
+p=lambda g:g*-1*-1or g and[p(g[0])]*3+p(g[1:])
+
+Task 224  Bytes: 145
+p=lambda g,n=-3,a=4:g*n or p([[r.pop()|a//6*(9>(a:=a+c.count(5)))*sum({*sum(g,[-5])})for c in g[::-1]]for*r,in zip(*g)if[a:=a*5-20or 5in r]],n+1)
+
+Task 225  Bytes: 125
+import re
+p=lambda g:eval(re.sub(r"0(?=.{27}(...)?(.{20})?0,( [^0])(?!,\3).{19}0)",r"\3",f"{*zip(*g[42:]or p(g*2)),}"))[::-1]
+
+Task 226  Bytes: 120
+p=lambda g,i=0:[[-j+(j:=j+x)or(1+i*2/(C:=sum(c)))*(i*2%C+i*sum(r)==j*C)for*c,x in zip(*g,r)]for r in g if[i:=i+r[j:=0]]]
+
+Task 227  Bytes: 52
+p=lambda g,u=[]:g*0!=0and[*map(p,g,u+g[4:])]or~g+u&2
+
+Task 228  Bytes: 116
+import re
+p=lambda g:exec(r'g[::-1]=zip(*eval(re.sub(r"0(.{34}([^0]).*)(.)(,.{33}\2)",r"\3\1 0\4",str(g))));'*4)or g
+
+Task 229  Bytes: 73
+p=lambda g:[[(5,v)[v==max(l:=sum(g,g),key=l.count)]for v in r]for r in g]
+
+Task 230  Bytes: 102
+exec("p=lambda g,Z=[[0]*30]:[[(114>>hash((*b'%rr&R'%g,))%9^2)%6"+"for*g,in map(zip,Z+g,g,g[1:]+Z)]"*2)
+
+Task 231  Bytes: 43
+p=lambda g:[(4*r[:6])[:2*len(r)]for r in g]
+
+Task 232  Bytes: 59
+p=lambda g:[(P:=0)or[P:=x+-P%sum(r,5)for x in r]for r in g]
+
+Task 233  Bytes: 278 (compressed)
+def p(r,l={}):
+ for g in range(len(r)-2):
+  for e in range(len(r[0])-2):
+   i=*[r[g+n//3][e+n%3]==2for n in range(9)],
+   if len(z:={r[g+n//3][e+n%3]for n in range(9)})>1>(0 in z):
+    z={i:sum(z)-2}
+    for n in range(9):r[g+n//3][e+n%3]=0;l[i]=z;i=*[i[2+n%3*3-n//3]for n in range(9)],
+ r=[[*n]for n in zip(*r)if sum(n)]
+ r=[[*n]for n in zip(*r)if sum(n)]
+ for g in range(len(r)-2):
+  for e in range(len(r[0])-2):
+   i=*[r[g+n//3][e+n%3]==0for n in range(9)],
+   if l.get(i,{}).get(i,{}):
+    z=l.get(i,{}).pop(*l.get(i,{}))
+    for n in range(9):r[g+n//3][e+n%3]=2>>r[g+n//3][e+n%3]or z
+ for g in range(len(r)-2):
+  for e in range(len(r[0])-2):
+   i=*[r[g+n//3][e+n%3]==0for n in range(9)],
+   if l.get(i,{}):
+    z=l.get(i,{}).pop(*l.get(i,{}))
+    for n in range(9):r[g+n//3][e+n%3]=2>>r[g+n//3][e+n%3]or z
+ return r
+
+Task 234  Bytes: 107
+p=lambda g:[g:=[*zip(*[r for r in g[:1]*99+g if~-r.count(max(max(g,key=any)))][:~len(g):-1])]for _ in g][3]
+
+Task 235  Bytes: 62
+p=lambda g:[[7**g[2][i]-g[2][1+i]&g[3][i]+6]*3for i in b""]
+
+Task 236  Bytes: 54
+p=lambda g,u=[]:g*0!=0and[*map(p,g,u+g[5:])]or-u%5^g*3
+
+Task 237  Bytes: 66
+p=lambda g,P=0:[[*[(P:=P or x for x in r+[P])][P:=0]]for*r,_ in g]
+
+Task 238  Bytes: 209 (compressed)
+def p(p):
+ i=p
+ for n in p*4:i=[p for*p,in zip(*i)if 8in p];p=[p for*p,in zip(*p)if{*p}-{8,0}]
+ for n in p[1:-1]:n[1:-1]=i.pop(0)
+ for n in p*4:i=0;p=[[n%~n&p[0]for n in p[:d]]+p[d:]for*p,in zip(*p[::-1])if[d:=min(i,len(p)-(i:=i+1))]]
+ return p
+
+Task 239  Bytes: 99
+p=lambda g:[s:=sum(g,[]),*filter(any,zip(*sorted([c:=-s.count(e)]+[e]*-c+[0]*99for e in{*s})))][2:]
+
+Task 240  Bytes: 99
+exec(f"p=lambda g:[g:=[[x:=y]and[g[y][x]|g[y][[~x,y+2][18-y>x%2*x>y]]{'for y in range(19)]'*3}[5]")
+
+Task 241  Bytes: 21
+p=lambda g:[*zip(*g)]
+
+Task 242  Bytes: 54
+p=lambda g:[r[~r.index(0)::-1][:3]for r in g if 0in r]
+
+Task 243  Bytes: 75
+p=lambda g:exec('g[::-1]=zip(*eval(str(g).replace("1, 0","1,1")));'*80)or g
+
+Task 244  Bytes: 61
+p=lambda g,w=2:[[0,max,p][w](g:=r,-2)for r in g if g!=r][::w]
+
+Task 245  Bytes: 99
+p=lambda g,k=-7:k*g or p([[r[3>max(r)in max(g,key=any)]for r in zip(l,[0]+l)]for*l,in zip(*g)],k+1)
+
+Task 246  Bytes: 104
+p=lambda g,n=3:-n*g or p([[r.pop()|(n|2in r!=3-n%2in(g:=g.pop()+g))*8for _ in r*1]for*r,in zip(*g)],n-1)
+
+Task 247  Bytes: 95
+p=lambda g,n=9:any(m:=[*{v:0for v in sum(zip(*g),())if sum(g,g).count(v)==n}])*n*[m]or p(g,n-1)
+
+Task 248  Bytes: 72
+def p(g,i=10):
+ for l in g:w=len(l)*2-2;l[min(i:=~-i%w,w-i)]=1
+ return g
+
+Task 249  Bytes: 26
+p=lambda g:[r*2for r in g]
+
+Task 250  Bytes: 101
+p=lambda g:[g:=[r[:(i:=sum(g,g).index(2)//10-2):-1]+[max(r[:i])]+i*[0]for*r,in zip(*g)]for _ in g][3]
+
+Task 251  Bytes: 88
+p=lambda g,n=7:g*-n or[*map(lambda*r,b=0:[b:=~0**b&e or n<1for e in r][::-1],*p(g,n-1))]
+
+Task 252  Bytes: 55
+p=lambda g,y=4:g*0!=0and[p(r)or(y:=-y)%(r+4)for r in g]
+
+Task 253  Bytes: 120
+F=0,1,2,3;p=lambda g:[[(x*y%3<1)*max(map(min,S:=sum(g[::-1],[]),S[298%(9|x^y+6):],S[13+(2>x^y):]))for x in F]for y in F]
+
+Task 254  Bytes: 81
+p=lambda g:[[(sum(g[-sum(c)//5])|5)%sum(g[8])*x%3for*c,x in zip(*g,r)]for r in g]
+
+Task 255  Bytes: 222 (compressed)
+import re
+p=lambda o:[o:=eval(re.sub(*p,f"{*zip(*o[::-1]),}"))for p in[["0(?=(?<=[^0], 0).{,12}, [^0].{80}, [^0])","12"[1in o[0]]]]*20+[["0(?=(?<=[^0], 0).{91}[^0].{,5}0|, [^0].{85}0, [^0])","12"[1in o[0]]]]*20+[["0(?=, [^0])","12"[1in o[0]]]]*4+[["[30], "*12,"3,"*12]]*4+[["12"[1in o[0]],"0"]]*4][51]
+
+Task 256  Bytes: 97
+def p(g):
+ w=sum(m:=max(g))//2;i=w+g.index(m)
+ for r in g:r[:i]=[2+(i-w|8)//9]*i;i-=i>0
+ return g
+
+Task 257  Bytes: 71
+p=lambda g:[*zip(*[eval('r.pop(0)or r[4],'*4)for*r,in g[9:]or p(g*2)])]
+
+Task 258  Bytes: 61
+import re;p=lambda g:eval(re.sub("1, 0(?=, 1)","1,2","%s"%g))
+
+Task 259  Bytes: 83
+p=lambda g:exec('g[:]=zip(*eval(str(g).replace(*"10"))[any(g[-1])-2::-1]);'*24)or g
+
+Task 260  Bytes: 132
+p=lambda g,i=0:[[sum({*max(g)*(sum((e+g)[i//5%5-2+i%10+i//50%10-(i:=i+1)//500]==5for e in g*5)==1or e%5)}-{5})for e in r]for r in g]
+
+Task 261  Bytes: 47
+p=lambda g:[[x%6for x in r]for r in[g.pop()]+g]
+
+Task 262  Bytes: 39
+p=lambda g:[3*[c^6&b+~a]for a,b,c in g]
+
+Task 263  Bytes: 106
+p=lambda g,h=0:-(M:=bytes(map(bool,sum(g:=[*zip(*h or p(g,g))],())))).find(M[:9],9)*g[:3]or p(g[3:]+g[:3])
+
+Task 264  Bytes: 178
+T=3,2,1;p=lambda g:[sum([eval(f"sorted([0in(S:=sum(g,T)),*[i!=5for i in S],*g]{'for*g,in map(zip,g,g[1:],g[2:])'*2})#{g}")[42>>Y&7*~-X^Y][-x]for Y in T],())for X in T for x in T]
+
+Task 265  Bytes: 104
+import re
+p=lambda g:eval(re.sub("0(?=.{949,952}(.{56})?0(?!.{37}0.{485}]), 0.{52}0, 0)","2","%r#"%g*2))
+
+Task 266  Bytes: 88
+p=lambda g:g[9:]or[[(8|9>>c|a*6)%9for a,c in zip([0]+r,r[1:]+[0])]for*r,in zip(*p(g*2))]
+
+Task 267  Bytes: 46
+p=lambda g:[[g[6][r>[x]]for x in r]for r in g]
+
+Task 268  Bytes: 215
+import re
+def p(g):v="12"[1in max(g)];return[g:=eval(re.sub(s[1]+f"(?={s[2:]}[^0])",s[0],f"{*zip(*g[::-1]),}"))for s in[v+"0(?<=[^0], 0)[^)]* "]*40+4*["40[0, ]*"+v]+27*[v+"0(.{%d}%s)+, "%(3*len(g)+4,v)]+["4"+v]][-1]
+
+Task 269  Bytes: 63
+p=lambda g:eval("[[g\nfor g in g for _ in[*{*'%r'}][5:]]#"%g*2)
+
+Task 270  Bytes: 115
+import re
+p=lambda g:[g:=eval(re.sub(f'{n}([^(]*)0(?=, {8%n})',r'0\1n',f"{*zip(*g[::-1]),}"))for n in(7,3,3)*8][-1]
+
+Task 271  Bytes: 86
+exec(f"p=lambda g:max([str(g).count('1'),g]{'for*g,in map(zip,g,g[1:],g[2:])'*2})[1]")
+
+Task 272  Bytes: 88
+p=lambda g,n=7:-n*g or[*map(lambda*r,b=0:[b:=b+a//~n%7+a>>2for a in r],*p(g,n-1)[::-1])]
+
+Task 273  Bytes: 75
+p=lambda g,*r,k=0:[c+(k:=k^c)%6and c^2for c in r]or[*map(p,g,*map(p,g,*g))]
+
+Task 274  Bytes: 70
+p=lambda g:[(w:=[8]*g.count(max(g,key=any))+g[0])[:3],w[5:2:-1],[0]*3]
+
+Task 275  Bytes: 135
+p=lambda g,n=3:-n*g or p([*zip(*[[k*l%7for k in i for l in j]for i in(8in g[0]+g[1])*g[len(g[0]):]for j in g[:len(i)]]or g)][::-1],n-1)
+
+Task 276  Bytes: 37
+p=lambda g:g*-1and-g%6|2or[*map(p,g)]
+
+Task 277  Bytes: 159
+p=lambda g,k=1199:(q:=-k*g)or p([q:=[c%~c&[max(c,*d,k:=k-1),1+(min(w:=sum(g,[]),key=w.count)==c)][k<99]for*d,c in zip([0]+q+r,q+r,r)]for*r,in zip(*g[::-1])],k)
+
+Task 278  Bytes: 110
+p=lambda g,n=11:-n*g or[[[x|6&y**x,x or 3%-~y,x&3][n//4]for x,y in zip(r,[0]+r)]for*r,in zip(*p(g,n-1))][::-1]
+
+Task 279  Bytes: 109
+p=lambda g,k=67:-k*g or[*map(lambda*l,a=0:[a:=[b%(a+9),b%(9|3-a)&9,b or 9][k>>5]for b in l],*p(g,k-1)[::-1])]
+
+Task 280  Bytes: 145
+p=lambda g,n=11:-n*g or[[P:=[((a:=(8%~P<x)*a+x%2*8|2)>2>x)*a,-6%(P-2|1-x|x),x&3][n//4]or x for x in r]for r in zip(*p(g,n-1))if[a:=0,P:=0]][::-1]
+
+Task 281  Bytes: 123
+p=lambda g:exec('*_,a,b,c=map(g.index,filter(any,g));g[:]=zip(*(g,g[:a]+(c-a)*[g[a]]+[g[b]]+g[c+1:])[b<a<c][::-1]);'*4)or g
+
+Task 282  Bytes: 74
+p=lambda g:g[99:]or[eval(8*"+(x:=r.pop()),x//5|x^0")for*r,in zip(*p(g*2))]
+
+Task 283  Bytes: 82
+p=lambda g:g[150:]or[*map(lambda*r,P=0:[P:=x*22**P%77%9for x in r],*p(g*2)[::-1])]
+
+Task 284  Bytes: 205
+import re
+p=lambda g,n=39:-n*g or p(eval(re.sub(*[r"(.),.0(?=[^)]*[1-9]) \1,\1",r"(0,.0,.)([^0]),.\1(.{%d})"%(3*len(g)-13)*2+r"(?!\1(\2|0)) *[\2]*5,\3\2,0,\1\2,\6"][n<4].split(),f"{*zip(*g[::-1]),}")),n-1)
+
+Task 285  Bytes: 226 (compressed)
+def p(h):
+ for e in range(8):
+  h[::-1]=zip(*h)
+  for e in range(len(h)):
+   for i in range(len(h)):
+    for q,g in(f:=[(e,i)]):*h[q],=h[q];h[q][i+i-g-1]=h[e][i-1];f+=[(p+q,g+n)for p in range(-1,2)for n in range(-1,2)if 0<h[e][i-1]!=(2*(2*h)[p+q])[g+n]==h[e][i]>0==h[p+q][i+i-g-n-1]]
+ return h
+
+Task 286  Bytes: 105
+p=lambda g,n=43:g*-n or[*map(lambda*r,x=0:[x:=y or sum({*x%8*sum(g,[-x-8])})for y in r[::-1]],*p(g,n-1))]
+
+Task 287  Bytes: 53
+p=lambda*g:g[g[0]==4]*-1*-1or[*map(p,g[-1][::-1],*g)]
+
+Task 288  Bytes: 86
+def p(g):d=c=g[-2].count(0)//2;exec(c*"c-=1;r=g[c-d-2];r[c]=r[~c]=g[-1][d];");return g
+
+Task 289  Bytes: 63
+p=lambda g:eval("[[g\nfor g in g for _ in[*{*'%r'}][5:]]#"%g*2)
+
+Task 290  Bytes: 65
+p=lambda g,*u:[sum({*u},r*-1)or p(r,*sum(g,r))for r in g if[r]>g]
+
+Task 291  Bytes: 61
+p=lambda g,i=1:4%len({r.count(i)for r in g})*[[i]]or p(g,i+1)
+
+Task 292  Bytes: 52
+p=lambda g,i=0:g*0!=0and[*map(p,g,b''*9)]or i*g%7
+
+Task 293  Bytes: 60
+p=lambda g:[[y-x+r[0]or x for x,y in zip(r,g[0])]for r in g]
+
+Task 294  Bytes: 70
+import re;p=lambda g:eval(re.sub("(?<=5.{34})5(?=.{34}5)","2",str(g)))
+
+Task 295  Bytes: 54
+p=lambda g:[P:=g[0]]+[P:=P[:1]+P[:-1]for x in P[2::2]]
+
+Task 296  Bytes: 55
+p=lambda*g:[*map([*g,max,p][2],*[r[-3:]for r in g],*g)]
+
+Task 297  Bytes: 43
+p=lambda g:g[:2]+[*zip(*g[:1]*len(g[0]))]*2
+
+Task 298  Bytes: 55
+p=lambda g:[[g[3][~-r.index(v)%3]for v in r]for r in g]
+
+Task 299  Bytes: 54
+p=lambda g:[[92%(4-(2in r)+x)for x in g[0]]for r in g]
+
+Task 300  Bytes: 87
+p=lambda g,*G:[r for*r,in zip(*G or p(g,*g))if max(range(1,10),key=sum(g,g).count)in r]
+
+Task 301  Bytes: 31
+s=sorted
+p=lambda g:s(map(s,g))
+
+Task 302  Bytes: 89
+import re
+p=lambda g:eval(re.sub('([^5]..5,)([^5]+)',r'\1*(k:=len([\2]))*[k+5],',str(g)))
+
+Task 303  Bytes: 62
+p=lambda g:[[[2,e][c>[0]*99<l]for*c,e in zip(*g,l)]for l in g]
+
+Task 304  Bytes: 92
+p=lambda g:[[c*(w==max(p:=sum(g,g),key=p.count))for w in q for c in r]for q in g for r in g]
+
+Task 305  Bytes: 57
+p=lambda g:[([*{*g[0]}-{0}]*9)[i:i+16]for i in range(16)]
+
+Task 306  Bytes: 63
+p=lambda g:[g:=[*zip(*map(max,g,g[:10]+g))][::-1]for _ in g][7]
+
+Task 307  Bytes: 46
+p=lambda g:g*-1*-1or g and[p(g[0])]*2+p(g[1:])
+
+Task 308  Bytes: 227 (compressed)
+def p(d):s=sum(d,[]);r=len(d[0]);*n,f=sorted((len(s)-s[::-1].index(n)-s.index(n),n)for n in {*s});e=n[-1][0]//r+1;s+=(d:=e*r*[f[1]]);[d:=[(d[n],o)[s[s.index(o)+n-(e*r-r+e-f)//2]==o]for n in range(e*r)]for f,o in n];return[d[n*r:][:e]for n in range(e)]
+
+Task 309  Bytes: 36
+p=lambda g:g*-1and g&-3or[*map(p,g)]
+
+Task 310  Bytes: 78
+p=lambda g,h=0:[r for*r,in zip(*h or p(g,g))if{*r}-({*g[0]}&{x[0]for x in g})]
+
+Task 311  Bytes: 32
+p=lambda g:[r+r[::-1]for r in g]
+
+Task 312  Bytes: 44
+p=lambda g:[[x%~x&r[0]for x in r]for r in g]
+
+Task 313  Bytes: 61
+p=lambda g,u=[]:g*-1*-1or[*map(p,g[u>[]:2--len(u)//11]*10,g)]
+
+Task 314  Bytes: 84
+p=lambda g,*r:[*map(max,r,(g[:2]==g[6:])*3*g[:3]+g)]or[*map(p,g,*map(p,zip(*g),*g))]
+
+Task 315  Bytes: 63
+p=lambda g:[[y&-x%5for x in r for y in s]for r in g for s in g]
+
+Task 316  Bytes: 71
+p=lambda g:[(S:=[*filter(int,map(max,*g))]+[0]*9)[:3],S[5:2:-1],S[6:9]]
+
+Task 317  Bytes: 43
+p=lambda g:g==5or g and[p(g[1])]*3+p(g[3:])
+
+Task 318  Bytes: 54
+p=lambda g,u=[]:g*0!=0and[*map(p,g,u+g[5:])]or(g!=u)*3
+
+Task 319  Bytes: 203
+p=lambda g,h=0:[[L[-(e!=L[0])]for e in r]for*r,in zip(*h or p(g,g))if(L:=sorted(set(w:=sum(g,[])),key=w.count)[(o:=hash((*w,*b'$,>N')))//b"==w~Y`NyFgvkM_~hqx2g`	Qyrjqx~~}#Km<q~ML"[o%43]&1:])[0]in r]
+
+Task 320  Bytes: 65
+p=lambda g:[*zip(*map(lambda*r:r[:-(k:=sum(r)//4)]+k*(8,)+r,*g))]
+
+Task 321  Bytes: 54
+p=lambda g:[eval("r.pop(0)or r[4]|r[9],"*4)for r in g]
+
+Task 322  Bytes: 48
+p=lambda g:[[*map(max,*g[:i]*2)]for i in(1,2,3)]
+
+Task 323  Bytes: 106
+import re
+p=lambda g:eval([g:=re.sub("0(?=(.{76})*(.{40}|(...){25,27})8)","5",str(g))[::-1]for _ in g][1])
+
+Task 324  Bytes: 225 (compressed)
+def p(m):
+ s=sum(m,t:=[]);r=sorted(s,key=s.count)[:2]
+ for d in range(len(m)):
+  for o in range(len(m[d])):
+   if m[d][o]in r:s[m[d][o]]=s[max(s,key=[m[d][o-1],m[d][o-len(m[d])+1],m[d<1][o]].count)]=m[d][o];r+=-d-o,;t+=d-o,
+ for d in range(len(m)):
+  for o in range(len(m[d])):
+   if d-o in t or-d-o in r:m[d][o]=s[m[d][o]]
+ return m
+
+Task 325  Bytes: 152
+p=lambda g,k=400,*a:[a:=a[-1:]+a[:-1]for _ in(k<0)*a]or p([[a:=c and max(c,a,k:=k-1)for c in[0]+r]for*r,in zip(*g[::-1])],k,*-2%len({*sum(g,[])})*[0],8)
+
+Task 326  Bytes: 30
+p=lambda g:[g[0][:2],g[1][:2]]
+
+Task 327  Bytes: 67
+p=lambda g,P=[0]*3:[P:=[*map(max,r+[0]*3,[0]+P*2)]for r in g+[P]*3]
+
+Task 328  Bytes: 163
+e=enumerate;p=lambda g:[[(S:=sorted(~max(X:=(x-i)**2,Y:=(y-j)**2)%2*c|X+Y<<4for x,r in e(g)for y,c in e(r)if c))[0]%16*(S<[S[1]-9])for j,_ in e(g)]for i,_ in e(g)]
+
+Task 329  Bytes: 54
+p=lambda g:[(j:=len(g)//2)*[0]+[r[j]]+j*[0]for r in g]
+
+Task 330  Bytes: 116
+p=lambda g,k=11,l=5:-k*g or p([(b:=1)*[b:=a%~a&[b|a|(l:=l*8),2-a**6%7][k<1]for a in r]for r in zip(*g[::-1])],k-1,0)
+
+Task 331  Bytes: 82
+p=lambda g:[g:=eval(f"{*zip(*g[::-1]),}".replace('1, 0','1,'+k))for k in'2786'][3]
+
+Task 332  Bytes: 58
+p=lambda g:[[r.pop(0)*-7**len(r)&7for x in r*1]for r in g]
+
+Task 333  Bytes: 83
+p=lambda g:[eval("P"+9*",(P:=r.pop()or(3in r)*P)")for*r,P in zip(*g[70:]or p(g*2))]
+
+Task 334  Bytes: 65
+p=lambda g:[[i%7,i%6,i%11]for i in b" M~M~MM"[max(max(g))::3]]
+
+Task 335  Bytes: 106
+p=lambda g:[g:=[[r.pop()|(n in r!=n^10in(g:=g.pop()+g))*4for _ in r*1]for*r,in zip(*g)]for n in[8,2]*2][3]
+
+Task 336  Bytes: 88
+p=lambda g:g[150:]or[eval("r.pop()or(5in{*r[:4]}-{*r[4:]})*8,"*10)for*r,in zip(*p(g*2))]
+
+Task 337  Bytes: 43
+p=lambda g:g*-1and g^84%g%3*13or[*map(p,g)]
+
+Task 338  Bytes: 64
+p=lambda g,c=0:g*0!=0and[p(l)or(c:=l+80-c>>c&9-l)%2*3for l in g]
+
+Task 339  Bytes: 37
+p=lambda g:[[*filter(int,sum(g,[]))]]
+
+Task 340  Bytes: 113
+p=lambda g,n=-3:n*g or[[z*(z!=y<=sum(g,g).count(z))for z in r]+[y*(y in r)+x,y]for*r,x,y in zip(*p(g,n+1)[::-1])]
+
+Task 341  Bytes: 108
+p=lambda g:[g:=[[g[i][j]or(9>j>=2<len({*min(g[i-1:][:3])}))*8for i in R]for j in R]for R in[range(10)]*2][1]
+
+Task 342  Bytes: 107
+import re
+p=lambda g:g[150:]or eval(re.sub("([1-9])((.{32})+?[^)]+?)8",r"0\2\1",f"{*zip(*p(g*2)[::-1]),}"))
+
+Task 343  Bytes: 64
+p=lambda g:[(r[:8-2*(r[4:8]!=r[:4]!=r[8:12])]*3)[:15]for r in g]
+
+Task 344  Bytes: 77
+p=lambda g:exec('g[:]=zip(*eval(str(g[::-1]).replace("3, 2","8,0")));'*4)or g
+
+Task 345  Bytes: 90
+import re
+p=lambda g:eval(re.sub("(?=0.{31}2)|(?<=5.{31}2,)","2|",str(g[5110:]or p(g*2))))
+
+Task 346  Bytes: 55
+p=lambda g:[[min(f:=sum(g[:6]+g,[])[11:],key=f.count)]]
+
+Task 347  Bytes: 50
+p=lambda g:[[6^6>>x+r.pop(3)for x in r]for r in g]
+
+Task 348  Bytes: 88
+p=lambda g,G=0,*s:[s:=[r.pop()|-y%15for y in s[1:]]+r for r in(G or p(g,g))[::-1]][::-1]
+
+Task 349  Bytes: 172
+p=lambda g,n=15:-n*g or[[P:=[max(x:=r.pop(),x%~x&P,a:=x and a+1198080|9),x or P&8**n*7and~8&P-8**n|3,x&15,x|(n-3in r)][n//4]for _ in g]for*r,in zip(*p(g,n-1))if[P:=0,a:=0]]
+
+Task 350  Bytes: 91
+p=lambda g:[*map(F:=lambda*l,a=1:[[e,8][l.count(1)>=(a:=a+e%2)>1>e]for e in l],*map(F,*g))]
+
+Task 351  Bytes: 67
+p=lambda g:[s[~r.index(3)::-1][:5]for r in g*1if 3in[s:=g.pop()]+r]
+
+Task 352  Bytes: 82
+p=lambda g:[g:=[[r.pop()or[0]<r[-1:]<[3]for _ in g]for*r,in zip(*g)]for _ in g][3]
+
+Task 353  Bytes: 87
+p=lambda g:exec("g+=[0]*99,;g.pop([*map(max,g)].index(4)+1);g[:]=zip(*g[::-1]);"*4)or g
+
+Task 354  Bytes: 96
+p=lambda g:g[10230:]or p([[sum({*w*c}-{5})or c for*w,c in zip([0]+r,g[0],r)][::-1]for r in g]*2)
+
+Task 355  Bytes: 98
+p=lambda g,n=95:[[n%16]]*(sum(v!=n%16in{*r}&{*c}for r in g for*c,v in zip(*g,r))==n>>4)or p(g,n-1)
+
+Task 356  Bytes: 92
+p=lambda g,*r,i=0:[x|max(g[i:])&max(g[:(i:=i+1)])for x in r]or[*map(p,g,*map(p,zip(*g),*g))]
+
+Task 357  Bytes: 84
+p=lambda g,i=10:[([8]*min(i:=~-i%(w:=(x:=len(l))*2-2),w-i)+[1]+[8]*x)[:x]for l in g]
+
+Task 358  Bytes: 90
+p=lambda g,*r:[max(r[::6^83>>len({*(r:=(0,)*35+r)})])for _ in r]or[*map(p,g,*map(p,g,*g))]
+
+Task 359  Bytes: 64
+p=lambda g:[[max(T:=r+c,key=T.count)for*c,in zip(*g)]for r in g]
+
+Task 360  Bytes: 45
+p=lambda g:[[*map(max,r,r[:4:-1])]for r in g]
+
+Task 361  Bytes: 203 (compressed)
+def p(f):
+ k=2
+ for s in range(10-k):
+  for e in range(10-k):
+   if all(all(f[e:e+k])for f in f[s:s+k]):p=2*s+k-1;r=2*e+k-1
+ k=3
+ for s in range(10-k):
+  for e in range(10-k):
+   if all(all(f[e:e+k])for f in f[s:s+k]):p=2*s+k-1;r=2*e+k-1
+ k=0
+ for s in range(10-k):
+  for e in range(10-k):
+   if l:=f[s][e]:g=2*s-p;e=2*e-r;g,e=-e,g;f[p+g>>1][e+r>>1]=l;g,e=-e,g;f[p+g>>1][e+r>>1]=l;g,e=-e,g;f[p+g>>1][e+r>>1]=l
+ return f
+
+Task 362  Bytes: 69
+def p(g):c=g.count(g[0]);return[r[c:]+r[:c]for r in g[-c:]*2+g[c:-c]]
+
+Task 363  Bytes: 175
+from re import*
+def p(g):h=hash((*g[3],));g[~h%7][3]|=h%149<1;return eval(sub(*'10',eval("'2'.join(split(sub('2',')0(',sub('[^2]','.',K:=str(g))).strip('.()'),"*3+"K))))))")))
+
+Task 364  Bytes: 133
+p=lambda g,k=95:-k*g or p([g:=[[7&88>>c%7,c|a|all([a,b*-1,k>83])<<k*3][k>0<c]for c,a,b in zip(r,[0]+r,g)]for*r,in zip(*g[::-1])],k-1)
+
+Task 365  Bytes: 111
+p=lambda g:max((-(y:=sum(s:=[r[x%9:x%13]for r in g[x%8:x%11]],g).count)(0),y(2),y(1),s)for x in range(5**6))[3]
+
+Task 366  Bytes: 331 (compressed)
+def p(u):n,e,f=sorted(set(h:=sum(u,[])),key=h.count)[-3:];r,u=[[r[:len(u[0])//2]for r in u],u[:len(u)//2],[r[len(u[0])//2:]for r in u],u[len(u)//2:]][len(u)>len(u[0])::2][::2*(e not in u[0][:8])-1];[e not in(h:=sum(c:=[r[a:a+d]for r in u[s:s+t]],[]))and o==t*d-h.count(n)and[exec('for r in u[s:s+t]:r[a:a+d]=[e]*d')or[all(r[o+e][a:a+d]==[(r,f)[r==n]for r in c[e]]for e in range(t))and exec('for e in range(t):r[o+e][a:a+d]=c[e]')for o in range(len(u)-t+1)for a in range(len(u[0])-d+1)]]for o in range(3,0,-1)for s in range(len(u))for a in range(len(u[0]))for t in range(len(u)-s,0,-1)for d in range(len(u[0])-a,0,-1)];return r
+
+Task 367  Bytes: 135
+p=lambda g,k=94:~k*g or p([g:=[c*((r!=[5]*3)>c%-4<r[2])|(k^95in l)*4for*r,c in zip([4]*2+g,g,[4]+l,l)]for*l,in zip(*g[::k%3-1|1])],k-1)
+
+Task 368  Bytes: 135
+p=lambda g,w=0,s=[0]*10:[(y:=0)or[[0,*[a for a in sum(g,[])if a%5],s:=[y:=x and(s[9]or y-(w:=max(w,y)))-~w]+s][y]for x in r]for r in g]
+
+Task 369  Bytes: 109
+p=lambda g,n=7:g*-n or[*map(lambda*r,b=5:[b:=a*(a>4)or[a+b//4-.25,min(a,b)][n>3]for a in r],*p(g,n-1)[::-1])]
+
+Task 370  Bytes: 159
+import re
+p=lambda g:exec('s=f"{*zip(*g[::-1]),}";i=s.rfind;d=i("0")-i(j:=min(s,key=i));g[:]=eval(re.sub("(?=(.{%d})+0)\d"%d,j,s,d%8*d%-(len(g)*3+5)));'*4)or g
+
+Task 371  Bytes: 102
+p=lambda g,u=0:eval((G:=f"{*zip(*u or p(g,g)),}")[:(w:=G.rfind("1")+G.find("1")>>1)-3]+"3,"*3+G[w+5:])
+
+Task 372  Bytes: 47
+p=lambda g:eval("[*map(max,g.pop(0),g[5])],"*5)
+
+Task 373  Bytes: 38
+p=lambda g:[T:=max(zip(*g))*3,T[::-1]]
+
+Task 374  Bytes: 103
+p=lambda g,i=51:-i*g or p(eval(x:=f"{*zip(*g),}".replace(i//5*", 5",i//5*",7*~len({*x})%5"))[::-1],i-1)
+
+Task 375  Bytes: 53
+def p(g,i=0):
+ for r in g:r[i]=r[~i]=0;i+=1
+ return g
+
+Task 376  Bytes: 30
+p=lambda g:2*(g+g[1:-1])+g[:1]
+
+Task 377  Bytes: 55
+p=lambda g,h=0:[h:=r for*r,in zip(*h or p(g,g))if r!=h]
+
+Task 378  Bytes: 140
+import re
+p=lambda g:exec(fr'g[::-1]=zip(*eval(re.sub(r"(?=(.{{{(x:=len(g)*3)+5}}})+([^0]), \2{".."*x}\2, 0, (.))0",r"\3",str(g))));'*4)or g
+
+Task 379  Bytes: 137
+import re
+p=lambda g:[g:=eval(re.sub("0, 8, ([ 0,]+)2|0, (1), .",r"*b''[\2::2],*[2]*len([\1])",f"{*zip(*g[::-1]),}"))for _ in g][7]
+
+Task 380  Bytes: 27
+p=lambda g:[*zip(*g)][::-1]
+
+Task 381  Bytes: 79
+p=lambda g:[r*(P:=r in g[::9])or[P:=r.pop(0)or any(r*P)*9for _ in g]for r in g]
+
+Task 382  Bytes: 133
+p=lambda g,n=3,u=[]:-n*g or p([*zip(*[[*map(max,r*str(g[1:]).count("8")+(u:=(r[0]==2)*[0]+u[r[-1]==2:]+r),r)]for*r,in g][::-1])],n-1)
+
+Task 383  Bytes: 123
+p=lambda g:[g:=[[[c,Q[2+c%~c]][f'{Q}'[1:8]in'%s'%r]for c in r]for*r,in zip(*g[::-1])]for*Q,in[{}.fromkeys(sum(g,[]))]*4][3]
+
+Task 384  Bytes: 62
+p=lambda g,*k:[e for*e,in zip(*k or p(*g))for _ in"  "*any(e)]
+
+Task 385  Bytes: 25
+p=lambda g:g[:4:-1]+g[5:]
+
+Task 386  Bytes: 50
+p=lambda g:[eval('3>>r.pop(0)+r[3],'*3)for r in g]
+
+Task 387  Bytes: 192
+p=lambda g,n=11:-n*g or[[[(i:=((x:=r.pop())+i>0)*-~i)%2*sum(r[:2-i])**4%5*5or x,x or-P**4%5*P*4,sum({*sum(g*(x>9),[])}-{5,x%15})or x][n//4]for P in[0]+r[:0:-1]]for*r,in zip(*p(g,n-1))if[i:=0]]
+
+Task 388  Bytes: 61
+p=lambda g:[[x|8&x-any(c)for*c,x in zip(*g,r)]*2for r in g]*2
+
+Task 389  Bytes: 57
+p=lambda g:[[sum({*sum(g,r)}-{5,x})for x in r]for r in g]
+
+Task 390  Bytes: 98
+import re
+p=lambda g,k=0:eval(re.sub("[^(2]{9}2"*2+"?","*[\g<0>][::-1]",f"{*zip(*k or p(g,g)),}"))
+
+Task 391  Bytes: 63
+p=lambda g:[*zip(sorted(range(10),key=sum(g,g).count)[7:4:-1])]
+
+Task 392  Bytes: 135
+p=lambda g,n=23:-n*g or[eval(f"r.pop()or[5,w:=max(max(g))][{n}//4%(('0, %d, '%w*2in'{g}')-3)]*any(r[-1:]),"*10)for*r,in zip(*p(g,n-1))]
+
+Task 393  Bytes: 63
+p=lambda g:[*zip(sorted(range(10),key=sum(g,g).count)[8:5:-1])]
+
+Task 394  Bytes: 91
+p=lambda g:[[r[j-2+w%~(j<3)-w//7]for j in range(w)if r[j]<1]for r in g if(w:=len(g))*0in r]
+
+Task 395  Bytes: 53
+p=lambda g,u=[]:g*0!=0and[*map(p,g,u+g[3:])]or~g+~u&2
+
+Task 396  Bytes: 177
+from re import*
+def p(g,S=str):*_,a,b=sorted(S(14**7*9),key=S(g).count);exec("g[:]=zip(*g[(max(findall(b+f'(?:, {b})+',S(g)))in S(g[-1]))-2::-1]);"*A);return eval(sub(b,a,S(g)))
+
+Task 397  Bytes: 117
+p=lambda g,x=324:g[:exec("x-=1\nif x&3<len(l:={*g[%s+g[1%s})*all(l):g[2+x%%4%s=3,3\n"%(("+x//36][x%9:x%9+2]",)*3)*x)]
+
+Task 398  Bytes: 78
+p=lambda g:[m:=g[0]+~g[0].count(0)%5*5*[0],*[m:=[0]+m[:-1]for _ in m]][-2::-1]
+
+Task 399  Bytes: 63
+p=lambda g:[*zip(*[map(sum(sum(g,[])).__gt__,b"_	___ ")]*3)]
+
+Task 400  Bytes: 67
+p=lambda g:[s[~r.index(1)::-1][:5]for r in g*1if 1in[s:=g.pop()]+r]
